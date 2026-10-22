@@ -50,7 +50,7 @@
       "id": "mof",
       "name": "財務省",
       "category": "日本経済",
-      "discovery_page": "https://www.mof.go.jp/about_mof/rss/index.html",
+      "url": "https://www.mof.go.jp/news.rss",
       "landing": "https://www.mof.go.jp/about_mof/rss/index.html",
       "kind": "primary",
       "language": "ja",
