@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "max_articles": 21,
+  "max_per_category": 4,
+  "max_per_publisher": 4,
+  "primary_max_age_hours": 168,
+  "press_max_age_hours": 48,
+  "publisher_allowlist": [
+    "reuters.com",
+    "nhk.or.jp",
+    "nhk.jp",
+    "news.web.nhk",
+    "jiji.com",
+    "nikkei.com",
+    "kyodonews.jp",
+    "kyodonews.net",
+    "47news.jp",
+    "asahi.com",
+    "mainichi.jp",
+    "yomiuri.co.jp",
+    "bbc.com",
+    "bbc.co.uk",
+    "apnews.com",
+    "bloomberg.com"
+  ],
+  "exclude_title_terms": [
+    "入札公告",
+    "調達情報",
+    "採用試験",
+    "非常勤職員",
+    "職員の募集",
+    "落札者",
+    "試験会場"
+  ],
+  "feeds": [
+    {
+      "id": "boj",
+      "name": "日本銀行",
+      "category": "金融政策",
+      "url": "https://www.boj.or.jp/rss/whatsnew.xml",
+      "landing": "https://www.boj.or.jp/about/abouthp.htm",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "boj.or.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "mof",
+      "name": "財務省",
+      "category": "日本経済",
+      "discovery_page": "https://www.mof.go.jp/about_mof/rss/index.html",
+      "landing": "https://www.mof.go.jp/about_mof/rss/index.html",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "mof.go.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fsa",
+      "name": "金融庁",
+      "category": "資産形成",
+      "url": "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml",
+      "landing": "https://www.fsa.go.jp/kouhou/rss.html",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "fsa.go.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "stat",
+      "name": "総務省統計局",
+      "category": "日本経済",
+      "discovery_page": "https://www.stat.go.jp/",
+      "landing": "https://www.stat.go.jp/",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "stat.go.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "mic",
+      "name": "総務省",
+      "category": "政治・地方自治",
+      "url": "https://www.soumu.go.jp/news.rdf",
+      "landing": "https://www.soumu.go.jp/menu_kyotsuu/rss_information.html",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "soumu.go.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "meti",
+      "name": "経済産業省",
+      "category": "AI・産業",
+      "url": "https://www.meti.go.jp/ml_index_release_atom.xml",
+      "landing": "https://www.meti.go.jp/",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "meti.go.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fed",
+      "name": "米連邦準備制度理事会（FRB）",
+      "category": "金融政策",
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "landing": "https://www.federalreserve.gov/feeds/feeds.htm",
+      "kind": "primary",
+      "language": "en",
+      "hosts": [
+        "federalreserve.gov"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press0",
+      "name": "報道見出し検索：日本経済",
+      "category": "日本経済",
+      "query": "(日本株 OR 日本経済 OR 企業決算 OR 景気) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press1",
+      "name": "報道見出し検索：世界経済",
+      "category": "世界経済",
+      "query": "(米国経済 OR 世界経済 OR 中国経済 OR 欧州経済) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press2",
+      "name": "報道見出し検索：金融政策",
+      "category": "金融政策",
+      "query": "(日銀 OR FRB OR 政策金利 OR 円相場) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press3",
+      "name": "報道見出し検索：政治・地方自治",
+      "category": "政治・地方自治",
+      "query": "(地方自治 OR 自治体 OR 地方財政 OR 市議会 OR 政府予算) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press4",
+      "name": "報道見出し検索：国際情勢",
+      "category": "国際情勢",
+      "query": "(国際情勢 OR 外交 OR 関税 OR 原油) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press5",
+      "name": "報道見出し検索：AI・産業",
+      "category": "AI・産業",
+      "query": "(AI OR 半導体 OR 人工知能 OR 設備投資) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "press6",
+      "name": "報道見出し検索：資産形成",
+      "category": "資産形成",
+      "query": "(NISA OR 資産形成 OR 投資信託) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    }
+  ]
+}
