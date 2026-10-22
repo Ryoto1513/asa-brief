@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "edition_date": null,
+  "status": "uninitialized",
+  "editorial_mode": "no_api",
+  "articles": [],
+  "markets": [],
+  "events": [],
+  "notice": "初回収集前です。架空の記事や株価は表示しません。GitHubで最初のワークフローを実行してください。"
+}

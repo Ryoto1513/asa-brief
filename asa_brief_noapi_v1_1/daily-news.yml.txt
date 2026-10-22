@@ -1,0 +1,67 @@
+name: 朝のブリーフ - 無料収集とWeb配信
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC -> JST: 22:35 -> 07:35, 23:40 -> 08:40 on the following day.
+    # Scheduler delays are possible. No exact 08:00 delivery guarantee.
+    - cron: '35 22 * * *'
+    - cron: '40 23 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: asa-brief-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Require a public repository for the no-additional-cost design
+        env:
+          IS_PRIVATE: ${{ github.event.repository.private }}
+        run: test "$IS_PRIVATE" = "false"
+      - name: Check out default branch
+        uses: actions/checkout@v6
+      - name: Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Offline unit tests (no dependency installation)
+        run: python -m unittest discover -s tests -v
+      - name: Collect public feeds (no AI/API keys)
+        id: collection
+        continue-on-error: true
+        run: python tools/update_news.py
+      - name: Persist current edition, health and archives
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "news: update edition and source health"
+            git push
+          fi
+      - name: Prepare only public web files
+        run: python tools/build_site.py
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact (one-day retention)
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.site'
+          retention-days: 1
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Mark total feed failure visibly
+        if: steps.collection.outcome == 'failure'
+        run: |
+          echo "RSS collection failed. The site was deployed with a failure notice and the last available edition."
+          exit 1
