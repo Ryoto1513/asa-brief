@@ -1,0 +1,58 @@
+{
+  "version": "1.2.0",
+  "created_on": "2026-10-22",
+  "deployment": "NOT_DEPLOYED",
+  "unit_tests": {
+    "passed": 43,
+    "failed": 0
+  },
+  "ui": {
+    "status": "PASS",
+    "browser": "Chromium",
+    "widths": [
+      320,
+      375,
+      390,
+      430
+    ],
+    "article_body_px": {
+      "normal": 16,
+      "large": 19
+    },
+    "first_card_top_px": 141.3125,
+    "js_errors": [],
+    "tests": [
+      "article-first layout",
+      "notices at footer",
+      "tables/chart/flow",
+      "font switch in article",
+      "font setting in settings",
+      "preference save and fresh-page restore using storage fixture",
+      "bookmarks",
+      "topic filter",
+      "glossary expansion",
+      "earnings tab",
+      "large text overflow checks",
+      "future exclusion",
+      "expiry handling"
+    ],
+    "limitations": [
+      "Injected fetch and storage fixtures; native localStorage/HTTP/service-worker not exercised",
+      "No real iPhone/Safari device test",
+      "No live RSS or TDnet connection test",
+      "No production deployment"
+    ]
+  },
+  "not_implemented": [
+    "Automatic creation of original in-depth news articles each day",
+    "Complete automatic financial analysis for all Nikkei 225 companies"
+  ],
+  "not_verified": [
+    "Live RSS and TDnet access",
+    "GitHub Actions execution of v1.2",
+    "iPhone and Safari",
+    "Native storage and service worker upgrade"
+  ],
+  "data_files_excluded": true,
+  "workflow_files_excluded": true
+}

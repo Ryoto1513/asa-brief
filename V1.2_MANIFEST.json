@@ -1,0 +1,21 @@
+{
+  "version": "1.2.0",
+  "files": {
+    "assets/app.js": "117c7e0046eace9c3c3dcb8056e04b332fb04523e75a101d7029cca3fc231c69",
+    "assets/style.css": "e4d27399857c54ff4619aa7fa3dabad48da93e540b3986c0f4b1f683d175c4e8",
+    "config/editorial.json": "bab93e5be86e897faf28c03b8db9d9670cb5e2c4e237c23da1ca6d760faee415",
+    "config/knowledge.json": "09704a41e35b40cb8106eec913b1ef6f8a67adbbd57a28ff168551c778b3dc4c",
+    "config/sources.json": "58b5c89fd5669e9994d84d42ad47a004562616e7e10062479e9934927e1c669d",
+    "tools/build_site.py": "f2950ce4539291f91ed43d2a6667e54a889a106113117f4e6c5903033e4c98ef",
+    "tools/earnings_watch.py": "148867cff4819ebc8c3a3ec5605b0e0c2251a0b880c4674dc7a483f21a13c01c",
+    "tools/editorial_rules.py": "d4899625f5ea0dfea2dfb2c4e1ce22b59eb35f4705f60bbcfc85a9551c6834cc",
+    "tools/update_news.py": "bdf362986c859330b8950b9501948531da4b62aeb55ff80c29f3726d8b9ac5c0",
+    "tests/test_update.py": "572b0229b385a9e17387277d0fc0578c78ba541fadb3c1fcaf4383af6301bcbd",
+    "tests/test_v12.py": "a04f90f41652655e4826d0d58ab9df48a6af42bce5829bd9f44b7558b0c40599",
+    "tests/browser_v12.py": "56ffea3af94c21eefae4b0e7e9fcb978acbb99f57e56ab555aa1eb96d3b3f206",
+    "index.html": "5a5eff82c20ea4a66dbb1755e70ae58b172eeebd3c966a454c23819c5d9389ae",
+    "sw.js": "43665f490c2f4bacfe5d0e82d52fab5e7d71fc03e3e0785b70c9a2e729a1a472",
+    "UPGRADE_v1.2_ja.md": "76e5620dfa7306caa37139ceacde572abc9c6abda137f0caffa3f9c212fb93fc",
+    "V1.2_CHECKS.json": "9b9d1612b8d145037a7e0d88ee3e4b18a8a8ca4e735b141da3cba1e6f6840aa6"
+  }
+}
