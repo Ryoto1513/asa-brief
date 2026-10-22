@@ -1,5 +1,126 @@
 {
-  "state": "uninitialized",
-  "attempted_at": null,
-  "message": "初回収集前です。"
+  "attempted_at": "2026-10-22T17:25:35+09:00",
+  "feeds_total": 14,
+  "feeds_ok": 12,
+  "feeds": [
+    {
+      "name": "日本銀行",
+      "kind": "primary",
+      "ok": true,
+      "eligible": 0,
+      "dropped": {
+        "link_not_allowed": 16,
+        "out_of_time_window": 62
+      }
+    },
+    {
+      "name": "財務省",
+      "kind": "primary",
+      "ok": false,
+      "reason": "取得またはRSS解析に失敗"
+    },
+    {
+      "name": "金融庁",
+      "kind": "primary",
+      "ok": true,
+      "eligible": 15,
+      "dropped": {}
+    },
+    {
+      "name": "総務省統計局",
+      "kind": "primary",
+      "ok": true,
+      "eligible": 3,
+      "dropped": {
+        "out_of_time_window": 12
+      }
+    },
+    {
+      "name": "総務省",
+      "kind": "primary",
+      "ok": true,
+      "eligible": 20,
+      "dropped": {}
+    },
+    {
+      "name": "経済産業省",
+      "kind": "primary",
+      "ok": false,
+      "reason": "取得またはRSS解析に失敗"
+    },
+    {
+      "name": "米連邦準備制度理事会（FRB）",
+      "kind": "primary",
+      "ok": true,
+      "eligible": 0,
+      "dropped": {
+        "out_of_time_window": 15
+      }
+    },
+    {
+      "name": "報道見出し検索：日本経済",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 20,
+      "dropped": {
+        "publisher_not_allowed": 80
+      }
+    },
+    {
+      "name": "報道見出し検索：世界経済",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 1,
+      "dropped": {
+        "publisher_not_allowed": 47
+      }
+    },
+    {
+      "name": "報道見出し検索：金融政策",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 21,
+      "dropped": {
+        "publisher_not_allowed": 79
+      }
+    },
+    {
+      "name": "報道見出し検索：政治・地方自治",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 23,
+      "dropped": {
+        "publisher_not_allowed": 77
+      }
+    },
+    {
+      "name": "報道見出し検索：国際情勢",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 27,
+      "dropped": {
+        "publisher_not_allowed": 73
+      }
+    },
+    {
+      "name": "報道見出し検索：AI・産業",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 32,
+      "dropped": {
+        "publisher_not_allowed": 68
+      }
+    },
+    {
+      "name": "報道見出し検索：資産形成",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 8,
+      "dropped": {
+        "publisher_not_allowed": 92
+      }
+    }
+  ],
+  "state": "partial",
+  "message": "一部の情報源を取得できませんでした。取得状況を確認してください。"
 }
