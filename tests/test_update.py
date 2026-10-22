@@ -60,7 +60,7 @@ class CollectorTests(unittest.TestCase):
         self.assertTrue(u.host_ok('https://jp.reuters.com/a',['reuters.com']))
         self.assertFalse(u.host_ok('https://reuters.com.evil.example/a',['reuters.com']))
     def test_discover_primary(self):
-        feed=CONFIG['feeds'][1]
+        feed=copy.deepcopy(CONFIG['feeds'][1]);feed.pop('url',None);feed['discovery_page']='https://www.mof.go.jp/about_mof/rss/index.html'
         html=b'<a href="/english/feed.xml">English</a><a href="/news.rdf">RSS</a>'
         self.assertEqual(u.resolve_feed(feed,lambda url,hosts:html),'https://www.mof.go.jp/news.rdf')
     def test_dedup_and_coverage(self):
@@ -90,7 +90,7 @@ class CollectorTests(unittest.TestCase):
         def downloader(url,hosts):called.append(url);return rss()
         with tempfile.TemporaryDirectory() as tmp,patch.dict('os.environ',{'OPENAI_API_KEY':'test-not-a-real-key','ANTHROPIC_API_KEY':'test'}):
             result=u.run(now=NOW,data_dir=tmp,config=c,downloader=downloader)
-            self.assertEqual(result['editorial_mode'],'no_api_fixed_learning')
+            self.assertEqual(result['editorial_mode'],'curated_with_editorial_library')
             self.assertEqual(called,['https://www.boj.or.jp/rss/whatsnew.xml'])
     def test_no_fake_prices(self):
         self.assertEqual(json.loads((R/'data/latest.json').read_text())['markets'],[])

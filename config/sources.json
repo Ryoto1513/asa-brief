@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "max_articles": 21,
+  "version": 2,
+  "max_articles": 15,
   "max_per_category": 4,
   "max_per_publisher": 4,
   "primary_max_age_hours": 168,
@@ -50,14 +50,14 @@
       "id": "mof",
       "name": "財務省",
       "category": "日本経済",
-      "url": "https://www.mof.go.jp/news.rss",
       "landing": "https://www.mof.go.jp/about_mof/rss/index.html",
       "kind": "primary",
       "language": "ja",
       "hosts": [
         "mof.go.jp"
       ],
-      "enabled": true
+      "enabled": true,
+      "url": "https://www.mof.go.jp/news.rss"
     },
     {
       "id": "fsa",
@@ -164,7 +164,7 @@
       "id": "press3",
       "name": "報道見出し検索：政治・地方自治",
       "category": "政治・地方自治",
-      "query": "(地方自治 OR 自治体 OR 地方財政 OR 市議会 OR 政府予算) when:2d",
+      "query": "(地方財政 OR 税制改正 OR 防災 OR 治水 OR 政府予算) when:2d",
       "kind": "press_search",
       "language": "ja",
       "hosts": [
@@ -176,7 +176,7 @@
       "id": "press4",
       "name": "報道見出し検索：国際情勢",
       "category": "国際情勢",
-      "query": "(国際情勢 OR 外交 OR 関税 OR 原油) when:2d",
+      "query": "(国際情勢 OR 暴動 OR 大規模デモ OR 夜間外出禁止 OR 戦争 OR 外交 OR 関税) when:2d",
       "kind": "press_search",
       "language": "ja",
       "hosts": [
@@ -201,6 +201,44 @@
       "name": "報道見出し検索：資産形成",
       "category": "資産形成",
       "query": "(NISA OR 資産形成 OR 投資信託) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "security-official",
+      "name": "JPCERT/CC 注意喚起",
+      "category": "セキュリティ",
+      "url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "landing": "https://www.jpcert.or.jp/rss/",
+      "kind": "primary",
+      "language": "ja",
+      "hosts": [
+        "jpcert.or.jp",
+        "jvn.jp"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "security-news",
+      "name": "報道見出し検索：重要セキュリティ",
+      "category": "セキュリティ",
+      "query": "(PHP OR Windows OR Chrome OR サイバー攻撃) (脆弱性 OR 緊急 OR 情報漏えい) when:2d",
+      "kind": "press_search",
+      "language": "ja",
+      "hosts": [
+        "news.google.com"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "social-news",
+      "name": "報道見出し検索：重大な社会動向",
+      "category": "社会・重要",
+      "query": "(暴動 OR 大規模デモ OR 大規模障害 OR 大規模災害 OR 緊急事態) when:2d",
       "kind": "press_search",
       "language": "ja",
       "hosts": [
