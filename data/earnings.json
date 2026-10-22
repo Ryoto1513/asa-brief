@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23T00:16:07+09:00",
+  "state": "success",
+  "items": [
+    {
+      "id": "601a4660ca2954d8b7aa",
+      "disclosure_key": "6146:2026-10-22",
+      "code": "6146",
+      "company": "ディスコ",
+      "title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-10-22T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261021554279.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "9b7651ed338dc9a21b35",
+      "disclosure_key": "6146:2026-10-22",
+      "code": "6146",
+      "company": "ディスコ",
+      "title": "業績予想のお知らせ",
+      "published_at": "2026-10-22T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261021554280.pdf",
+      "stage": "detected"
+    }
+  ],
+  "universe_count": 225,
+  "pages_requested": 3,
+  "pages_ok": 3,
+  "errors": [],
+  "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
+}
