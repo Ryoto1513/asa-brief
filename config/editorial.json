@@ -1,8 +1,318 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-23-cpi-r3",
+  "editorial_version": "2026-10-23-reference0800-r1",
   "reviewed_on": "2026-10-23",
   "articles": [
+    {
+      "manuscript_version": 2,
+      "revision": 1,
+      "id": "morning-reference-20261023-0800",
+      "title": "2026年10月23日 午前8時時点の参考ブリーフ",
+      "lead": "2026年10月23日 午前8時時点の参考ブリーフです。今朝の要点は「AI需要の成長と株価の期待は別」「原油高は日本の生活費にも関わる」の2点。日米株・原油・ディスコを中心に6件と当時の注目予定をまとめます。",
+      "cat": "世界経済",
+      "priority": "重要",
+      "published_at": "2026-10-23T15:00:56+09:00",
+      "checked_at": "2026-10-23T15:00:56+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "tag": "参考ブリーフ",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 6,
+      "selection_reason": "日本株・世界経済・生活費に関わる重要3件と、制度・セキュリティ・通信技術の補足3件を、午前8時までの情報でまとめた参考版。個別詳報は既存記事を保持。",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "source_url": "https://www.marketscreener.com/news/s-p-500-nasdaq-end-sharply-lower-as-revived-ai-doubts-ignite-tech-selloff-ce785cdedc80ff25",
+      "sources": [
+        {
+          "name": "株探：2026年10月22日の日本市場",
+          "url": "https://s.kabutan.jp/news/n202610221171/",
+          "published_at": "2026-10-22T17:13:00+09:00"
+        },
+        {
+          "name": "Reuters／MarketScreener：米国株式市場（更新時刻）",
+          "url": "https://www.marketscreener.com/news/s-p-500-nasdaq-end-sharply-lower-as-revived-ai-doubts-ignite-tech-selloff-ce785cdedc80ff25",
+          "published_at": "2026-10-23T05:48:00+09:00",
+          "published_at_basis": "displayed_update_2026-10-22_16:48_EDT"
+        },
+        {
+          "name": "Reuters／The Star：原油市場",
+          "url": "https://www.thestar.com.my/business/2026/10/23/oil-hits-five-month-high-as-houthi-attacks-fuel-supply-fears",
+          "published_at": "2026-10-23T07:49:00+09:00",
+          "published_at_basis": "displayed_2026-10-23_06:49_MYT"
+        },
+        {
+          "name": "株探：ディスコ決算速報",
+          "url": "https://s.kabutan.jp/news/k202610220015/",
+          "published_at": "2026-10-22T16:00:00+09:00"
+        },
+        {
+          "name": "TBS／livedoor：AI・デジタル改革会議",
+          "url": "https://news.livedoor.com/article/detail/32631591/",
+          "published_at": "2026-10-22T18:38:00+09:00"
+        },
+        {
+          "name": "窓の杜：PHP脆弱性と修正版（原HTMLの公開日時）",
+          "url": "https://forest.watch.impress.co.jp/docs/news/2150167.html",
+          "published_at": "2026-10-22T00:00:00+09:00",
+          "modified_at": "2026-10-22T15:52:55+09:00",
+          "published_at_basis": "publisher_HTML_article:published_time_and_JSONLD_datePublished; explicit midnight, not date padding"
+        },
+        {
+          "name": "KDDI：BroadcomとのCPO共同検証",
+          "url": "https://newsroom.kddi.com/news/detail/kddi_nr-1205_4772.html",
+          "published_at": "2026-10-22T11:00:00+09:00",
+          "published_at_basis": "original_HTML_JSONLD_datePublished_dateModified"
+        },
+        {
+          "name": "株探：10月23日の経済予定（前日公表）",
+          "url": "https://s.kabutan.jp/news/n202610221303/",
+          "published_at": "2026-10-22T20:05:00+09:00"
+        }
+      ],
+      "supplementary_sources": [
+        {
+          "name": "ディスコ公式決算資料",
+          "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20261022.pdf",
+          "published_date": "2026-10-22",
+          "published_at": null
+        },
+        {
+          "name": "デジタル庁：第1回会議",
+          "url": "https://www.digital.go.jp/councils/ai_digital/1f3aa34a-786d-4b56-99a4-469f8f933f1c",
+          "published_date": null,
+          "published_at": null
+        },
+        {
+          "name": "JPCERT/CC注意喚起",
+          "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+          "published_date": "2026-10-22",
+          "published_at": null
+        },
+        {
+          "name": "PHP公式修正版",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+          "published_date": "2026-10-21",
+          "published_at": null
+        },
+        {
+          "name": "日銀公式会合日程",
+          "url": "https://www.boj.or.jp/mopo/mpmsche_minu/m_ref/mref250731a.pdf",
+          "published_date": "2025-07-31",
+          "published_at": null
+        }
+      ],
+      "information_cutoff": "2026-10-22T23:00:00+00:00",
+      "information_cutoff_label": "2026年10月23日 午前8時 JST",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "match_terms": [
+        "参考ブリーフ",
+        "AI",
+        "原油"
+      ],
+      "takeaways": [
+        "AI関連株の警戒と、関連企業の実際の需要は分けて見る。",
+        "原油高は燃料・輸送・製造コストを通じて生活費にも関わる。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜重要1：日米のAI・半導体関連株に売り",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日の日経平均は62,907.84円で終了し、前日比1,713.40円安（−2.65%）。米国でもNASDAQ総合は−2.60%、S&P500は−1.21%でした。一方、NYダウは＋0.02%とほぼ横ばいで、すべての企業が同じように売られたわけではありません。",
+            "Reutersは、AI投資の採算への懸念が再燃したと報じています。"
+          ],
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜重要2：原油が上昇",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日のブレント原油先物は1バレル113.17ドル、前日比4.0%高。Reutersは、フーシ派によるサウジアラビアへの攻撃を受け、供給への不安が強まったと報じています。"
+          ],
+          "refs": [
+            3
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜重要3：ディスコは大幅増益",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "半導体を切る・削る装置などを手掛けるディスコが、22日に中間決算を発表しました。2026年4〜9月の売上高は約2,570.6億円、前年同期比＋32.1%。営業利益は約1,166.4億円、同＋47.9%でした。",
+            "会社は生成AI、先端ロジック、HBM向け需要について説明しています。HBMは、AIの大量の計算を支える高性能なメモリーです。"
+          ],
+          "refs": [
+            4
+          ],
+          "supplementary_evidence": [
+            "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20261022.pdf"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜知っておきたい4：政府がAI・デジタル改革の会議を初開催",
+          "role": "background",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日に第1回会議が開かれ、AI活用などについて年末までに中間整理する意向が示されました。行政手続きや職場でのAI利用がどう変わるかにつながる動きです。"
+          ],
+          "refs": [
+            5
+          ],
+          "supplementary_evidence": [
+            "https://www.digital.go.jp/councils/ai_digital/1f3aa34a-786d-4b56-99a4-469f8f933f1c"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜知っておきたい5：PHPに重大な脆弱性",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "PHP開発元が21日に修正版を公開し、JPCERT/CCも22日に注意喚起しました。条件によって、第三者にサーバー上でプログラムを実行されるおそれがあります。"
+          ],
+          "refs": [
+            6
+          ],
+          "supplementary_evidence": [
+            "https://www.jpcert.or.jp/at/2026/at260033.html",
+            "https://www.php.net/archive/2026.php#2026-10-21-5"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜知っておきたい6：KDDIとBroadcom、AI向け通信の省電力化を検証",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "両社は22日、半導体と光通信部品を近づける「CPO」の共同検証を発表しました。AIは計算だけでなく、データを運ぶ部分にも電力を使います。その負担を減らす技術です。"
+          ],
+          "refs": [
+            7
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜AI需要と、株価の期待は別",
+          "role": "perspectives",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "読み解くポイントは、AIが成長するかだけでなく「巨額の投資に見合う利益を生めるか」です。売上の伸びに加え、利益率、設備投資額、手元に残る現金を確認します。AI関連株を複数持っていても、同じ要因で一緒に下がる可能性があります。",
+            "ディスコのように、AI関連株への警戒が強まっていても、関連企業の需要が一律に弱くなったわけではありません。ただし、良い業績でも株価が上がるとは限りません。市場がそれ以上を期待していたか、好調が続くかも評価に影響します。"
+          ],
+          "refs": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜原油高が家計に伝わる仕組み",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "原油高は、燃料代に加えて商品の輸送費や製造コストを押し上げる方向に働きます。企業がその負担を価格に転嫁すれば、家計にも波及します。ただし、先物の4%上昇がそのまま店頭価格の4%上昇になるわけではありません。",
+            "今後は「高値が続くか」と円相場が重要です。資源関連企業には追い風となる場合がありますが、燃料を多く使う企業ではコスト負担が確認点になります。"
+          ],
+          "refs": [
+            3
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜制度・セキュリティ・通信で確認すること",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "AI・デジタル改革会議の開催は、新制度の決定ではありません。今後は具体的な利用ルール、予算、実施する事業を見ていく段階です。",
+            "PHPのサイトを自分で管理している場合は、管理会社などに修正適用を確認する事項です。一般利用者のPCが、サイトを見ただけで一律に感染するという話ではありません。",
+            "AI産業を見る際は、GPUだけでなく通信・電力・冷却にも目を向けると関連産業を理解しやすくなります。KDDIとBroadcomの発表は検証開始であり、家庭の通信料金が下がるという決定ではありません。"
+          ],
+          "refs": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "type": "text",
+          "title": "予測｜午前8時時点での注目予定",
+          "role": "outlook",
+          "claim_type": "prediction",
+          "paragraphs": [
+            "10月23日8:30：日本の9月全国CPI。情報基準の午前8時時点では発表前です。物価の伸びと、その内訳が注目点です。本稿は8時時点の参考版のため、その後に発表された結果は含めていません。",
+            "10月29〜30日：日銀の金融政策決定会合。物価・賃金・景気をどう評価するかを確認します。会合予定と、利上げ決定は別です。"
+          ],
+          "refs": [
+            8
+          ],
+          "supplementary_evidence": [
+            "https://www.boj.or.jp/mopo/mpmsche_minu/m_ref/mref250731a.pdf"
+          ]
+        }
+      ],
+      "metrics": [],
+      "glossary": [
+        [
+          "設備投資",
+          "工場や計算設備など、事業に必要な設備への投資。"
+        ],
+        [
+          "HBM",
+          "AIの大量の計算を支える高性能なメモリー。"
+        ],
+        [
+          "CPO",
+          "半導体と光通信部品を近づける技術。"
+        ],
+        [
+          "CPI",
+          "消費者物価指数。物価の変化を見る指標。"
+        ]
+      ],
+      "scope": "これは追加公開時にあらためて確認し、2026年10月23日午前8時までの情報で再構成した参考版です。記事の掲載・確認日時は実際の追加作業時刻であり、午前8時に公開・配信したという意味ではありません。日本株は22日終値、米国株・原油は22日の米国市場の終値・清算値を使用しています。\n\n数値を踏まえた影響の説明は一般的な分析で、個々の企業や家計に起きた変化の断定ではありません。数値は原資料との照合を行った自由文で、機械validatorが本文中の全数値を検算・真偽判定したものではありません。\n\n一次資料のうち公表日しか確認できないものは時刻を補完せず、下記補助出典とmetadataに日付精度で記録しています。日時付きニュース出典は確認済み報道・公開metadataです。\n\n補助一次資料：\nディスコ公式決算資料 https://www.disco.co.jp/jp/ir/library/doc/fr/fr20261022.pdf\nデジタル庁：第1回会議 https://www.digital.go.jp/councils/ai_digital/1f3aa34a-786d-4b56-99a4-469f8f933f1c\nJPCERT/CC注意喚起 https://www.jpcert.or.jp/at/2026/at260033.html\nPHP公式修正版 https://www.php.net/archive/2026.php#2026-10-21-5\n日銀公式会合日程 https://www.boj.or.jp/mopo/mpmsche_minu/m_ref/mref250731a.pdf\n\n08:30 CPIは情報基準時点の予定として掲載しています。午前8時以降の結果は本稿へ混入させず、既存CPI詳報とは別記事で保持します。既存のディスコ・PHP等の詳報本文も変更していません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T15:00:56+09:00",
+          "summary": "ユーザーが追加公開を依頼した午前8時時点の参考ブリーフ。既存6ニュースと予定のみを情報基準時刻で再構成。現在の実作業時刻で新規記事を記録し、既存4記事は不変。"
+        }
+      ],
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T15:00:56+09:00",
+          "adoption": "approved",
+          "scope": "ユーザーの「アプリへの追加公開を行ってください。」に基づく追加公開。recorded_atは記録作成時刻であり承認メッセージ時刻ではない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI source/editorial check; user publication instruction separately recorded",
+          "checked_at": "2026-10-23T15:00:56+09:00",
+          "note": "確認担当が各報道・一次資料と基準時刻以前の公表根拠を照合。日付のみ資料はsupplementary_sourcesへ精度を保って保存。本文の数値は原資料との照合に基づくものでありプログラムによる全数値検算ではない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI source/editorial check; user publication instruction separately recorded",
+          "checked_at": "2026-10-23T15:00:56+09:00",
+          "note": "ユーザーに提示した重要3件・補足3件・予定の範囲を維持。08時の情報基準と実際の追加公開を区別し、発表後のCPI結果や新規ニュースは加えていない。ユーザーの公開依頼は記録するが人間の出典真偽レビューは主張しない。"
+        }
+      }
+    },
     {
       "manuscript_version": 2,
       "revision": 3,
