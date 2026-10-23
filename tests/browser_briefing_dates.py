@@ -48,10 +48,26 @@ def check_briefing_dates(browser, fixture):
     page.locator('#briefDate').select_option('latest')
     page.wait_for_function("S.edition==='latest'&&!S.loading")
     assert page.locator('[data-open="expired-date-story"]').count()==0
+    # More than twelve entries: latest stays concise, a selected day shows all.
+    page.evaluate('''() => {
+        const sample=window.TEST_DATA['data/latest.json'].articles[0];
+        window.TEST_DATA['data/editorial.json']={schema_version:1,articles:[]};
+        window.TEST_DATA['data/latest.json'].articles=Array.from({length:15},(_,i)=>({...sample,
+            id:'full-day-'+i,title:'合成テスト：日付別の全件 '+i,source_url:'https://example.com/full-day-'+i}));
+    }''')
+    page.locator('[data-refresh]').first.click()
+    page.wait_for_function("S.edition==='latest'&&!S.loading")
+    assert page.locator('.article-card').count()==12
+    page.locator('#briefDate').select_option('2026-10-23')
+    page.wait_for_function("S.edition==='2026-10-23'")
+    assert page.locator('.article-card').count()==15
+    page.locator('[data-open="full-day-14"]').click()
+    assert page.locator('#articlePage h1').inner_text()=='合成テスト：日付別の全件 14'
+    page.locator('[data-close]').first.click()
     for width in (320,375,390,430):
         page.set_viewport_size({'width':width,'height':844})
         assert page.locator('#app').evaluate('(e)=>e.scrollWidth<=e.clientWidth'),width
     assert not errors,errors
     assert not requests,requests
     context.close()
-    return {'status':'PASS','tests':['visible date filter','expired editorial without RSS','JST membership','detail/bookmark','tabs/search','empty archive','return latest','mobile widths'],'network_requests':requests,'javascript_errors':errors}
+    return {'status':'PASS','tests':['visible date filter','expired editorial without RSS','JST membership','detail/bookmark','tabs/search','empty archive','return latest','selected day shows all 15, latest capped at 12','mobile widths'],'network_requests':requests,'javascript_errors':errors}

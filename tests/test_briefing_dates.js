@@ -29,5 +29,11 @@ const run=s=>vm.runInContext(s,context);
  await pending;assert.equal(run(`S.edition`),'2026-10-22');
  context.fetch=async()=>new Response(JSON.stringify({schema_version:1,edition_date:'WRONG',articles:[]}));
  await run(`selectArchive('2026-10-21')`);assert.equal(run(`S.edition`),'2026-10-22');
+ // The selected day's home must not silently truncate articles after twelve.
+ run(`S.editorial={articles:[]};S.data={edition_date:'2026-10-23',status:'live',articles:Array.from({length:15},(_,i)=>({id:'day-item-'+i,title:'Day item '+i,source_url:'https://example.com/'+i}))};S.latestData=S.data;S.edition='latest';S.tab='home';`);
+ assert.equal(run(`(home().match(/class="card article-card"/g)||[]).length`),12);
+ await run(`selectArchive('2026-10-23')`);
+ assert.equal(run(`(home().match(/class="card article-card"/g)||[]).length`),15);
+ assert.equal(run(`home().includes('data-open="day-item-14"')`),true);
  console.log('PASS briefing dates: JST, impossible/future dates, explicit membership, expiry, missing RSS, tab persistence, detail lookup, race, mismatched archive');
 })().catch(e=>{console.error(e);process.exitCode=1});
