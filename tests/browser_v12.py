@@ -29,7 +29,7 @@ def main():
    pg.wait_for_selector('.article-card');pg.wait_for_timeout(150)
    return pg
   page=boot()
-  assert page.locator('.article-card').count()==3
+  assert page.locator('.article-card').count()==2
   first=page.locator('.article-card').first.bounding_box()
   assert first['y']<180,first
   assert page.locator('.audit-footer').first.bounding_box()['y']>844
@@ -77,11 +77,11 @@ def main():
    page.locator('[data-close]').first.click()
   # No fabricated future and old content in fresh home edition.
   page.evaluate("S.editorial.articles[0].published_at='2099-01-01T00:00:00+09:00';render()")
-  page.locator('.bottom [data-tab="home"]').click();assert page.locator('.article-card').count()==2
+  page.locator('.bottom [data-tab="home"]').click();assert page.locator('.article-card').count()==1
   page.evaluate("S.editorial.articles.forEach(a=>a.home_until='2000-01-01T00:00:00+09:00');render()")
-  assert page.locator('.article-card').count()==0
+  assert page.locator('.article-card').count()==1  # Publication date, not curation expiry, defines Today.
   assert not errors,errors
-  result={'status':'PASS','browser':'Chromium','widths':[320,375,390,430],'article_body_px':{'normal':before,'large':after},'first_card_top_px':first['y'],'js_errors':errors,'tests':['article-first layout','notices at footer','tables/chart/flow','font switch in article','font setting in settings','preference save and fresh-page restore using storage fixture','bookmarks','topic filter','glossary expansion','earnings tab','large text overflow checks','future exclusion','expiry handling'],'limitations':['Injected fetch and storage fixtures; native localStorage/HTTP/service-worker not exercised','No real iPhone/Safari device test','No live RSS or TDnet connection test','No production deployment']}
+  result={'status':'PASS','browser':'Chromium','widths':[320,375,390,430],'article_body_px':{'normal':before,'large':after},'first_card_top_px':first['y'],'js_errors':errors,'tests':['article-first layout','notices at footer','tables/chart/flow','font switch in article','font setting in settings','preference save and fresh-page restore using storage fixture','bookmarks','topic filter','glossary expansion','earnings tab','large text overflow checks','future exclusion','publication day independent of curation expiry'],'limitations':['Injected fetch and storage fixtures; native localStorage/HTTP/service-worker not exercised','No real iPhone/Safari device test','No live RSS or TDnet connection test','No production deployment']}
   (OUT/'asa_brief_v12_browser_report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
   print(json.dumps(result,ensure_ascii=False));browser.close()
 if __name__=='__main__':main()

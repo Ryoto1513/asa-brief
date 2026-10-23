@@ -9,6 +9,7 @@ import hashlib,json,re
 from pathlib import Path
 from urllib.parse import urljoin
 from update_news import download,atomic_json,host_ok
+from earnings_schedule import update_schedule
 R=Path(__file__).resolve().parents[1]
 JST=timezone(timedelta(hours=9))
 COMPONENTS='https://indexes.nikkei.co.jp/nkave/index/component'
@@ -63,11 +64,12 @@ def update_watch(now=None,downloader=download,data_dir=None):
     try:previous=json.loads((d/'earnings.json').read_text(encoding='utf-8'))
     except (OSError,ValueError):pass
     previous_items=[x for x in previous.get('items',[]) if x.get('published_at','')>=(now-timedelta(days=30)).date().isoformat()]
-    state={'schema_version':1,'checked_at':now.isoformat(timespec='seconds'),'state':'uninitialized','items':previous_items,'universe_count':0,'pages_requested':0,'pages_ok':0,'errors':[]}
+    state={'schema_version':1,'checked_at':now.isoformat(timespec='seconds'),'state':'uninitialized','items':previous_items,'universe_count':0,'pages_requested':0,'pages_ok':0,'errors':[], 'schedule':{**previous.get('schedule',{}), 'state':'failed', 'checked_at':now.isoformat(timespec='seconds')}}
     try:members=parse_components(downloader(COMPONENTS,['indexes.nikkei.co.jp']));state['universe_count']=len(members)
     except (OSError,ValueError,TimeoutError) as exc:
         state.update(state='failed',message='構成銘柄の取得・照合に失敗。過去に検知した開示のみ保持しています。')
         state['errors'].append('component_fetch_or_parse_failed');atomic_json(d/'earnings.json',state);return state
+    state['schedule']=update_schedule(now,downloader,members,previous.get('schedule'))
     found=[]
     for ago in range(3):
         date=(now-timedelta(days=ago)).date();stamp=date.strftime('%Y%m%d');queue=[f'{TDNET}I_list_001_{stamp}.html'];visited=set()
