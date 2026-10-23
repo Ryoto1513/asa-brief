@@ -14,10 +14,13 @@ import math
 import os
 import re
 import tempfile
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timezone, timedelta
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
 from urllib.parse import parse_qsl, unquote, urlsplit, urlunsplit, urlencode
+
+MAX_BYTES = 2_000_000
+JST = timezone(timedelta(hours=9))
 
 LEGACY_HASHES = {
     'disco-20261022-2q': '7962ae5a8c316293aec1e9a0b508380e1c80af003bb178f1af7131ff198e9814',
@@ -35,6 +38,10 @@ PHONE = re.compile(r'(?<!\d)(?:0[789]0[- ]?\d{4}[- ]?\d{4}|\+81[- ]?[789]0[- ]?\
 SENSITIVE_KEY = re.compile(r'^(?:password|passwd|api[_-]?key|access[_-]?token|client[_-]?secret|private[_-]?key|email|phone|address|account[_-]?number|my[_-]?number)$', re.I)
 
 
+class SaveCommittedError(OSError):
+    """Replace succeeded, but directory durability is unknown; never retry blindly."""
+
+
 def canonical_hash(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
                                     separators=(',', ':'), allow_nan=False).encode('utf-8')).hexdigest()
@@ -49,7 +56,7 @@ def load_json(path):
             result[key] = value
         return result
     raw = Path(path).read_bytes()
-    if len(raw) > 2_000_000:
+    if len(raw) > MAX_BYTES:
         raise ValueError('manuscript exceeds 2 MB public-verification limit')
     return json.loads(raw.decode('utf-8'), object_pairs_hook=unique,
                       parse_constant=lambda _: (_ for _ in ()).throw(ValueError('non-finite JSON number')))
@@ -240,9 +247,9 @@ def validate(payload, now=None):
             issue('structural', path, 'require published_at <= checked_at <= validation time')
         if expiry and published and checked and expiry <= max(published, checked):
             issue('structural', path + '.home_until', 'expiry must follow publication and check')
-        if published and article.get('date') != published.strftime('%m/%d'):
+        if published and article.get('date') != published.astimezone(JST).strftime('%m/%d'):
             issue('structural', path + '.date', 'display date must match published_at')
-        if checked and article.get('reviewed_on') != checked.date().isoformat():
+        if checked and article.get('reviewed_on') != checked.astimezone(JST).date().isoformat():
             issue('structural', path + '.reviewed_on', 'display review date must match checked_at')
         for key in ('covered_headlines', 'match_terms'):
             if key in article:
@@ -357,7 +364,7 @@ def validate(payload, now=None):
                 if not isinstance(period, dict) or not isinstance(period.get('label'), str) or not period['label'].strip():
                     raise ValueError()
                 start, end = iso_date(period['start']), iso_date(period['end'])
-                if start > end or (metric.get('kind') == 'actual' and checked and end > checked.date()):
+                if start > end or (metric.get('kind') == 'actual' and checked and end > checked.astimezone(JST).date()):
                     raise ValueError()
             except (ValueError, TypeError, KeyError):
                 issue('numeric', mp + '.period', 'ordered ISO dates and visible period label required; actual cannot end after check')
@@ -500,7 +507,11 @@ def validate(payload, now=None):
                                 mid = cell_map.get((ri, ci))
                                 if match and match.group(2) and isinstance(mid, str) and mid in metric_map and match.group(2) != metric_map[mid].get('unit'):
                                     issue('numeric', bp, 'numeric cell suffix differs from metric unit')
-                                bindings.append((mid, number))
+                                # Only this cell's column and first (row-header) cell
+                                # describe it. A caption or another row cannot rescue it.
+                                context = [headers[ci], row[0] if ci != 0 else '']
+                                suffix = match.group(2) if match else None
+                                bindings.append((mid, number, context, suffix))
                     if set(cell_map) - found:
                         issue('numeric', bp, 'unused/invalid numeric cell binding')
                 else:
@@ -513,11 +524,10 @@ def validate(payload, now=None):
                         if not isinstance(row, list) or len(row) != 2 or not isinstance(row[0], str) or not row[0] or not _finite(row[1]) or row[1] < 0:
                             issue('numeric', bp, 'bar row requires label/nonnegative finite value (renderer limitation)')
                             continue
-                        bindings.append((ids[ri] if ri < len(ids) else None, row[1]))
+                        bindings.append((ids[ri] if ri < len(ids) else None, row[1], [row[0]], block.get('unit')))
             else:
                 issue('structural', bp, 'supported block type required')
-            visible = json.dumps({k: block.get(k) for k in ('title', 'caption', 'headers', 'rows', 'unit')}, ensure_ascii=False)
-            for mid, number in bindings:
+            for mid, number, context, suffix in bindings:
                 if not isinstance(mid, str) or mid not in metric_map:
                     issue('numeric', bp, 'every numeric cell/chart value needs a known metric binding')
                     continue
@@ -525,12 +535,39 @@ def validate(payload, now=None):
                 used_metrics.add(mid)
                 if not _finite(number) or not _finite(metric.get('value')) or not math.isclose(number, metric['value'], rel_tol=0, abs_tol=1e-9):
                     issue('numeric', bp, 'displayed number differs from structured metric')
-                if kind == 'bars' and metric.get('unit') != block.get('unit'):
-                    issue('numeric', bp, 'chart unit differs from metric')
+                local = ' '.join(x for x in context if isinstance(x, str))
                 period = metric.get('period', {})
-                tokens = (metric.get('unit'), KINDS.get(metric.get('kind')) if isinstance(metric.get('kind'), str) else None, period.get('label') if isinstance(period, dict) else None)
-                if any(not isinstance(token, str) or not token or token not in visible for token in tokens):
-                    issue('numeric', bp, 'display must label unit, period, actual/company/market forecast')
+                label = metric.get('label')
+                tokens = (label, KINDS.get(metric.get('kind')) if isinstance(metric.get('kind'), str) else None,
+                          period.get('label') if isinstance(period, dict) else None)
+                if any(not isinstance(token, str) or not token.strip() or token not in local for token in tokens):
+                    issue('numeric', bp, 'bound row/column must label metric, period and actual/company/market forecast')
+                labels = {m.get('label') for m in metric_map.values()
+                          if isinstance(m.get('label'), str) and m['label'].strip()}
+                visible_labels = set(re.findall('|'.join(re.escape(x) for x in sorted(labels, key=len, reverse=True)), local)) if labels else set()
+                if not isinstance(label, str) or visible_labels != {label}:
+                    issue('numeric', bp, 'bound headers must identify one unambiguous metric label')
+                # Reject ambiguous local axes, even if the expected token is present.
+                if any(token in local and token != tokens[1] for token in KINDS.values()):
+                    issue('numeric', bp, 'bound headers contradict actual/forecast kind')
+                periods = {m.get('period', {}).get('label') for m in metric_map.values()
+                           if isinstance(m.get('period'), dict) and isinstance(m['period'].get('label'), str)}
+                if isinstance(period, dict) and any(token and token in local and token != period.get('label') for token in periods):
+                    issue('numeric', bp, 'bound headers contradict metric period')
+                # Names and date labels can contain unit characters (日本, 月末日).
+                # Remove the already-bound labels before interpreting unit text.
+                unit_context = local
+                for bound_label in sorted((x for x in (label, period.get('label') if isinstance(period, dict) else None)
+                                           if isinstance(x, str) and x), key=len, reverse=True):
+                    unit_context = unit_context.replace(bound_label, ' ')
+                units = set(re.findall('|'.join(re.escape(u) for u in sorted(UNITS, key=len, reverse=True)), unit_context))
+                # A suffix cannot override a contradictory row/column unit.
+                if suffix is not None:
+                    if suffix != metric.get('unit') or (units and units != {suffix}):
+                        issue('numeric', bp, 'numeric cell/chart unit differs from metric')
+                else:
+                    if not isinstance(metric.get('unit'), str) or units != {metric['unit']}:
+                        issue('numeric', bp, 'bound headers must unambiguously label metric unit')
                 if claim == 'fact' and metric.get('kind') != 'actual':
                     issue('numeric', bp, 'forecast cannot be labeled as a fact block')
         if not ROLES <= roles:
@@ -546,6 +583,19 @@ def require_valid(payload, now=None):
     if not report['ok']:
         raise ValueError(json.dumps(report, ensure_ascii=False, sort_keys=True))
     return report
+
+
+def order_articles(articles):
+    """Stable editorial importance, newest publication, then explicit ID tie-break."""
+    legacy_rank = {identifier: index for index, identifier in enumerate(LEGACY_HASHES)}
+    # Preserve the approved three-article-only edition. Mixed/new editions use
+    # the explicit priority/newness rule, without changing article timestamps.
+    if all(a['id'] in legacy_rank for a in articles):
+        return sorted(articles, key=lambda a: legacy_rank[a['id']])
+    return sorted(articles, key=lambda a: (
+        {'重要': 0, '通常': 1, '参考': 2}.get(a.get('priority'), 1),
+        -timestamp(a['published_at']).timestamp(),
+        a['id']))
 
 
 def import_article(manuscript, target, mode, base_sha256, base_version, edition, now=None):
@@ -596,12 +646,15 @@ def import_article(manuscript, target, mode, base_sha256, base_version, edition,
             if manuscript.get('published_at') != old.get('published_at'):
                 raise ValueError('original publication timestamp must be preserved')
             articles[matches[0]] = manuscript
+        payload['articles'] = order_articles(articles)
         payload['editorial_version'] = edition
-        payload['reviewed_on'] = timestamp(manuscript.get('checked_at')).date().isoformat()
+        payload['reviewed_on'] = timestamp(manuscript.get('checked_at')).astimezone(JST).date().isoformat()
         require_valid(payload, now=now)
         if timestamp(manuscript.get('home_until')) <= now:
             raise ValueError('cannot import an expired manuscript')
         encoded = (json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False) + '\n').encode('utf-8')
+        if len(encoded) > MAX_BYTES:
+            raise ValueError('merged manuscript exceeds 2 MB public-verification limit')
         # Refuse non-cooperating local edits observed before replace as well.
         if target.read_bytes() != before:
             raise ValueError('target changed during validation')
@@ -615,11 +668,16 @@ def import_article(manuscript, target, mode, base_sha256, base_version, edition,
             raise ValueError('target changed before atomic replace')
         os.replace(temp, target)
         temp = None
-        directory = os.open(target.parent, os.O_RDONLY)
         try:
-            os.fsync(directory)
-        finally:
-            os.close(directory)
+            directory = os.open(target.parent, os.O_RDONLY)
+            try:
+                os.fsync(directory)
+            finally:
+                os.close(directory)
+        except OSError as exc:
+            # The atomic replace has committed. Rolling back here could destroy
+            # a subsequent writer; distinguish uncertainty from a rejected save.
+            raise SaveCommittedError('save committed; directory durability unknown; reread target and reconcile, do not retry') from exc
         return payload
     finally:
         if temp is not None:
@@ -648,6 +706,9 @@ def main():
         import_article(load_json(args.path), args.target, args.mode, args.base_sha256, args.base_version, args.edition)
         print('Imported validated article atomically; Git commit/publish and conversation delivery have NOT run.')
         return 0
+    except SaveCommittedError:
+        print('Editorial save UNKNOWN: replacement committed but directory durability was not confirmed. Reread the target; do not retry automatically.')
+        return 2
     except (ValueError, OSError, TypeError, UnicodeError) as exc:
         # Do not dump submitted values or raw input in diagnostics.
         print('Editorial operation refused:', str(exc) if not isinstance(exc, json.JSONDecodeError) else 'invalid JSON')

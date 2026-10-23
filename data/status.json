@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-23T09:50:01+09:00",
+  "attempted_at": "2026-10-23T10:56:54+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -16,10 +16,10 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 49,
+      "eligible": 46,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 50
+        "out_of_time_window": 53
       }
     },
     {
@@ -64,9 +64,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 74
       }
     },
     {
@@ -75,7 +75,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 28
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -91,27 +91,27 @@
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 88
+        "publisher_not_allowed": 91
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 71
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 74
       }
     },
     {
@@ -136,18 +136,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 35,
+      "eligible": 38,
       "dropped": {
-        "publisher_not_allowed": 65
+        "publisher_not_allowed": 62
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 80
       }
     }
   ],

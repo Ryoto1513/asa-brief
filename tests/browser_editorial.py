@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
-from editorial import require_valid
+from editorial import require_valid, order_articles
 from test_editorial import collection, metric, numeric_article
 
 NOW = datetime.fromisoformat('2026-10-23T11:00:00+09:00')
@@ -40,7 +40,7 @@ def fixture_data():
              ['2026-10-23T09:15:00+09:00', '架空の追記']]},
     ]
     legacy = json.loads((R / 'config/editorial.json').read_text(encoding='utf-8'))['articles']
-    manuscript = collection(story, *legacy)
+    manuscript = collection(*order_articles([*legacy, story]))
     require_valid(manuscript, now=NOW)
     rss = {
         'id': 'synthetic-rss-independent', 'title': '合成RSS：別の架空ニュース',
@@ -103,6 +103,8 @@ def main():
         expected_cards = len(data['data/editorial.json']['articles']) + 1
         assert page.locator('.article-card').count() == expected_cards
         assert page.locator('[data-open="synthetic-rss-covered"]').count() == 0
+        assert page.locator('.article-card').first.get_attribute('data-open') == story['id']
+        assert page.locator('.article-card').first.locator('.mini.muted').first.inner_text().startswith(story['date'])
         assert page.locator('[data-open="synthetic-rss-independent"]').count() == 1
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         page.screenshot(path=str(args.output_dir / 'asa_brief_phase2_home.png'))
@@ -169,6 +171,7 @@ def main():
             'widths': [320, 375, 390, 430], 'themes': ['light', 'dark'],
             'font_px': {'normal': normal, 'large': large}, 'javascript_errors': errors,
             'tests': ['validated synthetic v2 with unchanged legacy articles', 'RSS coexistence and duplicate suppression',
+                      'import ordering helper puts important new article in TOP3',
                       'visible fact/analysis/prediction', 'table/bars/flow/timeline', 'glossary and source links',
                       'today/topics/earnings/saved/settings', 'bookmark and font controls',
                       'large-text page overflow at four widths in both themes'],

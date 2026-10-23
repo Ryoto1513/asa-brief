@@ -18,7 +18,7 @@ BASE = 'https://example.github.io/asa-brief/'
 
 def fixture():
     # Only summary-facing fields: full manuscript validation is tested separately.
-    return {'schema_version': 1, 'editorial_version': 'synthetic-edition-1', 'articles': [
+    return {'schema_version': 1, 'editorial_version': 'synthetic-edition-1', 'reviewed_on': '2026-10-22', 'articles': [
         {'id': 'synthetic-a', 'title': '架空の試験記事', 'lead': 'これは実際のニュースではありません。',
          'published_at': '2026-10-22T09:00:00+09:00', 'home_until': '2026-10-25T00:00:00+09:00'}]}
 
@@ -60,6 +60,66 @@ class DeliveryTests(unittest.TestCase):
         for key in ('id', 'title', 'lead', 'published_at', 'home_until'):
             self.assertIn(self.payload['articles'][0][key], again['summary'])
         self.assertIn('過去記事を含む', again['summary'])
+
+    def test_delivery_snapshot_classifies_previous_evening_and_expiry(self):
+        payload = fixture()
+        a = payload['articles'][0]
+        a['published_at'] = '2026-10-22T23:30:00Z'
+        out = d.build_outputs(payload, encoded(payload), as_of='2026-10-23T08:30:00+09:00')
+        self.assertEqual(out['manifest']['delivery_date'], '2026-10-23')
+        self.assertEqual(out['manifest']['new_article_ids'], ['synthetic-a'])
+        expired = d.build_outputs(payload, encoded(payload), as_of=a['home_until'])
+        self.assertEqual(expired['manifest']['active_article_ids'], [])
+        self.assertEqual(expired['manifest']['expired_article_ids'], ['synthetic-a'])
+
+    def test_same_instant_same_snapshot_and_hash(self):
+        one = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-22T23:30:00Z')
+        two = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-23T08:30:00+09:00')
+        self.assertEqual(one, two)
+
+    def test_continuing_and_scheduled_are_not_new(self):
+        out = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-24T08:00:00+09:00')
+        self.assertEqual(out['manifest']['continuing_article_ids'], ['synthetic-a'])
+        self.assertEqual(out['manifest']['new_article_ids'], [])
+        early = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-21T08:00:00+09:00')
+        self.assertEqual(early['manifest']['scheduled_article_ids'], ['synthetic-a'])
+        self.assertEqual(early['manifest']['active_article_ids'], [])
+
+    def test_expiry_is_exclusive_and_eight_am_window_is_inclusive(self):
+        a = self.payload['articles'][0]
+        a['published_at'] = '2026-10-22T08:00:00+09:00'
+        for at in ('2026-10-23T07:59:59+09:00', '2026-10-23T08:00:00+09:00', '2026-10-23T08:00:01+09:00'):
+            out = d.build_outputs(self.payload, encoded(self.payload), as_of=at)
+            self.assertEqual(out['manifest']['new_article_ids'], ['synthetic-a'])
+        a['published_at'] = '2026-10-22T07:59:59+09:00'
+        out = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-23T08:00:00+09:00')
+        self.assertEqual(out['manifest']['continuing_article_ids'], ['synthetic-a'])
+        out = d.build_outputs(self.payload, encoded(self.payload), as_of='2026-10-24T23:59:59+09:00')
+        self.assertEqual(out['manifest']['active_article_ids'], ['synthetic-a'])
+        out = d.build_outputs(self.payload, encoded(self.payload), as_of=a['home_until'])
+        self.assertEqual(out['manifest']['active_article_ids'], [])
+
+    def test_snapshot_ids_cannot_be_forged(self):
+        for key in ('active_article_ids', 'new_article_ids', 'continuing_article_ids', 'expired_article_ids', 'scheduled_article_ids'):
+            bad = copy.deepcopy(self.outputs['manifest'])
+            bad[key] = ['forged']
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                d.verify_public(bad, BASE, self.fetch)
+        self.assertEqual(self.called, [])
+
+    def test_public_snapshot_time_and_summary_must_correspond(self):
+        changed = copy.deepcopy(self.outputs['manifest'])
+        changed['as_of'] = '2026-10-25T00:00:00+09:00'
+        self.public['editorial-manifest.json'] = encoded(changed)
+        self.assertEqual(self.verify()['state'], 'failed')
+
+    def test_naive_snapshot_and_invalid_window_rejected(self):
+        for at in ('2026-10-23T08:00:00', '2026-10-23', ''):
+            with self.subTest(at=at), self.assertRaises(ValueError):
+                d.build_outputs(self.payload, encoded(self.payload), as_of=at)
+        self.payload['articles'][0]['home_until'] = self.payload['articles'][0]['published_at']
+        with self.assertRaises(ValueError):
+            d.build_outputs(self.payload, encoded(self.payload))
 
     def test_canonical_hash_ignores_key_order_not_raw_identity(self):
         reordered = {key: self.payload[key] for key in reversed(self.payload)}

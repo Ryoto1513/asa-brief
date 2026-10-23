@@ -72,6 +72,56 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual((self.root / '.site/data/editorial.json').read_bytes(), (R / 'config/editorial.json').read_bytes())
 
+    def test_unsorted_source_rejected_without_touching_previous_build(self):
+        build_site.build_site(self.root, now=NOW)
+        before = (self.root / '.site/data/editorial.json').read_bytes()
+        first, second = article(), article()
+        first['id'] = 'z-synthetic'
+        second['id'] = 'a-synthetic'
+        second['title'] += ' 別の合成記事'
+        second['source_url'] = 'https://example.com/different-fixture'
+        second['sources'][0]['url'] = second['source_url']
+        self.write(collection(first, second))
+        with self.assertRaisesRegex(ValueError, 'article order'):
+            build_site.build_site(self.root, now=NOW)
+        self.assertEqual((self.root / '.site/data/editorial.json').read_bytes(), before)
+
+    def test_snapshot_uses_exact_evaluation_and_preserves_archives(self):
+        result = build_site.build_site(self.root, now=NOW)
+        self.assertEqual(result['manifest']['as_of'], NOW.astimezone(__import__('datetime').timezone.utc).isoformat())
+        self.assertEqual(result['manifest']['delivery_date'], '2026-10-23')
+        self.assertEqual(result['manifest']['active_article_ids'], [article()['id']])
+        self.assertEqual((self.root / '.site/data/archive/2026-10-22.json').read_bytes(), self.latest)
+
+    def test_no_ui_or_article_body_transformation(self):
+        build_site.build_site(self.root, now=NOW)
+        for name in ('index.html', 'sw.js', 'assets/app.js', 'assets/style.css'):
+            with self.subTest(name=name):
+                self.assertEqual((self.root / '.site' / name).read_bytes(), (self.root / name).read_bytes())
+        self.assertEqual((self.root / '.site/data/editorial.json').read_bytes(), self.source.read_bytes())
+
+    def test_import_build_summary_and_ui_order_share_exact_ids_and_hashes(self):
+        import editorial
+        original = json.loads((R / 'config/editorial.json').read_text())
+        self.write(original)
+        a = article()
+        editorial.import_article(a, self.source, 'create', hashlib.sha256(self.source.read_bytes()).hexdigest(),
+                                 original['editorial_version'], 'synthetic-integration-r2', now=NOW)
+        first = build_site.build_site(self.root, now=NOW)
+        second = build_site.build_site(self.root, now=NOW)
+        self.assertEqual(first, second)
+        public = json.loads((self.root / '.site/data/editorial.json').read_text())
+        self.assertEqual(public['articles'][0]['id'], a['id'])
+        active_ids = [item['id'] for item in public['articles']
+                      if editorial.timestamp(item['published_at']) <= NOW < editorial.timestamp(item['home_until'])]
+        self.assertEqual(first['manifest']['active_article_ids'], active_ids)
+        for old in original['articles']:
+            self.assertEqual(next(x for x in public['articles'] if x['id'] == old['id']), old)
+        for link in first['manifest']['articles']:
+            actual = next(x for x in public['articles'] if x['id'] == link['id'])
+            self.assertEqual(link['sha256'], editorial.canonical_hash(actual))
+        self.assertEqual((self.root / '.site/data/archive/2026-10-22.json').read_bytes(), self.latest)
+
     def test_future_or_unreviewed_new_article_is_not_published(self):
         for change in ('future', 'pending'):
             a = article()
@@ -89,8 +139,8 @@ class BuildTests(unittest.TestCase):
 
     def test_concurrent_source_change_refuses_generated_artifacts(self):
         original = build_site.build_outputs
-        def change(payload, raw):
-            result = original(payload, raw)
+        def change(payload, raw, **kwargs):
+            result = original(payload, raw, **kwargs)
             self.source.write_text('{}')
             return result
         with patch.object(build_site, 'build_outputs', side_effect=change), self.assertRaises(ValueError):

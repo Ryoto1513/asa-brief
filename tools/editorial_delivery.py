@@ -8,6 +8,7 @@ RSS freshness or receipt in a ChatGPT conversation. No posting API is called.
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, time, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -16,7 +17,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MAX_BYTES = 2_000_000
+from editorial import MAX_BYTES, timestamp
+JST = timezone(timedelta(hours=9))
 HEX256 = re.compile(r'^[0-9a-f]{64}$')
 
 
@@ -38,12 +40,13 @@ def canonical_hash(value):
     return hashlib.sha256(raw).hexdigest()
 
 
-def build_outputs(payload, raw_bytes):
-    """Derive a manifest and plain-text summary from exactly these manuscript bytes.
+def build_outputs(payload, raw_bytes, as_of=None):
+    """Bind a delivery snapshot to exact manuscript bytes and an explicit instant.
 
-    No wall clock, network, LLM, truncation or independent prose source is used.
-    All retained articles are included and labelled by publication/expiry dates;
-    this is an edition inventory, not a claim that archived news happened today.
+    Without an instant, use the latest recorded check/publication (or reviewed_on
+    at 08:00 JST for an empty edition), never the wall clock. The site builder
+    supplies its evaluation instant. New means publication since the previous
+    delivery day's 08:00 JST, not that the underlying event happened today.
     """
     if not isinstance(raw_bytes, bytes) or _json(raw_bytes) != payload:
         raise ValueError('payload_bytes_mismatch')
@@ -53,8 +56,25 @@ def build_outputs(payload, raw_bytes):
             or not isinstance(payload.get('articles'), list)):
         raise ValueError('invalid_manuscript')
     version = payload['editorial_version']
-    lines = [f'朝のブリーフ｜原稿版 {version}',
-             '確定原稿の要約一覧（過去記事を含む）。公開・出典再確認・会話送信の完了を意味しません。', '']
+    if as_of is None:
+        recorded = [timestamp(a[key]) for a in payload['articles']
+                    for key in ('published_at', 'checked_at') if isinstance(a, dict) and a.get(key)]
+        if recorded:
+            at = max(recorded)
+        else:
+            at = timestamp(payload.get('reviewed_on', '') + 'T08:00:00+09:00')
+    elif isinstance(as_of, datetime):
+        at = timestamp(as_of.isoformat())
+    else:
+        at = timestamp(as_of)
+    at = at.astimezone(timezone.utc)
+    delivery_day = at.astimezone(JST).date()
+    fresh_start = datetime.combine(delivery_day - timedelta(days=1), time(8), JST)
+    groups = {key: [] for key in ('active', 'new', 'continuing', 'expired', 'scheduled')}
+    lines = [f'朝のブリーフ｜配信日 {delivery_day.isoformat()} JST｜原稿版 {version}',
+             f'掲載判定時刻: {at.isoformat()} ／ 新着範囲: {fresh_start.isoformat()} 以降の公開（判定時刻まで）',
+             '確定原稿の要約一覧（過去記事を含む）。新着は記事公開時刻による区分で、出来事の発生日ではありません。',
+             '公開・出典再確認・会話送信の完了を意味しません。', '']
     links = []
     for article in payload['articles']:
         fields = ('id', 'title', 'lead', 'published_at', 'home_until')
@@ -63,17 +83,35 @@ def build_outputs(payload, raw_bytes):
         identity = article['id']
         if identity in [link['id'] for link in links]:
             raise ValueError('duplicate_article_id')
-        links.append({'id': identity, 'sha256': canonical_hash(article),
-                      'published_at': article['published_at'], 'home_until': article['home_until']})
-        lines.extend([f"■ {article['title']} [{identity}]", article['lead'],
-                      f"発表: {article['published_at']} ／ 今日欄の掲載期限: {article['home_until']}", ''])
+        published, expiry = timestamp(article['published_at']), timestamp(article['home_until'])
+        if expiry <= published:
+            raise ValueError('invalid_summary_window')
+        if at < published:
+            status, label = 'scheduled', '掲載開始前'
+        elif at >= expiry:
+            status, label = 'expired', '過去記事・掲載期限切れ'
+        else:
+            groups['active'].append(identity)
+            status, label = ('new', '新着・掲載対象') if published >= fresh_start else ('continuing', '継続掲載・過去公開')
+        groups[status].append(identity)
+        link = {'id': identity, 'sha256': canonical_hash(article),
+                'revision': article.get('revision'), 'manuscript_version': article.get('manuscript_version', 1),
+                'published_at': article['published_at'], 'home_until': article['home_until'],
+                'display_date_jst': published.astimezone(JST).date().isoformat(), 'status': status}
+        links.append(link)
+        lines.extend([f"■ [{label}] {article['title']} [{identity}]", article['lead'],
+                      f"記事公開: {article['published_at']} ／ 今日欄の掲載期限: {article['home_until']}",
+                      f"原稿確認: {article.get('checked_at', article.get('reviewed_on', '時刻記録なし'))} ／ 原稿版: {article.get('revision', 'legacy')} ／ SHA256: {link['sha256']}", ''])
     if not links:
         lines.append('この原稿版に編集記事はありません。')
     summary = '\n'.join(lines).rstrip() + '\n'
     manifest = {'schema_version': 1, 'edition': version, 'editorial_version': version,
+                'as_of': at.isoformat(), 'delivery_date': delivery_day.isoformat(),
+                'new_since': fresh_start.isoformat(),
                 'manuscript_sha256': hashlib.sha256(raw_bytes).hexdigest(),
                 'article_ids': [link['id'] for link in links], 'articles': links,
                 'summary_sha256': hashlib.sha256(summary.encode('utf-8')).hexdigest()}
+    manifest.update({key + '_article_ids': ids for key, ids in groups.items()})
     return {'manifest': manifest, 'summary': summary}
 
 
@@ -84,6 +122,11 @@ def _check_manifest(manifest):
             or not isinstance(manifest.get('articles'), list)
             or not isinstance(manifest.get('article_ids'), list)):
         raise ValueError('invalid_manifest')
+    at = timestamp(manifest.get('as_of'))
+    day = at.astimezone(JST).date()
+    if (manifest.get('delivery_date') != day.isoformat()
+            or manifest.get('new_since') != datetime.combine(day - timedelta(days=1), time(8), JST).isoformat()):
+        raise ValueError('invalid_manifest_snapshot')
     for key in ('manuscript_sha256', 'summary_sha256'):
         if not isinstance(manifest.get(key), str) or not HEX256.fullmatch(manifest[key]):
             raise ValueError('invalid_manifest_hash')
@@ -96,6 +139,21 @@ def _check_manifest(manifest):
         ids.append(article['id'])
     if ids != manifest['article_ids'] or len(ids) != len(set(ids)):
         raise ValueError('invalid_manifest_ids')
+    groups = {key: [] for key in ('active', 'new', 'continuing', 'expired', 'scheduled')}
+    for article in manifest['articles']:
+        published, expiry = timestamp(article['published_at']), timestamp(article['home_until'])
+        if expiry <= published:
+            raise ValueError('invalid_manifest_window')
+        status = ('scheduled' if at < published else 'expired' if at >= expiry else
+                  'new' if published >= timestamp(manifest['new_since']) else 'continuing')
+        if article.get('status') != status or article.get('display_date_jst') != published.astimezone(JST).date().isoformat():
+            raise ValueError('invalid_manifest_article_snapshot')
+        groups[status].append(article['id'])
+        if status in ('new', 'continuing'):
+            groups['active'].append(article['id'])
+    if any(manifest.get(key + '_article_ids') != value for key, value in groups.items()):
+        raise ValueError('invalid_manifest_snapshot_ids')
+
 
 
 def _base_url(base_url):
@@ -179,7 +237,7 @@ def verify_public(expected, base_url, downloader=None):
         manifest = _json(read('editorial-manifest.json'))
         summary = read('editorial-summary.txt')
         _check_manifest(manifest)
-        actual = build_outputs(_json(raw), raw)
+        actual = build_outputs(_json(raw), raw, as_of=manifest['as_of'])
         if manifest != actual['manifest'] or summary != actual['summary'].encode('utf-8'):
             return delivery_status(expected, 'failed', 'public_files_inconsistent', base)
         if manifest != expected:

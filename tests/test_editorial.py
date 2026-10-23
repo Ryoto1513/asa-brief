@@ -28,7 +28,9 @@ def collection(*articles):
 
 
 def metric(identifier='sales', value=100, unit='億円', kind='actual', **extra):
-    result = {'id': identifier, 'value': value, 'unit': unit,
+    labels = {'sales': '架空売上', 'profit': '架空利益', 'growth': '架空増収率',
+              'margin': '架空利益率', 'margin_difference': '架空利益率差'}
+    result = {'id': identifier, 'label': labels.get(identifier, identifier), 'value': value, 'unit': unit,
               'kind': kind, 'period': {'start': '2026-04-01', 'end': '2026-09-30', 'label': '2026上期'},
               'refs': [1], 'verification': 'verified', 'important': True}
     if unit in ('円', '百万円', '億円'):
@@ -193,6 +195,97 @@ class ValidationTests(unittest.TestCase):
         report = e.validate(collection(numeric_article()), now=NOW)
         self.assertTrue(report['ok'], report)
 
+
+    def test_coordinate_labels_not_elsewhere_in_table(self):
+        a = numeric_article()
+        a['metrics'][0]['label'] = '架空売上'
+        forecast = metric('forecast', 120, kind='company_forecast', label='架空売上')
+        forecast['period'] = {'start': '2026-10-01', 'end': '2027-03-31', 'label': '2026下期'}
+        a['metrics'].append(forecast)
+        block = a['blocks'][-1]
+        block.update(claim_type='analysis', title='分析｜合成比較',
+                     headers=['項目', '2026上期 実績（億円）', '2026下期 会社予想（億円）'],
+                     rows=[['架空売上', '100', '120']],
+                     numeric_cells=[{'row': 0, 'column': 1, 'metric': 'sales'},
+                                    {'row': 0, 'column': 2, 'metric': 'forecast'}])
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        for change in ('kind', 'period', 'label', 'missing', 'unit'):
+            bad = copy.deepcopy(a); b = bad['blocks'][-1]
+            if change == 'kind':
+                b['headers'][1] = '2026上期 会社予想（億円）'
+                b['headers'][2] = '2026下期 実績（億円）'
+            elif change == 'period':
+                b['headers'][1] = '2026下期 実績（億円）'
+                b['headers'][2] = '2026上期 会社予想（億円）'
+            elif change == 'label': b['rows'][0][0] = '架空利益'
+            elif change == 'missing': b['headers'][1] = '値'
+            else: b['headers'][1] = '2026上期 実績（百万円）'
+            with self.subTest(change=change): self.reject(collection(bad), 'numeric')
+
+    def test_metric_identity_missing_and_swapped_rows(self):
+        a = numeric_article(); a['metrics'].append(metric('profit', 100))
+        b = a['blocks'][-1]
+        b['rows'].append(['架空利益', '100'])
+        b['numeric_cells'].append({'row': 1, 'column': 1, 'metric': 'profit'})
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        bad = copy.deepcopy(a)
+        bad['blocks'][-1]['rows'].reverse()
+        self.reject(collection(bad), 'numeric')
+        bad = copy.deepcopy(a); del bad['metrics'][0]['label']
+        self.reject(collection(bad), 'numeric')
+
+    def test_suffix_cannot_override_header_or_ambiguous_metric_labels(self):
+        a = numeric_article()
+        a['blocks'][-1]['rows'][0][1] = '100億円'
+        a['blocks'][-1]['headers'][1] = '2026上期 実績（百万円）'
+        self.reject(collection(a), 'numeric')
+        a = numeric_article(); a['metrics'].append(metric('profit', 100))
+        a['blocks'][-1]['rows'][0][0] = '架空売上・架空利益'
+        self.reject(collection(a), 'numeric')
+
+    def test_metric_and_period_names_are_not_units(self):
+        for name, period in (('日本売上', '2026上期'), ('架空売上', '2026年9月30日')):
+            a = numeric_article()
+            a['metrics'][0]['label'] = name
+            a['metrics'][0]['period']['label'] = period
+            a['blocks'][-1]['rows'][0][0] = name
+            a['blocks'][-1]['headers'][1] = period + ' 実績（億円）'
+            with self.subTest(name=name, period=period):
+                self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+
+    def test_order_priority_newness_ties_and_legacy_compatibility(self):
+        def item(identity, priority, published):
+            return {'id': identity, 'priority': priority, 'published_at': published}
+        old = item('old-important', '重要', '2026-10-22T09:00:00+09:00')
+        new = item('new-important', '重要', '2026-10-23T09:00:00+09:00')
+        normal = item('new-normal', '通常', '2026-10-23T10:00:00+09:00')
+        tie = item('a-tie-important', '重要', new['published_at'])
+        expected = ['a-tie-important', 'new-important', 'old-important', 'new-normal']
+        for sequence in ([normal, old, new, tie], [tie, new, old, normal]):
+            self.assertEqual([a['id'] for a in e.order_articles(sequence)], expected)
+        legacy = json.loads((R / 'config/editorial.json').read_text())['articles']
+        self.assertEqual(e.order_articles(list(reversed(legacy))), legacy)
+
+    def test_bars_use_each_row_not_other_labels(self):
+        a = numeric_article(); a['metrics'].append(metric('profit', 20))
+        a['blocks'][-1] = {'type': 'bars', 'title': '事実｜合成', 'role': 'what',
+            'claim_type': 'fact', 'unit': '億円', 'refs': [1], 'metric_ids': ['sales', 'profit'],
+            'rows': [['架空売上 2026上期 実績', 100], ['架空利益 2026上期 実績', 20]]}
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        a['blocks'][-1]['rows'][0][0] = '架空利益 2026上期 実績'
+        self.reject(collection(a), 'numeric')
+
+    def test_jst_display_and_review_dates_for_equivalent_instants(self):
+        a = article()
+        a['published_at'] = '2026-10-22T23:30:00Z'
+        a['checked_at'] = '2026-10-22T23:45:00Z'
+        a['sources'][0]['published_at'] = a['published_at']
+        a['update_history'][0]['at'] = a['checked_at']
+        for review in a['review'].values(): review['checked_at'] = a['checked_at']
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        a['date'] = '10/22'
+        self.reject(collection(a), 'structural')
+
     def test_table_shape_and_cell_binding(self):
         for mutation in ('ragged', 'missing_binding', 'wrong_metric', 'wrong_value', 'bad_position'):
             with self.subTest(mutation=mutation):
@@ -220,6 +313,9 @@ class ValidationTests(unittest.TestCase):
 
     def test_growth_recomputed_with_comparable_prior_period(self):
         a = numeric_article()
+        # Mixed-unit columns state units on each value, not a misleading shared header.
+        a['blocks'][-1]['headers'][1] = '2026上期 実績'
+        a['blocks'][-1]['rows'][0][1] = '100億円'
         prior = metric('prior_sales', 80)
         prior['period'] = {'start': '2025-04-01', 'end': '2025-09-30', 'label': '2025上期'}
         a['metrics'] += [prior, metric('growth', 25, '%',
@@ -258,7 +354,7 @@ class ValidationTests(unittest.TestCase):
     def test_valid_bars_and_invalid_nonfinite_bar(self):
         a = article(); a['metrics'] = [metric()]
         a['blocks'].append({'type': 'bars', 'title': '事実｜合成チャート', 'role': 'what',
-                            'claim_type': 'fact', 'unit': '億円', 'rows': [['2026上期 実績', 100]],
+                            'claim_type': 'fact', 'unit': '億円', 'rows': [['2026上期 実績 架空売上', 100]],
                             'caption': '2026上期 実績 億円', 'refs': [1], 'metric_ids': ['sales']})
         self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
         a['blocks'][-1]['rows'][0][1] = math.inf
@@ -266,6 +362,9 @@ class ValidationTests(unittest.TestCase):
 
     def test_ratio_recomputed_and_zero_division_rejected(self):
         a = numeric_article()
+        # Mixed-unit columns state units on each value, not a misleading shared header.
+        a['blocks'][-1]['headers'][1] = '2026上期 実績'
+        a['blocks'][-1]['rows'][0][1] = '100億円'
         a['metrics'] += [metric('profit', 20), metric('margin', 20, '%',
                               calculation={'operation': 'ratio_percent', 'inputs': ['profit', 'sales'], 'precision': 1})]
         a['blocks'][-1]['rows'] += [['架空利益率', '20%']]
@@ -279,6 +378,9 @@ class ValidationTests(unittest.TestCase):
 
     def test_percentage_difference_is_percentage_points(self):
         a = numeric_article()
+        # Mixed-unit columns state units on each value, not a misleading shared header.
+        a['blocks'][-1]['headers'][1] = '2026上期 実績'
+        a['blocks'][-1]['rows'][0][1] = '100億円'
         a['metrics'] += [metric('margin_left', 45, '%'), metric('margin_right', 40, '%'),
                          metric('margin_difference', 5, 'pt', calculation={
                              'operation': 'difference', 'inputs': ['margin_left', 'margin_right'], 'precision': 1})]
@@ -393,8 +495,9 @@ class ImportTests(unittest.TestCase):
         before = copy.deepcopy(originals['articles'])
         e.import_article(article(), **self.args())
         after = json.loads(self.target.read_text(encoding='utf-8'))
-        self.assertEqual(after['articles'][:-1], before)
-        self.assertEqual(after['articles'][-1], article())
+        self.assertEqual({a['id']: a for a in after['articles'] if a['id'] in e.LEGACY_HASHES},
+                         {a['id']: a for a in before})
+        self.assertEqual(after['articles'][0], article())
 
     def test_stale_hash_or_version_cannot_clobber(self):
         for changes in ({'base_sha256': '0' * 64}, {'base_version': 'stale-version'}):
@@ -437,6 +540,67 @@ class ImportTests(unittest.TestCase):
 
     def test_edition_must_change(self):
         with self.assertRaises(ValueError): e.import_article(article(), **self.args(edition='synthetic-r1'))
+
+
+    def test_final_utf8_capacity_boundary_and_unchanged_rejection(self):
+        # The input and current library each fit; their serialized merge may not.
+        for size in (1_999_999, 2_000_000, 2_000_001):
+            self.write(collection())
+            a = article()
+            planned = collection(a); planned['editorial_version'] = 'synthetic-r2'
+            initial = len((json.dumps(planned, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
+            padding = size - initial
+            a['lead'] += 'あ' * (padding // 3) + 'x' * (padding % 3)
+            self.assertLess(len(json.dumps(a, ensure_ascii=False).encode('utf-8')), 2_000_000)
+            before = self.target.read_bytes(); sha = hashlib.sha256(before).hexdigest()
+            if size <= 2_000_000:
+                e.import_article(a, **self.args())
+                self.assertEqual(self.target.stat().st_size, size)
+                self.assertEqual(e.load_json(self.target)['articles'], [a])
+            else:
+                with self.assertRaises(ValueError): e.import_article(a, **self.args())
+                self.assertEqual(self.target.read_bytes(), before)
+                self.assertEqual(hashlib.sha256(self.target.read_bytes()).hexdigest(), sha)
+                self.assertEqual(list(self.target.parent.iterdir()), [self.target])
+
+    def test_merge_over_limit_preserves_existing_article_and_hash(self):
+        old = article(); old['id'] += '-old'; old['title'] += '旧'; old['source_url'] += '/old'
+        old['sources'][0]['url'] = old['source_url']
+        old['lead'] += 'あ' * 340_000
+        self.write(collection(old))
+        new = article(); new['lead'] += 'あ' * 340_000
+        self.assertLess(self.target.stat().st_size, e.MAX_BYTES)
+        self.assertLess(len(json.dumps(new, ensure_ascii=False).encode()), e.MAX_BYTES)
+        before = self.target.read_bytes()
+        with self.assertRaises(ValueError): e.import_article(new, **self.args())
+        self.assertEqual(hashlib.sha256(self.target.read_bytes()).digest(), hashlib.sha256(before).digest())
+        self.assertEqual(e.load_json(self.target)['articles'], [old])
+        self.assertEqual(list(self.target.parent.iterdir()), [self.target])
+
+    def test_temporary_write_failure_preserves_original_and_cleans_up(self):
+        before = self.target.read_bytes()
+        with patch('editorial.os.fsync', side_effect=OSError('synthetic flush failure')):
+            with self.assertRaises(OSError): e.import_article(article(), **self.args())
+        self.assertEqual(self.target.read_bytes(), before)
+        self.assertEqual(list(self.target.parent.iterdir()), [self.target])
+
+    def test_post_replace_directory_failure_is_explicitly_committed_unknown(self):
+        before = self.target.read_bytes()
+        with patch('editorial.os.fsync', side_effect=[None, OSError('directory sync failed')]):
+            with self.assertRaises(e.SaveCommittedError):
+                e.import_article(article(), **self.args())
+        self.assertNotEqual(self.target.read_bytes(), before)
+        self.assertEqual(e.load_json(self.target)['articles'], [article()])
+        self.assertEqual(list(self.target.parent.iterdir()), [self.target])
+
+    def test_import_reviewed_date_is_jst_not_input_offset(self):
+        a = article(); a['published_at'] = '2026-10-22T23:30:00Z'
+        a['checked_at'] = '2026-10-22T23:45:00Z'
+        a['sources'][0]['published_at'] = a['published_at']
+        a['update_history'][0]['at'] = a['checked_at']
+        for review in a['review'].values(): review['checked_at'] = a['checked_at']
+        e.import_article(a, **self.args())
+        self.assertEqual(e.load_json(self.target)['reviewed_on'], '2026-10-23')
 
     def test_replace_failure_preserves_bytes(self):
         before = self.target.read_bytes()

@@ -2,12 +2,14 @@
 
 Importing this module does not build, fetch, publish, or mutate any data.
 """
+import argparse
+from datetime import datetime, timezone
 from pathlib import Path
 import json
 import shutil
 import tempfile
 
-from editorial import load_json, require_valid
+from editorial import load_json, require_valid, order_articles, timestamp
 from editorial_delivery import build_outputs
 
 R = Path(__file__).resolve().parents[1]
@@ -21,8 +23,11 @@ def build_site(root=R, out=None, now=None):
     source = root / 'config/editorial.json'
     raw = source.read_bytes()
     payload = load_json(source)
+    now = now or datetime.now(timezone.utc)
     require_valid(payload, now=now)
-    generated = build_outputs(payload, raw)
+    if payload['articles'] != order_articles(payload['articles']):
+        raise ValueError('editorial article order must match priority/newness policy; import or review source order')
+    generated = build_outputs(payload, raw, as_of=now)
     # Invalid manuscripts fail before touching the previous successful output.
     with tempfile.TemporaryDirectory(prefix='.site-build-', dir=out.parent) as temp:
         staged = Path(temp) / 'public'
@@ -45,5 +50,8 @@ def build_site(root=R, out=None, now=None):
 
 
 if __name__ == '__main__':
-    build_site()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--as-of', help='aware ISO snapshot timestamp; defaults to current UTC')
+    args = parser.parse_args()
+    build_site(now=timestamp(args.as_of) if args.as_of else None)
     print('Static site prepared:', R / '.site')
