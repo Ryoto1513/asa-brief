@@ -1,0 +1,75 @@
+name: Editorial publication (main only)
+on:
+  push:
+    branches: [main]
+    paths: [config/editorial.json]
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  publish:
+    if: github.repository == 'Ryoto1513/asa-brief' && github.ref == 'refs/heads/main' && github.event_name == 'push'
+    # Same lock as the RSS publisher; an old queued event must not publish its old SHA.
+    concurrency:
+      group: asa-brief-publish
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Require a public repository for the no-additional-cost design
+        env:
+          IS_PRIVATE: ${{ github.event.repository.private }}
+        run: test "$IS_PRIVATE" = "false"
+      - name: Check out current main after acquiring publication lock
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Offline unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate and build the same confirmed manuscript
+        run: python tools/build_site.py
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact (one-day retention)
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.site'
+          retention-days: 1
+      - name: Refuse an obsolete checkout before deployment
+        run: |
+          remote=$(git ls-remote origin refs/heads/main | cut -f1)
+          test "$(git rev-parse HEAD)" = "$remote"
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public edition, IDs and hashes
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          remote=$(git ls-remote origin refs/heads/main | cut -f1)
+          test "$(git rev-parse HEAD)" = "$remote"
+          python tools/editorial_delivery.py verify --expected .site/data/editorial-manifest.json --base-url "$PAGE_URL" --status-output editorial-delivery-status.json
+      - name: Report delivery outcome without claiming a chat post
+        if: always()
+        run: |
+          if test ! -f editorial-delivery-status.json && test -f .site/data/editorial-manifest.json; then
+            python tools/editorial_delivery.py report --expected .site/data/editorial-manifest.json --state failed --reason workflow_failed_or_unverified --status-output editorial-delivery-status.json
+          fi
+          if test -f editorial-delivery-status.json; then
+            cat editorial-delivery-status.json >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Editorial delivery failed or was not verified. No conversation message was sent.' >> "$GITHUB_STEP_SUMMARY"
+          fi

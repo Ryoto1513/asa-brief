@@ -5,6 +5,7 @@ R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R/'tools'))
 import update_news as u
 import editorial_rules as e
 import earnings_watch as w
+import editorial as manuscript
 C=json.loads((R/'config/sources.json').read_text());NOW=datetime(2026,10,22,18,0,tzinfo=u.JST)
 
 def item(title,url='https://example.com/news',cat='日本経済',id='a'):
@@ -31,12 +32,22 @@ class EditorialTests(unittest.TestCase):
         rows,_=u.parse_feed(blob,C['feeds'][0],NOW,C);self.assertEqual(rows[0]['source_url'],'https://www.boj.or.jp/a')
     def test_editorial_claims_have_source_trails(self):
         articles=json.loads((R/'config/editorial.json').read_text())['articles']
-        self.assertEqual(len(articles),3)
+        self.assertTrue(manuscript.validate(json.loads((R/'config/editorial.json').read_text()))['ok'])
         for a in articles:
-            self.assertTrue(a['scope']);self.assertTrue(a['glossary']);self.assertTrue(a['home_until']>a['published_at'])
+            self.assertTrue(a['scope']);self.assertTrue(a['glossary']);self.assertGreater(manuscript.timestamp(a['home_until']),manuscript.timestamp(a['published_at']))
             for b in a['blocks']:
                 for ref in b.get('refs',[]):self.assertTrue(1<=ref<=len(a['sources']))
                 if b['type']=='table':self.assertTrue(all(len(r)==len(b['headers']) for r in b['rows']))
+    def test_original_disco_article_unchanged(self):
+        self.assert_original_article('disco-20261022-2q')
+    def test_original_php_article_unchanged(self):
+        self.assert_original_article('php-critical-20261022')
+    def test_original_france_article_unchanged(self):
+        self.assert_original_article('france-unrest-20261022')
+    def assert_original_article(self, article_id):
+        articles=json.loads((R/'config/editorial.json').read_text())['articles']
+        original=next(a for a in articles if a['id']==article_id)
+        self.assertEqual(manuscript.canonical_hash(original),manuscript.LEGACY_HASHES[article_id])
     def test_disco_calculations(self):
         self.assertEqual(round(116639/257058*100,1),45.4)
         self.assertEqual((174700-116639)/100,580.61)
