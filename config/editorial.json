@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-23-cpi-r1",
+  "editorial_version": "2026-10-23-cpi-r2",
   "reviewed_on": "2026-10-23",
   "articles": [
     {
       "manuscript_version": 2,
-      "revision": 1,
+      "revision": 2,
       "id": "japan-cpi-202609-first-brief",
       "title": "9月の全国コア物価は前年比2.1%上昇――伸び率と暮らしへの影響を分けて読む",
-      "lead": "生鮮食品を除く総合は8月の1.7%から9月は2.1%へ。物価の伸びを比べるときは、前年同月比と前月比を混同せず、家計や企業への影響を分けて考えます。未公開の採用候補です。",
+      "lead": "生鮮食品を除く総合は8月の1.7%から9月は2.1%へ。物価の伸びを比べるときは、前年同月比と前月比を混同せず、家計や企業への影響を分けて考えます。",
       "cat": "日本経済",
       "priority": "重要",
       "published_at": "2026-10-23T11:56:30+09:00",
-      "checked_at": "2026-10-23T11:56:30+09:00",
+      "checked_at": "2026-10-23T13:06:42+09:00",
       "home_until": "2026-10-26T00:00:00+09:00",
       "date": "10/23",
       "reviewed_on": "2026-10-23",
       "quality": "editorial",
       "source_kind": "editorial",
-      "tag": "詳報候補",
+      "tag": "詳報",
       "icon": "◉",
       "tone": "teal",
       "read": 4,
-      "scope": "全国CPIの2026年9月実績。隔離dry-run用の未公開原稿。記事published_atは仮の掲載評価開始時刻で実公開ではない。一次資料のpublished_atは公式XMLに記載された公表予定時刻で、実アップロード時刻は未確認。人間の採用・公開承認は未取得。",
-      "selection_reason": "AI仮採用評価:重要性3、影響範囲3、新規性3、読者関連性3、信頼性3。2×3+3+3+3+2×3=21/21。家計・日本経済に広く関係し本日公表の一次統計を確認できるため。機械による価値保証や人間の採用承認ではない。",
+      "scope": "全国CPIの2026年9月実績。ユーザーが正式採用・保存・公開を承認した記事です。掲載基準時刻published_atは初稿の2026年10月23日11:56:30 JSTを履歴として保持しており、実際の初回公開開始時刻ではありません。初回Pagesデプロイ成功を同日12:45:22.108508 JSTに観測しました（公開開始の厳密な瞬間ではありません）。一次資料のpublished_atは公式XMLに記載された公表予定時刻で、実アップロード時刻は未確認です。revision 2は公開用表記・採用状態のみを訂正し、ニュースの数値・分析・出典は変更していません。元の出典照合は同日11:56:30 JSTで、今回の編集確認は出典事実の再照合を意味しません。",
+      "selection_reason": "初稿時のAI参考評価:重要性3、影響範囲3、新規性3、読者関連性3、信頼性3。2×3+3+3+3+2×3=21/21。家計・日本経済に広く関係し本日公表の一次統計を確認できるため。機械による価値保証や人間の採用承認ではない。",
       "selection_scores": {
         "importance": 3,
         "reach": 3,
@@ -38,9 +38,9 @@
         "消費者物価",
         "全国CPI"
       ],
-      "human_adoption": "pending",
-      "publication_status": "unpublished_candidate",
-      "published_at_basis": "isolated_candidate_activation_not_publication",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "published_at_basis": "original_editorial_activation_preserved_not_actual_first_publication",
       "sources": [
         {
           "name": "総務省統計局：2026年9月全国CPI結果概要（公式公表予定時刻、実掲載時刻未確認）",
@@ -76,7 +76,7 @@
           "title": "事実｜何が起きたか",
           "paragraphs": [
             "総務省は10月23日、9月の全国消費者物価指数を公表しました。生鮮食品を除く総合の前年同月比は2.1%上昇で、8月は1.7%でした。",
-            "一次資料の時刻は公式公表予定XMLが示す08:30 JSTです。実ファイルの掲載時刻そのものは確認していません。この原稿は未公開の候補で、表示用の記事時刻は隔離検証の仮設定です。"
+            "一次資料の時刻は公式公表予定XMLが示す08:30 JSTです。実ファイルの掲載時刻そのものは確認していません。記事の掲載基準時刻は初稿の履歴として保持し、初回デプロイ成功は2026年10月23日12:45:22.108508 JSTに観測しました。この観測時刻は、公開開始の厳密な瞬間ではありません。"
           ],
           "refs": [
             1,
@@ -328,22 +328,60 @@
           "version": 1,
           "at": "2026-10-23T11:56:30+09:00",
           "summary": "一次資料と限定的な独立報道照合に基づくAI候補初稿。人間採用承認・本番保存・公開は未実施。"
+        },
+        {
+          "version": 2,
+          "at": "2026-10-23T13:06:42+09:00",
+          "summary": "ユーザー承認済みの公開用表記・採用状態訂正。未公開候補の現状表現を除去し、初回デプロイ成功の観測を別記録。初稿掲載基準時刻とrevision 1レビュー全文を保持。数値・分析・出典は不変、出典事実の再照合なし。"
         }
       ],
       "review": {
         "sourcecheck": {
           "status": "passed",
-          "reviewer": "AI research/editorial agents; not human approval",
-          "checked_at": "2026-10-23T11:56:30+09:00",
-          "note": "AI research agentが公式結果HTML・PDF p.1表1と公式公表XMLを照合。Reutersは検索表示のみで全文未確認。一次資料時刻は公式予定、実掲載時刻未確認。人間の出典採用承認は未取得。"
+          "reviewer": "AI revision consistency reviewer; not fresh source verification",
+          "checked_at": "2026-10-23T13:06:42+09:00",
+          "note": "revision 2の表記訂正に際し、元の出典URL・数値・metrics・分析・出典照合記録が保持されることを確認した。出典事実の新たな再照合は行っていない。元の照合時刻2026-10-23T11:56:30+09:00と当時のレビュー全文はreview_historyのrevision 1に無改変で保存。Reuters全文未確認・一次資料実掲載時刻未確認の制約は継続。"
         },
         "editorial": {
           "status": "passed",
-          "reviewer": "AI research/editorial agents; not human approval",
-          "checked_at": "2026-10-23T11:56:30+09:00",
-          "note": "AIが事実/分析/予測区分、数値の対象期間・単位、出典制約、断定回避、採用評価を確認。未確認の株価・政策予測を除外。機械validationは真実保証でない。人間採用・公開承認はpending。 初心者向け説明と条件付き株式分析を追加し再確認。無時刻の公式補助解説は本文URLと別紙に分離し、取得時刻を公表時刻に置き換えていない。"
+          "reviewer": "AI public-wording correction reviewer; user adoption separately recorded",
+          "checked_at": "2026-10-23T13:06:42+09:00",
+          "note": "ユーザーのrevision 2修正承認に基づき、公開画面の未公開候補・仮設定の現状表現と採用状態を訂正。ニュース数値・分析・出典は不変。初回デプロイ成功観測と厳密な公開開始時刻を区別し、初稿掲載基準時刻と過去レビューを保持。新規の人間による出典真偽レビューを主張しない。"
         }
-      }
+      },
+      "first_publication_observation": {
+        "observed_at": "2026-10-23T03:45:22.108508+00:00",
+        "meaning": "Pages deployment reported success; not exact first-public instant",
+        "run_id": 39896668264,
+        "head_sha": "b003a5448e3a534a3829966a19888b4a31b77697",
+        "revision": 1
+      },
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T13:06:42+09:00",
+          "adoption": "approved",
+          "scope": "User explicitly approved formal adoption/storage/first publication of revision 1 SHA256 0280be01dad418b5ad8e8d3f7d04efe7ad8e137b286008555924bb110fa45a01 and subsequently revision 2 public-wording/adoption-state correction, full tests, republication and one summary after successful verification. recorded_at is this record creation, not the approval-message timestamp."
+        }
+      ],
+      "review_history": [
+        {
+          "revision": 1,
+          "review": {
+            "sourcecheck": {
+              "status": "passed",
+              "reviewer": "AI research/editorial agents; not human approval",
+              "checked_at": "2026-10-23T11:56:30+09:00",
+              "note": "AI research agentが公式結果HTML・PDF p.1表1と公式公表XMLを照合。Reutersは検索表示のみで全文未確認。一次資料時刻は公式予定、実掲載時刻未確認。人間の出典採用承認は未取得。"
+            },
+            "editorial": {
+              "status": "passed",
+              "reviewer": "AI research/editorial agents; not human approval",
+              "checked_at": "2026-10-23T11:56:30+09:00",
+              "note": "AIが事実/分析/予測区分、数値の対象期間・単位、出典制約、断定回避、採用評価を確認。未確認の株価・政策予測を除外。機械validationは真実保証でない。人間採用・公開承認はpending。 初心者向け説明と条件付き株式分析を追加し再確認。無時刻の公式補助解説は本文URLと別紙に分離し、取得時刻を公表時刻に置き換えていない。"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "disco-20261022-2q",
