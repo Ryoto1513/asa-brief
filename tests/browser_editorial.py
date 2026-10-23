@@ -114,7 +114,12 @@ def main():
         open_synthetic()
         assert page.locator('#articlePage table').count() == 1
         assert page.locator('#articlePage .bar-row').count() == 2
-        assert page.locator('#articlePage .timeline > div').count() == 2
+        # The outer section also carries the timeline class; count only event rows.
+        timeline = page.locator('#articlePage section.rich-block.timeline > div.timeline > div')
+        assert timeline.count() == 2
+        expected_timeline = next(b['rows'] for b in story['blocks'] if b['type'] == 'timeline')
+        assert timeline.locator('b').all_inner_texts() == [row[0] for row in expected_timeline]
+        assert timeline.locator('p').all_inner_texts() == [row[1] for row in expected_timeline]
         assert page.locator('#articlePage .flow-step').count() == 3
         assert page.locator('#articlePage .takeaways').count() == 1
         headings = page.locator('#articlePage .rich-block h2').all_inner_texts()
