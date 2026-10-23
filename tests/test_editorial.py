@@ -3,10 +3,11 @@ import copy
 import hashlib
 import json
 import math
+import re
 import sys
 import tempfile
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -16,6 +17,33 @@ import editorial as e
 
 NOW = datetime.fromisoformat('2026-10-23T11:00:00+09:00')
 FIXTURE = R / 'tests/fixtures/editorial_v2.json'
+
+
+def legacy_collection():
+    """Frozen, hash-checked historical unit fixture, never the evolving library."""
+    payload = json.loads((R / 'tests/fixtures/editorial_legacy.json').read_text(encoding='utf-8'))
+    hashes = {a['id']: e.canonical_hash(a) for a in payload['articles']}
+    if len(payload['articles']) != 3 or hashes != e.LEGACY_HASHES:
+        raise AssertionError('historical fixture must contain exactly the immutable three articles')
+    return payload
+
+
+def article_checked_at(checked_at):
+    """Move a synthetic article coherently, keeping all timestamp relationships."""
+    value = article()
+    delta = checked_at - e.timestamp(value['checked_at'])
+    def shift(node):
+        if isinstance(node, dict):
+            return {key: shift(item) for key, item in node.items()}
+        if isinstance(node, list):
+            return [shift(item) for item in node]
+        if isinstance(node, str) and re.match(r'^\d{4}-\d\d-\d\dT', node):
+            return (e.timestamp(node) + delta).isoformat()
+        return node
+    value = shift(value)
+    value['date'] = e.timestamp(value['published_at']).astimezone(e.JST).strftime('%m/%d')
+    value['reviewed_on'] = checked_at.astimezone(e.JST).date().isoformat()
+    return value
 
 
 def article():
@@ -180,16 +208,31 @@ class ValidationTests(unittest.TestCase):
         self.reject(collection(a, b), 'structural')
 
     def test_legacy_articles_exactly_preserved_and_accepted(self):
-        existing = json.loads((R / 'config/editorial.json').read_text(encoding='utf-8'))
+        existing = legacy_collection()
         self.assertTrue(e.validate(existing, now=NOW)['ok'])
         for original in existing['articles']:
             changed = copy.deepcopy(original); changed['lead'] += '変更'
             self.reject(collection(changed), 'structural')
 
     def test_new_id_cannot_reuse_legacy_exemption(self):
-        existing = json.loads((R / 'config/editorial.json').read_text(encoding='utf-8'))
+        existing = legacy_collection()
         changed = copy.deepcopy(existing['articles'][0]); changed['id'] = 'new-not-grandfathered'
         self.reject(collection(changed), 'structural')
+
+    def test_later_synthetic_check_is_accepted_only_at_trusted_fixture_time(self):
+        # Both times are fixed test data, not clocks derived from a manuscript.
+        later = NOW + timedelta(hours=1)
+        a = article_checked_at(later)
+        rejected = self.reject(collection(a), 'structural')
+        self.assertIn('require published_at <= checked_at <= validation time',
+                      ' '.join(rejected['structural']['issues']))
+        self.assertTrue(e.validate(collection(a), now=later)['ok'])
+        self.assertTrue(e.validate(collection(a), now=later.astimezone(timezone.utc))['ok'])
+        a = article_checked_at(later + timedelta(seconds=1))
+        report = e.validate(collection(a), now=later)
+        self.assertFalse(report['ok'])
+        self.assertIn('require published_at <= checked_at <= validation time',
+                      ' '.join(report['structural']['issues']))
 
     def test_numeric_table_valid(self):
         report = e.validate(collection(numeric_article()), now=NOW)
@@ -263,7 +306,7 @@ class ValidationTests(unittest.TestCase):
         expected = ['a-tie-important', 'new-important', 'old-important', 'new-normal']
         for sequence in ([normal, old, new, tie], [tie, new, old, normal]):
             self.assertEqual([a['id'] for a in e.order_articles(sequence)], expected)
-        legacy = json.loads((R / 'config/editorial.json').read_text())['articles']
+        legacy = legacy_collection()['articles']
         self.assertEqual(e.order_articles(list(reversed(legacy))), legacy)
 
     def test_bars_use_each_row_not_other_labels(self):
@@ -490,7 +533,7 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(saved['articles'], [updated])
 
     def test_create_alongside_legacy_preserves_every_original_article(self):
-        originals = json.loads((R / 'config/editorial.json').read_text(encoding='utf-8'))
+        originals = legacy_collection()
         self.write(originals)
         before = copy.deepcopy(originals['articles'])
         e.import_article(article(), **self.args())

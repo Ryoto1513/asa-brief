@@ -1,5 +1,6 @@
 """End-to-end offline build: synthetic inputs never modify the real source."""
 import copy
+from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -13,7 +14,7 @@ R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
 import build_site
 import editorial_delivery
-from test_editorial import NOW, article, collection
+from test_editorial import NOW, article, collection, legacy_collection, article_checked_at
 
 
 class BuildTests(unittest.TestCase):
@@ -67,10 +68,30 @@ class BuildTests(unittest.TestCase):
 
     def test_build_is_deterministic_and_original_articles_retained(self):
         self.source.write_bytes((R / 'config/editorial.json').read_bytes())
-        first = build_site.build_site(self.root, now=NOW)
-        second = build_site.build_site(self.root, now=NOW)
+        # Real-library integration uses one observed clock, never input timestamps.
+        observed_at = datetime.now(timezone.utc)
+        print('REAL_LIBRARY_EVALUATION ' + observed_at.isoformat(), flush=True)
+        first = build_site.build_site(self.root, now=observed_at)
+        second = build_site.build_site(self.root, now=observed_at)
+        self.assertLessEqual(observed_at, datetime.now(timezone.utc))
         self.assertEqual(first, second)
-        self.assertEqual((self.root / '.site/data/editorial.json').read_bytes(), (R / 'config/editorial.json').read_bytes())
+        self.assertEqual(first['manifest']['as_of'], observed_at.isoformat())
+        public_raw = (self.root / '.site/data/editorial.json').read_bytes()
+        self.assertEqual(public_raw, (R / 'config/editorial.json').read_bytes())
+        import editorial
+        public = json.loads(public_raw)
+        for old in legacy_collection()['articles']:
+            actual = next(a for a in public['articles'] if a['id'] == old['id'])
+            self.assertEqual(actual, old)
+            self.assertEqual(editorial.canonical_hash(actual), editorial.LEGACY_HASHES[old['id']])
+        self.assertEqual(first['manifest']['article_ids'], [a['id'] for a in public['articles']])
+        self.assertEqual(public['articles'], editorial.order_articles(public['articles']))
+        self.assertEqual(first['manifest']['manuscript_sha256'], hashlib.sha256(public_raw).hexdigest())
+        self.assertEqual(first['manifest']['summary_sha256'], hashlib.sha256(first['summary'].encode()).hexdigest())
+        for link, actual in zip(first['manifest']['articles'], public['articles']):
+            self.assertEqual(link['sha256'], editorial.canonical_hash(actual))
+        self.assertEqual((self.root / '.site/data/latest.json').read_bytes(), self.latest)
+        self.assertEqual((self.root / '.site/data/archive/2026-10-22.json').read_bytes(), self.latest)
 
     def test_unsorted_source_rejected_without_touching_previous_build(self):
         build_site.build_site(self.root, now=NOW)
@@ -102,7 +123,7 @@ class BuildTests(unittest.TestCase):
 
     def test_import_build_summary_and_ui_order_share_exact_ids_and_hashes(self):
         import editorial
-        original = json.loads((R / 'config/editorial.json').read_text())
+        original = legacy_collection()
         self.write(original)
         a = article()
         editorial.import_article(a, self.source, 'create', hashlib.sha256(self.source.read_bytes()).hexdigest(),
@@ -131,6 +152,17 @@ class BuildTests(unittest.TestCase):
             with self.subTest(change=change), self.assertRaises(ValueError):
                 build_site.build_site(self.root, now=NOW)
             self.assertFalse((self.root / '.site').exists())
+
+    def test_coherent_future_manuscript_refused_at_observed_clock(self):
+        observed_at = datetime.now(timezone.utc)
+        build_site.build_site(self.root, now=observed_at)
+        before = (self.root / '.site/data/editorial.json').read_bytes()
+        future = article_checked_at(observed_at + timedelta(hours=1))
+        self.write(collection(future))
+        self.assertLessEqual(observed_at, datetime.now(timezone.utc))
+        with self.assertRaisesRegex(ValueError, 'published_at <= checked_at <= validation time'):
+            build_site.build_site(self.root, now=observed_at)
+        self.assertEqual((self.root / '.site/data/editorial.json').read_bytes(), before)
 
     def test_valid_expired_archive_remains_buildable(self):
         from datetime import timedelta
