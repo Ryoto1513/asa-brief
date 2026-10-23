@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T09:50:01+09:00",
+  "generated_at": "2026-10-23T10:56:54+09:00",
   "edition_date": "2026-10-23",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -294,49 +294,49 @@
       "new_since_last": false
     },
     {
-      "id": "c1e5c75dd2d66c17693c",
+      "id": "b7305f4b272b2b81712f",
       "cat": "セキュリティ",
       "tag": "報道見出し",
       "date": "10/23",
-      "published_at": "2026-10-23T06:31+09:00",
+      "published_at": "2026-10-23T09:59+09:00",
       "date_precision": "minute",
-      "title": "PHP欠陥でサイト止めた日本、止めなかった米国 脆弱性は8月に発見",
+      "title": "サイバー攻撃、日本企業も標的か 中国系ハッカーがAI悪用",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0dzlMU3pQRHNrN2p0SXhZekpDWjRaUDZPRy1nMkJab2NhbVYxdlVUdUFOZFVFcjRHdFZVVkk1QkY4TzNPVGdBZ3k3RnJYd3hSRHFtU2RUdllwSkRKWVVsNG5OSWc0U1VGY3dIeQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE91TXB5R1g0bTJaS0lQVklVaFZQSmFqMU5MNE05SnF4Ni0yY3VhZ1UzcjNVQzhUdk5ReF9wV2l1NFJsVHNuSUFnWnllRQ?oc=5",
       "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0dzlMU3pQRHNrN2p0SXhZekpDWjRaUDZPRy1nMkJab2NhbVYxdlVUdUFOZFVFcjRHdFZVVkk1QkY4TzNPVGdBZ3k3RnJYd3hSRHFtU2RUdllwSkRKWVVsNG5OSWc0U1VGY3dIeQ?oc=5"
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE91TXB5R1g0bTJaS0lQVklVaFZQSmFqMU5MNE05SnF4Ni0yY3VhZ1UzcjNVQzhUdk5ReF9wV2l1NFJsVHNuSUFnWnllRQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "📰",
+      "icon": "💻",
       "tone": "slate",
       "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
+      "learning_topic": "AI・産業のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-23 06:31 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "47NEWSが配信した見出し・リンク・公開日時（2026-10-23 09:59 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
         ],
         [
           "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
         ],
         [
           "解説の位置づけ",
@@ -345,25 +345,17 @@
       ],
       "glossary": [
         [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
     },
     {
       "id": "2f34631e5ed1546d374a",
@@ -435,7 +427,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "eb1a5acd0e97476d6d0c",
@@ -1057,10 +1049,10 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 49,
+      "eligible": 46,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 50
+        "out_of_time_window": 53
       }
     },
     {
@@ -1105,9 +1097,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 74
       }
     },
     {
@@ -1116,7 +1108,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 28
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -1132,27 +1124,27 @@
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 88
+        "publisher_not_allowed": 91
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 71
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 74
       }
     },
     {
@@ -1177,18 +1169,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 35,
+      "eligible": 38,
       "dropped": {
-        "publisher_not_allowed": 65
+        "publisher_not_allowed": 62
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 80
       }
     }
   ]
