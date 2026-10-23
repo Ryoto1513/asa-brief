@@ -124,9 +124,12 @@ def main():
         assert timeline.locator('p').all_inner_texts() == [row[1] for row in expected_timeline]
         assert page.locator('#articlePage .flow-step').count() == 3
         assert page.locator('#articlePage .takeaways').count() == 1
-        headings = page.locator('#articlePage .rich-block h2').all_inner_texts()
-        for label in ('事実', '分析', '予測'):
-            assert any(title.startswith(label) for title in headings), headings
+        headings = page.locator('#articlePage .editorial-group > h2').all_inner_texts()
+        for label in ('事実', '分析', '今後の見通し'):
+            assert label in headings, headings
+        subheadings = page.locator('#articlePage .rich-block h3').all_inner_texts()
+        assert len(subheadings) == len(story['blocks'])
+        assert not any(title.startswith(('事実｜', '分析｜', '予測｜')) for title in subheadings)
         assert page.locator('#source-1').get_attribute('href') == story['source_url']
         page.locator('.glossary summary').first.click()
         assert page.locator('.glossary details[open]').count() == 1
