@@ -6,17 +6,18 @@ never contacts a source or deploys; run after installing Playwright separately.
 import argparse
 import copy
 import json
+import re
 import shutil
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
-from editorial import require_valid, order_articles
-from test_editorial import collection, metric, numeric_article
+from editorial import require_valid, order_articles, timestamp, canonical_hash, LEGACY_HASHES
+from test_editorial import collection, metric, numeric_article, legacy_collection
 
 NOW = datetime.fromisoformat('2026-10-23T11:00:00+09:00')
 
@@ -39,7 +40,7 @@ def fixture_data():
              ['2026-10-23T09:00:00+09:00', '架空の発表'],
              ['2026-10-23T09:15:00+09:00', '架空の追記']]},
     ]
-    legacy = json.loads((R / 'config/editorial.json').read_text(encoding='utf-8'))['articles']
+    legacy = legacy_collection()['articles']
     manuscript = collection(*order_articles([*legacy, story]))
     require_valid(manuscript, now=NOW)
     rss = {
@@ -64,6 +65,87 @@ def fixture_data():
         'data/earnings.json': {'schema_version': 1, 'items': [], 'state': 'uninitialized',
                                'message': '合成表示試験・実在の開示取得なし'},
     }
+
+
+def check_current_library(browser):
+    """Separate real-library view, using one observed clock, never manuscript time."""
+    observed = datetime.now(timezone.utc)
+    raw = (R / 'config/editorial.json').read_bytes()
+    library = json.loads(raw)
+    require_valid(library, now=observed)
+    assert observed <= datetime.now(timezone.utc)
+    print('BROWSER_REAL_LIBRARY_EVALUATION ' + observed.isoformat(), flush=True)
+    articles = library['articles']
+    assert articles == order_articles(articles)
+    for identity, expected_hash in LEGACY_HASHES.items():
+        assert canonical_hash(next(a for a in articles if a['id'] == identity)) == expected_hash
+    story = next(a for a in articles if a['id'] == 'japan-cpi-202609-first-brief')
+    active = [a for a in articles if timestamp(a['published_at']) <= observed < timestamp(a['home_until'])]
+    data = {
+        'data/editorial.json': library,
+        'data/latest.json': {'schema_version': 1, 'articles': [], 'status': 'live',
+                            'edition_date': observed.astimezone(timestamp(story['published_at']).tzinfo).date().isoformat(),
+                            'generated_at': observed.isoformat(), 'markets': []},
+        'data/earnings.json': {'schema_version': 1, 'items': []},
+        'data/status.json': {'state': 'success', 'feeds': []},
+    }
+    errors, requests = [], []
+    context = browser.new_context(viewport={'width': 390, 'height': 844},
+                                  is_mobile=True, has_touch=True, service_workers='block')
+    context.route('**/*', lambda route: (requests.append(route.request.url), route.abort()))
+    page = context.new_page()
+    page.clock.install(time=observed)
+    page.on('pageerror', lambda error: errors.append(str(error)))
+    page.set_content('<meta name="viewport" content="width=device-width, initial-scale=1">'
+                     '<style>' + (R / 'assets/style.css').read_text(encoding='utf-8') + '</style>'
+                     '<main class="shell" id="app"></main><div id="modal"></div>')
+    page.add_script_tag(content='window.TEST_DATA=' + json.dumps(data, ensure_ascii=False) + ';'
+        'window.TEST_STORE={};'
+        "Object.defineProperty(window,'localStorage',{value:{getItem:k=>window.TEST_STORE[k]??null,"
+        'setItem:(k,v)=>{window.TEST_STORE[k]=String(v)},removeItem:k=>{delete window.TEST_STORE[k]}}});'
+        'window.fetch=async(url)=>{'
+        r"let key=String(url).replace(/^\.\//,'').split('?')[0];"
+        'return new Response(JSON.stringify(window.TEST_DATA[key]||{}),'
+        "{status:200,headers:{'Content-Type':'application/json'}})};")
+    page.add_script_tag(content=(R / 'assets/app.js').read_text(encoding='utf-8'))
+    page.wait_for_function('!S.loading')
+    expected_ids = [a['id'] for a in active[:12]]
+    assert page.locator('.article-card').evaluate_all('(cards)=>cards.map(c=>c.dataset.open)') == expected_ids
+    if story['id'] in expected_ids:
+        card = page.locator('.article-card[data-open="' + story['id'] + '"]')
+        assert card.locator('.summary').inner_text() == story['lead']
+        assert card.locator('.why').count() == 0
+        assert story['selection_reason'] not in card.inner_text()
+        card.click()
+    else:
+        # Retained articles remain available after expiry; do not advance the clock.
+        page.evaluate('(id)=>openArticle(id)', story['id'])
+    assert page.locator('#articlePage h1').inner_text() == story['title']
+    assert page.locator('#articlePage .editorial-group > h2').all_inner_texts() == ['事実', '分析', '今後の見通し']
+    expected_titles = [re.sub(r'^(事実|分析|予測)\s*[｜|:：]\s*', '', b['title']) for b in story['blocks']]
+    assert page.locator('#articlePage .rich-block h3').all_inner_texts() == expected_titles
+    assert page.locator('#articlePage table').count() == 1
+    assert page.locator('#articlePage .bar-row').count() == 2
+    for block in story['blocks']:
+        if block['type'] in ('table', 'bars'):
+            assert block['caption'] in page.locator('#articlePage').inner_text()
+    assert page.locator('#articlePage .rich-block .smallnote').count() == 0
+    details = page.locator('#articlePage .scope-details')
+    details.locator('summary').click()
+    assert story['selection_reason'] in details.inner_text()
+    for paragraph in re.split(r'\r?\n\s*\r?\n', story['scope']):
+        assert paragraph in details.locator('p').all_text_contents()
+    for width in (320, 375, 390, 430):
+        page.set_viewport_size({'width': width, 'height': 844})
+        assert page.locator('#articlePage').evaluate('(e)=>e.scrollWidth<=e.clientWidth'), width
+    assert not errors, errors
+    assert not requests, requests
+    assert (R / 'config/editorial.json').read_bytes() == raw
+    result = {'as_of': observed.isoformat(), 'article_ids': [a['id'] for a in articles],
+              'active_article_ids': [a['id'] for a in active], 'cpi_revision': story['revision'],
+              'cpi_sha256': canonical_hash(story), 'javascript_errors': errors, 'network_requests': requests}
+    context.close()
+    return result
 
 
 def main():
@@ -169,7 +251,9 @@ def main():
                 page.locator('[data-close]').first.click()
         assert not errors, errors
         assert not requests, requests
+        current_library = check_current_library(browser)
         result = {
+            'current_library': current_library,
             'status': 'PASS', 'browser': 'Chromium', 'network_requests': requests,
             'widths': [320, 375, 390, 430], 'themes': ['light', 'dark'],
             'font_px': {'normal': normal, 'large': large}, 'javascript_errors': errors,
