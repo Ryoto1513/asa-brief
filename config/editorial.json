@@ -1,8 +1,322 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-23-reference0800-r1",
+  "editorial_version": "2026-10-23-individual-morning-r1",
   "reviewed_on": "2026-10-23",
   "articles": [
+    {
+      "manuscript_version": 2,
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "information_cutoff": "2026-10-22T23:00:00+00:00",
+      "information_cutoff_label": "2026年10月23日 午前8時 JST",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "id": "ai-stocks-20261023-morning",
+      "revision": 1,
+      "title": "日米のAI関連株が下落：需要の成長と「株価の期待」は別",
+      "lead": "日米でAI・半導体関連株に売りが広がりました。注目点は、AIが使われるかだけでなく、巨額の投資に見合う利益を生めるか。株安をそのまま「AI需要の消失」と読むのは早計です。",
+      "cat": "世界経済",
+      "priority": "重要",
+      "published_at": "2026-10-23T15:17:50+09:00",
+      "checked_at": "2026-10-23T15:17:50+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "tag": "朝刊・個別記事",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 3,
+      "selection_reason": "日米株の大きな値動きと、AI成長・投資採算の違いを理解するため。",
+      "source_url": "https://s.kabutan.jp/news/n202610221171/",
+      "sources": [
+        {
+          "name": "株探：2026年10月22日の日本市場",
+          "url": "https://s.kabutan.jp/news/n202610221171/",
+          "published_at": "2026-10-22T17:13:00+09:00"
+        },
+        {
+          "name": "Reuters／MarketScreener：米国株式市場（更新時刻）",
+          "url": "https://www.marketscreener.com/news/s-p-500-nasdaq-end-sharply-lower-as-revived-ai-doubts-ignite-tech-selloff-ce785cdedc80ff25",
+          "published_at": "2026-10-23T05:48:00+09:00",
+          "published_at_basis": "displayed_update_2026-10-22_16:48_EDT"
+        }
+      ],
+      "supplementary_sources": [],
+      "takeaways": [
+        "日経平均は2.65%安、NASDAQ総合は2.60%安。NYダウはほぼ横ばいでした。",
+        "企業の成長と、株価に織り込まれた期待を分けて確認します。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜何が起きたか",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日の日経平均は62,907.84円で終了し、前日比1,713.40円安（−2.65%）。米国ではNASDAQ総合が2.60%、S&P500が1.21%下落しました。NYダウは0.02%高とほぼ横ばいでした。"
+          ],
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜売られた背景",
+          "role": "background",
+          "claim_type": "fact",
+          "paragraphs": [
+            "Reutersは、AI投資の採算への懸念が再燃したと報じています。指数ごとに値動きが違い、市場全体を一括りに「どの企業も悪い」とは読めません。"
+          ],
+          "refs": [
+            2
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "分析｜期待が株価に伝わるしくみ",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "steps": [
+            "AI投資が将来の利益につながると期待する",
+            "期待ほど利益を生まない可能性を意識する",
+            "将来の利益に払ってよいと考える価格が変わる"
+          ],
+          "refs": [
+            2
+          ],
+          "note": "影響が伝わる一般的な経路です。実際の変化の大きさを示すものではありません。"
+        },
+        {
+          "type": "text",
+          "title": "分析｜生活・資産への意味",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "株式を含む投資信託や年金の運用では、保有する業種の偏りが値動きに影響します。AI関連の銘柄を複数持っていても、同じ理由で一緒に下がる可能性があります。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜売上と株価は同じものではない",
+          "role": "perspectives",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "企業の売上が伸びても、市場がそれ以上を期待していれば株価は下がり得ます。逆に、株価の下落だけで事業の需要がなくなったとは判断できません。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜次に見る数字",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "決算では売上だけでなく、利益率、設備投資額、手元に残る現金を確認します。今回の一日の下落だけから、その後の相場の方向を決めつけないことが大切です。"
+          ],
+          "refs": []
+        }
+      ],
+      "glossary": [
+        [
+          "設備投資",
+          "事業に必要な工場や計算設備などへの投資。"
+        ],
+        [
+          "採算",
+          "費用に見合う収益が得られるかということ。"
+        ]
+      ],
+      "metrics": [],
+      "match_terms": [
+        "日米のAI関連株が下落"
+      ],
+      "scope": "2026年10月23日午前8時までに確認できた情報で、当日の朝刊を振り返って作成した個別記事です。掲載・確認日時は実際の作成時刻で、午前8時に公開したという意味ではありません。8時以降のCPI発表結果は含めていません。\n\n事実部分は、先に確認済みの出典・原稿と照合しました。「分析」は影響を理解するための説明で、個別企業や家計への影響を断定するものではありません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T15:17:50+09:00",
+          "summary": "ユーザーの個別記事化の依頼に基づく初版。午前8時までの確認済み情報を再構成。"
+        }
+      ],
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T15:17:50+09:00",
+          "adoption": "approved",
+          "scope": "ユーザーの「今日のニュースをアプリに反映させてください」に基づく個別記事の追加。記録時刻は承認メッセージ時刻ではない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:17:50+09:00",
+          "note": "確認済み参考原稿と出典記録の範囲で照合。新しい事実・発表後の結果は追加していない。本文数値は自由文の照合で、機械検算の対象ではない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:17:50+09:00",
+          "note": "事実と分析を区別。単一テーマの個別記事とし、生活・経済への意味と未確定な点を記載。人間による出典レビューの完了は主張しない。"
+        }
+      }
+    },
+    {
+      "manuscript_version": 2,
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "information_cutoff": "2026-10-22T23:00:00+00:00",
+      "information_cutoff_label": "2026年10月23日 午前8時 JST",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "id": "oil-supply-20261023-morning",
+      "revision": 1,
+      "title": "原油が4%上昇：ガソリンだけでなく、輸送・製造コストにも",
+      "lead": "原油価格が上昇し、供給への不安が強まりました。日本の家計への影響は、燃料代だけではありません。商品を運び、作る費用を通じて広がる可能性がありますが、店頭価格へ同じ幅ですぐ反映されるわけではありません。",
+      "cat": "世界経済",
+      "priority": "重要",
+      "published_at": "2026-10-23T15:17:50+09:00",
+      "checked_at": "2026-10-23T15:17:50+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "tag": "朝刊・個別記事",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 3,
+      "selection_reason": "生活費と幅広い企業のコストに関わるため。",
+      "source_url": "https://www.thestar.com.my/business/2026/10/23/oil-hits-five-month-high-as-houthi-attacks-fuel-supply-fears",
+      "sources": [
+        {
+          "name": "Reuters／The Star：原油市場",
+          "url": "https://www.thestar.com.my/business/2026/10/23/oil-hits-five-month-high-as-houthi-attacks-fuel-supply-fears",
+          "published_at": "2026-10-23T07:49:00+09:00",
+          "published_at_basis": "displayed_2026-10-23_06:49_MYT"
+        }
+      ],
+      "supplementary_sources": [],
+      "takeaways": [
+        "ブレント原油先物は113.17ドル、前日比4.0%高でした。",
+        "家計への波及は、原油高の持続期間や円相場、企業の価格転嫁によって変わります。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜何が起きたか",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日のブレント原油先物は1バレル113.17ドルで、前日比4.0%上昇しました。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜供給への不安",
+          "role": "background",
+          "claim_type": "fact",
+          "paragraphs": [
+            "Reutersは、フーシ派によるサウジアラビアへの攻撃を受け、原油供給への不安が強まったと報じています。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "分析｜家計までの波及経路",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "steps": [
+            "原油の調達価格が上がる",
+            "燃料・輸送・製造の費用が増える方向に働く",
+            "企業が販売価格へ転嫁すれば家計の負担にもつながる"
+          ],
+          "refs": [
+            1
+          ],
+          "note": "影響が伝わる一般的な経路です。実際の変化の大きさを示すものではありません。"
+        },
+        {
+          "type": "text",
+          "title": "分析｜店頭で4%高くなるとは限らない",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "先物価格の4%上昇が、そのままガソリンや商品の4%値上げになるわけではありません。企業が価格を変える時期や、コスト増をどれだけ吸収するかによっても違います。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜企業への影響は一様ではない",
+          "role": "perspectives",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "資源関連企業には追い風となる場合がある一方、燃料を多く使う企業にはコスト負担となり得ます。同じ原油高でも、会社が何を売り、何を仕入れているかで意味が変わります。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜高値の長さと円相場を確認",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "一日の急騰だけでなく、高値が続くかが重要です。日本から見ると円相場も輸入コストに関わるため、原油価格と合わせて確認します。"
+          ],
+          "refs": []
+        }
+      ],
+      "glossary": [
+        [
+          "原油先物",
+          "将来の決められた時期に原油を取引する契約。"
+        ],
+        [
+          "価格転嫁",
+          "仕入れや生産のコスト増を販売価格に反映すること。"
+        ]
+      ],
+      "metrics": [],
+      "match_terms": [
+        "原油が4%上昇"
+      ],
+      "scope": "2026年10月23日午前8時までに確認できた情報で、当日の朝刊を振り返って作成した個別記事です。掲載・確認日時は実際の作成時刻で、午前8時に公開したという意味ではありません。8時以降のCPI発表結果は含めていません。\n\n事実部分は、先に確認済みの出典・原稿と照合しました。「分析」は影響を理解するための説明で、個別企業や家計への影響を断定するものではありません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T15:17:50+09:00",
+          "summary": "ユーザーの個別記事化の依頼に基づく初版。午前8時までの確認済み情報を再構成。"
+        }
+      ],
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T15:17:50+09:00",
+          "adoption": "approved",
+          "scope": "ユーザーの「今日のニュースをアプリに反映させてください」に基づく個別記事の追加。記録時刻は承認メッセージ時刻ではない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:17:50+09:00",
+          "note": "確認済み参考原稿と出典記録の範囲で照合。新しい事実・発表後の結果は追加していない。本文数値は自由文の照合で、機械検算の対象ではない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:17:50+09:00",
+          "note": "事実と分析を区別。単一テーマの個別記事とし、生活・経済への意味と未確定な点を記載。人間による出典レビューの完了は主張しない。"
+        }
+      }
+    },
     {
       "manuscript_version": 2,
       "revision": 1,
@@ -1382,6 +1696,322 @@
         ]
       ],
       "scope": "PHP公式、CERT-EU、AWS、Google Cloudの告知を確認。利用者のPC・サーバーをスキャンしたわけではありません。本アプリにPHPが不要という記述は配布コードの構成に基づきます。個別サービスで侵害されたかは未判定。技術的な攻撃手順は掲載していません。"
+    },
+    {
+      "manuscript_version": 2,
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "information_cutoff": "2026-10-22T23:00:00+00:00",
+      "information_cutoff_label": "2026年10月23日 午前8時 JST",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "id": "ai-policy-20261023-morning",
+      "revision": 1,
+      "title": "政府がAI・デジタル改革の会議を初開催：制度決定とは分けて読む",
+      "lead": "政府がAI・デジタル改革の議論を始め、年末までの中間整理を目指します。行政手続きや職場でのAI活用に関わる動きとして、具体化する内容を追います。",
+      "cat": "政治・地方自治",
+      "priority": "通常",
+      "published_at": "2026-10-23T15:17:50+09:00",
+      "checked_at": "2026-10-23T15:19:29+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "tag": "朝刊・個別記事",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 3,
+      "selection_reason": "行政・仕事でのAI活用に関わる政策の動きとして。",
+      "source_url": "https://news.livedoor.com/article/detail/32631591/",
+      "sources": [
+        {
+          "name": "TBS／livedoor：AI・デジタル改革会議",
+          "url": "https://news.livedoor.com/article/detail/32631591/",
+          "published_at": "2026-10-22T18:38:00+09:00"
+        }
+      ],
+      "supplementary_sources": [
+        {
+          "name": "デジタル庁：第1回会議",
+          "url": "https://www.digital.go.jp/councils/ai_digital/1f3aa34a-786d-4b56-99a4-469f8f933f1c",
+          "published_date": null,
+          "published_at": null
+        }
+      ],
+      "takeaways": [
+        "22日に第1回会議が開かれ、年末までに中間整理する意向が示されました。",
+        "今後は利用ルール、予算、具体的な事業を確認する段階です。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜会議で示されたこと",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "22日に第1回会議が開かれ、AI活用などについて年末までに中間整理する意向が示されました。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜身近な政策の話",
+          "role": "background",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "行政手続きや職場でのAI利用がどう変わるかにつながる動きです。技術だけでなく、使い方のルールも見る話題です。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "flow",
+          "title": "分析｜議論から実施へ",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "steps": [
+            "課題・方針の整理",
+            "具体的なルール・予算・事業",
+            "実施内容と効果の確認"
+          ],
+          "refs": [],
+          "note": "実施や効果が確定したことを示す図ではありません。"
+        },
+        {
+          "type": "text",
+          "title": "分析｜生活との接点",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "手続きの進め方や仕事の役割への影響は、導入する場面によって変わります。自分が利用する窓口や業務との接点を確認します。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜企業を見る視点",
+          "role": "perspectives",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "関連企業への需要を考えるときは、政策の方向だけでなく、実際の事業や予算を見る必要があります。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜次の確認点",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "年末までの中間整理で、利用ルールや実施事業がどこまで具体化するかを確認します。"
+          ],
+          "refs": []
+        }
+      ],
+      "glossary": [
+        [
+          "中間整理",
+          "検討の途中段階で、論点や方向性をまとめること。"
+        ]
+      ],
+      "metrics": [],
+      "match_terms": [
+        "政府がAI・デジタル改革の会議を初開催"
+      ],
+      "scope": "2026年10月23日午前8時までに確認できた情報で、当日の朝刊を振り返って作成した個別記事です。掲載・確認日時は実際の作成時刻で、午前8時に公開したという意味ではありません。8時以降のCPI発表結果は含めていません。\n\n事実部分は、先に確認済みの出典・原稿と照合しました。「分析」は影響を理解するための説明で、個別企業や家計への影響を断定するものではありません。\n\n補助一次資料（公表時刻は確認できないため補完していません）：\nデジタル庁：第1回会議 https://www.digital.go.jp/councils/ai_digital/1f3aa34a-786d-4b56-99a4-469f8f933f1c\n\n会議の開催や中間整理の方針は、制度の最終決定や新サービスの提供開始を意味しません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T15:19:29+09:00",
+          "summary": "個別記事候補の初版。情報基準は午前8時。掲載前の文章整理で重複説明を削除。"
+        }
+      ],
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T15:17:50+09:00",
+          "adoption": "approved",
+          "scope": "ユーザーの「今日のニュースをアプリに反映させてください」に基づく個別記事の追加。記録時刻は承認メッセージ時刻ではない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:19:29+09:00",
+          "note": "確認済み参考原稿と出典記録の範囲で照合。新しい事実・発表後の結果は追加していない。本文数値は自由文の照合で、機械検算の対象ではない。 今回の確認時刻は保存済み証拠との整合性と文章の再レビュー時刻であり、出典ページの再取得時刻ではない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:19:29+09:00",
+          "note": "事実と分析を区別。単一テーマの個別記事とし、生活・経済への意味と未確定な点を記載。人間による出典レビューの完了は主張しない。 今回の確認時刻は保存済み証拠との整合性と文章の再レビュー時刻であり、出典ページの再取得時刻ではない。"
+        }
+      }
+    },
+    {
+      "manuscript_version": 2,
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "information_cutoff": "2026-10-22T23:00:00+00:00",
+      "information_cutoff_label": "2026年10月23日 午前8時 JST",
+      "human_adoption": "adopted",
+      "publication_status": "published",
+      "id": "kddi-cpo-20261023-morning",
+      "revision": 1,
+      "title": "KDDIとBroadcomがCPOを共同検証：AIは「データを運ぶ電力」も課題",
+      "lead": "AIの省電力化は、計算する半導体だけの話ではありません。KDDIとBroadcomは、半導体と光通信部品を近づけるCPOの共同検証を発表しました。",
+      "cat": "AI・産業",
+      "priority": "通常",
+      "published_at": "2026-10-23T15:17:50+09:00",
+      "checked_at": "2026-10-23T15:19:29+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "tag": "朝刊・個別記事",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 3,
+      "selection_reason": "AIの成長を支える通信・電力の課題を知るため。",
+      "source_url": "https://newsroom.kddi.com/news/detail/kddi_nr-1205_4772.html",
+      "sources": [
+        {
+          "name": "KDDI：BroadcomとのCPO共同検証",
+          "url": "https://newsroom.kddi.com/news/detail/kddi_nr-1205_4772.html",
+          "published_at": "2026-10-22T11:00:00+09:00",
+          "published_at_basis": "original_HTML_JSONLD_datePublished_dateModified"
+        }
+      ],
+      "supplementary_sources": [],
+      "takeaways": [
+        "22日、AI向け通信の省電力化につながるCPOの共同検証を発表しました。",
+        "検証開始と、商用化・売上・家庭の料金への反映は別です。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜共同検証を発表",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "KDDIとBroadcomは22日、半導体と光通信部品を近づける「CPO」の共同検証を発表しました。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜通信にも電力が必要",
+          "role": "background",
+          "claim_type": "fact",
+          "paragraphs": [
+            "AIは計算だけでなく、データを運ぶ部分にも電力を使います。CPOは、その負担を減らすための技術です。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "分析｜省電力化の経路",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "steps": [
+            "通信部分の電力消費を抑える",
+            "実用化できれば設備の運用負担の軽減へ"
+          ],
+          "refs": [
+            1
+          ],
+          "note": "実施や効果が確定したことを示す図ではありません。"
+        },
+        {
+          "type": "text",
+          "title": "分析｜生活との距離",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "今回はAI向けの通信を支える技術の話です。家庭の通信料金への効果を示す発表ではありません。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜AI産業を広く見る",
+          "role": "perspectives",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "AI産業を見る際は、計算用の半導体だけでなく、通信・電力・冷却にも目を向けると理解しやすくなります。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "分析｜次の確認点",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "検証の結果、実用化の時期と範囲、事業への反映を確認します。"
+          ],
+          "refs": []
+        }
+      ],
+      "glossary": [
+        [
+          "CPO",
+          "半導体と光通信部品を近づけ、データ通信の省電力化を目指す技術。"
+        ],
+        [
+          "GPU",
+          "大量の計算を並列に行う半導体。AIの計算にも使われる。"
+        ]
+      ],
+      "metrics": [],
+      "match_terms": [
+        "KDDIとBroadcomがCPOを共同検証"
+      ],
+      "scope": "2026年10月23日午前8時までに確認できた情報で、当日の朝刊を振り返って作成した個別記事です。掲載・確認日時は実際の作成時刻で、午前8時に公開したという意味ではありません。8時以降のCPI発表結果は含めていません。\n\n事実部分は、先に確認済みの出典・原稿と照合しました。「分析」は影響を理解するための説明で、個別企業や家計への影響を断定するものではありません。\n\n共同検証の開始と商用化は別です。特定の企業の売上や利益への効果は、この発表だけでは判断できません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T15:19:29+09:00",
+          "summary": "個別記事候補の初版。情報基準は午前8時。掲載前の文章整理で重複説明を削除。"
+        }
+      ],
+      "human_adoption_history": [
+        {
+          "recorded_at": "2026-10-23T15:17:50+09:00",
+          "adoption": "approved",
+          "scope": "ユーザーの「今日のニュースをアプリに反映させてください」に基づく個別記事の追加。記録時刻は承認メッセージ時刻ではない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:19:29+09:00",
+          "note": "確認済み参考原稿と出典記録の範囲で照合。新しい事実・発表後の結果は追加していない。本文数値は自由文の照合で、機械検算の対象ではない。 今回の確認時刻は保存済み証拠との整合性と文章の再レビュー時刻であり、出典ページの再取得時刻ではない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial comparison against previously verified source evidence",
+          "checked_at": "2026-10-23T15:19:29+09:00",
+          "note": "事実と分析を区別。単一テーマの個別記事とし、生活・経済への意味と未確定な点を記載。人間による出典レビューの完了は主張しない。 今回の確認時刻は保存済み証拠との整合性と文章の再レビュー時刻であり、出典ページの再取得時刻ではない。"
+        }
+      }
     }
-  ]
+  ],
+  "briefings": {
+    "2026-10-23": [
+      "ai-stocks-20261023-morning",
+      "oil-supply-20261023-morning",
+      "ai-policy-20261023-morning",
+      "kddi-cpo-20261023-morning",
+      "disco-20261022-2q",
+      "php-critical-20261022",
+      "japan-cpi-202609-first-brief"
+    ]
+  }
 }

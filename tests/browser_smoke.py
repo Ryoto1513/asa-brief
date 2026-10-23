@@ -65,7 +65,8 @@ def main():
                 page.evaluate('window.TEST_OFFLINE=false')
                 page.locator('[data-refresh]').first.click();page.wait_for_timeout(250)
                 page.locator('[data-archive]').click();page.locator('#archiveSelect').select_option(now.date().isoformat())
-                page.wait_for_timeout(250);assert '過去の配信号' in page.inner_text('body')
+                page.wait_for_timeout(250);assert '日付指定のブリーフ' in page.inner_text('body')
+                assert page.locator('#briefDate').input_value()==now.date().isoformat()
                 for width in (320,375,430):
                     page.set_viewport_size({'width':width,'height':844})
                     assert page.evaluate('document.documentElement.scrollWidth<=window.innerWidth'),f'overflow at {width}'
