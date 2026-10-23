@@ -1,20 +1,57 @@
-"""Copy only public website assets into .site for Pages publication."""
+"""Validate the editorial source, then stage only public files for Pages.
+
+Importing this module does not build, fetch, publish, or mutate any data.
+"""
+import argparse
+from datetime import datetime, timezone
 from pathlib import Path
-import shutil
-R=Path(__file__).resolve().parents[1]
-out=R/'.site'
-if out.exists():shutil.rmtree(out)
-out.mkdir()
-for name in ('index.html','manifest.webmanifest','sw.js'):
-    shutil.copy2(R/name,out/name)
-for name in ('assets','data'):
-    shutil.copytree(R/name,out/name)
-# Keep editor-authored reports separate from the automatically refreshed edition.
 import json
-editorial=R/'config/editorial.json'
-if editorial.exists():
-    payload=json.loads(editorial.read_text(encoding='utf-8'))
-    if payload.get('schema_version')!=1:raise ValueError('editorial schema')
-    shutil.copy2(editorial,out/'data/editorial.json')
-(out/'.nojekyll').touch()
-print('Static site prepared:',out)
+import shutil
+import tempfile
+
+from editorial import load_json, require_valid, order_articles, timestamp
+from editorial_delivery import build_outputs
+
+R = Path(__file__).resolve().parents[1]
+
+
+def build_site(root=R, out=None, now=None):
+    root = Path(root)
+    out = Path(out) if out is not None else root / '.site'
+    if out.is_symlink():
+        raise ValueError('refuse symlink build destination')
+    source = root / 'config/editorial.json'
+    raw = source.read_bytes()
+    payload = load_json(source)
+    now = now or datetime.now(timezone.utc)
+    require_valid(payload, now=now)
+    if payload['articles'] != order_articles(payload['articles']):
+        raise ValueError('editorial article order must match priority/newness policy; import or review source order')
+    generated = build_outputs(payload, raw, as_of=now)
+    # Invalid manuscripts fail before touching the previous successful output.
+    with tempfile.TemporaryDirectory(prefix='.site-build-', dir=out.parent) as temp:
+        staged = Path(temp) / 'public'
+        staged.mkdir()
+        for name in ('index.html', 'manifest.webmanifest', 'sw.js'):
+            shutil.copy2(root / name, staged / name)
+        for name in ('assets', 'data'):
+            shutil.copytree(root / name, staged / name)
+        (staged / 'data/editorial.json').write_bytes(raw)
+        (staged / 'data/editorial-manifest.json').write_text(
+            json.dumps(generated['manifest'], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        (staged / 'data/editorial-summary.txt').write_text(generated['summary'], encoding='utf-8')
+        (staged / '.nojekyll').touch()
+        if source.read_bytes() != raw:
+            raise ValueError('editorial source changed during build; rebuild from one version')
+        if out.exists():
+            shutil.rmtree(out)
+        staged.rename(out)
+    return generated
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--as-of', help='aware ISO snapshot timestamp; defaults to current UTC')
+    args = parser.parse_args()
+    build_site(now=timestamp(args.as_of) if args.as_of else None)
+    print('Static site prepared:', R / '.site')

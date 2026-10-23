@@ -1,0 +1,136 @@
+{
+  "manuscript_version": 2,
+  "revision": 1,
+  "id": "synthetic-policy-20261023",
+  "title": "合成テスト：政策変更の読み方",
+  "lead": "これは実在ニュースではなく、検証専用の架空原稿です。",
+  "cat": "日本経済",
+  "priority": "重要",
+  "published_at": "2026-10-23T09:00:00+09:00",
+  "checked_at": "2026-10-23T09:30:00+09:00",
+  "home_until": "2026-10-24T12:00:00+09:00",
+  "date": "10/23",
+  "quality": "editorial",
+  "source_kind": "editorial",
+  "read": 4,
+  "scope": "合成データのみ。実際の出典照合や投資判断には使用しない。",
+  "selection_reason": "重要性・影響範囲・新規性を扱う検証用事例。",
+  "publisher": "合成テスト資料",
+  "source_url": "https://example.com/synthetic-policy",
+  "sources": [
+    {
+      "name": "合成テスト一次資料（実在ニュースではない）",
+      "url": "https://example.com/synthetic-policy",
+      "published_at": "2026-10-23T09:00:00+09:00"
+    }
+  ],
+  "takeaways": [
+    "架空の政策変更を題材にする。",
+    "事実・分析・予測を区別する。"
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "title": "事実｜何が起きたか",
+      "role": "what",
+      "claim_type": "fact",
+      "paragraphs": [
+        "架空の制度案が発表されたというテスト設定です。"
+      ],
+      "refs": [
+        1
+      ]
+    },
+    {
+      "type": "text",
+      "title": "事実｜背景",
+      "role": "background",
+      "claim_type": "fact",
+      "paragraphs": [
+        "背景説明もすべて合成データです。"
+      ],
+      "refs": [
+        1
+      ]
+    },
+    {
+      "type": "flow",
+      "title": "事実｜仕組み",
+      "role": "mechanism",
+      "claim_type": "fact",
+      "steps": [
+        "架空の発表",
+        "架空の審議",
+        "架空の実施"
+      ],
+      "refs": [
+        1
+      ]
+    },
+    {
+      "type": "text",
+      "title": "分析｜影響",
+      "role": "impact",
+      "claim_type": "analysis",
+      "paragraphs": [
+        "影響の分析例であり、確定事実や投資推奨ではありません。"
+      ],
+      "refs": [
+        1
+      ]
+    },
+    {
+      "type": "text",
+      "title": "分析｜複数の見方",
+      "role": "perspectives",
+      "claim_type": "analysis",
+      "paragraphs": [
+        "便益と実施負担の両面を検討するという架空の分析です。"
+      ],
+      "refs": [
+        1
+      ]
+    },
+    {
+      "type": "text",
+      "title": "予測｜今後の注目点",
+      "role": "outlook",
+      "claim_type": "prediction",
+      "paragraphs": [
+        "今後の確認事項を示すだけで、将来の結果を保証しません。"
+      ],
+      "refs": [
+        1
+      ]
+    }
+  ],
+  "metrics": [],
+  "glossary": [
+    [
+      "合成データ",
+      "テストのために作る架空の情報。"
+    ]
+  ],
+  "update_history": [
+    {
+      "version": 1,
+      "at": "2026-10-23T09:30:00+09:00",
+      "summary": "合成テスト初稿"
+    }
+  ],
+  "review": {
+    "sourcecheck": {
+      "status": "passed",
+      "reviewer": "synthetic-editor",
+      "checked_at": "2026-10-23T09:30:00+09:00",
+      "note": "Synthetic fixture only; no real source verification."
+    },
+    "editorial": {
+      "status": "passed",
+      "reviewer": "synthetic-editor",
+      "checked_at": "2026-10-23T09:30:00+09:00",
+      "note": "Synthetic fixture only; no real editorial approval."
+    }
+  },
+  "reviewed_on": "2026-10-23"
+}
