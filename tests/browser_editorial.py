@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+from browser_briefing_dates import check_briefing_dates
 
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
@@ -80,7 +81,10 @@ def check_current_library(browser):
     for identity, expected_hash in LEGACY_HASHES.items():
         assert canonical_hash(next(a for a in articles if a['id'] == identity)) == expected_hash
     story = next(a for a in articles if a['id'] == 'japan-cpi-202609-first-brief')
-    active = [a for a in articles if timestamp(a['published_at']) <= observed < timestamp(a['home_until'])]
+    day = observed.astimezone(timestamp(story['published_at']).tzinfo).date().isoformat()
+    members = library.get('briefings', {}).get(day)
+    active = [a for a in articles if timestamp(a['published_at']) <= observed < timestamp(a['home_until'])
+              and (members is None or a['id'] in members)]
     data = {
         'data/editorial.json': library,
         'data/latest.json': {'schema_version': 1, 'articles': [], 'status': 'live',
@@ -251,9 +255,10 @@ def main():
                 page.locator('[data-close]').first.click()
         assert not errors, errors
         assert not requests, requests
+        date_filter = check_briefing_dates(browser, data)
         current_library = check_current_library(browser)
         result = {
-            'current_library': current_library,
+            'current_library': current_library, 'date_filter': date_filter,
             'status': 'PASS', 'browser': 'Chromium', 'network_requests': requests,
             'widths': [320, 375, 390, 430], 'themes': ['light', 'dark'],
             'font_px': {'normal': normal, 'large': large}, 'javascript_errors': errors,

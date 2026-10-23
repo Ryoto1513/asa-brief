@@ -200,6 +200,35 @@ def validate(payload, now=None):
     if not isinstance(articles, list):
         issue('structural', '$.articles', 'array required')
         articles = []
+    # Optional curated day membership preserves immutable historical manuscripts.
+    briefings = payload.get('briefings', {})
+    if not isinstance(briefings, dict):
+        issue('structural', '$.briefings', 'date-to-article-ID object required')
+    else:
+        by_id = {a.get('id'): a for a in articles if isinstance(a, dict) and isinstance(a.get('id'), str)}
+        for day, ids in briefings.items():
+            path = '$.briefings.' + str(day)
+            try:
+                edition_day = iso_date(day)
+                if edition_day > now.astimezone(JST).date():
+                    issue('structural', path, 'future briefing date is not allowed')
+            except (ValueError, TypeError):
+                issue('structural', path, 'ISO date required')
+                continue
+            if not isinstance(ids, list) or any(not isinstance(aid, str) for aid in ids):
+                issue('structural', path, 'article ID array required')
+                continue
+            if len(ids) != len(set(ids)):
+                issue('structural', path, 'duplicate article ID')
+            for aid in ids:
+                if aid not in by_id:
+                    issue('structural', path, 'unknown article ID')
+                    continue
+                try:
+                    if timestamp(by_id[aid].get('published_at')).astimezone(JST).date() > edition_day:
+                        issue('structural', path, 'article cannot precede its publication date in JST')
+                except (ValueError, TypeError):
+                    issue('structural', path, 'article publication timestamp required')
     seen = {key: set() for key in ('id', 'title', 'source_url', 'disclosure_key')}
     for ai, article in enumerate(articles):
         path = f'$.articles[{ai}]'
