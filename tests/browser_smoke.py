@@ -47,16 +47,16 @@ def main():
                 assert '一般論' in page.locator('#articlePage').inner_text()
                 assert 'コピー' in page.locator('[data-copy-question]').inner_text()
                 page.locator('#articlePage [data-bookmark]').click()
-                page.locator('[data-close]').first.click();page.locator('[data-tab="saved"]').click()
+                page.locator('[data-close]').first.click();page.locator('.bottom [data-tab="saved"]').click()
                 assert page.locator('.article-card').count()==1
-                page.locator('[data-tab="topics"]').click();page.locator('[data-cat="金融政策"]').click()
+                page.locator('.bottom [data-tab="topics"]').click();page.locator('[data-cat="金融政策"]').click()
                 assert page.locator('.article-card').count()==1
                 page.locator('#searchInput').fill('no-such-text');assert page.locator('.article-card').count()==0
-                page.locator('[data-tab="settings"]').click();page.locator('[data-theme="dark"]').click()
+                page.locator('.bottom [data-tab="settings"]').click();page.locator('[data-theme="dark"]').click()
                 assert page.locator('body.dark').count()==1
                 page.locator('[data-font="large"]').click();assert page.locator('body.large').count()==1
                 assert '取得状況' in page.inner_text('body')
-                page.locator('[data-tab="home"]').first.click();page.locator('[data-refresh]').first.click()
+                page.locator('.bottom [data-tab="home"]').first.click();page.locator('[data-refresh]').first.click()
                 page.wait_for_timeout(250)
                 page.wait_for_selector('.article-card')
                 page.evaluate('window.TEST_OFFLINE=true');page.locator('[data-refresh]').first.click()

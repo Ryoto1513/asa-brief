@@ -4,13 +4,14 @@ from datetime import datetime,timezone
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 R=Path(__file__).resolve().parents[1]
-OUT=R.parent
+OUT=R/'browser-artifacts/v12'
 NOW=datetime(2026,10,22,13,0,tzinfo=timezone.utc)
 EDITORIAL=json.loads((R/'config/editorial.json').read_text())
 EDITION={'schema_version':1,'articles':[],'status':'live','generated_at':'2026-10-22T21:45:00+09:00','edition_date':'2026-10-22','markets':[],'notice':'API不使用。テスト用取得状態。'}
 HEALTH={'state':'success','feeds':[],'attempted_at':EDITION['generated_at']}
 
 def main():
+ OUT.mkdir(parents=True,exist_ok=True)
  with sync_playwright() as p:
   browser=p.chromium.launch(headless=True,executable_path=shutil.which('chromium'),args=['--no-sandbox'])
   context=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True,service_workers='block')

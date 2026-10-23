@@ -39,12 +39,16 @@ jobs:
       - name: Install pinned browser test dependency
         run: python -m pip install playwright==1.62.0
       - name: Install Chromium and OS dependencies on the standard CI runner
+        id: browsers
         run: python -m playwright install --with-deps chromium
       - name: Existing RSS, archive and simulated-offline UI smoke
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
         run: python tests/browser_smoke.py
       - name: Existing three-article UI regression (in-memory fixtures)
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
         run: python tests/browser_v12.py
       - name: Synthetic fourth article and mixed RSS UI regression
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
         run: python tests/browser_editorial.py --output-dir browser-artifacts/editorial
       - name: Retain only public and synthetic browser evidence
         if: always()
@@ -52,9 +56,12 @@ jobs:
         with:
           name: editorial-browser-evidence
           path: |
-            ../asa_brief_v12_*.png
-            ../asa_brief_v12_browser_report.json
-            browser-artifacts/editorial/*.png
-            browser-artifacts/editorial/*.json
+            browser-artifacts/v12/asa_brief_v12_home.png
+            browser-artifacts/v12/asa_brief_v12_article.png
+            browser-artifacts/v12/asa_brief_v12_tables.png
+            browser-artifacts/v12/asa_brief_v12_browser_report.json
+            browser-artifacts/editorial/asa_brief_phase2_home.png
+            browser-artifacts/editorial/asa_brief_phase2_numbers.png
+            browser-artifacts/editorial/asa_brief_phase2_browser_report.json
           if-no-files-found: warn
           retention-days: 1
