@@ -1,8 +1,187 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-23-individual-morning-r2",
+  "editorial_version": "2026-10-23-date-earnings-r3",
   "reviewed_on": "2026-10-23",
   "articles": [
+    {
+      "manuscript_version": 2,
+      "revision": 1,
+      "id": "fanuc-20261023-2q",
+      "title": "ファナック、上期営業利益36%増。通期売上は1兆円超へ上方修正",
+      "lead": "工場の自動化を支えるファナックは、上期に増収増益となり、通期予想も引き上げました。中国や米州などの設備投資需要が支えです。過去半年の実績と、これからを含む会社予想を分けて読みます。",
+      "cat": "決算",
+      "company_code": "6954",
+      "disclosure_key": "6954:2026-10-23",
+      "priority": "重要",
+      "published_at": "2026-10-23T16:23:21+09:00",
+      "checked_at": "2026-10-23T16:23:21+09:00",
+      "home_until": "2026-10-26T00:00:00+09:00",
+      "date": "10/23",
+      "reviewed_on": "2026-10-23",
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "publisher": "朝のブリーフ（一次資料・確認済み報道に基づく編集）",
+      "tag": "決算詳報",
+      "icon": "◉",
+      "tone": "teal",
+      "read": 3,
+      "publication_status": "adopted_for_publication",
+      "human_adoption": "owner_standing_authorization_not_individual_fact_review",
+      "information_cutoff": "2026-10-23T16:23:21+09:00",
+      "information_cutoff_label": "2026年10月23日16時台 JST",
+      "selection_reason": "本日公表の決算。工場自動化への需要と会社見通しの変化を確認するため。",
+      "source_url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/financialresult202609.pdf",
+      "sources": [
+        {
+          "name": "ファナック：2027年3月期中間決算短信",
+          "url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/financialresult202609.pdf",
+          "published_at": "2026-10-23T15:30:00+09:00",
+          "published_at_basis": "disclosure_time_reported_by_Kabutan_not_official_site_upload_time",
+          "time_evidence_url": "https://s.kabutan.jp/stocks/6954/news",
+          "official_document_date": "2026-10-23"
+        },
+        {
+          "name": "ファナック：2026年度第2四半期決算説明会資料",
+          "url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/reference202609.pdf",
+          "published_at": "2026-10-23T15:30:00+09:00",
+          "published_at_basis": "disclosure_time_reported_by_Kabutan_not_official_site_upload_time",
+          "time_evidence_url": "https://s.kabutan.jp/stocks/6954/news",
+          "official_document_date": "2026-10-23"
+        },
+        {
+          "name": "株探：ファナック、今期経常を14％上方修正",
+          "url": "https://s.kabutan.jp/stocks/6954/news/k202610230016/",
+          "published_at": "2026-10-23T15:30:00+09:00",
+          "published_at_basis": "displayed_article_time_JST"
+        }
+      ],
+      "supplementary_sources": [],
+      "takeaways": [
+        "上期の売上高は4,737.08億円、営業利益は1,166.62億円。前年同期比でそれぞれ16.2%、35.7%増えました。",
+        "通期売上予想は1兆137億円へ上方修正。会社の見通しであり、確定した実績ではありません。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "事実｜上期は売上・利益とも増加",
+          "role": "what",
+          "claim_type": "fact",
+          "paragraphs": [
+            "2026年4〜9月の連結売上高は4,737.08億円（前年同期比16.2%増）、営業利益は1,166.62億円（35.7%増）、親会社株主に帰属する中間純利益は1,125.76億円（41.0%増）でした。これは半年間の累計です。"
+          ],
+          "refs": [
+            1,
+            3
+          ]
+        },
+        {
+          "type": "text",
+          "title": "事実｜どこで需要が伸びたか",
+          "role": "background",
+          "claim_type": "fact",
+          "paragraphs": [
+            "会社の説明では、FAは中国・国内・インド、ロボットは米州・中国、ロボマシンは中国を中心に好調でした。説明会資料は、AI関連を含む一般産業の自動化投資や、半導体・航空宇宙などの需要を挙げています。"
+          ],
+          "refs": [
+            2
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜売上より利益が大きく伸びた意味",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "営業利益は、本業の売上から製造費用や販売・管理費を引いた利益です。今回は売上の伸びを利益の伸びが上回りました。会社資料では、売上増加が営業増益の主な押し上げ要因とされています。"
+          ],
+          "refs": [
+            2
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜工場投資を読む手がかり",
+          "role": "impact",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "機械を作る企業や工場向けの部品・サービス企業にとって、自動化需要の強さを知る手がかりになります。ただし、ファナックの好調が製造業全体や家計所得の改善をそのまま示すわけではありません。"
+          ],
+          "refs": []
+        },
+        {
+          "type": "text",
+          "title": "予測｜通期計画はどれだけ変わったか",
+          "role": "perspectives",
+          "claim_type": "prediction",
+          "paragraphs": [
+            "2027年3月期の会社予想は、売上高が9,481億円から1兆137億円へ（前回予想比6.9%増）、営業利益が2,180億円から2,407億円へ（10.4%増）、親会社株主に帰属する純利益が1,980億円から2,283億円へ（15.3%増）引き上げられました。比較対象は7月31日公表の会社予想です。"
+          ],
+          "refs": [
+            1,
+            3
+          ]
+        },
+        {
+          "type": "text",
+          "title": "分析｜次は需要の持続と為替を確認",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "paragraphs": [
+            "会社は下期の為替を1ドル150円、1ユーロ175円と想定しています。今後の需要や為替が想定と違えば、業績も変わります。増益・上方修正だけで株価上昇が決まるわけではなく、本記事では市場予想との差や決算後の株価反応は評価していません。"
+          ],
+          "refs": [
+            1
+          ]
+        }
+      ],
+      "glossary": [
+        [
+          "FA",
+          "工場の生産を自動化する仕組み。"
+        ],
+        [
+          "営業利益",
+          "本業の売上から製造費用や販売・管理費を引いた利益。"
+        ],
+        [
+          "上方修正",
+          "会社が以前に示した業績予想を引き上げること。"
+        ]
+      ],
+      "metrics": [],
+      "match_terms": [
+        "ファナック",
+        "6954"
+      ],
+      "scope": "2026年10月23日公表の中間決算と会社予想を確認した記事です。決算短信の表紙・添付資料2〜3ページ、説明会資料2〜6ページと株探速報を照合。一次資料の日付は確認できましたが、公式サイトへの厳密な掲載時刻は未確認です。一次資料の出典時刻15:30は、株探の速報記事および開示一覧が報じる開示時刻です。公式サイトのアップロード時刻を示すものではありません。公式PDF自体は日付のみを表示しています。記事の掲載基準日時は原稿作成時刻で、実際の配信確認は公開処理の記録と区別しています。数値は自由文として照合し、機械検算の対象外。一次資料を転載する二次報道との照合であり独立した測定ではありません。",
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-23T16:23:21+09:00",
+          "summary": "本日公表の公式資料と報道を確認した初版。所有者の決算詳報作成・公開指示に基づく掲載。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI public-source editorial review",
+          "checked_at": "2026-10-23T16:23:21+09:00",
+          "note": "公式PDFの本文・数表と株探速報を照合。正確な公式掲載時刻は未確認。機械検証は出典の真偽を保証しない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI public-source editorial review",
+          "checked_at": "2026-10-23T16:23:21+09:00",
+          "note": "半年間の実績と通期会社予想を区別。6つの説明役割を満たし、売買推奨や未確認の株価反応は記載しない。所有者の包括的な公開指示に基づき掲載する。個別の事実に対する人間レビューは主張しない。"
+        }
+      },
+      "adoption_authority": {
+        "type": "owner_instruction",
+        "message_id": "Sentinel_40a480a9af94819185440533f0d44729",
+        "scope": "individual_earnings_details_after_release",
+        "human_fact_review": false
+      }
+    },
     {
       "manuscript_version": 2,
       "quality": "editorial",
@@ -1701,7 +1880,8 @@
       "kddi-cpo-20261023-morning",
       "disco-20261022-2q",
       "php-critical-20261022",
-      "japan-cpi-202609-first-brief"
+      "japan-cpi-202609-first-brief",
+      "fanuc-20261023-2q"
     ]
   }
 }

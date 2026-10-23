@@ -14,6 +14,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 from browser_briefing_dates import check_briefing_dates
+from browser_earnings_calendar import check_earnings_calendar
 
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
@@ -82,9 +83,8 @@ def check_current_library(browser):
         assert canonical_hash(next(a for a in articles if a['id'] == identity)) == expected_hash
     story = next(a for a in articles if a['id'] == 'japan-cpi-202609-first-brief')
     day = observed.astimezone(timestamp(story['published_at']).tzinfo).date().isoformat()
-    members = library.get('briefings', {}).get(day)
-    active = [a for a in articles if timestamp(a['published_at']) <= observed < timestamp(a['home_until'])
-              and (members is None or a['id'] in members)]
+    active = [a for a in articles if timestamp(a['published_at']) <= observed
+              and timestamp(a['published_at']).astimezone(timestamp(story['published_at']).tzinfo).date().isoformat() == day]
     data = {
         'data/editorial.json': library,
         'data/latest.json': {'schema_version': 1, 'articles': [], 'status': 'live',
@@ -113,7 +113,7 @@ def check_current_library(browser):
         "{status:200,headers:{'Content-Type':'application/json'}})};")
     page.add_script_tag(content=(R / 'assets/app.js').read_text(encoding='utf-8'))
     page.wait_for_function('!S.loading')
-    expected_ids = [a['id'] for a in active[:12]]
+    expected_ids = [a['id'] for a in active]
     assert page.locator('.article-card').evaluate_all('(cards)=>cards.map(c=>c.dataset.open)') == expected_ids
     if story['id'] in expected_ids:
         card = page.locator('.article-card[data-open="' + story['id'] + '"]')
@@ -186,11 +186,11 @@ def main():
         page.wait_for_selector('.article-card')
         page.wait_for_timeout(100)
 
-        expected_cards = len(data['data/editorial.json']['articles']) + 1
+        expected_cards = sum(timestamp(a['published_at']).astimezone(NOW.tzinfo).date() == NOW.date() for a in data['data/editorial.json']['articles']) + 1
         assert page.locator('.article-card').count() == expected_cards
         assert page.locator('[data-open="synthetic-rss-covered"]').count() == 0
         assert page.locator('.article-card').first.get_attribute('data-open') == story['id']
-        assert page.locator('.article-card').first.locator('.mini.muted').first.inner_text().startswith(story['date'])
+        assert page.locator('.article-card').first.locator('.mini.muted').first.inner_text().startswith(timestamp(story['published_at']).astimezone(NOW.tzinfo).strftime('%Y/%m/%d'))
         assert page.locator('[data-open="synthetic-rss-independent"]').count() == 1
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         page.screenshot(path=str(args.output_dir / 'asa_brief_phase2_home.png'))
@@ -206,7 +206,7 @@ def main():
         timeline = page.locator('#articlePage section.rich-block.timeline > div.timeline > div')
         assert timeline.count() == 2
         expected_timeline = next(b['rows'] for b in story['blocks'] if b['type'] == 'timeline')
-        assert timeline.locator('b').all_inner_texts() == [row[0] for row in expected_timeline]
+        assert timeline.locator('b').all_inner_texts() == [datetime.fromisoformat(row[0]).strftime('%Y/%m/%d %H:%M JST') for row in expected_timeline]
         assert timeline.locator('p').all_inner_texts() == [row[1] for row in expected_timeline]
         assert page.locator('#articlePage .flow-step').count() == 3
         assert page.locator('#articlePage .takeaways').count() == 1
@@ -256,9 +256,10 @@ def main():
         assert not errors, errors
         assert not requests, requests
         date_filter = check_briefing_dates(browser, data)
+        earnings_calendar = check_earnings_calendar(browser, data)
         current_library = check_current_library(browser)
         result = {
-            'current_library': current_library, 'date_filter': date_filter,
+            'current_library': current_library, 'date_filter': date_filter, 'earnings_calendar': earnings_calendar,
             'status': 'PASS', 'browser': 'Chromium', 'network_requests': requests,
             'widths': [320, 375, 390, 430], 'themes': ['light', 'dark'],
             'font_px': {'normal': normal, 'large': large}, 'javascript_errors': errors,
