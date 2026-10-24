@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-24-refreshed-two-candidate-r1",
+  "editorial_version": "2026-10-24-daily-r1",
   "reviewed_on": "2026-10-24",
   "articles": [
     {
@@ -11,16 +11,16 @@
       "lead": "米ミシガン大学の10月確報で消費者態度指数は48.0と、9月の48.1からほぼ横ばいでした。家計の購入意欲を読む材料ですが、実際の消費支出そのものではありません。次は需要の弱さが販売統計にも表れるかを確認します。",
       "cat": "世界経済",
       "priority": "重要",
-      "published_at": "2026-10-24T09:24:36+09:00",
-      "checked_at": "2026-10-24T09:24:36+09:00",
-      "home_until": "2026-10-26T09:24:36+09:00",
+      "published_at": "2026-10-24T09:41:04+09:00",
+      "checked_at": "2026-10-24T09:41:04+09:00",
+      "home_until": "2026-10-26T09:41:04+09:00",
       "date": "10/24",
       "reviewed_on": "2026-10-24",
       "quality": "editorial",
       "source_kind": "editorial",
       "tag": "詳報",
       "read": 3,
-      "scope": "大学の公式本文を10月24日09:19:33 JSTに再取得し、数値が早朝調査と同じことを確認。Reutersは親担当AIの07:00 JST検索取得本文の照合記録を保持し、09時台の再取得は未成立。原資料の公表時刻・タイムゾーンが未確定なため日付のみを記録。checked_atは取得済み証拠と原稿の編集照合時刻で、再取得時刻ではない。実際の消費支出、企業別売上、株価反応、金融政策の変更時期は本稿の確認対象外。",
+      "scope": "大学の公式本文を10月24日09:19:33 JSTに再取得し、数値が早朝調査と同じことを確認。Reutersは親担当AIの07:00 JST検索取得本文の照合記録を保持し、09時台の再取得は未成立。原資料の公表時刻・タイムゾーンが未確定なため日付のみを記録。checked_atは取得済み証拠と原稿の編集照合時刻で、再取得時刻ではない。実際の消費支出、企業別売上、株価反応、金融政策の変更時期は本稿の確認対象外。 一次資料は09:33:19 JSTにも再取得し、本文の根拠となる内容に変更がないことを確認した。",
       "selection_reason": "米国家計の購入意欲と物価見通しを読み、日本企業の外需を考える材料になる月次調査のため。",
       "publisher": "ミシガン大学・消費者調査",
       "source_url": "https://www.sca.isr.umich.edu/",
@@ -136,28 +136,28 @@
       "update_history": [
         {
           "version": 1,
-          "at": "2026-10-24T09:24:36+09:00",
-          "summary": "今回取得した一次資料に基づく新規記事の公開候補。個別の人間レビューや実公開を意味しない。"
+          "at": "2026-10-24T09:41:04+09:00",
+          "summary": "一次資料に基づく初回編集版。所有者の運用・公開承認に基づき採用。個別事実の人間レビューとは区別し、実配信の成否は公開後に別途照合する。"
         }
       ],
       "review": {
         "sourcecheck": {
           "status": "passed",
           "reviewer": "AI evidence consistency reviewer; not a human reviewer",
-          "checked_at": "2026-10-24T09:24:36+09:00",
-          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+          "checked_at": "2026-10-24T09:41:04+09:00",
+          "note": "取得済み証拠と本文をAIが編集照合。一次資料は09:33:19 JSTにも再確認し内容の一致を確認した。sources.observed_atの先行取得記録と補助報道の確認範囲を保持。所有者は公開運用を承認しているが、個別事実の人間レビューを意味しない。"
         },
         "editorial": {
           "status": "passed",
           "reviewer": "AI editorial reviewer under standing daily automation; no fresh human review",
-          "checked_at": "2026-10-24T09:24:36+09:00",
-          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+          "checked_at": "2026-10-24T09:41:04+09:00",
+          "note": "取得済み証拠と本文をAIが編集照合。一次資料は09:33:19 JSTにも再確認し内容の一致を確認した。sources.observed_atの先行取得記録と補助報道の確認範囲を保持。所有者は公開運用を承認しているが、個別事実の人間レビューを意味しない。"
         }
       },
-      "human_adoption": "not_individually_reviewed",
-      "publication_status": "unpublished_candidate_awaiting_full_verification",
-      "published_at_basis": "new_candidate_editorial_release_proposal_not_actual_publication",
-      "automation_authorization": "standing_daily_editorial_automation; publication gated on full verification",
+      "human_adoption": "owner_authorized_publication; not_individually_fact_reviewed",
+      "publication_status": "adopted_for_authorized_publication",
+      "published_at_basis": "first_editorial_release_time; live_deployment_verified_separately",
+      "automation_authorization": "owner_authorized_daily_publication_and_20261024_release; no_individual_human_fact_review",
       "draft_authored_at": "2026-10-24T09:24:36+09:00"
     },
     {
@@ -1731,16 +1731,16 @@
       "lead": "PHPが23日、特殊な構成に残る遠隔コード実行の可能性について追加案内を出しました。21日の案内でアップロード進捗機能を無効化済みなら、その設定を維持し、この経路について追加の操作は不要としています。管理者は次の通常修正版と提供元の案内を確認してください。",
       "cat": "セキュリティ",
       "priority": "通常",
-      "published_at": "2026-10-24T09:24:36+09:00",
-      "checked_at": "2026-10-24T09:24:36+09:00",
-      "home_until": "2026-10-26T09:24:36+09:00",
+      "published_at": "2026-10-24T09:41:04+09:00",
+      "checked_at": "2026-10-24T09:41:04+09:00",
+      "home_until": "2026-10-26T09:41:04+09:00",
       "date": "10/24",
       "reviewed_on": "2026-10-24",
       "quality": "editorial",
       "source_kind": "editorial",
       "tag": "詳報",
       "read": 3,
-      "scope": "公式一次資料の本文を2026年10月24日09:19:33 JSTに取得して確認し、その証拠と原稿をchecked_atの時点で編集照合した。正確な原資料掲載時刻は不明。今回の独立した報道との再照合は成立しておらず、一次資料単独に基づく。記事の公開提案時刻と原資料取得時刻は区別する。 23日の追加案内に限定し、既存22日記事は変更していない。 次の通常修正版の具体的な公開日は未確認。",
+      "scope": "公式一次資料の本文を2026年10月24日09:19:33 JSTに取得して確認し、その証拠と原稿をchecked_atの時点で編集照合した。正確な原資料掲載時刻は不明。今回の独立した報道との再照合は成立しておらず、一次資料単独に基づく。記事の編集配信日時と原資料取得時刻は区別する。 23日の追加案内に限定し、既存22日記事は変更していない。 次の通常修正版の具体的な公開日は未確認。 一次資料は09:33:19 JSTにも再取得し、本文の根拠となる内容に変更がないことを確認した。",
       "selection_reason": "既存22日記事とは異なる23日の公式追加案内。対策済み管理者が設定を維持する判断に役立つため。",
       "publisher": "PHP公式・2026年ニュース",
       "source_url": "https://www.php.net/archive/2026.php",
@@ -1847,28 +1847,28 @@
       "update_history": [
         {
           "version": 1,
-          "at": "2026-10-24T09:24:36+09:00",
-          "summary": "今回取得した一次資料に基づく新規記事の公開候補。個別の人間レビューや実公開を意味しない。"
+          "at": "2026-10-24T09:41:04+09:00",
+          "summary": "一次資料に基づく初回編集版。所有者の運用・公開承認に基づき採用。個別事実の人間レビューとは区別し、実配信の成否は公開後に別途照合する。"
         }
       ],
       "review": {
         "sourcecheck": {
           "status": "passed",
           "reviewer": "AI evidence consistency reviewer; not a human reviewer",
-          "checked_at": "2026-10-24T09:24:36+09:00",
-          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+          "checked_at": "2026-10-24T09:41:04+09:00",
+          "note": "取得済み証拠と本文をAIが編集照合。一次資料は09:33:19 JSTにも再確認し内容の一致を確認した。sources.observed_atの先行取得記録と補助報道の確認範囲を保持。所有者は公開運用を承認しているが、個別事実の人間レビューを意味しない。"
         },
         "editorial": {
           "status": "passed",
           "reviewer": "AI editorial reviewer under standing daily automation; no fresh human review",
-          "checked_at": "2026-10-24T09:24:36+09:00",
-          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+          "checked_at": "2026-10-24T09:41:04+09:00",
+          "note": "取得済み証拠と本文をAIが編集照合。一次資料は09:33:19 JSTにも再確認し内容の一致を確認した。sources.observed_atの先行取得記録と補助報道の確認範囲を保持。所有者は公開運用を承認しているが、個別事実の人間レビューを意味しない。"
         }
       },
-      "human_adoption": "not_individually_reviewed",
-      "publication_status": "unpublished_candidate_awaiting_full_verification",
-      "published_at_basis": "new_candidate_editorial_release_proposal_not_actual_publication",
-      "automation_authorization": "standing_daily_editorial_automation; publication gated on full verification",
+      "human_adoption": "owner_authorized_publication; not_individually_fact_reviewed",
+      "publication_status": "adopted_for_authorized_publication",
+      "published_at_basis": "first_editorial_release_time; live_deployment_verified_separately",
+      "automation_authorization": "owner_authorized_daily_publication_and_20261024_release; no_individual_human_fact_review",
       "draft_authored_at": "2026-10-24T09:24:36+09:00"
     },
     {
