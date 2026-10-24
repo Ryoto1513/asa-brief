@@ -1,8 +1,165 @@
 {
   "schema_version": 1,
-  "editorial_version": "2026-10-23-date-earnings-r3",
-  "reviewed_on": "2026-10-23",
+  "editorial_version": "2026-10-24-refreshed-two-candidate-r1",
+  "reviewed_on": "2026-10-24",
   "articles": [
+    {
+      "manuscript_version": 2,
+      "revision": 1,
+      "id": "michigan-sentiment-20261024",
+      "title": "米消費者心理は48.0、低水準続く。物価への懸念も残る",
+      "lead": "米ミシガン大学の10月確報で消費者態度指数は48.0と、9月の48.1からほぼ横ばいでした。家計の購入意欲を読む材料ですが、実際の消費支出そのものではありません。次は需要の弱さが販売統計にも表れるかを確認します。",
+      "cat": "世界経済",
+      "priority": "重要",
+      "published_at": "2026-10-24T09:24:36+09:00",
+      "checked_at": "2026-10-24T09:24:36+09:00",
+      "home_until": "2026-10-26T09:24:36+09:00",
+      "date": "10/24",
+      "reviewed_on": "2026-10-24",
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "tag": "詳報",
+      "read": 3,
+      "scope": "大学の公式本文を10月24日09:19:33 JSTに再取得し、数値が早朝調査と同じことを確認。Reutersは親担当AIの07:00 JST検索取得本文の照合記録を保持し、09時台の再取得は未成立。原資料の公表時刻・タイムゾーンが未確定なため日付のみを記録。checked_atは取得済み証拠と原稿の編集照合時刻で、再取得時刻ではない。実際の消費支出、企業別売上、株価反応、金融政策の変更時期は本稿の確認対象外。",
+      "selection_reason": "米国家計の購入意欲と物価見通しを読み、日本企業の外需を考える材料になる月次調査のため。",
+      "publisher": "ミシガン大学・消費者調査",
+      "source_url": "https://www.sca.isr.umich.edu/",
+      "sources": [
+        {
+          "name": "ミシガン大学・消費者調査",
+          "url": "https://www.sca.isr.umich.edu/",
+          "published_at": "2026-10-23",
+          "published_at_precision": "date_only",
+          "publication_note": "公表日は10月23日。正確な掲載時刻とタイムゾーンは確認できていない。",
+          "observed_at": "2026-10-24T09:19:33+09:00",
+          "observation_note": "09:19:33 JSTのweb openで大学公式の2026年10月確報表と解説本文を取得。指数と予想インフレ率の9月・10月値を照合。"
+        },
+        {
+          "name": "Reuters／Investing.com（早朝取得の照合記録）",
+          "url": "https://www.investing.com/news/economy-news/us-consumer-sentiment-near-record-low-ahead-of-midterm-elections-4969915",
+          "published_at": "2026-10-23",
+          "published_at_precision": "date_only",
+          "publication_note": "本文表示は公表10:19・更新10:24だがタイムゾーン不明。正確な絶対時刻を推定せず公表日だけを記録。",
+          "observed_at": "2026-10-24T07:00:00+09:00",
+          "observation_note": "親担当AIの早朝調査引継ぎ記録による検索取得本文の照合。今回09時台の再取得はできていない。記録された07:00を保持し、新規取得とは扱わない。"
+        }
+      ],
+      "takeaways": [
+        "心理調査と実際の消費を分けて読む。",
+        "予想インフレ率は物価の実績ではない。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "role": "what",
+          "claim_type": "fact",
+          "title": "10月確報はほぼ横ばい（事実）",
+          "paragraphs": [
+            "消費者態度指数は9月48.1から10月48.0へ小幅低下。現在の景況感を示す指数は50.9から46.7に下がりました。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "background",
+          "claim_type": "fact",
+          "title": "家計が気にする金利と買いやすさ（事実）",
+          "paragraphs": [
+            "大学の説明は、高い金利や価格面の負担が耐久財の購入環境を圧迫しているとしています。自動車や家電のような大きな買い物には、価格だけでなく借入費用も関わります。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "title": "心理と支出は同じではない（分析）",
+          "paragraphs": [
+            "調査が測るのは消費者の受け止め方です。不安が強くても必要な買い替えは続く場合があり、心理と支出実績を合わせて読むことが大切です。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "impact",
+          "claim_type": "analysis",
+          "title": "日本企業には米国販売が確認点（分析）",
+          "paragraphs": [
+            "米国向け自動車・家電を扱う企業では、買い控えが実際の販売に表れるかが確認点です。消費者心理の低さは需要を読む材料ですが、そのまま個別企業の減収を意味するわけではありません。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "perspectives",
+          "claim_type": "fact",
+          "title": "予想インフレ率は小幅上昇（事実）",
+          "paragraphs": [
+            "1年先の予想インフレ率は4.6%から4.7%、長期は3.4%から3.5%へ上昇しました。いずれも回答者の予想であり、実際に観測された物価上昇率ではありません。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "title": "販売実績とのずれを追う（分析）",
+          "paragraphs": [
+            "次は小売売上や企業の販売実績を確認し、心理の弱さが支出にも広がるかを見ます。"
+          ],
+          "refs": [
+            1
+          ]
+        }
+      ],
+      "metrics": [],
+      "glossary": [
+        [
+          "消費者態度指数",
+          "消費者の景気や暮らしに対する見方を指数にした調査。実際の支出額ではない。"
+        ],
+        [
+          "予想インフレ率",
+          "回答者が将来の物価上昇について予想する率。実績の消費者物価とは別。"
+        ]
+      ],
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-24T09:24:36+09:00",
+          "summary": "今回取得した一次資料に基づく新規記事の公開候補。個別の人間レビューや実公開を意味しない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI evidence consistency reviewer; not a human reviewer",
+          "checked_at": "2026-10-24T09:24:36+09:00",
+          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial reviewer under standing daily automation; no fresh human review",
+          "checked_at": "2026-10-24T09:24:36+09:00",
+          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+        }
+      },
+      "human_adoption": "not_individually_reviewed",
+      "publication_status": "unpublished_candidate_awaiting_full_verification",
+      "published_at_basis": "new_candidate_editorial_release_proposal_not_actual_publication",
+      "automation_authorization": "standing_daily_editorial_automation; publication gated on full verification",
+      "draft_authored_at": "2026-10-24T09:24:36+09:00"
+    },
     {
       "manuscript_version": 2,
       "revision": 1,
@@ -1565,6 +1722,154 @@
         ]
       ],
       "scope": "PHP公式、CERT-EU、AWS、Google Cloudの告知を確認。利用者のPC・サーバーをスキャンしたわけではありません。本アプリにPHPが不要という記述は配布コードの構成に基づきます。個別サービスで侵害されたかは未判定。技術的な攻撃手順は掲載していません。"
+    },
+    {
+      "manuscript_version": 2,
+      "revision": 1,
+      "id": "php-upload-progress-advisory-20261024",
+      "title": "PHPが23日に追加案内。既に無効化した設定は維持を",
+      "lead": "PHPが23日、特殊な構成に残る遠隔コード実行の可能性について追加案内を出しました。21日の案内でアップロード進捗機能を無効化済みなら、その設定を維持し、この経路について追加の操作は不要としています。管理者は次の通常修正版と提供元の案内を確認してください。",
+      "cat": "セキュリティ",
+      "priority": "通常",
+      "published_at": "2026-10-24T09:24:36+09:00",
+      "checked_at": "2026-10-24T09:24:36+09:00",
+      "home_until": "2026-10-26T09:24:36+09:00",
+      "date": "10/24",
+      "reviewed_on": "2026-10-24",
+      "quality": "editorial",
+      "source_kind": "editorial",
+      "tag": "詳報",
+      "read": 3,
+      "scope": "公式一次資料の本文を2026年10月24日09:19:33 JSTに取得して確認し、その証拠と原稿をchecked_atの時点で編集照合した。正確な原資料掲載時刻は不明。今回の独立した報道との再照合は成立しておらず、一次資料単独に基づく。記事の公開提案時刻と原資料取得時刻は区別する。 23日の追加案内に限定し、既存22日記事は変更していない。 次の通常修正版の具体的な公開日は未確認。",
+      "selection_reason": "既存22日記事とは異なる23日の公式追加案内。対策済み管理者が設定を維持する判断に役立つため。",
+      "publisher": "PHP公式・2026年ニュース",
+      "source_url": "https://www.php.net/archive/2026.php",
+      "sources": [
+        {
+          "name": "PHP公式・2026年ニュース",
+          "url": "https://www.php.net/archive/2026.php",
+          "published_at": "2026-10-23",
+          "published_at_precision": "date_only",
+          "publication_note": "公表日は10月23日。正確な掲載時刻とタイムゾーンは確認できていない。",
+          "observed_at": "2026-10-24T09:19:33+09:00",
+          "observation_note": "09:19:33 JSTのweb openでPHP公式アーカイブの10月23日付追加案内本文を取得。設定維持、まれな構成、通常修正版での対応を照合。"
+        }
+      ],
+      "takeaways": [
+        "21日に設定を無効化済みなら維持。この経路について追加操作は不要。",
+        "次の通常修正版と管理事業者の案内を確認する。"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "role": "what",
+          "claim_type": "fact",
+          "title": "23日の追加案内で何が変わったか（事実）",
+          "paragraphs": [
+            "PHP公式はCVE-2026-115560について、特殊な設定とアプリケーションの組み合わせで起こり得る問題を告知しました。次の通常の不具合修正版までsession.upload_progress.enabled=0を維持するよう勧めています。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "background",
+          "claim_type": "fact",
+          "title": "21日の対策を済ませた場合（事実）",
+          "paragraphs": [
+            "この設定変更は21日の案内にも含まれていました。当時適用済みならそのまま維持し、この経路について追加の対応は不要だと説明しています。21日の修正版が全面的に無効になったという意味ではありません。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "mechanism",
+          "claim_type": "analysis",
+          "title": "一般利用者ではなく管理者向け（分析）",
+          "paragraphs": [
+            "PHPはウェブサイトのサーバー側で処理を動かすソフトウェアです。今回の注意はその設定とアプリケーションの関係を扱うため、一般の閲覧者が自分の端末の設定を変更する話ではありません。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "impact",
+          "claim_type": "analysis",
+          "title": "運用環境の確認が先（分析）",
+          "paragraphs": [
+            "サイト管理者は、稼働環境と設定を保守担当者やホスティング事業者に確認し、提供元の手順に沿って必要な対応を整理してください。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "perspectives",
+          "claim_type": "fact",
+          "title": "発生条件は限定される（事実）",
+          "paragraphs": [
+            "公式は、通常はまれな構成で生じる問題として、通常のリリース周期で対応するとしています。すべての利用環境を同じ緊急度で扱う案内ではありません。"
+          ],
+          "refs": [
+            1
+          ]
+        },
+        {
+          "type": "text",
+          "role": "outlook",
+          "claim_type": "analysis",
+          "title": "次の修正版の内容を確認（分析）",
+          "paragraphs": [
+            "次の通常修正版と詳細なアドバイザリーで、修正内容と設定の扱いを確認します。"
+          ],
+          "refs": [
+            1
+          ]
+        }
+      ],
+      "metrics": [],
+      "glossary": [
+        [
+          "PHP",
+          "サーバー側でウェブサイトの処理を動かすプログラミング言語と実行環境。"
+        ],
+        [
+          "遠隔コード実行（RCE）",
+          "外部から意図しないプログラム処理を実行される危険。"
+        ]
+      ],
+      "update_history": [
+        {
+          "version": 1,
+          "at": "2026-10-24T09:24:36+09:00",
+          "summary": "今回取得した一次資料に基づく新規記事の公開候補。個別の人間レビューや実公開を意味しない。"
+        }
+      ],
+      "review": {
+        "sourcecheck": {
+          "status": "passed",
+          "reviewer": "AI evidence consistency reviewer; not a human reviewer",
+          "checked_at": "2026-10-24T09:24:36+09:00",
+          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+        },
+        "editorial": {
+          "status": "passed",
+          "reviewer": "AI editorial reviewer under standing daily automation; no fresh human review",
+          "checked_at": "2026-10-24T09:24:36+09:00",
+          "note": "取得済み証拠と本文をAIが照合。各sources.observed_atに実際の取得記録を保持し、編集照合を新規取得と混同しない。一次資料と補助報道それぞれの確認範囲をscopeに明記。人間レビュー・実公開は主張しない。"
+        }
+      },
+      "human_adoption": "not_individually_reviewed",
+      "publication_status": "unpublished_candidate_awaiting_full_verification",
+      "published_at_basis": "new_candidate_editorial_release_proposal_not_actual_publication",
+      "automation_authorization": "standing_daily_editorial_automation; publication gated on full verification",
+      "draft_authored_at": "2026-10-24T09:24:36+09:00"
     },
     {
       "manuscript_version": 2,

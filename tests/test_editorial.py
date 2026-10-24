@@ -154,6 +154,118 @@ class ValidationTests(unittest.TestCase):
         a = article(); a['sources'][0]['published_at'] = '2026-10-23'
         self.reject(collection(a), 'structural')
 
+    def date_only_article(self):
+        a = article()
+        a['sources'][0].update({
+            'published_at': '2026-10-23',
+            'published_at_precision': 'date_only',
+            'publication_note': 'Synthetic publisher date only; time and timezone unknown.',
+            'observed_at': a['checked_at'],
+            'observation_note': 'Synthetic retrieval fixture; page displayed this date.',
+        })
+        return a
+
+    def test_date_only_requires_explicit_precision_and_observation_evidence(self):
+        a = self.date_only_article()
+        before = copy.deepcopy(a)
+        report = e.validate(collection(a), now=NOW)
+        self.assertTrue(report['ok'], report)
+        self.assertEqual(a, before)  # Never fill midnight or substitute observation.
+        self.assertEqual(report['sourcecheck']['source_truth'], 'not_verified_by_program')
+        for key in ('published_at_precision', 'publication_note', 'observed_at', 'observation_note'):
+            bad = copy.deepcopy(a); del bad['sources'][0][key]
+            with self.subTest(missing=key):
+                self.reject(collection(bad), 'structural')
+        for key in ('publication_note', 'observation_note'):
+            for value in ('', '  ', None, [], True):
+                bad = copy.deepcopy(a); bad['sources'][0][key] = value
+                with self.subTest(key=key, value=value):
+                    self.reject(collection(bad), 'structural')
+
+    def test_date_only_precision_cannot_bypass_invalid_or_exact_timestamps(self):
+        for value in ('2026-02-30', '20261023', '2026-1-2', '', None, [],
+                      '2026-10-23T09:00:00+09:00', '2026-10-24T09:00:00Z',
+                      '2026-10-23T09:00:00', '2026-10-23T09:00:00+08:99'):
+            a = self.date_only_article(); a['sources'][0]['published_at'] = value
+            with self.subTest(value=value):
+                self.reject(collection(a), 'structural')
+
+    def test_source_precision_mismatch_and_unknown_precision_rejected(self):
+        for precision in ('timestamp', '', 'day', 'unknown', None, [], True):
+            a = self.date_only_article(); a['sources'][0]['published_at_precision'] = precision
+            with self.subTest(precision=precision):
+                self.reject(collection(a), 'structural')
+        for precision in ('', 'day', 'unknown', None, [], True):
+            a = article(); a['sources'][0]['published_at_precision'] = precision
+            self.reject(collection(a), 'structural')
+
+    def test_exact_source_timestamp_validation_is_unchanged(self):
+        for precision in (None, 'timestamp'):
+            for value in ('2026-10-23T00:00:00Z', '2026-10-23T09:00:00+09:00'):
+                a = article(); a['sources'][0]['published_at'] = value
+                if precision: a['sources'][0]['published_at_precision'] = precision
+                report = e.validate(collection(a), now=NOW)
+                self.assertTrue(report['ok'], report)
+            for value in ('2026-10-23T09:00:00', '2026-10-23T09:00:00-00:00',
+                          '2026-10-23T09:00:00+08:99', '2026-10-23T09:00:00+14:01',
+                          '2026-10-23T09:00:00+25:00', '2026-10-23T09:31:00+09:00',
+                          '2026-10-24T00:00:00Z', '2026-02-30T09:00:00Z'):
+                a = article(); a['sources'][0]['published_at'] = value
+                if precision: a['sources'][0]['published_at_precision'] = precision
+                with self.subTest(precision=precision, value=value):
+                    self.reject(collection(a), 'structural')
+
+    def test_date_only_unknown_timezone_uses_observation_not_interval_completion(self):
+        a = self.date_only_article()
+        # 09:30 JST observation is compatible with this publisher date, but the
+        # day has NOT ended globally. Accept only with the actual observation
+        # attestation; do not interpret this date as an exact before-cutoff time.
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        for value in ('2026-10-24', '9999-12-31'):
+            a['sources'][0]['published_at'] = value
+            self.reject(collection(a), 'structural')
+        # Boundary: Oct 23 begins earliest at Oct 22 10:00 UTC (UTC+14),
+        # even though the viewer in JST still sees Oct 22. No JST inference.
+        a = self.date_only_article()
+        a['sources'][0]['observed_at'] = '2026-10-22T10:00:00Z'
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+        a['sources'][0]['observed_at'] = '2026-10-22T09:59:59Z'
+        self.reject(collection(a), 'structural')
+
+    def test_source_observation_requires_real_aware_timestamp_before_check(self):
+        for value in (None, '', '2026-10-23', '2026-10-23T09:00:00',
+                      '2026-10-23T09:00:00-00:00', '2026-10-23T09:00:00+08:99',
+                      '2026-10-23T09:00:00+14:01', '2026-02-30T09:00:00Z',
+                      '2026-10-23T09:31:00+09:00', '2026-10-24T09:00:00+09:00'):
+            a = self.date_only_article(); a['sources'][0]['observed_at'] = value
+            with self.subTest(value=value):
+                self.reject(collection(a), 'structural')
+        a = article()
+        a['sources'][0].update(observed_at='2026-10-23T08:59:59+09:00',
+                               observation_note='Synthetic observation before exact publication.')
+        self.reject(collection(a), 'structural')
+        a['sources'][0]['observed_at'] = a['checked_at']
+        self.assertTrue(e.validate(collection(a), now=NOW)['ok'])
+
+    def test_date_only_does_not_relax_article_history_or_review_chronology(self):
+        for key, value in (('published_at', '2026-10-23'),
+                           ('published_at', '2026-10-23T10:00:00+09:00'),
+                           ('checked_at', '2026-10-23'),
+                           ('checked_at', '2026-10-24T09:30:00+09:00'),
+                           ('home_until', '2026-10-23T09:00:00+09:00')):
+            a = self.date_only_article(); a[key] = value
+            self.reject(collection(a), 'structural')
+        for value in ('2026-10-23', '2026-10-23T09:31:00+09:00'):
+            a = self.date_only_article(); a['update_history'][0]['at'] = value
+            self.reject(collection(a), 'structural')
+            for review in ('sourcecheck', 'editorial'):
+                a = self.date_only_article(); a['review'][review]['checked_at'] = value
+                self.reject(collection(a))
+        a = self.date_only_article(); a['revision'] = 2
+        a['update_history'].append({'version': 2, 'at': '2026-10-23T09:29:00+09:00',
+                                    'summary': 'Synthetic backwards history'})
+        self.reject(collection(a), 'structural')
+
     def test_refs_are_existing_one_based_integers(self):
         for refs in ([0], [2], [-1], [True], ['1'], '1'):
             with self.subTest(refs=refs):

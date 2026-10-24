@@ -137,6 +137,7 @@ def validate(payload, now=None):
     report['editorial']['editorial_judgment'] = 'recorded_attestation'
     report['legacy_policy'] = 'exact historical hashes exempt from new metadata; no new truth/editorial approval inferred'
     report['limits'] = ['No source fetch or truth verification; reviews are recorded attestations.',
+                        'Date-only source publication time/timezone remain unknown; observation attests availability, not publication time or an earlier cutoff.',
                         'Numeric checks cover bound structured metrics, not arbitrary prose.',
                         'Secret/PII heuristics are incomplete and may reject public contact information. Human review remains required.']
 
@@ -171,6 +172,46 @@ def validate(payload, now=None):
         except (ValueError, TypeError):
             issue('structural', path + '.' + key, 'valid timestamp with timezone required')
             return None
+
+    def source_publication(source, path, checked):
+        # Date-only is a publisher calendar label, NOT an exact publication
+        # instant or proof that its entire possible interval precedes a cutoff.
+        # Unknown source timezone spans UTC-14..UTC+14; never infer viewer JST.
+        # Actual observation can attest availability by the article check, but
+        # cannot recover publication time or support an earlier as-of claim.
+        # Use date_only only when the publisher supplies no exact time. Notes
+        # must explain that limitation and the actual retrieval evidence; the
+        # validator cannot verify these attestations or detect a stripped time.
+        precision = source.get('published_at_precision', 'timestamp')
+        observed = None
+        if precision == 'date_only' or 'observed_at' in source:
+            observed = stamp(source, 'observed_at', path)
+            need_text(source, 'observation_note', path)
+            if observed and (observed > now or (checked and observed > checked)):
+                issue('structural', path + '.observed_at', 'observation must not follow check or validation time')
+        if precision == 'date_only':
+            need_text(source, 'publication_note', path)
+            try:
+                day = iso_date(source.get('published_at'))
+            except (ValueError, TypeError):
+                issue('structural', path + '.published_at', 'date_only requires a real YYYY-MM-DD date')
+                return
+            # This is only the earliest POSSIBLE instant, never a stored or
+            # inferred publication timestamp. A future label incompatible even
+            # with UTC+14 is rejected. Other timezone/time ambiguity remains;
+            # required observation evidence, not the date, attests availability.
+            earliest = datetime(day.year, day.month, day.day,
+                                tzinfo=timezone(timedelta(hours=14)))
+            if observed and earliest > observed:
+                issue('structural', path + '.published_at', 'publication date is after observation in every supported timezone')
+        else:
+            if precision != 'timestamp':
+                issue('structural', path + '.published_at_precision', 'use timestamp or date_only')
+            source_time = stamp(source, 'published_at', path)
+            if source_time and checked and source_time > checked:
+                issue('structural', path, 'source published after check')
+            if source_time and observed and source_time > observed:
+                issue('structural', path + '.observed_at', 'observation must not precede exact publication')
 
     def privacy(value, path):
         if isinstance(value, dict):
@@ -319,9 +360,7 @@ def validate(payload, now=None):
                 if key in source_urls:
                     issue('structural', sp, 'duplicate source URL')
                 source_urls.add(key)
-            source_time = stamp(source, 'published_at', sp)
-            if source_time and checked and source_time > checked:
-                issue('structural', sp, 'source published after check')
+            source_publication(source, sp, checked)
         if safe_url(article.get('source_url')) and _url_key(article['source_url']) not in source_urls:
             issue('structural', path + '.source_url', 'primary URL must appear in sources')
         history = article.get('update_history')
