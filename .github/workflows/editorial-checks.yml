@@ -1,4 +1,4 @@
-name: Editorial checks (no deployment)
+name: Chat mirror and earnings checks (no deployment)
 on:
   push:
     branches-ignore: [main]
@@ -23,8 +23,13 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Build public files without uploading or deploying
         run: python tools/build_site.py
-      - name: Confirm source manuscript is copied exactly
-        run: cmp config/editorial.json .site/data/editorial.json
+      - name: Confirm canonical bodies are copied exactly
+        run: |
+          for source in config/chat-briefs/*.md; do
+            cmp "$source" ".site/data/chat-briefs/$(basename "$source")"
+          done
+          test ! -e .site/data/latest.json
+          test ! -e .site/data/archive
   browser:
     name: Chromium fixture smoke (no deployment)
     runs-on: ubuntu-latest
@@ -41,27 +46,14 @@ jobs:
       - name: Install Chromium and OS dependencies on the standard CI runner
         id: browsers
         run: python -m playwright install --with-deps chromium
-      - name: Existing RSS, archive and simulated-offline UI smoke
+      - name: Chat mirror preservation, privacy, mobile and interrupted-flow regression
         if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
-        run: python tests/browser_smoke.py
-      - name: Existing three-article UI regression (in-memory fixtures)
-        if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
-        run: python tests/browser_v12.py
-      - name: Synthetic fourth article and mixed RSS UI regression
-        if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
-        run: python tests/browser_editorial.py --output-dir browser-artifacts/editorial
+        run: python tests/browser_chat_brief.py
       - name: Retain only public and synthetic browser evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: editorial-browser-evidence
-          path: |
-            browser-artifacts/v12/asa_brief_v12_home.png
-            browser-artifacts/v12/asa_brief_v12_article.png
-            browser-artifacts/v12/asa_brief_v12_tables.png
-            browser-artifacts/v12/asa_brief_v12_browser_report.json
-            browser-artifacts/editorial/asa_brief_phase2_home.png
-            browser-artifacts/editorial/asa_brief_phase2_numbers.png
-            browser-artifacts/editorial/asa_brief_phase2_browser_report.json
+          path: browser-artifacts/chat-brief/
           if-no-files-found: warn
           retention-days: 1

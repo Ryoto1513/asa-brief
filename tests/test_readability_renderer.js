@@ -40,7 +40,7 @@ test('table numeric captions units periods and citations remain adjacent',()=>{
  for(const text of ['前年同月比・実績・%','2026年9月 実績（%）','2.1%','href="#source-1"'])assert.ok(html.includes(text));
  assert.ok(!html.includes('確認補足'));
 });
-test('article detail integrates footer notes after body and preserves five tabs',()=>{
+test('article detail integrates footer notes after body and preserves earnings detail with mirror navigation',()=>{
  const nodes={'#modal':{innerHTML:''},'#articlePage':{focus(){},addEventListener(){}}};
  context.document={querySelector:s=>nodes[s],body:{style:{}}};
  context.fixture={...article,blocks:[{type:'text',title:'分析｜要点',paragraphs:['本文の結論'],note:'末尾限定の補足',refs:[1]}],sources:[{name:'合成出典',url:'https://example.com/source'}],scope:'確認範囲'};
@@ -51,8 +51,8 @@ test('article detail integrates footer notes after body and preserves five tabs'
  assert.ok(html.indexOf(article.selection_reason)>html.indexOf('class="scope-details"'));
  assert.ok(html.includes('href="#source-1"'));
  const tabs=vm.runInContext('tabs()',context);
- for(const id of ['home','topics','earnings','saved','settings'])assert.ok(tabs.includes(`data-tab="${id}"`));
- assert.equal((tabs.match(/data-tab=/g)||[]).length,5);
+ for(const id of ['home','earnings','settings'])assert.ok(tabs.includes(`data-tab="${id}"`));
+ assert.equal((tabs.match(/data-tab=/g)||[]).length,3);
 });
 
 test('scope blank-line paragraphs remain separate escaped paragraphs, with one fallback',()=>{

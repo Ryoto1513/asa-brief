@@ -34,3 +34,19 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}.bottom{grid-template-c
 @media(max-width:350px){.article-title{font-size:1rem}.art-side{display:none}.article-body{padding-inline:14px}.table-scroll{max-width:100%}}
 
 .date-filter{display:flex;align-items:center;gap:8px;flex:1;min-width:0}.date-filter label{font-size:.8125rem;white-space:nowrap}.date-filter select{flex:1;min-width:0;width:auto;padding:4px 8px}.date-filter .action{white-space:nowrap;padding:4px 8px}.date-note{margin:8px 0 16px}
+
+/* Canonical full Chat brief: content order is never rearranged. */
+.mirror-tabs{grid-template-columns:repeat(3,1fr)}
+.chat-brief{overflow-wrap:anywhere;line-height:1.9;min-width:0}
+.chat-brief h1{font-size:1.55rem;line-height:1.5;margin:1.2rem 0}
+.chat-brief h2{font-size:1.3rem;line-height:1.6;margin:2rem 0 .8rem}
+.chat-brief h3{font-size:1.12rem;line-height:1.6;margin:1.5rem 0 .6rem}
+.chat-brief p{white-space:pre-line;margin:.8rem 0}
+.chat-brief a{color:var(--accent,#226b77);text-decoration:underline;overflow-wrap:anywhere}
+body.dark .chat-brief a{color:#90dfe6}
+.chat-brief hr{border:0;border-top:1px solid #aab3bd;margin:1.8rem 0}
+.chat-brief .table-scroll{max-width:100%;overflow-x:auto;margin:1.2rem 0}
+.chat-brief table{min-width:34rem;white-space:normal}
+.chat-brief th,.chat-brief td{min-width:6rem;vertical-align:top;white-space:pre-line}
+.brief-meta{font-size:.85rem;padding:.6rem 0;border-bottom:1px solid #aab3bd}
+.home-content{min-width:0}.chat-brief li{white-space:pre-line}

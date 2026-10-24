@@ -72,26 +72,23 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify public editorial edition, IDs and hashes
+      - name: Verify public Chat mirror files and hashes
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           remote=$(git ls-remote origin refs/heads/main | cut -f1)
           test "$(git rev-parse HEAD)" = "$remote"
-          python tools/editorial_delivery.py verify --expected .site/data/editorial-manifest.json --base-url "$PAGE_URL" --status-output editorial-delivery-status.json
-      - name: Report editorial verification without claiming a chat post
+          python tools/chat_brief_verify.py --expected .site/data/chat-brief-manifest.json --base-url "$PAGE_URL" --status-output chat-brief-delivery-status.json
+      - name: Report verification outcome (never a Chat delivery claim)
         if: always()
         run: |
-          if test ! -f editorial-delivery-status.json && test -f .site/data/editorial-manifest.json; then
-            python tools/editorial_delivery.py report --expected .site/data/editorial-manifest.json --state failed --reason workflow_failed_or_unverified --status-output editorial-delivery-status.json
-          fi
-          if test -f editorial-delivery-status.json; then
-            cat editorial-delivery-status.json >> "$GITHUB_STEP_SUMMARY"
+          if test -f chat-brief-delivery-status.json; then
+            cat chat-brief-delivery-status.json >> "$GITHUB_STEP_SUMMARY"
           else
-            echo 'Editorial delivery failed or was not verified. No conversation message was sent.' >> "$GITHUB_STEP_SUMMARY"
+            echo '{"state":"failed","publication_verified":false,"reason":"workflow_failed_or_unverified","conversation_delivery":"not_sent"}' >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Mark total feed failure visibly
         if: steps.collection.outcome == 'failure'
         run: |
-          echo "RSS collection failed. The site was deployed with a failure notice and the last available edition."
+          echo "RSS collection failed. Chat mirror content is never replaced with RSS. Check earnings collection health separately."
           exit 1
