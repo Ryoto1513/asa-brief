@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T10:57:02+09:00",
+  "checked_at": "2026-10-24T09:57:18+09:00",
   "state": "success",
   "items": [
     {
@@ -28,10 +28,9 @@
   "pages_requested": 3,
   "pages_ok": 3,
   "errors": [],
-  "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。",
   "schedule": {
     "state": "success",
-    "checked_at": "2026-10-23T16:15:25+09:00",
+    "checked_at": "2026-10-24T09:57:18+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2026,6 +2025,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-10-23T16:15:25+09:00"
-  }
+    "last_success_at": "2026-10-24T09:57:18+09:00"
+  },
+  "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
