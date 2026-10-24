@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T09:57:08+09:00",
+  "generated_at": "2026-10-24T10:57:43+09:00",
   "edition_date": "2026-10-24",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -294,15 +294,15 @@
       "new_since_last": false
     },
     {
-      "id": "2f72cef0d1f64a3a4a04",
+      "id": "5c154e97bda5c8f24be3",
       "cat": "セキュリティ",
       "tag": "報道見出し",
       "date": "10/24",
-      "published_at": "2026-10-24T06:33+09:00",
+      "published_at": "2026-10-24T10:15+09:00",
       "date_precision": "minute",
-      "title": "PHP脆弱性への攻撃「1分で100万回」 米クラウドフレアCEO",
+      "title": "PHP並みの脆弱性「まだ出てくる」 米クラウドフレアCEOが予告",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SN1FYQUlOTnd0eUtxdnRRQUhPNHF6cWp2VVRZTm5ZbDNiM0xfd0VqeWlTX0pLYkhSRGozNU11aFRtM0tOZ0ZTVTJpaGxYRFdvSXhmUnFHQ2E5M3JYeVg5dXFpbDBlRXdLR1NwRA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLWUyQzZyNTRHYUYzOG5HeHFjMnktdTBzX19qTmhsclhOZFRUZWdRM0MtVnRHSVhXbjlza3BPenBiREFmUUVpWkFtVGdCc1dnbkdrb0NEYkliY204Z3AyV1VtY2R3UWpsU2Z4dg?oc=5",
       "source_kind": "press_search",
       "publisher": "日本経済新聞",
       "publisher_domain": "www.nikkei.com",
@@ -310,7 +310,7 @@
       "sources": [
         {
           "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SN1FYQUlOTnd0eUtxdnRRQUhPNHF6cWp2VVRZTm5ZbDNiM0xfd0VqeWlTX0pLYkhSRGozNU11aFRtM0tOZ0ZTVTJpaGxYRFdvSXhmUnFHQ2E5M3JYeVg5dXFpbDBlRXdLR1NwRA?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLWUyQzZyNTRHYUYzOG5HeHFjMnktdTBzX19qTmhsclhOZFRUZWdRM0MtVnRHSVhXbjlza3BPenBiREFmUUVpWkFtVGdCc1dnbkdrb0NEYkliY204Z3AyV1VtY2R3UWpsU2Z4dg?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -324,7 +324,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-24 06:33 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-24 10:15 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -427,7 +427,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "61b3cafd084d4fb8319e",
@@ -491,7 +491,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "559853fb9744aa8828ba",
@@ -555,7 +555,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "2f34631e5ed1546d374a",
@@ -691,7 +691,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "bc6e2e581ecb6abf93e2",
@@ -759,7 +759,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "bddb884b3ac0650b24ba",
@@ -823,7 +823,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "eb1a5acd0e97476d6d0c",
@@ -955,7 +955,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "1cd818f4b33875903b1e",
@@ -978,7 +978,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -1019,7 +1019,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1093,9 +1093,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 40,
+      "eligible": 41,
       "dropped": {
-        "publisher_not_allowed": 60
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -1104,34 +1104,34 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 47
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 30,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 70
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 13,
       "dropped": {
-        "publisher_not_allowed": 88
+        "publisher_not_allowed": 87
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -1147,9 +1147,9 @@
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 36
+        "publisher_not_allowed": 70
       }
     },
     {
@@ -1165,18 +1165,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 84
       }
     }
   ]

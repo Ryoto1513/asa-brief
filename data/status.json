@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-24T09:57:08+09:00",
+  "attempted_at": "2026-10-24T10:57:43+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -64,9 +64,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 40,
+      "eligible": 41,
       "dropped": {
-        "publisher_not_allowed": 60
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -75,34 +75,34 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 47
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 30,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 70
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 13,
       "dropped": {
-        "publisher_not_allowed": 88
+        "publisher_not_allowed": 87
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -118,9 +118,9 @@
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 36
+        "publisher_not_allowed": 70
       }
     },
     {
@@ -136,18 +136,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 84
       }
     }
   ],
