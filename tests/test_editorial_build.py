@@ -86,7 +86,7 @@ class ManuscriptTests(unittest.TestCase):
         self.assertEqual(len([b for b in e['blocks'] if b['type']=='table']),2)
         self.assertEqual(e['blocks'][0]['type'],'heading')
     def test_injection_private_links_and_unknown_markup_rejected(self):
-        cases=['<script>alert(1)</script>','![image](https://example.com/a)','```python\nx\n```','> quote','[x](javascript:alert)','[x](https://chatgpt.com/c/secret)','[x](https://localhost/a)','[x](https://user:pass@example.com/a)','[x](https://example.com/a?token=secret)','\ue200cite\ue202x\ue201','**unclosed','| h |\n| invalid |','_unsupported_','1. first\n3. third']
+        cases=['<script>alert(1)</script>','![image](https://example.com/a)','```python\nx\n```','> quote','[x](javascript:alert)','[x](https://chatgpt.com/c/secret)','[x](https://localhost/a)','[x](https://user:pass@example.com/a)','[x](https://example.com/a?token=secret)','\ue200cite\ue202x\ue201','**unclosed','| h |\n| invalid |','_unsupported_','1. first\n3. third','[**nested**](https://example.com/a)']
         for body in cases:
             with self.subTest(body=body),self.assertRaises(ValueError):chat_brief.parse_markdown(body)
     def test_exact_inline_order_and_table(self):

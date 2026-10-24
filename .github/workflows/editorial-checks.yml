@@ -46,6 +46,13 @@ jobs:
       - name: Install Chromium and OS dependencies on the standard CI runner
         id: browsers
         run: python -m playwright install --with-deps chromium
+      - name: Build canonical public fixture on this runner
+        run: python tools/build_site.py
+      - name: JavaScript date, renderer and earnings regression
+        run: |
+          node tests/test_briefing_dates.js
+          node tests/test_readability_renderer.js
+          node tests/test_earnings_calendar.js
       - name: Chat mirror preservation, privacy, mobile and interrupted-flow regression
         if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
         run: python tests/browser_chat_brief.py

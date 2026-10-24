@@ -74,6 +74,8 @@ def inlines(text):
             match = re.match(r'\[([^\[\]\n]+)\]\((https://[^\s()]+)\)', text[i:])
             if not match:
                 raise ValueError('unsupported or unresolved link markup')
+            if re.search(r'[*_`~<>]', match[1]):
+                raise ValueError('nested link-label markup unsupported')
             flush(); tokens.append({'type': 'link', 'text': match[1], 'url': safe_url(match[2])}); i += len(match[0])
         elif text[i] in '<>`~\\' or text[i] in '\ue200\ue201\ue202' or text.startswith('![', i):
             raise ValueError('unsupported Markdown or unresolved citation token')
