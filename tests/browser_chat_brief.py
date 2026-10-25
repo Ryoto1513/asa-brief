@@ -77,9 +77,14 @@ def run(output, public_url=None):
                     for cell in row:gather(cell)
         assert page.locator('#chatBrief a').evaluate_all('(xs)=>xs.map(a=>[a.textContent,a.getAttribute("href")])')==links
         assert page.locator('nav button').all_text_contents()==['⌂ブリーフ','▥決算','⚙設定']
-        for width in (320,375,390,430):
+        for width in (320,375,390,430,1280):
             page.set_viewport_size({'width':width,'height':844})
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),width
+            assert page.locator('#chatBrief').evaluate('(e)=>parseFloat(getComputedStyle(e).lineHeight)/parseFloat(getComputedStyle(e).fontSize)>=1.8')
+            assert page.locator('#chatBrief').evaluate('(e)=>e.getBoundingClientRect().width<=680')
+            assert page.locator('#briefDate').get_attribute('aria-label')=='ブリーフの日付'
+            page.screenshot(path=str(output/f'chat-brief-width-{width}.png'))
+        page.set_viewport_size({'width':390,'height':844})
         page.screenshot(path=str(output/'chat-brief-mobile.png'))
         page.locator('[data-tab="settings"]').click();page.locator('[data-font="large"]').click();page.locator('[data-theme="dark"]').click();page.locator('[data-tab="home"]').click()
         page.set_viewport_size({'width':320,'height':844})
@@ -146,7 +151,7 @@ def run(output, public_url=None):
         assert not errors,errors
         calendar_report=check_earnings_calendar(browser,data) if not public_url else None
         browser.close()
-    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430],'checks':['block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
+    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430,1280],'checks':['block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
     if public_url:
         report['checks']=['public body text and order','public heading hierarchy','public source labels and destinations','table scroll','large dark','earnings']
         report['limitations']=['Chromium; Service Worker blocked for fresh public-file verification; not real Safari']

@@ -35,18 +35,26 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}.bottom{grid-template-c
 
 .date-filter{display:flex;align-items:center;gap:8px;flex:1;min-width:0}.date-filter label{font-size:.8125rem;white-space:nowrap}.date-filter select{flex:1;min-width:0;width:auto;padding:4px 8px}.date-filter .action{white-space:nowrap;padding:4px 8px}.date-note{margin:8px 0 16px}
 
-/* Canonical full Chat brief: content order is never rearranged. */
+/* Canonical Chat text/order stays untouched; only its reading presentation changes. */
 .mirror-tabs{grid-template-columns:repeat(3,1fr)}
-.chat-brief{overflow-wrap:anywhere;line-height:1.9;min-width:0}
-.chat-brief h1{font-size:1.55rem;line-height:1.5;margin:1.2rem 0}
-.chat-brief h2{font-size:1.3rem;line-height:1.6;margin:2rem 0 .8rem}
-.chat-brief h3{font-size:1.12rem;line-height:1.6;margin:1.5rem 0 .6rem}
-.chat-brief p{white-space:pre-line;margin:.8rem 0}
-.chat-brief a{color:var(--accent,#226b77);text-decoration:underline;overflow-wrap:anywhere}
-body.dark .chat-brief a{color:#90dfe6}
-.chat-brief hr{border:0;border-top:1px solid #aab3bd;margin:1.8rem 0}
-.chat-brief .table-scroll{max-width:100%;overflow-x:auto;margin:1.2rem 0}
-.chat-brief table{min-width:34rem;white-space:normal}
-.chat-brief th,.chat-brief td{min-width:6rem;vertical-align:top;white-space:pre-line}
-.brief-meta{font-size:.85rem;padding:.6rem 0;border-bottom:1px solid #aab3bd}
-.home-content{min-width:0}.chat-brief li{white-space:pre-line}
+.home-content{min-width:0}
+.brief-meta{font-size:.8rem;line-height:1.7;color:var(--txt);padding:.4rem .25rem 1rem}
+.brief-meta p{margin:.3rem 0}
+.chat-brief{overflow-wrap:anywhere;line-height:1.95;min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.15rem 1rem 1.5rem;margin-bottom:1rem}
+.chat-brief h1,.chat-brief h2,.chat-brief h3{font-weight:800;letter-spacing:-.025em;scroll-margin-top:1rem}
+.chat-brief h1{font-size:1.4rem;line-height:1.55;margin:2.2rem 0 1.1rem;padding:1rem 0;border-block:2px solid var(--line);color:var(--navy)}
+.chat-brief h1:first-child{font-size:1.55rem;margin:0 0 1rem;padding:0 0 1.1rem;border-top:0;border-bottom:3px solid var(--blue)}
+.chat-brief h2{font-size:1.22rem;line-height:1.65;margin:2rem 0 1rem;padding:.65rem .8rem;background:var(--chip);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;color:var(--navy)}
+.chat-brief h3{font-size:1.08rem;line-height:1.7;margin:1.7rem 0 .8rem;padding-bottom:.55rem;border-bottom:1px solid var(--line)}
+.chat-brief p{white-space:pre-line;margin:1rem 0}
+.chat-brief strong{font-weight:800}
+.chat-brief a{color:var(--blue);text-decoration:underline;text-underline-offset:.18em;overflow-wrap:anywhere}
+.chat-brief hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+.chat-brief li{white-space:pre-line}
+.chat-brief .table-scroll{max-width:100%;overflow-x:auto;margin:1.25rem 0;border-radius:12px;overscroll-behavior-x:contain}
+.chat-brief table{min-width:34rem;white-space:normal;line-height:1.8;font-size:.88rem}
+.chat-brief th,.chat-brief td{min-width:6rem;vertical-align:top;white-space:pre-line;padding:.8rem .75rem;text-align:left}
+.chat-brief thead th{font-size:.8rem;color:var(--navy);font-weight:800}
+.chat-brief tbody tr:nth-child(even){background:var(--bg)}
+@media(min-width:760px){body:has(#chatBrief) .shell{max-width:720px}body:has(#chatBrief) .bottom{width:min(100%,720px)}.home-content:has(#chatBrief){padding-inline:24px}.chat-brief{padding:1.75rem 2rem 2.25rem}.chat-brief h1:first-child{font-size:1.85rem}}
+@media(max-width:350px){.home-content:has(#chatBrief){padding-inline:10px}.chat-brief{padding-inline:.8rem}.chat-brief h1:first-child{font-size:1.4rem}}
