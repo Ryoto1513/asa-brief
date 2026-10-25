@@ -58,7 +58,7 @@ def run(output, public_url=None):
             elif b['type']=='hr':expected.append('')
             elif b['type']=='table':expected.append(''.join(inline(c) for c in b['headers'])+ ''.join(''.join(inline(c) for c in row) for row in b['rows']))
             else:raise AssertionError('extend test for new block type')
-        actual=page.locator('#chatBrief').evaluate('(el)=>Array.from(el.children).map(e=>e.textContent)')
+        actual=page.locator('#chatBrief').evaluate('(el)=>Array.from(el.querySelectorAll("[data-brief-block]")).map(e=>e.textContent)')
         assert len(actual)==len(expected),(len(actual),len(expected))
         normalize=lambda s: ''.join(s.split())
         assert actual==expected
@@ -75,8 +75,53 @@ def run(output, public_url=None):
                 for cell in b['headers']:gather(cell)
                 for row in b['rows']:
                     for cell in row:gather(cell)
-        assert page.locator('#chatBrief a').evaluate_all('(xs)=>xs.map(a=>[a.textContent,a.getAttribute("href")])')==links
-        assert page.locator('nav button').all_text_contents()==['⌂ブリーフ','▥決算','⚙設定']
+        assert page.locator('#chatBrief [data-brief-block] a').evaluate_all('(xs)=>xs.map(a=>[a.textContent,a.getAttribute("href")])')==links
+        assert page.locator('.bottom button').all_text_contents()==['⌂ブリーフ','▥決算','⚙設定']
+        chapters=page.locator('.brief-chapter')
+        assert chapters.count()==len([b for b in brief['blocks'] if b['type']=='heading' and b['level']==1])
+        assert page.locator('#chatBrief [data-brief-block]').evaluate_all('(xs)=>xs.map(e=>Number(e.dataset.briefBlock))')==list(range(len(expected)))
+        assert page.locator('.brief-chapter[open]').count()==2
+        # Native summary controls work by keyboard, without changing source content.
+        first_summary=chapters.nth(0).locator('summary')
+        first_summary.focus();page.keyboard.press('Enter')
+        assert chapters.nth(0).get_attribute('open') is None
+        page.keyboard.press('Space')
+        assert chapters.nth(0).get_attribute('open') is not None
+        page.locator('[data-chapters="close"]').click()
+        assert page.locator('.brief-chapter[open]').count()==0
+        page.screenshot(path=str(output/'chat-brief-chapters-overview.png'))
+        page.locator('.brief-toc summary').click()
+        toc_links=page.locator('.brief-toc a')
+        assert toc_links.count()==chapters.count()
+        toc_links.nth(3).click()
+        page.wait_for_function('document.querySelectorAll(".brief-chapter")[3].open && document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
+        assert chapters.nth(3).get_attribute('open') is not None
+        assert page.evaluate('document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
+        assert page.evaluate('location.hash').endswith('-chapter-3')
+        page.screenshot(path=str(output/'chat-brief-chapter-selected.png'))
+        chapters.nth(3).locator('.chapter-return').click()
+        assert page.evaluate('location.hash')=='#brief-toc'
+        page.go_back()
+        page.wait_for_function('location.hash.endsWith("-chapter-3")')
+        page.go_forward()
+        page.wait_for_function('location.hash==="#brief-toc"')
+        page.locator('[data-chapters="open"]').click()
+        assert page.locator('.brief-chapter[open]').count()==chapters.count()
+        # Same-edition redraw preserves expanded chapters.
+        page.locator('[data-tab="settings"]').click();page.locator('[data-tab="home"]').click()
+        assert page.locator('.brief-chapter[open]').count()==chapters.count()
+        assert page.locator('#chatBrief').evaluate('(el)=>Array.from(el.querySelectorAll("[data-brief-block]")).map(e=>e.textContent)')==expected
+        older=[d for d in data['data/chat-briefs/index.json']['dates'] if d!=day]
+        if older:
+            page.locator('#briefDate').select_option(older[0])
+            page.wait_for_function('(d)=>S.brief?.edition_date===d',arg=older[0])
+            assert page.evaluate('location.hash')==''
+            assert page.locator('.brief-chapter[open]').count()==2
+            page.locator('#briefDate').select_option(day)
+            page.wait_for_function('(d)=>S.brief?.edition_date===d',arg=day)
+            assert page.locator('.brief-chapter[open]').count()==2
+        page.locator('[data-chapters="open"]').click()
+
         for width in (320,375,390,430,1280):
             page.set_viewport_size({'width':width,'height':844})
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),width
@@ -90,6 +135,7 @@ def run(output, public_url=None):
         page.set_viewport_size({'width':320,'height':844})
         assert page.locator('body').evaluate('(e)=>e.classList.contains("dark")&&e.classList.contains("large")')
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+        page.locator('[data-chapters="open"]').click()
         table=page.locator('#chatBrief .table-scroll').first
         table.scroll_into_view_if_needed();assert table.evaluate('(e)=>e.scrollWidth>e.clientWidth')
         table.evaluate('(e)=>e.scrollLeft=100');assert table.evaluate('(e)=>e.scrollLeft>0')
@@ -148,6 +194,10 @@ def run(output, public_url=None):
             assert page.evaluate("briefInlines([{type:'text',text:'<img src=x onerror=alert(1)>'}])")== '&lt;img src=x onerror=alert(1)&gt;'
             for token in ({'type':'html','text':'<script>'},{'type':'link','text':'x','url':'javascript:alert(1)'},{'type':'link','text':'x','url':'https://chatgpt.com/c/private'}):
                 assert page.evaluate('(t)=>{try{briefInlines([t]);return false}catch(_){return true}}',token)
+        if not public_url:
+            # Renderer grouping preserves synthetic preamble, list and duplicate titles.
+            synthetic=[{'type':'paragraph','inlines':[{'type':'text','text':'intro'}]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]},{'type':'list','ordered':False,'items':[[{'type':'text','text':'list item'}]]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]}]
+            assert page.evaluate('(bs)=>briefChapters(bs).flatMap(c=>c.blocks)',synthetic)==synthetic
         assert not errors,errors
         calendar_report=check_earnings_calendar(browser,data) if not public_url else None
         browser.close()
