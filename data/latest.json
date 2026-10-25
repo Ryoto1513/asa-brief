@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T10:57:43+09:00",
-  "edition_date": "2026-10-24",
+  "generated_at": "2026-10-25T09:27:22+09:00",
+  "edition_date": "2026-10-25",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
   "articles": [
@@ -26,7 +26,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -98,7 +98,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -242,7 +242,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -294,23 +294,23 @@
       "new_since_last": false
     },
     {
-      "id": "5c154e97bda5c8f24be3",
+      "id": "803c7caa265c4980a64d",
       "cat": "セキュリティ",
       "tag": "報道見出し",
       "date": "10/24",
-      "published_at": "2026-10-24T10:15+09:00",
+      "published_at": "2026-10-24T20:41+09:00",
       "date_precision": "minute",
-      "title": "PHP並みの脆弱性「まだ出てくる」 米クラウドフレアCEOが予告",
+      "title": "GMO緊急要請の「能動的サイバー防御」、政府側は慎重な姿勢 [情報漏洩・個人情報流出の最新ニュース]",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLWUyQzZyNTRHYUYzOG5HeHFjMnktdTBzX19qTmhsclhOZFRUZWdRM0MtVnRHSVhXbjlza3BPenBiREFmUUVpWkFtVGdCc1dnbkdrb0NEYkliY204Z3AyV1VtY2R3UWpsU2Z4dg?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzT0hybVB2OC1UanJtWWQ2Znp3MTZqTDhkX1I5NVZTRWpvM25kcG1VYnV3VHg2dEp3VnZXbHVUTU5zVUMwLTNLMFFvNHhzU1d1TzNGOG52WXZTNDdWMGtzUlAwSXNIVzUzN2pB?oc=5",
       "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
       "language": "ja",
       "sources": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLWUyQzZyNTRHYUYzOG5HeHFjMnktdTBzX19qTmhsclhOZFRUZWdRM0MtVnRHSVhXbjlza3BPenBiREFmUUVpWkFtVGdCc1dnbkdrb0NEYkliY204Z3AyV1VtY2R3UWpsU2Z4dg?oc=5"
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzT0hybVB2OC1UanJtWWQ2Znp3MTZqTDhkX1I5NVZTRWpvM25kcG1VYnV3VHg2dEp3VnZXbHVUTU5zVUMwLTNLMFFvNHhzU1d1TzNGOG52WXZTNDdWMGtzUlAwSXNIVzUzN2pB?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -324,7 +324,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-24 10:15 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-24 20:41 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -386,10 +386,10 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
+      "icon": "📰",
+      "tone": "slate",
       "selection_reason": "社会への影響が大きく、知っておきたい動き",
       "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
@@ -430,6 +430,262 @@
       "new_since_last": false
     },
     {
+      "id": "64057d7fe2ea1f1ac0b5",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "10/25",
+      "published_at": "2026-10-25T07:16+09:00",
+      "date_precision": "minute",
+      "title": "仏各地で40万人デモ、衝突も 暴動後初、拘束者は1千人",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtYXRyUE9SaEl0VWNGa1B0OEV4Q1pGejd4Vlo4cFdVNDgwSGVzcFgwWjU1Y09zcjJvT08zZFE3dXpSWFpWQkJIM0hRVQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtYXRyUE9SaEl0VWNGa1B0OEV4Q1pGejd4Vlo4cFdVNDgwSGVzcFgwWjU1Y09zcjJvT08zZFE3dXpSWFpWQkJIM0hRVQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-10-25 07:16 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "a3bfb8e6b9283981e952",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "10/25",
+      "published_at": "2026-10-25T05:00+09:00",
+      "date_precision": "minute",
+      "title": "フランス、再び大規模デモ 暴動警戒、警官ら７万人配置",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5FcVlZRFUtRFJmM2ZhN1hHMVZIQ0N2RUoxNEYxcWhfYkZwUzBqQmVzWmw4YnNNMkh3RnB6MjA3b2JydXZrUlQzMGpETVVfQ1owTnFVZEl2cFRkUkJ3?oc=5",
+      "source_kind": "press_search",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5FcVlZRFUtRFJmM2ZhN1hHMVZIQ0N2RUoxNEYxcWhfYkZwUzBqQmVzWmw4YnNNMkh3RnB6MjA3b2JydXZrUlQzMGpETVVfQ1owTnFVZEl2cFRkUkJ3?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-25 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "c9c0195c47b7ecc7571b",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "10/25",
+      "published_at": "2026-10-25T05:00+09:00",
+      "date_precision": "minute",
+      "title": "＜考論＞仏暴動、マクロン政治の帰結 東大教授・中山洋平氏",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwZURSTnVQSjc2MjhKVHRuOFpidHlrNmJ0b3AtWnZ5NXVuNVQ5d2g3SU9CMXV2OFpNMWltSGZxWmFFaEJwalJ2T2hrQ2lWcS1QR3llRnZMdm5rOS0t?oc=5",
+      "source_kind": "press_search",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwZURSTnVQSjc2MjhKVHRuOFpidHlrNmJ0b3AtWnZ5NXVuNVQ5d2g3SU9CMXV2OFpNMWltSGZxWmFFaEJwalJ2T2hrQ2lWcS1QR3llRnZMdm5rOS0t?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-25 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "b64611a39b6c06893803",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "10/25",
+      "published_at": "2026-10-25T03:11+09:00",
+      "date_precision": "minute",
+      "title": "パリでまた警察と衝突 「暴徒500人以上」 大規模デモの終着点で",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtcjlOWHVTQzloczc1SndGX09WbTdveTJOMXFrcWltMjJ6cE5WR0traWtva09pd3V2OHpkVE5oQnVXZjVBX1YwMUtxNzlsVFlPNGxtcHU1R090S2Q1b2t5X2NEWWo3WG8?oc=5",
+      "source_kind": "press_search",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtcjlOWHVTQzloczc1SndGX09WbTdveTJOMXFrcWltMjJ6cE5WR0traWtva09pd3V2OHpkVE5oQnVXZjVBX1YwMUtxNzlsVFlPNGxtcHU1R090S2Q1b2t5X2NEWWo3WG8?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-25 03:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
       "id": "61b3cafd084d4fb8319e",
       "cat": "社会・重要",
       "tag": "報道見出し",
@@ -450,7 +706,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🌍",
       "tone": "amber",
@@ -494,7 +750,7 @@
       "new_since_last": false
     },
     {
-      "id": "559853fb9744aa8828ba",
+      "id": "68937586b98dac78c6e1",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "10/24",
@@ -502,19 +758,19 @@
       "date_precision": "minute",
       "title": "英国民は3日分の生活物資確保を、緊急事態に備え政府が静かに勧告",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wa3czSHVUbjBiNWRvSHd0TGc4LWtodnE4eHF1Q21leW5MNERUejJwWDgxT3F4QTR1cUFzZzhKRUhFa1RDRTRXOEdCVmlLUXBWY2hwQko0cnZJRnpFSFlLUE96WkRvdk9sZXhsQUQtS01qbEdPU2tV?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUlhmUU84cG9TVzFxQS0zTVlrbVRnZDFPanc2VkVOejJTZU1kVlVZZjJmNzdjZERKeWNrYV9ZMk0zbXI1LXEzcHZGcGVaYUhFNFBRbkwxNDAxQ1FuYXVzZ3AxSWdoWkdpenczTG1fTzRSbk5MUWtNTTZ6TVlLXzc2Q0p3cVE2dHdKREZTWnJB?oc=5",
       "source_kind": "press_search",
-      "publisher": "Bloomberg",
+      "publisher": "Bloomberg.com",
       "publisher_domain": "www.bloomberg.com",
       "language": "ja",
       "sources": [
         {
-          "name": "Bloomberg",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wa3czSHVUbjBiNWRvSHd0TGc4LWtodnE4eHF1Q21leW5MNERUejJwWDgxT3F4QTR1cUFzZzhKRUhFa1RDRTRXOEdCVmlLUXBWY2hwQko0cnZJRnpFSFlLUE96WkRvdk9sZXhsQUQtS01qbEdPU2tV?oc=5"
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUlhmUU84cG9TVzFxQS0zTVlrbVRnZDFPanc2VkVOejJTZU1kVlVZZjJmNzdjZERKeWNrYV9ZMk0zbXI1LXEzcHZGcGVaYUhFNFBRbkwxNDAxQ1FuYXVzZ3AxSWdoWkdpenczTG1fTzRSbk5MUWtNTTZ6TVlLXzc2Q0p3cVE2dHdKREZTWnJB?oc=5"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -524,7 +780,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "Bloombergが配信した見出し・リンク・公開日時（2026-10-24 00:17 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "Bloomberg.comが配信した見出し・リンク・公開日時（2026-10-24 00:17 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -555,7 +811,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
     },
     {
       "id": "2f34631e5ed1546d374a",
@@ -650,10 +906,10 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
-      "icon": "📈",
-      "tone": "teal",
+      "icon": "🌍",
+      "tone": "amber",
       "selection_reason": "社会への影響が大きく、知っておきたい動き",
       "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
@@ -714,7 +970,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -760,266 +1016,6 @@
         }
       ],
       "new_since_last": false
-    },
-    {
-      "id": "bddb884b3ac0650b24ba",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "10/23",
-      "published_at": "2026-10-23T16:05+09:00",
-      "date_precision": "minute",
-      "title": "社説：仏の大規模デモ 渦巻く不満 欧州に拡散",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VWVlpUmE0TTR5bzBLb00tRU9HeWJxZW5JYkpwNGNWUkgyRWZCY3dldkdGak93dk94X2lGQUV5STcwSl9VcjNVVjVURQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "47NEWS",
-      "publisher_domain": "www.47news.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VWVlpUmE0TTR5bzBLb00tRU9HeWJxZW5JYkpwNGNWUkgyRWZCY3dldkdGak93dk94X2lGQUV5STcwSl9VcjNVVjVURQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "世界経済・国際情勢のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-10-23 16:05 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "eb1a5acd0e97476d6d0c",
-      "cat": "政治・地方自治",
-      "tag": "公式発表",
-      "date": "10/23",
-      "published_at": "2026-10-23T05:00+09:00",
-      "date_precision": "minute",
-      "title": "2025年基準 消費者物価指数 全国 2026年(令和8年)9月分",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000354.html",
-      "source_kind": "primary",
-      "publisher": "総務省",
-      "publisher_domain": "soumu.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "総務省",
-          "url": "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000354.html"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "物価のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "総務省が配信した見出し・リンク・公開日時（2026-10-23 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜物価のニュース（一般論）",
-          "消費者物価指数（CPI）は、家庭が購入するさまざまな商品・サービスの価格の変化をまとめたものです。特定の商品の値上がりと、物価全体の上昇は分けて考えます。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "物価上昇率が小さくなることと、価格そのものが下がることは別です。例えば、価格が100円から103円へ上がり、翌年104円になれば、上昇率は鈍っても価格は上がっています。この数値は説明用で、今日の実測値ではありません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①何月の統計か、②前年同月比か前月比か、③総合指数か特定品目を除く指数か、④速報・改定の区別を確認します。生活への影響は、賃金や自分の支出内容と合わせて考えましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "前年同月比",
-          "前年の同じ月と比べた変化率。"
-        ],
-        [
-          "実質",
-          "物価変化の影響を取り除いて考えること。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：消費者物価指数のQ&A",
-          "url": "https://www.stat.go.jp/data/cpi/4-1.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "34cc8e39304662d13986",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "10/23",
-      "published_at": "2026-10-23T14:16+09:00",
-      "date_precision": "minute",
-      "title": "仏暴動で風当たり強まる極左ＬＦＩ、各政治勢力が党首を批判",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HNlNzY0N1YmdreC1OdUpPY0ZlMF9fSFJlTTctSUdUQ0kwTFVtVVBzbXNHanNnakh6M0RROFdnMmo0N1oxcHhZOHVSQ1Z6WkZyVjJBTnhBTW9ENWRiTy1uWHU2dlN3YWo2WEVybGlQcnNMNVJSOEZoRkhFNXA4UQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HNlNzY0N1YmdreC1OdUpPY0ZlMF9fSFJlTTctSUdUQ0kwTFVtVVBzbXNHanNnakh6M0RROFdnMmo0N1oxcHhZOHVSQ1Z6WkZyVjJBTnhBTW9ENWRiTy1uWHU2dlN3YWo2WEVybGlQcnNMNVJSOEZoRkhFNXA4UQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-10-23 14:16 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "1cd818f4b33875903b1e",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "10/23",
-      "published_at": "2026-10-23T10:10+09:00",
-      "date_precision": "minute",
-      "title": "仏大規模デモ怒りの根源に目を凝らせ",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1WMExZVmFYbTJMcHNOYzdKX2JpQWdqVmRaN1M2RElGb1hfcERMSE1jN0NVdVBuWFBCTkRUdjZJdVNQNkU1cVZycUYtdw?oc=5",
-      "source_kind": "press_search",
-      "publisher": "47NEWS",
-      "publisher_domain": "www.47news.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1WMExZVmFYbTJMcHNOYzdKX2JpQWdqVmRaN1M2RElGb1hfcERMSE1jN0NVdVBuWFBCTkRUdjZJdVNQNkU1cVZycUYtdw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-10-23 10:10 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1045,10 +1041,10 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 45,
+      "eligible": 41,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 54
+        "out_of_time_window": 58
       }
     },
     {
@@ -1093,9 +1089,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 41,
+      "eligible": 49,
       "dropped": {
-        "publisher_not_allowed": 59
+        "publisher_not_allowed": 51
       }
     },
     {
@@ -1104,34 +1100,34 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 47
+        "publisher_not_allowed": 44
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 30,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 70
+        "publisher_not_allowed": 74
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 87
+        "publisher_not_allowed": 89
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 68
       }
     },
     {
@@ -1147,9 +1143,9 @@
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 4,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 70
+        "publisher_not_allowed": 43
       }
     },
     {
@@ -1165,18 +1161,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 28,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 72
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 88
       }
     }
   ]
