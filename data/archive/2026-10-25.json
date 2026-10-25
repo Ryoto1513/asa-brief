@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T09:27:22+09:00",
+  "generated_at": "2026-10-25T10:37:57+09:00",
   "edition_date": "2026-10-25",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -363,7 +363,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "4fd26f9dad256b27a60b",
@@ -430,6 +430,70 @@
       "new_since_last": false
     },
     {
+      "id": "0a3791ff054e5c145271",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "10/25",
+      "published_at": "2026-10-25T09:32+09:00",
+      "date_precision": "minute",
+      "title": "フランスの暴動、「マクロン政治の必然だ」と専門家 そのわけは",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1RV1BBcHVVb2s0b0plMWZIVjg1amIxazVvQUh1cGF0LTJQN0FrSC1YNk1maF9QU2k4YmtXdExJSVpKcW1vem5haWh2Tk5IMUtCZDhsMVJDT181bDZPRWttZW83OXExWkE?oc=5",
+      "source_kind": "press_search",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1RV1BBcHVVb2s0b0plMWZIVjg1amIxazVvQUh1cGF0LTJQN0FrSC1YNk1maF9QU2k4YmtXdExJSVpKcW1vem5haWh2Tk5IMUtCZDhsMVJDT181bDZPRWttZW83OXExWkE?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-25 09:32 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
       "id": "64057d7fe2ea1f1ac0b5",
       "cat": "社会・重要",
       "tag": "報道見出し",
@@ -491,7 +555,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "a3bfb8e6b9283981e952",
@@ -555,7 +619,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c9c0195c47b7ecc7571b",
@@ -619,71 +683,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "b64611a39b6c06893803",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "10/25",
-      "published_at": "2026-10-25T03:11+09:00",
-      "date_precision": "minute",
-      "title": "パリでまた警察と衝突 「暴徒500人以上」 大規模デモの終着点で",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtcjlOWHVTQzloczc1SndGX09WbTdveTJOMXFrcWltMjJ6cE5WR0traWtva09pd3V2OHpkVE5oQnVXZjVBX1YwMUtxNzlsVFlPNGxtcHU1R090S2Q1b2t5X2NEWWo3WG8?oc=5",
-      "source_kind": "press_search",
-      "publisher": "朝日新聞",
-      "publisher_domain": "www.asahi.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtcjlOWHVTQzloczc1SndGX09WbTdveTJOMXFrcWltMjJ6cE5WR0traWtva09pd3V2OHpkVE5oQnVXZjVBX1YwMUtxNzlsVFlPNGxtcHU1R090S2Q1b2t5X2NEWWo3WG8?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "世界経済・国際情勢のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-25 03:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "61b3cafd084d4fb8319e",
@@ -811,7 +811,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "2f34631e5ed1546d374a",
@@ -834,7 +834,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -1089,9 +1089,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 49,
+      "eligible": 50,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 50
       }
     },
     {
@@ -1100,16 +1100,16 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 43
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 26,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 73
       }
     },
     {
@@ -1134,18 +1134,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 1,
+      "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 99
+        "publisher_not_allowed": 100
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 43
+        "publisher_not_allowed": 83
       }
     },
     {
@@ -1170,9 +1170,9 @@
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 88
+        "publisher_not_allowed": 89
       }
     }
   ]
