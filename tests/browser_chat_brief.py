@@ -98,6 +98,7 @@ def run(output, public_url=None):
         assert chapters.nth(3).get_attribute('open') is not None
         assert page.evaluate('document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
         assert page.evaluate('location.hash').endswith('-chapter-3')
+        page.wait_for_function('(()=>{const y=document.querySelectorAll(".brief-chapter")[3].getBoundingClientRect().top;return y>=0 && y<=24})()')
         page.screenshot(path=str(output/'chat-brief-chapter-selected.png'))
         chapters.nth(3).locator('.chapter-return').click()
         assert page.evaluate('location.hash')=='#brief-toc'
@@ -201,9 +202,9 @@ def run(output, public_url=None):
         assert not errors,errors
         calendar_report=check_earnings_calendar(browser,data) if not public_url else None
         browser.close()
-    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430,1280],'checks':['block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
+    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430,1280],'checks':['chapter cards and unique block indices','native keyboard open/close','expand all and collapse all','TOC focus and hash navigation','Back/Forward','date changes reset chapter state','block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
     if public_url:
-        report['checks']=['public body text and order','public heading hierarchy','public source labels and destinations','table scroll','large dark','earnings']
+        report['checks']=['chapter keyboard and TOC','all chapters reachable','date reset and Back/Forward','public body text and order','public heading hierarchy','public source labels and destinations','table scroll','large dark','earnings']
         report['limitations']=['Chromium; Service Worker blocked for fresh public-file verification; not real Safari']
     (output/'chat-brief-browser-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report,ensure_ascii=False))
