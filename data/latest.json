@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T09:34:50+09:00",
+  "generated_at": "2026-10-26T10:42:01+09:00",
   "edition_date": "2026-10-26",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -363,6 +363,70 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
+      "new_since_last": false
+    },
+    {
+      "id": "67daca9deb4dde9c8c4f",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "10/26",
+      "published_at": "2026-10-26T10:02+09:00",
+      "date_precision": "minute",
+      "title": "イタリア各地で物価高に抗議するデモ隊と警察が衝突 政府が暴動対策を導入も、約100人を拘束",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5TT0ZCNndsbHhUdVBUUFF3dm1lc19LM1N2WnJVWnR5eEtSdkhjNS1jX1p3YnA4bmpmeFZBTHZUdFBtc2RIT3RtNVVsMHpFMFFOdDdyaF9YTl9UcXR6OVVLTURpWTYzeWxaNzlVcEwwQVNVYmtZbGR6N0NNaDJIUQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Reuters",
+      "publisher_domain": "www.reuters.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5TT0ZCNndsbHhUdVBUUFF3dm1lc19LM1N2WnJVWnR5eEtSdkhjNS1jX1p3YnA4bmpmeFZBTHZUdFBtc2RIT3RtNVVsMHpFMFFOdDdyaF9YTl9UcXR6OVVLTURpWTYzeWxaNzlVcEwwQVNVYmtZbGR6N0NNaDJIUQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Reutersが配信した見出し・リンク・公開日時（2026-10-26 10:02 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
       "new_since_last": true
     },
     {
@@ -435,18 +499,18 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "5807f2771641ff3b4c7c",
+      "id": "92ccc470aa1a3aa376c6",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "10/26",
-      "published_at": "2026-10-26T05:00+09:00",
+      "published_at": "2026-10-26T10:10+09:00",
       "date_precision": "minute",
       "title": "【仏大規模デモ】若者の不満と向き合え",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1nelZwRlIyVDg4ZTJKNHRJRVZqNDdpUDg5RkZhU2stYW1PenM0a0VHRFBoTHNjMlFrbEJIbkhhRzQwVU1nREFwVEQ4aw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9YRjVNOGFYdXNzTDI2d3UxVnNPcUVaeHhJYTNpSkZBVjVqX25yOUFmbkZuSmk2N3lHdk11b0p1T290alcxa3NqWV9vZw?oc=5",
       "source_kind": "press_search",
       "publisher": "47NEWS",
       "publisher_domain": "www.47news.jp",
@@ -454,7 +518,7 @@
       "sources": [
         {
           "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1nelZwRlIyVDg4ZTJKNHRJRVZqNDdpUDg5RkZhU2stYW1PenM0a0VHRFBoTHNjMlFrbEJIbkhhRzQwVU1nREFwVEQ4aw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9YRjVNOGFYdXNzTDI2d3UxVnNPcUVaeHhJYTNpSkZBVjVqX25yOUFmbkZuSmk2N3lHdk11b0p1T290alcxa3NqWV9vZw?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -468,7 +532,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-10-26 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "47NEWSが配信した見出し・リンク・公開日時（2026-10-26 10:10 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -563,7 +627,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "56bfd3f5d59fc40fb0b7",
@@ -627,7 +691,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "41bfb9a6e3bc1a339a98",
@@ -691,7 +755,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "de12560d7377327a8e16",
@@ -759,7 +823,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "5fd6674de06e3cb7c3a9",
@@ -821,6 +885,74 @@
         {
           "name": "財務省：公式情報",
           "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
+      "id": "34aa62724ae4562a87ee",
+      "cat": "日本経済",
+      "tag": "公式発表",
+      "date": "10/26",
+      "published_at": "2026-10-26T10:30+09:00",
+      "date_precision": "minute",
+      "title": "5年クライメート・トランジション利付国債（11月債）の発行予定額等（令和8年10月26日公表）",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261026.htm",
+      "source_kind": "primary",
+      "publisher": "財務省",
+      "publisher_domain": "mof.go.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261026.htm"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📈",
+      "tone": "teal",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "財務省が配信した見出し・リンク・公開日時（2026-10-26 10:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -888,142 +1020,6 @@
         }
       ],
       "new_since_last": false
-    },
-    {
-      "id": "eb1a5acd0e97476d6d0c",
-      "cat": "政治・地方自治",
-      "tag": "公式発表",
-      "date": "10/23",
-      "published_at": "2026-10-23T05:00+09:00",
-      "date_precision": "minute",
-      "title": "2025年基準 消費者物価指数 全国 2026年(令和8年)9月分",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000354.html",
-      "source_kind": "primary",
-      "publisher": "総務省",
-      "publisher_domain": "soumu.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "総務省",
-          "url": "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000354.html"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "物価のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "総務省が配信した見出し・リンク・公開日時（2026-10-23 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜物価のニュース（一般論）",
-          "消費者物価指数（CPI）は、家庭が購入するさまざまな商品・サービスの価格の変化をまとめたものです。特定の商品の値上がりと、物価全体の上昇は分けて考えます。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "物価上昇率が小さくなることと、価格そのものが下がることは別です。例えば、価格が100円から103円へ上がり、翌年104円になれば、上昇率は鈍っても価格は上がっています。この数値は説明用で、今日の実測値ではありません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①何月の統計か、②前年同月比か前月比か、③総合指数か特定品目を除く指数か、④速報・改定の区別を確認します。生活への影響は、賃金や自分の支出内容と合わせて考えましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "前年同月比",
-          "前年の同じ月と比べた変化率。"
-        ],
-        [
-          "実質",
-          "物価変化の影響を取り除いて考えること。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：消費者物価指数のQ&A",
-          "url": "https://www.stat.go.jp/data/cpi/4-1.htm"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "536d9cb9a7b9f151ce72",
-      "cat": "日本経済",
-      "tag": "公式発表",
-      "date": "10/23",
-      "published_at": "2026-10-23T00:00+09:00",
-      "date_precision": "date",
-      "title": "消費者物価指数（全国－2026年（令和8年）9月分）（2025年基準）",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
-      "source_kind": "primary",
-      "publisher": "総務省統計局",
-      "publisher_domain": "stat.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "総務省統計局",
-          "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "物価のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "総務省統計局が配信した見出し・リンク・公開日時（2026-10-23）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜物価のニュース（一般論）",
-          "消費者物価指数（CPI）は、家庭が購入するさまざまな商品・サービスの価格の変化をまとめたものです。特定の商品の値上がりと、物価全体の上昇は分けて考えます。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "物価上昇率が小さくなることと、価格そのものが下がることは別です。例えば、価格が100円から103円へ上がり、翌年104円になれば、上昇率は鈍っても価格は上がっています。この数値は説明用で、今日の実測値ではありません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①何月の統計か、②前年同月比か前月比か、③総合指数か特定品目を除く指数か、④速報・改定の区別を確認します。生活への影響は、賃金や自分の支出内容と合わせて考えましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "前年同月比",
-          "前年の同じ月と比べた変化率。"
-        ],
-        [
-          "実質",
-          "物価変化の影響を取り除いて考えること。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：消費者物価指数のQ&A",
-          "url": "https://www.stat.go.jp/data/cpi/4-1.htm"
-        }
-      ],
-      "new_since_last": true
     }
   ],
   "markets": [],
@@ -1049,9 +1045,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 41,
+      "eligible": 40,
       "dropped": {
-        "out_of_scope": 1,
+        "out_of_scope": 2,
         "out_of_time_window": 58
       }
     },
@@ -1099,9 +1095,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 42,
+      "eligible": 39,
       "dropped": {
-        "publisher_not_allowed": 39
+        "publisher_not_allowed": 61
       }
     },
     {
@@ -1119,34 +1115,34 @@
       "ok": true,
       "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 82
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 10,
       "dropped": {
-        "publisher_not_allowed": 91
+        "publisher_not_allowed": 90
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 84
       }
     },
     {
@@ -1171,18 +1167,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 87
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 84
       }
     }
   ]
