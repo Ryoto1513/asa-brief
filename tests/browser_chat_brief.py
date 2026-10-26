@@ -57,6 +57,7 @@ def run(output, public_url=None):
             if b['type'] in ('heading','paragraph'):expected.append(inline(b['inlines']))
             elif b['type']=='hr':expected.append('')
             elif b['type']=='table':expected.append(''.join(inline(c) for c in b['headers'])+ ''.join(''.join(inline(c) for c in row) for row in b['rows']))
+            elif b['type']=='list':expected.append(''.join(inline(item) for item in b['items']))
             else:raise AssertionError('extend test for new block type')
         actual=page.locator('#chatBrief').evaluate('(el)=>Array.from(el.querySelectorAll("[data-brief-block]")).map(e=>e.textContent)')
         assert len(actual)==len(expected),(len(actual),len(expected))
@@ -65,17 +66,34 @@ def run(output, public_url=None):
         heads=[(f"h{b['level']}",inline(b['inlines'])) for b in brief['blocks'] if b['type']=='heading']
         assert page.locator('#chatBrief h1,#chatBrief h2,#chatBrief h3,#chatBrief h4,#chatBrief h5,#chatBrief h6').evaluate_all('(xs)=>xs.map(e=>[e.tagName.toLowerCase(),e.textContent])')==[list(x) for x in heads]
         links=[]
-        def gather(ts):
+        def gather(ts, target=links):
             for t in ts:
-                if t['type']=='link':links.append([t['text'],t['url']])
-                elif 'children' in t:gather(t['children'])
+                if t['type']=='link':target.append([t['text'],t['url']])
+                elif 'children' in t:gather(t['children'],target)
         for b in brief['blocks']:
             if 'inlines' in b:gather(b['inlines'])
             if b['type']=='table':
                 for cell in b['headers']:gather(cell)
                 for row in b['rows']:
                     for cell in row:gather(cell)
+            if b['type']=='list':
+                for item in b['items']:gather(item)
         assert page.locator('#chatBrief [data-brief-block] a').evaluate_all('(xs)=>xs.map(a=>[a.textContent,a.getAttribute("href")])')==links
+        def check_lists(root, blocks):
+            expected_lists=[]
+            for index,b in enumerate(blocks):
+                if b['type']!='list':continue
+                items=[]
+                for item in b['items']:
+                    item_links=[];gather(item,item_links)
+                    items.append(['li',inline(item),item_links])
+                expected_lists.append([index,'ol' if b['ordered'] else 'ul',str(b.get('start',1)) if b['ordered'] else None,items])
+            actual_lists=root.locator('ul[data-brief-block],ol[data-brief-block]').evaluate_all('''(xs)=>xs.map(e=>[
+                Number(e.dataset.briefBlock),e.tagName.toLowerCase(),e.getAttribute('start'),
+                Array.from(e.children).map(li=>[li.tagName.toLowerCase(),li.textContent,
+                    Array.from(li.querySelectorAll('a')).map(a=>[a.textContent,a.getAttribute('href')])])])''')
+            assert actual_lists==expected_lists,(actual_lists,expected_lists)
+        check_lists(page.locator('#chatBrief'),brief['blocks'])
         assert page.locator('.bottom button').all_text_contents()==['⌂ブリーフ','▥決算','⚙設定']
         chapters=page.locator('.brief-chapter')
         assert chapters.count()==len([b for b in brief['blocks'] if b['type']=='heading' and b['level']==1])
@@ -195,7 +213,39 @@ def run(output, public_url=None):
             assert page.evaluate("briefInlines([{type:'text',text:'<img src=x onerror=alert(1)>'}])")== '&lt;img src=x onerror=alert(1)&gt;'
             for token in ({'type':'html','text':'<script>'},{'type':'link','text':'x','url':'javascript:alert(1)'},{'type':'link','text':'x','url':'https://chatgpt.com/c/private'}):
                 assert page.evaluate('(t)=>{try{briefInlines([t]);return false}catch(_){return true}}',token)
+                assert page.evaluate('(t)=>{try{renderBriefBlocks([{type:"list",ordered:false,start:1,items:[[t]]}]);return false}catch(_){return true}}',token)
         if not public_url:
+            # Exercise both list kinds, nested inline links and non-default numbering.
+            list_blocks=[
+                {'type':'list','ordered':False,'start':1,'items':[
+                    [{'type':'text','text':'first '},{'type':'strong','children':[{'type':'link','text':'source A','url':'https://example.org/a'}]}],
+                    [{'type':'em','children':[{'type':'text','text':'second '},{'type':'link','text':'source B','url':'https://example.org/b'}]}]]},
+                {'type':'list','ordered':True,'start':3,'items':[
+                    [{'type':'text','text':'third'}],[{'type':'text','text':'fourth'}]]}]
+            page.evaluate('()=>{const root=document.createElement("div");root.id="listRegression";document.body.append(root)}')
+            root=page.locator('#listRegression')
+            def render_lists():
+                root.evaluate('(el,bs)=>{el.innerHTML=renderBriefBlocks(bs);Array.from(el.children).forEach((e,i)=>e.dataset.briefBlock=i)}',list_blocks)
+            render_lists();check_lists(root,list_blocks)
+            # Exact item boundaries, ordering, labels and URLs must all be enforced.
+            mutations=[
+                'el.querySelector("li").firstChild.textContent="changed "',
+                'el.querySelector("ul").append(el.querySelector("li"))',
+                'el.querySelector("li").append(...el.querySelectorAll("li")[1].childNodes);el.querySelectorAll("li")[1].remove()',
+                'el.querySelector("a").textContent="wrong label"',
+                'el.querySelector("a").setAttribute("href","https://example.org/wrong")',
+                'el.querySelector("a").replaceWith(el.querySelector("a").textContent)',
+                'el.querySelector("ul").append(el.querySelector("li").cloneNode(true))',
+                'el.querySelector("ol").setAttribute("start","1")',
+                'el.querySelector("ul").outerHTML=el.querySelector("ul").outerHTML.replace(/ul/g,"ol")',
+                'el.querySelector("ul").remove()']
+            for mutation in mutations:
+                render_lists();root.evaluate('(el)=>{'+mutation+'}')
+                try:check_lists(root,list_blocks)
+                except AssertionError:pass
+                else:raise AssertionError('list validation accepted mutation: '+mutation)
+            root.evaluate('(el)=>el.remove()')
+            assert page.evaluate('()=>{try{renderBriefBlocks([{type:"unsupported"}]);return false}catch(_){return true}}')
             # Renderer grouping preserves synthetic preamble, list and duplicate titles.
             synthetic=[{'type':'paragraph','inlines':[{'type':'text','text':'intro'}]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]},{'type':'list','ordered':False,'items':[[{'type':'text','text':'list item'}]]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]}]
             assert page.evaluate('(bs)=>briefChapters(bs).flatMap(c=>c.blocks)',synthetic)==synthetic
