@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-10-28T10:33:25+09:00",
+  "attempted_at": "2026-10-28T11:35:00+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -7,7 +7,7 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 12,
+      "eligible": 13,
       "dropped": {
         "out_of_time_window": 58
       }
@@ -26,8 +26,10 @@
       "name": "金融庁",
       "kind": "primary",
       "ok": true,
-      "eligible": 15,
-      "dropped": {}
+      "eligible": 13,
+      "dropped": {
+        "out_of_scope": 2
+      }
     },
     {
       "name": "総務省統計局",
@@ -66,9 +68,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 38,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 62
       }
     },
     {
@@ -77,25 +79,25 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 38
+        "publisher_not_allowed": 39
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 79
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 15,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 85
       }
     },
     {
@@ -111,18 +113,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 6,
+      "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 94
+        "publisher_not_allowed": 37
       }
     },
     {
@@ -138,9 +140,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 88
       }
     },
     {
@@ -149,7 +151,7 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 85
       }
     }
   ],
