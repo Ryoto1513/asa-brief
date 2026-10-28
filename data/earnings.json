@@ -1,8 +1,88 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T11:25:12+09:00",
+  "checked_at": "2026-10-28T10:33:34+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "c6efccf19c2c26fa2a91",
+      "disclosure_key": "4519:2026-10-27",
+      "code": "4519",
+      "company": "中外薬",
+      "title": "2026年12月期第３四半期決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-10-27T17:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556449.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "a12664b8de4178969b48",
+      "disclosure_key": "6988:2026-10-27",
+      "code": "6988",
+      "company": "日東電",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+      "published_at": "2026-10-27T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556326.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "a2e09d6900d512364c9c",
+      "disclosure_key": "6988:2026-10-27",
+      "code": "6988",
+      "company": "日東電",
+      "title": "2027年３月期 第２四半期決算短信〔IFRS〕（連結）補足資料",
+      "published_at": "2026-10-27T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556297.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "88ead16a5b9530f490ad",
+      "disclosure_key": "6988:2026-10-27",
+      "code": "6988",
+      "company": "日東電",
+      "title": "2027年３月期 第２四半期決算短信〔IFRS〕（連結）決算説明資料",
+      "published_at": "2026-10-27T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556273.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "71889a817e7cc42eca98",
+      "disclosure_key": "6988:2026-10-27",
+      "code": "6988",
+      "company": "日東電",
+      "title": "剰余金の配当（中間配当）および期末配当予想の修正（増配）ならびに自己株式取得に関するお知らせ",
+      "published_at": "2026-10-27T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261015551840.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "78c7d730a7284e466850",
+      "disclosure_key": "9022:2026-10-27",
+      "code": "9022",
+      "company": "ＪＲ東海",
+      "title": "子会社における業績予想の修正に関するお知らせ",
+      "published_at": "2026-10-27T15:50+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556374.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "d305595c1255a5e19e3a",
+      "disclosure_key": "9697:2026-10-27",
+      "code": "9697",
+      "company": "カプコン",
+      "title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-10-27T15:40+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261027556520.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "1222223e9133f880d723",
+      "disclosure_key": "4063:2026-10-27",
+      "code": "4063",
+      "company": "信越化",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-10-27T15:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261026556436.pdf",
+      "stage": "detected"
+    },
     {
       "id": "601a4660ca2954d8b7aa",
       "disclosure_key": "6146:2026-10-22",
@@ -30,7 +110,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-10-27T11:25:12+09:00",
+    "checked_at": "2026-10-28T10:33:34+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2025,7 +2105,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-10-27T11:25:12+09:00"
+    "last_success_at": "2026-10-28T10:33:34+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
