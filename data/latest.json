@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T10:54:22+09:00",
+  "generated_at": "2026-10-29T11:52:02+09:00",
   "edition_date": "2026-10-29",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -219,78 +219,6 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "2dca47f8efdaa6b9e01b",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "10/27",
-      "published_at": "2026-10-27T19:11+09:00",
-      "date_precision": "minute",
-      "title": "熊本市、9サイトが一時停止 PHP脆弱性問題 市長「強い危機感」",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1GT040QTVHT3Z0VlhGS0dYbDVNRVlERVZoWXhsQTVObFJfUVZHNURtMDJIem4zc3Y3QjkzWEtKVTVRN2RscUYyNFBPSQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "47NEWS",
-      "publisher_domain": "www.47news.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1GT040QTVHT3Z0VlhGS0dYbDVNRVlERVZoWXhsQTVObFJfUVZHNURtMDJIem4zc3Y3QjkzWEtKVTVRN2RscUYyNFBPSQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-10-27 19:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
-        }
-      ],
       "new_since_last": false
     },
     {
@@ -366,6 +294,78 @@
       "new_since_last": false
     },
     {
+      "id": "2dca47f8efdaa6b9e01b",
+      "cat": "セキュリティ",
+      "tag": "報道見出し",
+      "date": "10/27",
+      "published_at": "2026-10-27T19:11+09:00",
+      "date_precision": "minute",
+      "title": "熊本市、9サイトが一時停止 PHP脆弱性問題 市長「強い危機感」",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1GT040QTVHT3Z0VlhGS0dYbDVNRVlERVZoWXhsQTVObFJfUVZHNURtMDJIem4zc3Y3QjkzWEtKVTVRN2RscUYyNFBPSQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1GT040QTVHT3Z0VlhGS0dYbDVNRVlERVZoWXhsQTVObFJfUVZHNURtMDJIem4zc3Y3QjkzWEtKVTVRN2RscUYyNFBPSQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "48時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
+      "learning_topic": "セキュリティの重要情報",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-10-27 19:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜セキュリティの重要情報（一般論）",
+          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "脆弱性",
+          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
+        ],
+        [
+          "CVE",
+          "公開された脆弱性を区別する識別番号。"
+        ],
+        [
+          "パッチ",
+          "不具合や脆弱性を直すための更新。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "JPCERT/CC 注意喚起",
+          "url": "https://www.jpcert.or.jp/at/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
       "id": "ff666f82f259ec80b084",
       "cat": "日本経済",
       "tag": "公式発表",
@@ -435,7 +435,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "29cc5743ebb9b2079206",
@@ -511,7 +511,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "a47c96495aeaac9d8e05",
@@ -575,16 +575,16 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "07bc196cf9627f74ffce",
+      "id": "9fa5dac996d775182292",
       "cat": "日本経済",
       "tag": "報道見出し",
       "date": "10/29",
       "published_at": "2026-10-29T10:36+09:00",
       "date_precision": "minute",
-      "title": "決算:サムスン半導体部門営業益15倍の12兆円 7〜9月期、AI需要増",
+      "title": "決算:サムスン半導体部門が営業利益15倍の12兆円 7〜9月、AI需要増",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
       "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPYkk0N0xDLUtxWFpJVThtanUyV04ySnFRT2c3WjJKazlBelJMbnpzTF9RU0t6TW9GcDJ0ZFdfa1pZaDJQLW44dXRaTWJrVmpVWjF3OEJ3dmtOcUpNN1RvQXR3akZvRkxvdW16WA?oc=5",
       "source_kind": "press_search",
@@ -603,7 +603,7 @@
       "icon": "💻",
       "tone": "slate",
       "selection_reason": "企業の業績・見通し・株主還元に関わる",
-      "learning_topic": "AI・産業のニュース",
+      "learning_topic": "決算・日本株のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
@@ -611,16 +611,16 @@
           "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-29 10:36 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜AI・産業のニュース（一般論）",
-          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
         ],
         [
           "解説の位置づけ",
@@ -629,14 +629,18 @@
       ],
       "glossary": [
         [
-          "設備投資",
-          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "経済産業省：公式情報",
-          "url": "https://www.meti.go.jp/"
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -703,7 +707,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "77d47e4bee707337ff7a",
@@ -907,18 +911,18 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "ed01f70ddd3d5eb6da65",
-      "cat": "金融政策",
+      "id": "cf5e5b9c7a15043779eb",
+      "cat": "国際情勢",
       "tag": "報道見出し",
       "date": "10/29",
-      "published_at": "2026-10-29T09:52+09:00",
+      "published_at": "2026-10-29T11:41+09:00",
       "date_precision": "minute",
-      "title": "FRBが金利据え置き決定－ウォーシュ議長は明言せずも追加利上げ示唆",
+      "title": "トランプ氏、ロボット・産業機械への関税延期－貿易相手国と協議へ",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdmEzaG1KRnF0dUVxNmlTd1dyeXFwMG9GWkI2SW5OcHlTeXZwdDlyU2NacUc5RE5OY1RlbzJGTUNkUzdXdUtKUWpxNkJyTzdQNUppZXplZmU3eVV3XzFXQ2xXczQ5LTJMOTRMNk04WU1EV3BEWkxMd2NNNEk0cGoyVkZlTkR2NzVLTTQ1QkN3?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQTlpNGFsZEx1bzlQNllFSTg4YlpKcXNvSWUtMW44dEtpNFRQTFh0anZ1T2VXRHpxTUxXNGoyVmlTSjM0enpTZ1VDTGpvN3I1Nk1qYVNjR05pV2hLMXoyWGE2OUVxQWlDYTdSSUYzUHNTMHNnRXRudWxWMDZmYkhtQmFvMnRkWktxVTdha1dn?oc=5",
       "source_kind": "press_search",
       "publisher": "Bloomberg",
       "publisher_domain": "www.bloomberg.com",
@@ -926,7 +930,71 @@
       "sources": [
         {
           "name": "Bloomberg",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdmEzaG1KRnF0dUVxNmlTd1dyeXFwMG9GWkI2SW5OcHlTeXZwdDlyU2NacUc5RE5OY1RlbzJGTUNkUzdXdUtKUWpxNkJyTzdQNUppZXplZmU3eVV3XzFXQ2xXczQ5LTJMOTRMNk04WU1EV3BEWkxMd2NNNEk0cGoyVkZlTkR2NzVLTTQ1QkN3?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQTlpNGFsZEx1bzlQNllFSTg4YlpKcXNvSWUtMW44dEtpNFRQTFh0anZ1T2VXRHpxTUxXNGoyVmlTSjM0enpTZ1VDTGpvN3I1Nk1qYVNjR05pV2hLMXoyWGE2OUVxQWlDYTdSSUYzUHNTMHNnRXRudWxWMDZmYkhtQmFvMnRkWktxVTdha1dn?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Bloombergが配信した見出し・リンク・公開日時（2026-10-29 11:41 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "c65181ed9ba056fda089",
+      "cat": "金融政策",
+      "tag": "報道見出し",
+      "date": "10/29",
+      "published_at": "2026-10-29T11:17+09:00",
+      "date_precision": "minute",
+      "title": "FRB、金利据え置き 中間選挙を意識？ 12月の利上げ観測強まる [トランプ再来]",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6ODNLUE5CdHA1UXF5SVQ5VVdBMjlFNjVaWnYxenJabVU0RVZsdmNReTBSbm9mQ1RUbERsaElxTTNZWHJIUXhMRzlLakxLMXdGcllLY0x5UXBmY3N5OTVBRVB2Z3NkcTg?oc=5",
+      "source_kind": "press_search",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6ODNLUE5CdHA1UXF5SVQ5VVdBMjlFNjVaWnYxenJabVU0RVZsdmNReTBSbm9mQ1RUbERsaElxTTNZWHJIUXhMRzlLakxLMXdGcllLY0x5UXBmY3N5OTVBRVB2Z3NkcTg?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -940,7 +1008,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "Bloombergが配信した見出し・リンク・公開日時（2026-10-29 09:52 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-10-29 11:17 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -977,70 +1045,6 @@
         {
           "name": "日本銀行：金融政策の概要",
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "3eaa3e943edf2ebd983c",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "10/29",
-      "published_at": "2026-10-29T09:05+09:00",
-      "date_precision": "minute",
-      "title": "トランプ氏、輸入ロボットに安保リスク認定 関税は見送り",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPajdRVERLbzdJaVFxWGFQR3lqUkROY0xwcktfWUFydWdFZl82d0NBQXF2WEJDb3ZmOTJ0dWZvN1B6T0UxZzF2ZWxVNFA2RXM0bXNpQ2hZUFoydUh0T3o4QzJRdVh4MzBYSXlOblZhN0tvd2ExaEtFaE1ncDZhTkFkLWtYeXVHVTg?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPajdRVERLbzdJaVFxWGFQR3lqUkROY0xwcktfWUFydWdFZl82d0NBQXF2WEJDb3ZmOTJ0dWZvN1B6T0UxZzF2ZWxVNFA2RXM0bXNpQ2hZUFoydUh0T3o4QzJRdVh4MzBYSXlOblZhN0tvd2ExaEtFaE1ncDZhTkFkLWtYeXVHVTg?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-10-29 09:05 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
         }
       ],
       "new_since_last": true
@@ -1119,9 +1123,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 45,
+      "eligible": 41,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -1130,43 +1134,43 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 39
+        "publisher_not_allowed": 38
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 69
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 17,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 83
+        "publisher_not_allowed": 84
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 87
+        "publisher_not_allowed": 71
       }
     },
     {
@@ -1191,9 +1195,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 10,
       "dropped": {
-        "publisher_not_allowed": 91
+        "publisher_not_allowed": 90
       }
     },
     {
@@ -1202,7 +1206,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 60
       }
     }
   ]

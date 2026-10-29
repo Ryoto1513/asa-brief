@@ -1,8 +1,18 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-29T10:54:31+09:00",
+  "checked_at": "2026-10-29T11:52:10+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "8eb0f9492e06db6a58f6",
+      "disclosure_key": "6902:2026-10-29",
+      "code": "6902",
+      "company": "デンソー",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-10-29T11:10+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261027556975.pdf",
+      "stage": "detected"
+    },
     {
       "id": "e51d03e989de1ac3d825",
       "disclosure_key": "4043:2026-10-29",
@@ -140,7 +150,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-10-29T10:54:31+09:00",
+    "checked_at": "2026-10-29T11:52:10+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2135,7 +2145,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-10-29T10:54:31+09:00"
+    "last_success_at": "2026-10-29T11:52:10+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
