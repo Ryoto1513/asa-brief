@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T11:35:10+09:00",
+  "checked_at": "2026-10-29T10:54:31+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "e51d03e989de1ac3d825",
+      "disclosure_key": "4043:2026-10-29",
+      "code": "4043",
+      "company": "トクヤマ",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-10-29T09:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261001544936.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "89f5666784aaf7cb387f",
+      "disclosure_key": "4043:2026-10-29",
+      "code": "4043",
+      "company": "トクヤマ",
+      "title": "2027年3月期通期連結業績予想の修正、通期個別業績見込みと前期実績値との差異および配当予想の修正に関するお知らせ",
+      "published_at": "2026-10-29T09:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261015551669.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "bbb59fe83c2d5ba71e6e",
+      "disclosure_key": "6723:2026-10-29",
+      "code": "6723",
+      "company": "ルネサス",
+      "title": "2026年12月期第３四半期決算短信〔ＩＦＲＳ〕(連結)",
+      "published_at": "2026-10-29T09:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261028557610.pdf",
+      "stage": "detected"
+    },
     {
       "id": "c6efccf19c2c26fa2a91",
       "disclosure_key": "4519:2026-10-27",
@@ -110,7 +140,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-10-28T11:35:10+09:00",
+    "checked_at": "2026-10-29T10:54:31+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2105,7 +2135,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-10-28T11:35:10+09:00"
+    "last_success_at": "2026-10-29T10:54:31+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
