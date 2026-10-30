@@ -1,8 +1,18 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T11:05:47+09:00",
+  "checked_at": "2026-10-30T11:57:39+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "57cc37440f40b08c5d98",
+      "disclosure_key": "8601:2026-10-30",
+      "code": "8601",
+      "company": "大和証Ｇ",
+      "title": "2027年３月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-10-30T11:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261029559619.pdf",
+      "stage": "detected"
+    },
     {
       "id": "cb5e696b7f8d1475620b",
       "disclosure_key": "4507:2026-10-30",
@@ -250,7 +260,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-10-30T11:05:47+09:00",
+    "checked_at": "2026-10-30T11:57:39+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2245,7 +2255,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-10-30T11:05:47+09:00"
+    "last_success_at": "2026-10-30T11:57:39+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
