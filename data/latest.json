@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T10:21:43+09:00",
+  "generated_at": "2026-11-01T11:33:51+09:00",
   "edition_date": "2026-11-01",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -150,6 +150,78 @@
       "new_since_last": false
     },
     {
+      "id": "d1a98b845a3f4afe9e4c",
+      "cat": "セキュリティ",
+      "tag": "報道見出し",
+      "date": "11/01",
+      "published_at": "2026-11-01T11:14+09:00",
+      "date_precision": "minute",
+      "title": "ユニオンアプリ、きょうから再開 PHP脆弱性問題で一時停止 沖縄",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tOE85bGJwSGRYci1FcmFCVG1EVEdaMk1fWElsdC1jV0hZOHRTU3dDSFZKQlB0NHMtSWo0MzFVRGJ3OGdNdFlKOWgtZw?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tOE85bGJwSGRYci1FcmFCVG1EVEdaMk1fWElsdC1jV0hZOHRTU3dDSFZKQlB0NHMtSWo0MzFVRGJ3OGdNdFlKOWgtZw?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
+      "learning_topic": "セキュリティの重要情報",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-01 11:14 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜セキュリティの重要情報（一般論）",
+          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "脆弱性",
+          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
+        ],
+        [
+          "CVE",
+          "公開された脆弱性を区別する識別番号。"
+        ],
+        [
+          "パッチ",
+          "不具合や脆弱性を直すための更新。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "JPCERT/CC 注意喚起",
+          "url": "https://www.jpcert.or.jp/at/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
       "id": "9e78e7d74d2163030840",
       "cat": "セキュリティ",
       "tag": "報道見出し",
@@ -283,7 +355,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "9bd9205b8bfcc0bdc564",
@@ -347,7 +419,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "f5682d4379f1331b175d",
@@ -411,7 +483,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "1be544278c9e6883f0f6",
@@ -475,7 +547,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b465a5f50dafe155767f",
@@ -543,7 +615,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "9c9ddb7e5fd1bacac001",
@@ -822,74 +894,6 @@
       "new_since_last": false
     },
     {
-      "id": "c4107090e7d508ecbc07",
-      "cat": "日本経済",
-      "tag": "報道見出し",
-      "date": "10/31",
-      "published_at": "2026-10-31T05:52+09:00",
-      "date_precision": "minute",
-      "title": "決算:米インテル株、29%急落 PC向け不振で約50年ぶりの下落率",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VTHBZMWhITDh4dXgtUml5TG5HbTJ5TnFWang3ZDlCTmJtMGdIV3dlUTFhbFlMekV5TW1TQXcxUjBEVlJEcmlUbzVZczEzcnItUnNzWkliNmpLYml2RlAxQmhlTUxfRlF1bUNETw?oc=5",
-      "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VTHBZMWhITDh4dXgtUml5TG5HbTJ5TnFWang3ZDlCTmJtMGdIV3dlUTFhbFlMekV5TW1TQXcxUjBEVlJEcmlUbzVZczEzcnItUnNzWkliNmpLYml2RlAxQmhlTUxfRlF1bUNETw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "企業の業績・見通し・株主還元に関わる",
-      "learning_topic": "決算・日本株のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-10-31 05:52 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜決算・日本株のニュース（一般論）",
-          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "営業利益",
-          "本業の収益力を考える際に使われる利益指標。"
-        ],
-        [
-          "IR",
-          "企業が投資家に向けて行う情報開示や説明。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "金融庁：NISAの情報",
-          "url": "https://www.fsa.go.jp/policy/nisa2/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
       "id": "a0f3b0ab9291e4e3c8f6",
       "cat": "日本経済",
       "tag": "公式発表",
@@ -1046,7 +1050,7 @@
       "ok": true,
       "eligible": 15,
       "dropped": {
-        "out_of_time_window": 64
+        "out_of_time_window": 63
       }
     },
     {
@@ -1103,9 +1107,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 58,
+      "eligible": 43,
       "dropped": {
-        "publisher_not_allowed": 42
+        "publisher_not_allowed": 57
       }
     },
     {
@@ -1114,52 +1118,52 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 26
+        "publisher_not_allowed": 25
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 55,
+      "eligible": 56,
       "dropped": {
-        "publisher_not_allowed": 45
+        "publisher_not_allowed": 44
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 18,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 82
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 26,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 76
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 13,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 87
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 0,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 63
+        "publisher_not_allowed": 96
       }
     },
     {
@@ -1177,7 +1181,7 @@
       "ok": true,
       "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 68
       }
     },
     {
@@ -1186,7 +1190,7 @@
       "ok": true,
       "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 37
+        "publisher_not_allowed": 38
       }
     }
   ]
