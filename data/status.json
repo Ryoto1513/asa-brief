@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-01T11:33:51+09:00",
+  "attempted_at": "2026-11-02T10:41:55+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -9,17 +9,17 @@
       "ok": true,
       "eligible": 15,
       "dropped": {
-        "out_of_time_window": 63
+        "out_of_time_window": 57
       }
     },
     {
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 42,
+      "eligible": 46,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 57
+        "out_of_time_window": 53
       }
     },
     {
@@ -66,63 +66,66 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 43,
+      "eligible": 33,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 67
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 0,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 25
+        "publisher_not_allowed": 33,
+        "out_of_time_window": 8
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 56,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 81,
+        "out_of_time_window": 7
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 24,
+      "eligible": 22,
       "dropped": {
-        "publisher_not_allowed": 76
+        "publisher_not_allowed": 77,
+        "out_of_time_window": 1
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 87
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 4,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 96
+        "publisher_not_allowed": 61
       }
     },
     {
@@ -138,18 +141,19 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 36,
+        "out_of_time_window": 2
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 7,
+      "eligible": 15,
       "dropped": {
-        "publisher_not_allowed": 38
+        "publisher_not_allowed": 33
       }
     }
   ],
