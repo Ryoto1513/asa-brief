@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:44:14+09:00",
+  "checked_at": "2026-11-03T12:37:55+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "c51e7973351d28ddee05",
+      "disclosure_key": "2282:2026-11-02",
+      "code": "2282",
+      "company": "日ハム",
+      "title": "2027年３月期第２四半期（中間期）決算短信〔ＩＦＲＳ〕(連結)",
+      "published_at": "2026-11-02T15:40+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261101562006.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "3c5dbc3dd27fce7c42db",
+      "disclosure_key": "2282:2026-11-02",
+      "code": "2282",
+      "company": "日ハム",
+      "title": "業績予想及び配当予想の修正に関するお知らせ",
+      "published_at": "2026-11-02T15:40+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261101562008.pdf",
+      "stage": "detected"
+    },
     {
       "id": "715e941a807e375ba8df",
       "disclosure_key": "285A:2026-10-30",
@@ -270,7 +290,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-02T11:44:14+09:00",
+    "checked_at": "2026-11-03T12:37:55+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2274,7 +2294,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-02T11:44:14+09:00"
+    "last_success_at": "2026-11-03T12:37:55+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
