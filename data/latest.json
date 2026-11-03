@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T12:37:47+09:00",
+  "generated_at": "2026-11-03T13:01:47+09:00",
   "edition_date": "2026-11-03",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -147,7 +147,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "edc7d8e21d48e112c7d7",
@@ -283,7 +283,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "fd738838e6e1c11b4423",
@@ -355,7 +355,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b8456f6159dbc5370103",
@@ -423,7 +423,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "a0898d83c3798806f26f",
@@ -520,8 +520,8 @@
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "📰",
-      "tone": "slate",
+      "icon": "🌍",
+      "tone": "amber",
       "selection_reason": "社会への影響が大きく、知っておきたい動き",
       "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
@@ -559,7 +559,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "990be0fe60298160917c",
@@ -623,7 +623,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "3c7460231780b5af00a6",
@@ -687,7 +687,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "050dff8a5c45603c504a",
@@ -819,7 +819,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "69d1573f100c67d4c43a",
@@ -887,7 +887,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cfa13b731661754e8a05",
@@ -910,7 +910,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -959,7 +959,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "258ac4098ae8472092ac",
@@ -1048,9 +1048,9 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 19,
+      "eligible": 18,
       "dropped": {
-        "out_of_time_window": 51
+        "out_of_time_window": 52
       }
     },
     {
@@ -1105,9 +1105,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 35,
+      "eligible": 34,
       "dropped": {
-        "publisher_not_allowed": 64,
+        "publisher_not_allowed": 65,
         "missing_title_or_date": 1
       }
     },
@@ -1117,26 +1117,26 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 37,
-        "out_of_time_window": 2
+        "publisher_not_allowed": 38,
+        "out_of_time_window": 1
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 17,
+      "eligible": 18,
       "dropped": {
-        "publisher_not_allowed": 83
+        "publisher_not_allowed": 82
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 23,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 77
       }
     },
     {
@@ -1152,18 +1152,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 30,
+      "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 70
+        "publisher_not_allowed": 69
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 97
+        "publisher_not_allowed": 76
       }
     },
     {
@@ -1179,9 +1179,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 30
       }
     },
     {
@@ -1190,7 +1190,7 @@
       "ok": true,
       "eligible": 10,
       "dropped": {
-        "publisher_not_allowed": 44,
+        "publisher_not_allowed": 46,
         "out_of_time_window": 3
       }
     }
