@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-04T11:34:14+09:00",
+  "attempted_at": "2026-11-04T12:14:51+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -64,10 +64,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 37,
+      "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 50,
-        "missing_title_or_date": 1
+        "publisher_not_allowed": 69
       }
     },
     {
@@ -76,25 +75,25 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 31
+        "publisher_not_allowed": 25
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 69
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 17,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 83
       }
     },
     {
@@ -110,9 +109,9 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 37,
+      "eligible": 39,
       "dropped": {
-        "publisher_not_allowed": 63
+        "publisher_not_allowed": 61
       }
     },
     {
@@ -137,7 +136,7 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 10,
       "dropped": {
         "publisher_not_allowed": 48
       }
@@ -146,9 +145,9 @@
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 68
       }
     }
   ],

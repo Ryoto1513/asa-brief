@@ -1,8 +1,18 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T11:34:23+09:00",
+  "checked_at": "2026-11-04T12:14:59+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "75a3cb47a0c14380a58b",
+      "disclosure_key": "8031:2026-11-04",
+      "code": "8031",
+      "company": "三井物産",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-04T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261102562306.pdf",
+      "stage": "detected"
+    },
     {
       "id": "8c86fae0d415a911c8ce",
       "disclosure_key": "8002:2026-11-04",
@@ -310,7 +320,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-04T11:34:23+09:00",
+    "checked_at": "2026-11-04T12:14:59+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2314,7 +2324,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-04T11:34:23+09:00"
+    "last_success_at": "2026-11-04T12:14:59+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
