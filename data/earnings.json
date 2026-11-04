@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T13:01:56+09:00",
+  "checked_at": "2026-11-04T11:34:23+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "8c86fae0d415a911c8ce",
+      "disclosure_key": "8002:2026-11-04",
+      "code": "8002",
+      "company": "丸紅",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-04T11:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261104563473.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "9033753716c3e247175f",
+      "disclosure_key": "8002:2026-11-04",
+      "code": "8002",
+      "company": "丸紅",
+      "title": "配当予想の修正及び剰余金の配当（中間配当）に関するお知らせ",
+      "published_at": "2026-11-04T11:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261104563513.pdf",
+      "stage": "detected"
+    },
     {
       "id": "c51e7973351d28ddee05",
       "disclosure_key": "2282:2026-11-02",
@@ -290,7 +310,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-03T13:01:56+09:00",
+    "checked_at": "2026-11-04T11:34:23+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2294,7 +2314,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-03T13:01:56+09:00"
+    "last_success_at": "2026-11-04T11:34:23+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
