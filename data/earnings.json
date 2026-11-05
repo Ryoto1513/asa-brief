@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T12:14:59+09:00",
+  "checked_at": "2026-11-05T11:40:38+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "c52f517a02aa625e5132",
+      "disclosure_key": "3401:2026-11-05",
+      "code": "3401",
+      "company": "帝人",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-05T11:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261104564276.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "951f0cece87d0ed72cf9",
+      "disclosure_key": "6103:2026-11-04",
+      "code": "6103",
+      "company": "オークマ",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-11-04T15:40+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261103563384.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "fcc03a36fa30d9f55a8f",
+      "disclosure_key": "2413:2026-11-04",
+      "code": "2413",
+      "company": "エムスリー",
+      "title": "2027年３月期 第２四半期（中間期）決算短信 [IFRS]（連結）",
+      "published_at": "2026-11-04T15:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261102563057.pdf",
+      "stage": "detected"
+    },
     {
       "id": "75a3cb47a0c14380a58b",
       "disclosure_key": "8031:2026-11-04",
@@ -320,7 +350,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-04T12:14:59+09:00",
+    "checked_at": "2026-11-05T11:40:38+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2324,7 +2354,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-04T12:14:59+09:00"
+    "last_success_at": "2026-11-05T11:40:38+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
