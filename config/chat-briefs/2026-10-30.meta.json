@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "title": "経済・金融・時事ニュース｜朝のブリーフ",
+  "source_kind": "chat-news-mirror",
+  "source_updated_at": "2026-10-29T23:02:34.100321Z",
+  "information_cutoff": "2026-10-30T08:00:00+09:00",
+  "body_file": "2026-10-30.md",
+  "body_sha256": "b4b0540b2c6621b9fdfdf3b31b3189e1d5dfc25a5df93b48d662734e8da653d5",
+  "body_utf8_bytes": 55948,
+  "body_line_count": 1027,
+  "body_codepoints": 24448,
+  "citation_conversion_count": 38,
+  "status": "verified"
+}
