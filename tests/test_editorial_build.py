@@ -73,6 +73,18 @@ class BuildTests(unittest.TestCase):
     def test_no_private_or_unexpected_public_manuscript_files(self):
         (self.root/'config/chat-briefs/privateaudit.json').write_text('{}')
         with self.assertRaisesRegex(ValueError,'unexpected'):self.build()
+    def test_cutoff_after_source_reports_exact_gap_and_preserves_site(self):
+        self.build(); before=(self.root/'.site/data/chat-brief-manifest.json').read_bytes()
+        p=next((self.root/'config/chat-briefs').glob('*.meta.json'))
+        meta=json.loads(p.read_text()); day=meta['date']
+        meta['source_updated_at']=day+'T07:59:05+09:00'
+        meta['information_cutoff']=day+'T08:00:00+09:00'
+        p.write_text(json.dumps(meta))
+        with self.assertRaisesRegex(ValueError,day+': .*information_cutoff is 55 seconds after source_updated_at'):
+            self.build()
+        self.assertEqual((self.root/'.site/data/chat-brief-manifest.json').read_bytes(),before)
+        self.assertEqual(json.loads(p.read_text()),meta)
+
     def test_expired_edition_keeps_its_date_never_relabels_as_today(self):
         from datetime import timedelta
         result=build_site.build_site(self.root,now=self.now+timedelta(days=7))

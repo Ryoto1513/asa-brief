@@ -12,6 +12,8 @@ context.fixture=index;run('S.briefIndex=fixture');
 context.fetch=async path=>new Response(JSON.stringify(brief(path.includes('2026-10-23')?'2026-10-23':'2026-10-24')));
 (async()=>{
  assert.equal(run("validDate('2026-02-30')"),false);assert.equal(run('localToday()'),'2026-10-24');
+ // If today's published body fails, never call yesterday the latest publication.
+ run("S.briefState='failed';S.brief=null");assert.equal(run('latestPublishedBriefAction()'),'');assert.ok(!run('home()').includes('data-brief-date'));
  await run("selectArchive('2026-10-24')");assert.equal(run('S.brief.edition_date'),'2026-10-24');assert.ok(run('home()').includes(body));
  assert.equal(run('JSON.stringify(briefingDates())'),JSON.stringify(dates));
  await run("selectArchive('2099-01-01')");assert.equal(run('S.edition'),'2026-10-24');
@@ -26,6 +28,13 @@ context.fetch=async path=>new Response(JSON.stringify(brief(path.includes('2026-
  // Midnight cannot show yesterday underneath Today, including failed refresh.
  run("S.edition='latest'");now='2026-10-24T15:00:01Z';assert.equal(run('localToday()'),'2026-10-25');assert.ok(!run('home()').includes('id="chatBrief"'));assert.equal(run('S.brief'),null);
  context.fetch=async()=>{throw Error('unavailable')};await run('refresh()');assert.ok(!run('home()').includes('id="chatBrief"'));
+ // An explicit latest-published action never presents an archive as today's brief.
+ context.fixture=index;run('S.briefIndex=fixture');await run("loadBriefDay('latest',++S.editionRequest)");
+ assert.ok(run('home()').includes('data-brief-date="2026-10-24"'));
+ assert.ok(run('home()').includes('最新公開版（2026/10/24）を読む'));
+ assert.ok(run('home()').includes('本日分とは別の過去の版'));
+ assert.equal(run('S.edition'),'latest');assert.equal(run('S.brief'),null);
+ run('S.briefIndex={dates:["invalid","2099-01-01"],editions:[]}');assert.equal(run('latestPublishedBriefAction()'),'');
  run('S.briefIndex={dates:[],editions:[]}');await run("loadBriefDay('latest',++S.editionRequest)");assert.equal(run('S.briefState'),'waiting');assert.ok(run('home()').includes('本日分は未反映'));
  // Renderer only emits explicit safe token types; no raw HTML or private links.
  context.token={type:'text',text:'<img src=x onerror=alert(1)>'};assert.equal(run('briefInlines([token])'),'&lt;img src=x onerror=alert(1)&gt;');

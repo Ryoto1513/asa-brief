@@ -10,6 +10,7 @@ env:
   PYTHONDONTWRITEBYTECODE: '1'
 jobs:
   offline:
+    if: github.repository == 'Ryoto1513/asa-brief' && github.event.repository.private == false
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -32,6 +33,7 @@ jobs:
           test ! -e .site/data/archive
   browser:
     name: Chromium fixture smoke (no deployment)
+    if: github.repository == 'Ryoto1513/asa-brief' && github.event.repository.private == false
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -56,11 +58,12 @@ jobs:
       - name: Chat mirror preservation, privacy, mobile and interrupted-flow regression
         if: ${{ !cancelled() && steps.browsers.outcome == 'success' }}
         run: python tests/browser_chat_brief.py
-      - name: Retain only public and synthetic browser evidence
+      - name: Report browser result without storing artifacts
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: editorial-browser-evidence
-          path: browser-artifacts/chat-brief/
-          if-no-files-found: warn
-          retention-days: 1
+        run: |
+          echo "Checked commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+          if test -f browser-artifacts/chat-brief/chat-brief-browser-report.json; then
+            cat browser-artifacts/chat-brief/chat-brief-browser-report.json >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Browser verification did not complete.' >> "$GITHUB_STEP_SUMMARY"
+          fi
