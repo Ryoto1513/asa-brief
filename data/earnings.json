@@ -1,8 +1,48 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T11:40:38+09:00",
+  "checked_at": "2026-11-05T12:43:24+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "04b8d8b0a8bf7de24465",
+      "disclosure_key": "3407:2026-11-05",
+      "code": "3407",
+      "company": "旭化成",
+      "title": "2027年３月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-11-05T12:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261102563247.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "111086c90e7f11d2239d",
+      "disclosure_key": "3407:2026-11-05",
+      "code": "3407",
+      "company": "旭化成",
+      "title": "剰余金の配当（中間配当の増配）および期末配当予想の修正に関するお知らせ",
+      "published_at": "2026-11-05T12:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261105565056.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "192329448bba93123265",
+      "disclosure_key": "9101:2026-11-05",
+      "code": "9101",
+      "company": "郵船",
+      "title": "2027年３月期 剰余金の配当（中間配当）及び配当予想（期末配当）の修正に関するお知らせ",
+      "published_at": "2026-11-05T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261105564979.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "27873818073798d90c56",
+      "disclosure_key": "9101:2026-11-05",
+      "code": "9101",
+      "company": "郵船",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-11-05T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261104563983.pdf",
+      "stage": "detected"
+    },
     {
       "id": "c52f517a02aa625e5132",
       "disclosure_key": "3401:2026-11-05",
@@ -350,7 +390,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-05T11:40:38+09:00",
+    "checked_at": "2026-11-05T12:43:24+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2354,7 +2394,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-05T11:40:38+09:00"
+    "last_success_at": "2026-11-05T12:43:24+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
