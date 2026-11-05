@@ -157,8 +157,17 @@ def load_editions(root, now=None):
         if path.name != day + '.meta.json' or meta['body_file'] != day + '.md':
             raise ValueError('edition filename mismatch')
         updated = timestamp(meta['source_updated_at']); cutoff = timestamp(meta['information_cutoff'])
-        if updated > now or cutoff > now or cutoff > updated or cutoff.astimezone(JST).date().isoformat() != day or updated.astimezone(JST).date().isoformat() < day:
-            raise ValueError('inconsistent source edition timestamps')
+        if updated > now:
+            raise ValueError(f'{day}: inconsistent source edition timestamps: source_updated_at is in the future')
+        if cutoff > now:
+            raise ValueError(f'{day}: inconsistent source edition timestamps: information_cutoff is in the future')
+        if cutoff > updated:
+            seconds = (cutoff - updated).total_seconds()
+            raise ValueError(f'{day}: inconsistent source edition timestamps: information_cutoff is {seconds:g} seconds after source_updated_at; recheck the canonical source, do not rewrite timestamps')
+        if cutoff.astimezone(JST).date().isoformat() != day:
+            raise ValueError(f'{day}: inconsistent source edition timestamps: information_cutoff has a different JST edition date')
+        if updated.astimezone(JST).date().isoformat() < day:
+            raise ValueError(f'{day}: inconsistent source edition timestamps: source_updated_at precedes the JST edition date')
         if not isinstance(meta['title'], str) or PRIVATE.search(meta['title']) or re.search(r'[<>\n]', meta['title']):
             raise ValueError('unsafe title')
         body_path = folder / meta['body_file']; raw = body_path.read_bytes(); body = raw.decode('utf-8')

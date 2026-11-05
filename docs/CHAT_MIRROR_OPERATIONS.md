@@ -18,3 +18,13 @@ The date is the original edition's JST calendar date. `source_updated_at` record
 6. Confirm terminal workflow success and independently inspect the public body, headings/tables/sources and earnings UI in the browser. Report exact commit/run links and limitations; cloud Chromium is not actual iPhone Safari testing.
 
 The application publication automation is configured separately for an 08:10 JST start; the separate 08:00 Chat delivery and existing RSS cron are not changed by these repository workflows. Browser refresh only reads already public data. This repository never claims that it sent a Chat message.
+
+## Publication safeguards
+
+Both existing publication workflows build first, then run the JavaScript regressions and Chromium fixture test against the exact staged `.site` files before uploading or deploying. This gate does not change the RSS schedule, feed selection, earnings pipeline, canonical manuscript or original Chat delivery schedule. Browser checks use the existing pinned Playwright package on a standard public-repository Ubuntu runner.
+
+The non-deploying `editorial-checks.yml` workflow stores its result in workflow logs and the job summary only. It does not upload artifacts or use a persistent cache. Browser screenshot files remain temporary runner files. Standard public-repository runner use and logs do not add Actions storage charges. The Pages deployment artifact is separate: publishing still requires the existing Pages artifact, so do not infer an account-wide zero-storage-cost guarantee from a successful no-artifact check.
+
+A chronology error now reports the edition, field and exact positive gap. In particular, an information cutoff later than the source's actual revision time is still rejected. Never round or rewrite either timestamp to make a failing manuscript pass. Review the canonical source first, and keep the last valid published build unchanged if the source cannot be verified.
+
+When today's canonical edition is missing, the app continues to say so. A separately labelled button opens the most recent available historical edition only after the reader selects it; an older edition is never relabelled as today's news.

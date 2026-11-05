@@ -34,7 +34,7 @@ def run(output, public_url=None):
             requests.append(name)
             if name in data:
                 r.fulfill(json=data[name]);return
-            p=R/name
+            p=R/'.site'/name
             if name in ('index.html','assets/app.js','assets/style.css','manifest.webmanifest') and p.is_file():
                 r.fulfill(body=p.read_text(),content_type='text/html' if name.endswith('.html') else 'text/css' if name.endswith('.css') else 'application/javascript' if name.endswith('.js') else 'application/json');return
             r.fulfill(status=404,body='not found')
@@ -61,7 +61,6 @@ def run(output, public_url=None):
             else:raise AssertionError('extend test for new block type')
         actual=page.locator('#chatBrief').evaluate('(el)=>Array.from(el.querySelectorAll("[data-brief-block]")).map(e=>e.textContent)')
         assert len(actual)==len(expected),(len(actual),len(expected))
-        normalize=lambda s: ''.join(s.split())
         assert actual==expected
         heads=[(f"h{b['level']}",inline(b['inlines'])) for b in brief['blocks'] if b['type']=='heading']
         assert page.locator('#chatBrief h1,#chatBrief h2,#chatBrief h3,#chatBrief h4,#chatBrief h5,#chatBrief h6').evaluate_all('(xs)=>xs.map(e=>[e.tagName.toLowerCase(),e.textContent])')==[list(x) for x in heads]
@@ -96,9 +95,11 @@ def run(output, public_url=None):
         check_lists(page.locator('#chatBrief'),brief['blocks'])
         assert page.locator('.bottom button').all_text_contents()==['⌂ブリーフ','▥決算','⚙設定']
         chapters=page.locator('.brief-chapter')
-        assert chapters.count()==len([b for b in brief['blocks'] if b['type']=='heading' and b['level']==1])
+        def chapter_count(blocks):
+            return sum(b['type']=='heading' and b['level']==1 for b in blocks) + int(bool(blocks) and not (blocks[0]['type']=='heading' and blocks[0]['level']==1))
+        assert chapters.count()==chapter_count(brief['blocks'])
         assert page.locator('#chatBrief [data-brief-block]').evaluate_all('(xs)=>xs.map(e=>Number(e.dataset.briefBlock))')==list(range(len(expected)))
-        assert page.locator('.brief-chapter[open]').count()==2
+        assert page.locator('.brief-chapter[open]').count()==min(2,chapters.count())
         # Native summary controls work by keyboard, without changing source content.
         first_summary=chapters.nth(0).locator('summary')
         first_summary.focus();page.keyboard.press('Enter')
@@ -111,17 +112,18 @@ def run(output, public_url=None):
         page.locator('.brief-toc summary').click()
         toc_links=page.locator('.brief-toc a')
         assert toc_links.count()==chapters.count()
-        toc_links.nth(3).click()
-        page.wait_for_function('document.querySelectorAll(".brief-chapter")[3].open && document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
-        assert chapters.nth(3).get_attribute('open') is not None
-        assert page.evaluate('document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
-        assert page.evaluate('location.hash').endswith('-chapter-3')
-        page.wait_for_function('(()=>{const y=document.querySelectorAll(".brief-chapter")[3].getBoundingClientRect().top;return y>=0 && y<=24})()')
+        target=min(3,chapters.count()-1)
+        toc_links.nth(target).click()
+        page.wait_for_function('(i)=>document.querySelectorAll(".brief-chapter")[i].open && document.activeElement===document.querySelectorAll(".brief-chapter>summary")[i]',arg=target)
+        assert chapters.nth(target).get_attribute('open') is not None
+        assert page.evaluate('location.hash').endswith(f'-chapter-{target}')
+        # Short manuscripts cannot always scroll the selected heading to the top.
+        assert chapters.nth(target).locator('summary').is_visible()
         page.screenshot(path=str(output/'chat-brief-chapter-selected.png'))
-        chapters.nth(3).locator('.chapter-return').click()
+        chapters.nth(target).locator('.chapter-return').click()
         assert page.evaluate('location.hash')=='#brief-toc'
         page.go_back()
-        page.wait_for_function('location.hash.endsWith("-chapter-3")')
+        page.wait_for_function('(i)=>location.hash.endsWith("-chapter-"+i)',arg=target)
         page.go_forward()
         page.wait_for_function('location.hash==="#brief-toc"')
         page.locator('[data-chapters="open"]').click()
@@ -135,10 +137,10 @@ def run(output, public_url=None):
             page.locator('#briefDate').select_option(older[0])
             page.wait_for_function('(d)=>S.brief?.edition_date===d',arg=older[0])
             assert page.evaluate('location.hash')==''
-            assert page.locator('.brief-chapter[open]').count()==2
+            assert page.locator('.brief-chapter[open]').count()==min(2,chapters.count())
             page.locator('#briefDate').select_option(day)
             page.wait_for_function('(d)=>S.brief?.edition_date===d',arg=day)
-            assert page.locator('.brief-chapter[open]').count()==2
+            assert page.locator('.brief-chapter[open]').count()==min(2,chapters.count())
         page.locator('[data-chapters="open"]').click()
 
         for width in (320,375,390,430,1280):
@@ -155,10 +157,13 @@ def run(output, public_url=None):
         assert page.locator('body').evaluate('(e)=>e.classList.contains("dark")&&e.classList.contains("large")')
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         page.locator('[data-chapters="open"]').click()
-        table=page.locator('#chatBrief .table-scroll').first
-        table.scroll_into_view_if_needed();assert table.evaluate('(e)=>e.scrollWidth>e.clientWidth')
-        table.evaluate('(e)=>e.scrollLeft=100');assert table.evaluate('(e)=>e.scrollLeft>0')
-        page.screenshot(path=str(output/'chat-brief-dark-large-table.png'))
+        # Actual editions may contain no table, or a table narrow enough to fit.
+        for table in page.locator('#chatBrief .table-scroll').all():
+            table.scroll_into_view_if_needed()
+            if table.evaluate('(e)=>e.scrollWidth>e.clientWidth'):
+                table.evaluate('(e)=>e.scrollLeft=100')
+                assert table.evaluate('(e)=>e.scrollLeft>0')
+        page.screenshot(path=str(output/'chat-brief-dark-large.png'))
         page.locator('[data-tab="earnings"]').first.click();assert page.get_by_text('決算発表の予定',exact=True).count()==1
         assert page.get_by_text('新しい決算開示',exact=True).count()==1
         page.screenshot(path=str(output/'chat-brief-earnings.png'))
@@ -206,6 +211,18 @@ def run(output, public_url=None):
             page.evaluate("async()=>{readJSON=testOriginalRead;S.briefIndex={dates:[],editions:[]};await loadBriefDay('latest',++S.editionRequest);render();}")
             assert page.locator('#chatBrief').count()==0
             assert page.get_by_text('本日分は未反映です',exact=True).count()==1
+            assert page.locator('[data-brief-date]').count()==0
+            # A missing current edition offers the latest historical publication,
+            # without mislabelling it as today. Exercise the actual click handler.
+            page.evaluate("async tomorrow=>{localToday=()=>tomorrow;readJSON=testOriginalRead;await refresh();}",tomorrow)
+            assert page.locator('#chatBrief').count()==0
+            latest=page.locator('[data-brief-date="'+day+'"]')
+            assert latest.inner_text()=='最新公開版（'+day.replace('-','/')+'）を読む'
+            latest.click()
+            page.wait_for_function('(d)=>S.edition===d && S.brief?.edition_date===d',arg=day)
+            assert page.locator('#briefDate').input_value()==day
+            assert page.locator('#chatBrief').count()==1
+            page.evaluate('localToday=realLocalToday')
             # Delayed older selection cannot overwrite a newer selection.
             result=page.evaluate("""async()=>{const today=localToday();const b=%s;const old='2026-10-23';S.briefIndex={dates:[today,old],editions:[{edition_date:today,body_sha256:b.body_sha256,source_updated_at:b.source_updated_at},{edition_date:old,body_sha256:b.body_sha256,source_updated_at:b.source_updated_at}]};readJSON=async p=>{if(p.includes(old)){await new Promise(r=>setTimeout(r,60));return {data:{...b,edition_date:old},cached:false};}return {data:b,cached:false};};await Promise.all([selectArchive(old),selectArchive(today)]);return S.edition;}""" % json.dumps(brief))
             assert result==day
@@ -249,10 +266,42 @@ def run(output, public_url=None):
             # Renderer grouping preserves synthetic preamble, list and duplicate titles.
             synthetic=[{'type':'paragraph','inlines':[{'type':'text','text':'intro'}]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]},{'type':'list','ordered':False,'items':[[{'type':'text','text':'list item'}]]},{'type':'heading','level':1,'inlines':[{'type':'text','text':'same'}]}]
             assert page.evaluate('(bs)=>briefChapters(bs).flatMap(c=>c.blocks)',synthetic)==synthetic
+            # Long navigation and wide-table coverage must not depend on news content.
+            wide={'type':'table','headers':[[{'type':'text','text':'Column '+str(i)}] for i in range(8)],
+                  'rows':[[[{'type':'text','text':'synthetic-long-unbroken-cell-'+str(i)}] for i in range(8)]],
+                  'align':['left']*8}
+            long_blocks=[]
+            for i in range(4):
+                long_blocks.extend([{'type':'heading','level':1,'inlines':[{'type':'text','text':'Synthetic chapter '+str(i)}]},
+                                    {'type':'paragraph','inlines':[{'type':'text','text':'Long fixture text. '*100}]}])
+            long_blocks.append(wide)
+            page.evaluate('(blocks)=>{S.brief={...S.brief,blocks,body_sha256:"synthetic-long"};S.briefState="ready";S.tab="home";history.replaceState(null,"",location.pathname);render();}',long_blocks)
+            assert page.locator('.brief-chapter').count()==4
+            page.locator('.brief-toc summary').click()
+            page.locator('.brief-toc a').nth(3).click()
+            page.wait_for_function('document.querySelectorAll(".brief-chapter")[3].open && document.activeElement===document.querySelectorAll(".brief-chapter>summary")[3]')
+            page.locator('[data-chapters="open"]').click()
+            table=page.locator('#chatBrief .table-scroll')
+            table.scroll_into_view_if_needed()
+            assert table.evaluate('(e)=>e.scrollWidth>e.clientWidth')
+            table.evaluate('(e)=>e.scrollLeft=100')
+            assert table.evaluate('(e)=>e.scrollLeft>0')
+            assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+            # The smallest legal manuscript has one paragraph, no H1 and no table.
+            short=[{'type':'paragraph','inlines':[{'type':'text','text':'Short fixture.'}]}]
+            page.evaluate('(blocks)=>{S.brief={...S.brief,blocks,body_sha256:"synthetic-short"};history.replaceState(null,"",location.pathname);render();}',short)
+            assert page.locator('.brief-chapter').count()==1
+            assert page.locator('.brief-chapter[open]').count()==1
+            assert page.locator('#chatBrief [data-brief-block]').all_text_contents()==['Short fixture.']
+            assert page.locator('#chatBrief table').count()==0
+            page.locator('[data-chapters="close"]').click()
+            page.locator('.brief-toc summary').click()
+            page.locator('.brief-toc a').click()
+            page.wait_for_function('document.querySelector(".brief-chapter").open')
         assert not errors,errors
         calendar_report=check_earnings_calendar(browser,data) if not public_url else None
         browser.close()
-    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430,1280],'checks':['chapter cards and unique block indices','native keyboard open/close','expand all and collapse all','TOC focus and hash navigation','Back/Forward','date changes reset chapter state','block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
+    report={'calendar_regression':calendar_report,'passed':True,'mode':'public_read_only' if public_url else 'offline_fixture','edition':day,'blocks':len(expected),'source_links':len(links),'widths':[320,375,390,430,1280],'checks':['chapter cards and unique block indices','native keyboard open/close','expand all and collapse all','TOC focus and hash navigation','Back/Forward','date changes reset chapter state','block text and order','heading hierarchy','source labels and destinations','table scroll','large dark','earnings','no RSS requests','offline provenance','failure retains content','missing today and latest-publication navigation','synthetic long and short manuscripts','rapid date race','unsafe tokens rejected'],'limitations':['Chromium fixture only; not real Safari or real Service Worker installation']}
     if public_url:
         report['checks']=['chapter keyboard and TOC','all chapters reachable','date reset and Back/Forward','public body text and order','public heading hierarchy','public source labels and destinations','table scroll','large dark','earnings']
         report['limitations']=['Chromium; Service Worker blocked for fresh public-file verification; not real Safari']
