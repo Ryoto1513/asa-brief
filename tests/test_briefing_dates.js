@@ -12,6 +12,8 @@ context.fixture=index;run('S.briefIndex=fixture');
 context.fetch=async path=>new Response(JSON.stringify(brief(path.includes('2026-10-23')?'2026-10-23':'2026-10-24')));
 (async()=>{
  assert.equal(run("validDate('2026-02-30')"),false);assert.equal(run('localToday()'),'2026-10-24');
+ // If today's published body fails, never call yesterday the latest publication.
+ run("S.briefState='failed';S.brief=null");assert.equal(run('latestPublishedBriefAction()'),'');assert.ok(!run('home()').includes('data-brief-date'));
  await run("selectArchive('2026-10-24')");assert.equal(run('S.brief.edition_date'),'2026-10-24');assert.ok(run('home()').includes(body));
  assert.equal(run('JSON.stringify(briefingDates())'),JSON.stringify(dates));
  await run("selectArchive('2099-01-01')");assert.equal(run('S.edition'),'2026-10-24');
