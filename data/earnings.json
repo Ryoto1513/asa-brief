@@ -1,8 +1,18 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T12:43:24+09:00",
+  "checked_at": "2026-11-06T11:43:27+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "9195894f2df3b878c972",
+      "disclosure_key": "3402:2026-11-05",
+      "code": "3402",
+      "company": "東レ",
+      "title": "業績予想の修正に関するお知らせ",
+      "published_at": "2026-11-05T16:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261104564372.pdf",
+      "stage": "detected"
+    },
     {
       "id": "04b8d8b0a8bf7de24465",
       "disclosure_key": "3407:2026-11-05",
@@ -390,7 +400,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-05T12:43:24+09:00",
+    "checked_at": "2026-11-06T11:43:27+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2394,7 +2404,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-05T12:43:24+09:00"
+    "last_success_at": "2026-11-06T11:43:27+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }

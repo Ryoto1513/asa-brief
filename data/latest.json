@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T12:43:15+09:00",
-  "edition_date": "2026-11-05",
+  "generated_at": "2026-11-06T11:43:19+09:00",
+  "edition_date": "2026-11-06",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
   "articles": [
     {
-      "id": "da7b8af365fe81788a7d",
+      "id": "0162deead9df2ef96b13",
       "cat": "セキュリティ",
-      "tag": "公式発表",
-      "date": "10/29",
-      "published_at": "2026-10-29T15:43+09:00",
+      "tag": "報道見出し",
+      "date": "11/06",
+      "published_at": "2026-11-06T05:00+09:00",
       "date_precision": "minute",
-      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.jpcert.or.jp/at/2026/at260033.html",
-      "source_kind": "primary",
-      "publisher": "JPCERT/CC 注意喚起",
-      "publisher_domain": "jpcert.or.jp",
+      "title": "政府 ブロッキング検討 サイバー攻撃 緊急対策案",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBGVThWeUZXdk5PNTluZlRuU1R0QkpGcnlhVHF5WlNIZkF3TE1tZ0lSdHF1ZFlVcDM1M1JoTXlEMURZX2hHN2swWWhuWFctWW1mc3hiRzRiLWlvdXQwRlFsQS15aw?oc=5",
+      "source_kind": "press_search",
+      "publisher": "読売新聞",
+      "publisher_domain": "www.yomiuri.co.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/2026/at260033.html"
+          "name": "読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBGVThWeUZXdk5PNTluZlRuU1R0QkpGcnlhVHF5WlNIZkF3TE1tZ0lSdHF1ZFlVcDM1M1JoTXlEMURZX2hHN2swWWhuWFctWW1mc3hiRzRiLWlvdXQwRlFsQS15aw?oc=5"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
+      "age_label": "24時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -36,7 +36,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "JPCERT/CC 注意喚起が配信した見出し・リンク・公開日時（2026-10-29 15:43 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "読売新聞が配信した見出し・リンク・公開日時（2026-11-06 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -75,7 +75,79 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
+    },
+    {
+      "id": "c2df309fb1da7002f534",
+      "cat": "セキュリティ",
+      "tag": "報道見出し",
+      "date": "11/05",
+      "published_at": "2026-11-05T17:08+09:00",
+      "date_precision": "minute",
+      "title": "政府、サイバー攻撃「緊急対策パッケージ」に強制遮断「ブロッキング」の検討盛り込む方針…法的課題の検討急ぐ",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9uN0VKbDdVMHZNREE1a1FYQWJ4cThZaWVYVnNOWlJYSFZqS1p3S3NrQVEtbnpVelFNRi1tWVVicXRtd2xyM0ExR2F4VENDOWdTSDF0OXg1RjFqRDlXU0ZwczNDdmI?oc=5",
+      "source_kind": "press_search",
+      "publisher": "読売新聞",
+      "publisher_domain": "www.yomiuri.co.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9uN0VKbDdVMHZNREE1a1FYQWJ4cThZaWVYVnNOWlJYSFZqS1p3S3NrQVEtbnpVelFNRi1tWVVicXRtd2xyM0ExR2F4VENDOWdTSDF0OXg1RjFqRDlXU0ZwczNDdmI?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
+      "learning_topic": "セキュリティの重要情報",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "読売新聞が配信した見出し・リンク・公開日時（2026-11-05 17:08 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜セキュリティの重要情報（一般論）",
+          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "脆弱性",
+          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
+        ],
+        [
+          "CVE",
+          "公開された脆弱性を区別する識別番号。"
+        ],
+        [
+          "パッチ",
+          "不具合や脆弱性を直すための更新。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "JPCERT/CC 注意喚起",
+          "url": "https://www.jpcert.or.jp/at/"
+        }
+      ],
+      "new_since_last": true
     },
     {
       "id": "b8ea38728d6d1a0b89a4",
@@ -98,79 +170,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "読売新聞が配信した見出し・リンク・公開日時（2026-11-05 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "e2a7753126bb44779aa1",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T05:00+09:00",
-      "date_precision": "minute",
-      "title": "サイバー攻撃 救援組織 官民の専門家 派遣 政府緊急対策案",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5STWJXWEFDNGpKMnhTOWhTOU81TldFSEgyYnp4VnhxM05ZOVlHOFp5cEF4LU94aUM0dkQ5anVqa3A0S0Fhckw4M3AzQl9XMVpyX2hmRDFScFBuc3pfdnZXN29uVQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "読売新聞",
-      "publisher_domain": "www.yomiuri.co.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5STWJXWEFDNGpKMnhTOWhTOU81TldFSEgyYnp4VnhxM05ZOVlHOFp5cEF4LU94aUM0dkQ5anVqa3A0S0Fhckw4M3AzQl9XMVpyX2hmRDFScFBuc3pfdnZXN29uVQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -242,7 +242,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -294,13 +294,13 @@
       "new_since_last": false
     },
     {
-      "id": "9c72f436c020cf9e1d70",
+      "id": "799823e79b042afabe4f",
       "cat": "日本経済",
       "tag": "公式発表",
-      "date": "11/05",
-      "published_at": "2026-11-05T09:30+09:00",
+      "date": "11/06",
+      "published_at": "2026-11-06T09:30+09:00",
       "date_precision": "minute",
-      "title": "国債金利情報(令和8年11月4日)",
+      "title": "国債金利情報(令和8年11月5日)",
       "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
       "source_url": "https://www.mof.go.jp/jgbs/reference/interest_rate/jgbcm.csv",
       "source_kind": "primary",
@@ -324,7 +324,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "財務省が配信した見出し・リンク・公開日時（2026-11-05 09:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "財務省が配信した見出し・リンク・公開日時（2026-11-06 09:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -361,516 +361,32 @@
         {
           "name": "日本銀行：金融政策の概要",
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "cc8e3898edba26001a33",
-      "cat": "金融政策",
-      "tag": "公式発表",
-      "date": "11/05",
-      "published_at": "2026-11-05T08:50+09:00",
-      "date_precision": "minute",
-      "title": "金融政策決定会合議事要旨（9月17、18日開催分）",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.boj.or.jp/mopo/mpmsche_minu/minu_2026/g260918.pdf",
-      "source_kind": "primary",
-      "publisher": "日本銀行",
-      "publisher_domain": "boj.or.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日本銀行",
-          "url": "https://www.boj.or.jp/mopo/mpmsche_minu/minu_2026/g260918.pdf"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏦",
-      "tone": "indigo",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "金利のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本銀行が配信した見出し・リンク・公開日時（2026-11-05 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜金利のニュース（一般論）",
-          "金利は、お金を一定期間借りるときの費用の割合です。中央銀行の政策金利と、住宅ローンや国債の金利は同じものではありません。まず、どの金利の話なのかを確認しましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般に金利が上がると、借入れが多い企業や家計の負担が増えやすい一方、預金の利息が増える場合があります。ただし契約の種類や見直し時期で反映は異なります。株価や為替は事前の予想にも左右され、「利上げなら必ず円高・株安」とは決められません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①決定か発言・観測か、②変更前と変更後の金利、③実施時期、④判断の根拠となった物価・賃金・景気、⑤市場の事前予想を確認します。総裁や委員の発言を、政策決定と混同しないことが重要です。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "政策金利",
-          "中央銀行が金融政策で働きかける短期金利など。"
-        ],
-        [
-          "長期金利",
-          "長い期間の資金の貸し借りに対応する金利。政策金利そのものではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "日本銀行：教えて！にちぎん",
-          "url": "https://www.boj.or.jp/about/education/oshiete/"
-        },
-        {
-          "name": "日本銀行：金融政策の概要",
-          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "3a64e29a10d70b721a66",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T12:20+09:00",
-      "date_precision": "minute",
-      "title": "「津波防災の日」に宮崎港で避難訓練",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PRVZjZUg1N0xhbW1vbXZTX09iUENWbXhRSHJDcHE2al80alZLdzZNb0o0M1VCWFdJZ29IRTRBclFkUWwtdjE2Q29JT2FGbE4taE91SDhiQXVpRjBwaU9F?oc=5",
-      "source_kind": "press_search",
-      "publisher": "NHKニュース",
-      "publisher_domain": "news.web.nhk",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PRVZjZUg1N0xhbW1vbXZTX09iUENWbXhRSHJDcHE2al80alZLdzZNb0o0M1VCWFdJZ29IRTRBclFkUWwtdjE2Q29JT2FGbE4taE91SDhiQXVpRjBwaU9F?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 12:20 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
         }
       ],
       "new_since_last": true
     },
     {
-      "id": "d91d78a7ac82c5796d88",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T11:59+09:00",
-      "date_precision": "minute",
-      "title": "「津波防災の日」に合わせ「シェイクアウト訓練」 山口",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZGxmcTlJVk94REFIN0dvM1c2aTNTLWlRR2VBVmZZNmhKQ2RpbXM1TW4wdE5KbUZSODFfSnZoaUZSYzlMR3FSRFBZeFFTT1NaVlNqeEZJYVlsVUpZN184?oc=5",
-      "source_kind": "press_search",
-      "publisher": "NHKニュース",
-      "publisher_domain": "news.web.nhk",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZGxmcTlJVk94REFIN0dvM1c2aTNTLWlRR2VBVmZZNmhKQ2RpbXM1TW4wdE5KbUZSODFfSnZoaUZSYzlMR3FSRFBZeFFTT1NaVlNqeEZJYVlsVUpZN184?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 11:59 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "e58b2bc36465036fa54e",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T11:30+09:00",
-      "date_precision": "minute",
-      "title": "「津波防災の日」津波被害の教訓伝える写真展 青森 八戸",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhbGlwQkQ1dWo1LWVmcDZLc05zc29MUXF5NUNNRmJ5VGdsMkt1bEZQYnJaZmpvVktsa1hQM2dPLUQ3b0tveEZMRkVQcWxwalBHeVdBRjlFdzRyMWs5MnJr?oc=5",
-      "source_kind": "press_search",
-      "publisher": "NHKニュース",
-      "publisher_domain": "news.web.nhk",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhbGlwQkQ1dWo1LWVmcDZLc05zc29MUXF5NUNNRmJ5VGdsMkt1bEZQYnJaZmpvVktsa1hQM2dPLUQ3b0tveEZMRkVQcWxwalBHeVdBRjlFdzRyMWs5MnJr?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 11:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "2408ce5bcc5e86453c49",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T11:01+09:00",
-      "date_precision": "minute",
-      "title": "11月5日は「津波防災の日」です",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WUTBqczBLNk5mQkRQLUowZWJoMVRvZzZjbXQwQ2dHMUZNb3hQMVI0RS1IZy1iOTU1eko4MlZaS01Ib2RLcUNrZVlmTkhZUWVic2VUUzhoLU9QS1BUYUtGY1pFLWxFX3c?oc=5",
-      "source_kind": "press_search",
-      "publisher": "やさしい朝日新聞",
-      "publisher_domain": "yasashii.asahi.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "やさしい朝日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WUTBqczBLNk5mQkRQLUowZWJoMVRvZzZjbXQwQ2dHMUZNb3hQMVI0RS1IZy1iOTU1eko4MlZaS01Ib2RLcUNrZVlmTkhZUWVic2VUUzhoLU9QS1BUYUtGY1pFLWxFX3c?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "やさしい朝日新聞が配信した見出し・リンク・公開日時（2026-11-05 11:01 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "5e962c406bd24e75b4d1",
-      "cat": "日本経済",
-      "tag": "公式発表",
-      "date": "11/05",
-      "published_at": "2026-11-05T10:30+09:00",
-      "date_precision": "minute",
-      "title": "5年利付国債（11月債）の発行予定額等（令和8年11月5日公表）",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261105.htm",
-      "source_kind": "primary",
-      "publisher": "財務省",
-      "publisher_domain": "mof.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "財務省",
-          "url": "https://www.mof.go.jp/jgbs/auction/calendar/yotei/auct20261105.htm"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "決算・日本株のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "財務省が配信した見出し・リンク・公開日時（2026-11-05 10:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜決算・日本株のニュース（一般論）",
-          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "営業利益",
-          "本業の収益力を考える際に使われる利益指標。"
-        ],
-        [
-          "IR",
-          "企業が投資家に向けて行う情報開示や説明。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "金融庁：NISAの情報",
-          "url": "https://www.fsa.go.jp/policy/nisa2/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "7033e3a9109a384a125d",
-      "cat": "金融政策",
-      "tag": "公式発表",
-      "date": "11/05",
-      "published_at": "2026-11-05T08:50+09:00",
-      "date_precision": "minute",
-      "title": "日銀当座預金増減要因（11月見込み）",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.boj.or.jp/statistics/boj/fm/juqp/juqp2611.xlsx",
-      "source_kind": "primary",
-      "publisher": "日本銀行",
-      "publisher_domain": "boj.or.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日本銀行",
-          "url": "https://www.boj.or.jp/statistics/boj/fm/juqp/juqp2611.xlsx"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🏦",
-      "tone": "indigo",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "金利のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本銀行が配信した見出し・リンク・公開日時（2026-11-05 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜金利のニュース（一般論）",
-          "金利は、お金を一定期間借りるときの費用の割合です。中央銀行の政策金利と、住宅ローンや国債の金利は同じものではありません。まず、どの金利の話なのかを確認しましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般に金利が上がると、借入れが多い企業や家計の負担が増えやすい一方、預金の利息が増える場合があります。ただし契約の種類や見直し時期で反映は異なります。株価や為替は事前の予想にも左右され、「利上げなら必ず円高・株安」とは決められません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①決定か発言・観測か、②変更前と変更後の金利、③実施時期、④判断の根拠となった物価・賃金・景気、⑤市場の事前予想を確認します。総裁や委員の発言を、政策決定と混同しないことが重要です。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "政策金利",
-          "中央銀行が金融政策で働きかける短期金利など。"
-        ],
-        [
-          "長期金利",
-          "長い期間の資金の貸し借りに対応する金利。政策金利そのものではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "日本銀行：教えて！にちぎん",
-          "url": "https://www.boj.or.jp/about/education/oshiete/"
-        },
-        {
-          "name": "日本銀行：金融政策の概要",
-          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "dfb44ddf25a00473ca25",
+      "id": "7d11a78637cdc55eccaf",
       "cat": "国際情勢",
       "tag": "報道見出し",
-      "date": "11/04",
-      "published_at": "2026-11-04T05:00+09:00",
+      "date": "11/06",
+      "published_at": "2026-11-06T05:52+09:00",
       "date_precision": "minute",
-      "title": "フランス暴動、かすむ学生の訴え 教育改善へ「声上げ続ける」",
+      "title": "フランスで再び大規模デモ 高校で火災など混乱も",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kV1hDSU5MQXB5c2RNdVBTenlyVTVXcHRRU1Y0RmstV1pwSG5PeURRTG9Kc01RRTdBYkUtdEM1TzY0QVE0LXNHSmU0WlQzbC04Smo2ZFhvMzJPNU0yZEJ0dVNvdHVMRnQyYk1uTQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCYVMtU0tWc1pLNml1MUg2UEpTUDJ6dlpueWN3b3hNSXhtRHVjM2pEcHFwXzlXeW1BMXhTYXBzRHNGT2N1WnY5bVUwSG9YRkFYdzlLamJ4VXpxVzJ5SjZ3?oc=5",
       "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
+      "publisher": "NHKニュース",
+      "publisher_domain": "news.web.nhk",
       "language": "ja",
       "sources": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kV1hDSU5MQXB5c2RNdVBTenlyVTVXcHRRU1Y0RmstV1pwSG5PeURRTG9Kc01RRTdBYkUtdEM1TzY0QVE0LXNHSmU0WlQzbC04Smo2ZFhvMzJPNU0yZEJ0dVNvdHVMRnQyYk1uTQ?oc=5"
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCYVMtU0tWc1pLNml1MUg2UEpTUDJ6dlpueWN3b3hNSXhtRHVjM2pEcHFwXzlXeW1BMXhTYXBzRHNGT2N1WnY5bVUwSG9YRkFYdzlLamJ4VXpxVzJ5SjZ3?oc=5"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "24時間以内",
       "read": 3,
       "icon": "🌍",
       "tone": "amber",
@@ -880,7 +396,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-04 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-06 05:52 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜世界経済・国際情勢のニュース（一般論）",
@@ -911,18 +427,218 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
     },
     {
-      "id": "43393f7ab6e86cd1e0fa",
+      "id": "9df81f0c03a31dc5b9a8",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/06",
+      "published_at": "2026-11-06T03:29+09:00",
+      "date_precision": "minute",
+      "title": "米中間選挙結果におののくイスラエル、「最高レベルの緊急事態」",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzWVhlRkNEdk1Vc1dSclM4MFA4WDBwZUdlRkd4WWtGTkZjMHU0YWs5QVFKa0VWb1E4b0JHLXU3MUdNRFg3SmFEZlZOVmNrSnI3azhDbXlvMXV1VGtzbjNHa1NkM1BqOC1TaG42d3NRN0dJN3VaM1Zn?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Bloomberg.com",
+      "publisher_domain": "www.bloomberg.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzWVhlRkNEdk1Vc1dSclM4MFA4WDBwZUdlRkd4WWtGTkZjMHU0YWs5QVFKa0VWb1E4b0JHLXU3MUdNRFg3SmFEZlZOVmNrSnI3azhDbXlvMXV1VGtzbjNHa1NkM1BqOC1TaG42d3NRN0dJN3VaM1Zn?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Bloomberg.comが配信した見出し・リンク・公開日時（2026-11-06 03:29 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "e66d30fd4992357578f9",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/05",
+      "published_at": "2026-11-05T19:11+09:00",
+      "date_precision": "minute",
+      "title": "「津波防災の日」南相馬市で地震・津波想定の大規模訓練",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IR1V1dURNbzdGZWJISFA5YlVSOW1nVm1QYWhOMlQxV0p6UENvQ3d1WVN4ZURMckJCeEVMMktzQjJWZlB0czkyTWxYbnFELXlZeWhjeE5KMEk2cFpMNWlB?oc=5",
+      "source_kind": "press_search",
+      "publisher": "NHKニュース",
+      "publisher_domain": "news.web.nhk",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IR1V1dURNbzdGZWJISFA5YlVSOW1nVm1QYWhOMlQxV0p6UENvQ3d1WVN4ZURMckJCeEVMMktzQjJWZlB0czkyTWxYbnFELXlZeWhjeE5KMEk2cFpMNWlB?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🏛️",
+      "tone": "blue",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "政治・地方自治のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 19:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜政治・地方自治のニュース（一般論）",
+          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "地方自治",
+          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
+        ],
+        [
+          "予算案",
+          "支出などの計画案。成立した予算や実際の支出と区別します。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省：公式情報",
+          "url": "https://www.soumu.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "76253d189d18e06661c3",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/05",
+      "published_at": "2026-11-05T19:06+09:00",
+      "date_precision": "minute",
+      "title": "防災庁 「世界津波の日」にあわせ和歌山で防災シンポジウム",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNcHlmVzEyV2ZldUQtU1FPY3BvSnBXN1NPVnNuWFpQeERySHE4VkxBamRmMnZmNEhUeXo4Nl9KeXFpNkxqckJiS1djYllZR1Z1NEttbUVHVTZUM1FRQTRV?oc=5",
+      "source_kind": "press_search",
+      "publisher": "NHKニュース",
+      "publisher_domain": "news.web.nhk",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNcHlmVzEyV2ZldUQtU1FPY3BvSnBXN1NPVnNuWFpQeERySHE4VkxBamRmMnZmNEhUeXo4Nl9KeXFpNkxqckJiS1djYllZR1Z1NEttbUVHVTZUM1FRQTRV?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🏛️",
+      "tone": "blue",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "政治・地方自治のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 19:06 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜政治・地方自治のニュース（一般論）",
+          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "地方自治",
+          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
+        ],
+        [
+          "予算案",
+          "支出などの計画案。成立した予算や実際の支出と区別します。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省：公式情報",
+          "url": "https://www.soumu.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "cc8e3898edba26001a33",
       "cat": "金融政策",
       "tag": "公式発表",
-      "date": "11/04",
-      "published_at": "2026-11-04T17:00+09:00",
+      "date": "11/05",
+      "published_at": "2026-11-05T08:50+09:00",
       "date_precision": "minute",
-      "title": "日本銀行が保有する国債の銘柄別残高",
+      "title": "金融政策決定会合議事要旨（9月17、18日開催分）",
       "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.boj.or.jp/statistics/boj/other/mei/release/2026/mei261030.xlsx",
+      "source_url": "https://www.boj.or.jp/mopo/mpmsche_minu/minu_2026/g260918.pdf",
       "source_kind": "primary",
       "publisher": "日本銀行",
       "publisher_domain": "boj.or.jp",
@@ -930,11 +646,11 @@
       "sources": [
         {
           "name": "日本銀行",
-          "url": "https://www.boj.or.jp/statistics/boj/other/mei/release/2026/mei261030.xlsx"
+          "url": "https://www.boj.or.jp/mopo/mpmsche_minu/minu_2026/g260918.pdf"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -944,7 +660,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日本銀行が配信した見出し・リンク・公開日時（2026-11-04 17:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本銀行が配信した見出し・リンク・公開日時（2026-11-05 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -986,23 +702,163 @@
       "new_since_last": false
     },
     {
-      "id": "81c1c1b5f229b418aace",
-      "cat": "日本経済",
+      "id": "96ab7e820ebd3a6d0e83",
+      "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/05",
-      "published_at": "2026-11-05T09:44+09:00",
+      "published_at": "2026-11-05T17:29+09:00",
       "date_precision": "minute",
-      "title": "協和キリン、増収増益",
+      "title": "「津波防災の日」大規模災害想定の合同訓練 山陽小野田",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56ZDlQbEJvR0VVMnpmbDdrUEZXbmNhWjJHTVZfbmdNRk5Zc1QxUXVJQVBCVFo2cmNUdHdLaGhfZ2pQLWh6VjQzX1NlaVhmRWVHNjJrQUN5U2NPR0hnd2QycTNPZ2g4Nl96Q2txbw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfNk1DSkpjMWNIOHVRUV9CWW93RkU1NkFKNDN1dEd4YS1mZy1iSUo4bmFaZTBOZ1cxaWFsR3lmQlM3UjFNXy00UXJ0cU4yQjdYXzhPS0JKRHBKWWVBNTRF?oc=5",
       "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
+      "publisher": "NHKニュース",
+      "publisher_domain": "news.web.nhk",
       "language": "ja",
       "sources": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56ZDlQbEJvR0VVMnpmbDdrUEZXbmNhWjJHTVZfbmdNRk5Zc1QxUXVJQVBCVFo2cmNUdHdLaGhfZ2pQLWh6VjQzX1NlaVhmRWVHNjJrQUN5U2NPR0hnd2QycTNPZ2g4Nl96Q2txbw?oc=5"
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfNk1DSkpjMWNIOHVRUV9CWW93RkU1NkFKNDN1dEd4YS1mZy1iSUo4bmFaZTBOZ1cxaWFsR3lmQlM3UjFNXy00UXJ0cU4yQjdYXzhPS0JKRHBKWWVBNTRF?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "政治・地方自治のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 17:29 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜政治・地方自治のニュース（一般論）",
+          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "地方自治",
+          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
+        ],
+        [
+          "予算案",
+          "支出などの計画案。成立した予算や実際の支出と区別します。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省：公式情報",
+          "url": "https://www.soumu.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "63eb73364ebe4203ac37",
+      "cat": "金融政策",
+      "tag": "公式発表",
+      "date": "11/06",
+      "published_at": "2026-11-06T10:00+09:00",
+      "date_precision": "minute",
+      "title": "学生向けコンテスト「第22回 日銀グランプリ」決勝大会の実施について",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.boj.or.jp/about/nichigin_gp/ngp_release/ngp261106.htm",
+      "source_kind": "primary",
+      "publisher": "日本銀行",
+      "publisher_domain": "boj.or.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本銀行",
+          "url": "https://www.boj.or.jp/about/nichigin_gp/ngp_release/ngp261106.htm"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🏦",
+      "tone": "indigo",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "金利のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本銀行が配信した見出し・リンク・公開日時（2026-11-06 10:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜金利のニュース（一般論）",
+          "金利は、お金を一定期間借りるときの費用の割合です。中央銀行の政策金利と、住宅ローンや国債の金利は同じものではありません。まず、どの金利の話なのかを確認しましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般に金利が上がると、借入れが多い企業や家計の負担が増えやすい一方、預金の利息が増える場合があります。ただし契約の種類や見直し時期で反映は異なります。株価や為替は事前の予想にも左右され、「利上げなら必ず円高・株安」とは決められません。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①決定か発言・観測か、②変更前と変更後の金利、③実施時期、④判断の根拠となった物価・賃金・景気、⑤市場の事前予想を確認します。総裁や委員の発言を、政策決定と混同しないことが重要です。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "政策金利",
+          "中央銀行が金融政策で働きかける短期金利など。"
+        ],
+        [
+          "長期金利",
+          "長い期間の資金の貸し借りに対応する金利。政策金利そのものではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "日本銀行：教えて！にちぎん",
+          "url": "https://www.boj.or.jp/about/education/oshiete/"
+        },
+        {
+          "name": "日本銀行：金融政策の概要",
+          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "e533ab50fa4d0f9c5198",
+      "cat": "日本経済",
+      "tag": "公式発表",
+      "date": "11/06",
+      "published_at": "2026-11-06T08:50+09:00",
+      "date_precision": "minute",
+      "title": "個人向け国債の発行条件等",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/p20261106.pdf",
+      "source_kind": "primary",
+      "publisher": "財務省",
+      "publisher_domain": "mof.go.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/p20261106.pdf"
         }
       ],
       "quality": "fixed_learning",
@@ -1010,13 +866,13 @@
       "read": 3,
       "icon": "📈",
       "tone": "teal",
-      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
       "learning_topic": "決算・日本株のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-05 09:44 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "財務省が配信した見出し・リンク・公開日時（2026-11-06 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜決算・日本株のニュース（一般論）",
@@ -1051,7 +907,143 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
+    },
+    {
+      "id": "e8a2bde9ae42d7c8b5af",
+      "cat": "日本経済",
+      "tag": "公式発表",
+      "date": "11/06",
+      "published_at": "2026-11-06T08:50+09:00",
+      "date_precision": "minute",
+      "title": "新型窓口販売方式による10年利付国債（第384回）の発行条件等",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261106.htm",
+      "source_kind": "primary",
+      "publisher": "財務省",
+      "publisher_domain": "mof.go.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261106.htm"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📈",
+      "tone": "teal",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "財務省が配信した見出し・リンク・公開日時（2026-11-06 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "8c238c239b9d82ecb487",
+      "cat": "日本経済",
+      "tag": "報道見出し",
+      "date": "11/05",
+      "published_at": "2026-11-05T19:45+09:00",
+      "date_precision": "minute",
+      "title": "決算:AGC一転最終減益 26年12月期42％減、欧州景気低迷で建築ガラス減",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PdjNmSzV6OHAyNENxeFcxSGFkdFVHWUJfUmhfdlB0OER4OEhraXNmLWdyYk80ZVktMHJpVXhGWlFielF0eVZvSW80ZGlReFRheHl5RDRCZE1SVXFianBiRW54dGpUUF84RWhTSg?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PdjNmSzV6OHAyNENxeFcxSGFkdFVHWUJfUmhfdlB0OER4OEhraXNmLWdyYk80ZVktMHJpVXhGWlFielF0eVZvSW80ZGlReFRheHl5RDRCZE1SVXFianBiRW54dGpUUF84RWhTSg?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📈",
+      "tone": "teal",
+      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-05 19:45 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
+        }
+      ],
+      "new_since_last": true
     }
   ],
   "markets": [],
@@ -1068,7 +1060,7 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 22,
+      "eligible": 24,
       "dropped": {
         "out_of_time_window": 53
       }
@@ -1077,9 +1069,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 38,
+      "eligible": 40,
       "dropped": {
-        "out_of_time_window": 62
+        "out_of_time_window": 60
       }
     },
     {
@@ -1093,17 +1085,19 @@
       "name": "総務省統計局",
       "kind": "primary",
       "ok": true,
-      "eligible": 6,
+      "eligible": 0,
       "dropped": {
-        "out_of_time_window": 9
+        "out_of_time_window": 15
       }
     },
     {
       "name": "総務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 20,
-      "dropped": {}
+      "eligible": 19,
+      "dropped": {
+        "out_of_scope": 1
+      }
     },
     {
       "name": "経済産業省",
@@ -1126,89 +1120,88 @@
       "ok": true,
       "eligible": 38,
       "dropped": {
-        "publisher_not_allowed": 60,
-        "missing_title_or_date": 2
+        "publisher_not_allowed": 62
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 0,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 23
+        "publisher_not_allowed": 29
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 14,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 86
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 39,
+      "eligible": 37,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 63
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 22,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 78
+        "publisher_not_allowed": 79
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 40
       }
     },
     {
       "name": "JPCERT/CC 注意喚起",
       "kind": "primary",
       "ok": true,
-      "eligible": 16,
+      "eligible": 15,
       "dropped": {
-        "out_of_time_window": 5
+        "out_of_time_window": 6
       }
     },
     {
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 52
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 49
+        "publisher_not_allowed": 43
       }
     }
   ]
