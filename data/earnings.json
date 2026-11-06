@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T11:43:27+09:00",
+  "checked_at": "2026-11-06T12:39:29+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "d937e96f4102a2933aa7",
+      "disclosure_key": "1332:2026-11-06",
+      "code": "1332",
+      "company": "ニッスイ",
+      "title": "2027年３月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-11-06T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106566707.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "6a6cc6445fcf84a39e4c",
+      "disclosure_key": "1332:2026-11-06",
+      "code": "1332",
+      "company": "ニッスイ",
+      "title": "2027年３月期 中間期決算短信補足資料",
+      "published_at": "2026-11-06T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106566713.pdf",
+      "stage": "detected"
+    },
     {
       "id": "9195894f2df3b878c972",
       "disclosure_key": "3402:2026-11-05",
@@ -400,7 +420,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-06T11:43:27+09:00",
+    "checked_at": "2026-11-06T12:39:29+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2404,7 +2424,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-06T11:43:27+09:00"
+    "last_success_at": "2026-11-06T12:39:29+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }

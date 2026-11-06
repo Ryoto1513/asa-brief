@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-06T11:43:19+09:00",
+  "attempted_at": "2026-11-06T12:39:20+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -7,18 +7,18 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 24,
+      "eligible": 22,
       "dropped": {
-        "out_of_time_window": 53
+        "out_of_time_window": 55
       }
     },
     {
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 40,
+      "eligible": 42,
       "dropped": {
-        "out_of_time_window": 60
+        "out_of_time_window": 58
       }
     },
     {
@@ -65,9 +65,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 38,
+      "eligible": 37,
       "dropped": {
-        "publisher_not_allowed": 62
+        "publisher_not_allowed": 63
       }
     },
     {
@@ -83,9 +83,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 27,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 73
+        "publisher_not_allowed": 71
       }
     },
     {
@@ -101,27 +101,27 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 37,
+      "eligible": 38,
       "dropped": {
-        "publisher_not_allowed": 63
+        "publisher_not_allowed": 62
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 81
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 40
+        "publisher_not_allowed": 41
       }
     },
     {
@@ -137,9 +137,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 63
       }
     },
     {
