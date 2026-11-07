@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T12:39:29+09:00",
+  "checked_at": "2026-11-07T11:12:14+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "727e201071bfe9654ff0",
+      "disclosure_key": "7211:2026-11-06",
+      "code": "7211",
+      "company": "三菱自",
+      "title": "2027年３月期通期業績予想の修正に関するお知らせ",
+      "published_at": "2026-11-06T16:05+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106567665.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "cedc2d75a92d946c6f33",
+      "disclosure_key": "7211:2026-11-06",
+      "code": "7211",
+      "company": "三菱自",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-11-06T16:05+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106567006.pdf",
+      "stage": "detected"
+    },
     {
       "id": "d937e96f4102a2933aa7",
       "disclosure_key": "1332:2026-11-06",
@@ -420,106 +440,16 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-06T12:39:29+09:00",
+    "checked_at": "2026-11-07T11:12:14+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
-      {
-        "date": "2026-10-08",
-        "code": "3382",
-        "company": "セブン&アイ・ホールディングス",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-08",
-        "code": "9983",
-        "company": "ファーストリテイリング",
-        "period": "2026-08-31期末・本決算",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-09",
-        "code": "6506",
-        "company": "安川電機",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-13",
-        "code": "3086",
-        "company": "J.フロント リテイリング",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-13",
-        "code": "8267",
-        "company": "イオン",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-14",
-        "code": "7453",
-        "company": "良品計画",
-        "period": "2026-08-31期末・本決算",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-15",
-        "code": "3697",
-        "company": "SHIFT",
-        "period": "2026-08-31期末・本決算",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-15",
-        "code": "6532",
-        "company": "ベイカレント",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-15",
-        "code": "8233",
-        "company": "高島屋",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-10-15",
-        "code": "9602",
-        "company": "東宝",
-        "period": "2027-02-28期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "source_as_of": "2026-10-01",
-        "stage": "planned"
-      },
       {
         "date": "2026-10-22",
         "code": "6146",
         "company": "ディスコ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -527,8 +457,8 @@
         "code": "6954",
         "company": "ファナック",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -536,8 +466,8 @@
         "code": "4063",
         "company": "信越化学工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -545,8 +475,8 @@
         "code": "4519",
         "company": "中外製薬",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -554,8 +484,8 @@
         "code": "6988",
         "company": "日東電工",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -563,8 +493,8 @@
         "code": "7751",
         "company": "キヤノン",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -572,8 +502,8 @@
         "code": "8697",
         "company": "日本取引所グループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -581,8 +511,8 @@
         "code": "9697",
         "company": "カプコン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -590,8 +520,8 @@
         "code": "2002",
         "company": "日清製粉グループ本社",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -599,8 +529,8 @@
         "code": "6501",
         "company": "日立製作所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -608,8 +538,8 @@
         "code": "6526",
         "company": "ソシオネクスト",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -617,8 +547,8 @@
         "code": "6701",
         "company": "日本電気",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -626,8 +556,8 @@
         "code": "6857",
         "company": "アドバンテスト",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -635,8 +565,8 @@
         "code": "8604",
         "company": "野村ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -644,8 +574,8 @@
         "code": "9022",
         "company": "東海旅客鉄道",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -653,8 +583,8 @@
         "code": "2914",
         "company": "日本たばこ産業",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -662,8 +592,8 @@
         "code": "3092",
         "company": "ZOZO",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -671,8 +601,8 @@
         "code": "4043",
         "company": "トクヤマ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -680,8 +610,8 @@
         "code": "4062",
         "company": "イビデン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -689,8 +619,8 @@
         "code": "4307",
         "company": "野村総合研究所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -698,8 +628,8 @@
         "code": "4502",
         "company": "武田薬品工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -707,8 +637,8 @@
         "code": "4507",
         "company": "塩野義製薬",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -716,8 +646,8 @@
         "code": "4661",
         "company": "オリエンタルランド",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -725,8 +655,8 @@
         "code": "6301",
         "company": "小松製作所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -734,8 +664,8 @@
         "code": "6305",
         "company": "日立建機",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -743,8 +673,8 @@
         "code": "6471",
         "company": "日本精工",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -752,8 +682,8 @@
         "code": "6473",
         "company": "ジェイテクト",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -761,8 +691,8 @@
         "code": "6504",
         "company": "富士電機",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -770,8 +700,8 @@
         "code": "6702",
         "company": "富士通",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -779,8 +709,8 @@
         "code": "6723",
         "company": "ルネサスエレクトロニクス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -788,8 +718,8 @@
         "code": "6861",
         "company": "キーエンス",
         "period": "2027-03-20期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -797,8 +727,8 @@
         "code": "6902",
         "company": "デンソー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -806,8 +736,8 @@
         "code": "8015",
         "company": "豊田通商",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -815,8 +745,8 @@
         "code": "9202",
         "company": "ANAホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -824,8 +754,8 @@
         "code": "9501",
         "company": "東京電力ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -833,8 +763,8 @@
         "code": "9502",
         "company": "中部電力",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -842,8 +772,8 @@
         "code": "9503",
         "company": "関西電力",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -851,8 +781,8 @@
         "code": "9531",
         "company": "東京瓦斯",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -860,8 +790,8 @@
         "code": "9532",
         "company": "大阪瓦斯",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -869,8 +799,8 @@
         "code": "9766",
         "company": "コナミグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -878,8 +808,8 @@
         "code": "2768",
         "company": "双日",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -887,8 +817,8 @@
         "code": "285A",
         "company": "キオクシアホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -896,8 +826,8 @@
         "code": "4506",
         "company": "住友ファーマ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -905,8 +835,8 @@
         "code": "4568",
         "company": "第一三共",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -914,8 +844,8 @@
         "code": "4578",
         "company": "大塚ホールディングス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -923,8 +853,8 @@
         "code": "5214",
         "company": "日本電気硝子",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -932,8 +862,8 @@
         "code": "5332",
         "company": "TOTO",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -941,8 +871,8 @@
         "code": "5333",
         "company": "NGK",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -950,8 +880,8 @@
         "code": "5802",
         "company": "住友電気工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -959,8 +889,8 @@
         "code": "6302",
         "company": "住友重機械工業",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -968,8 +898,8 @@
         "code": "6472",
         "company": "NTN",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -977,8 +907,8 @@
         "code": "6503",
         "company": "三菱電機",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -986,8 +916,8 @@
         "code": "6752",
         "company": "パナソニック ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -995,8 +925,8 @@
         "code": "6762",
         "company": "TDK",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1004,8 +934,8 @@
         "code": "6770",
         "company": "アルプスアルパイン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1013,8 +943,8 @@
         "code": "6920",
         "company": "レーザーテック",
         "period": "2027-06-30期末・第1四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1022,8 +952,8 @@
         "code": "6981",
         "company": "村田製作所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1031,8 +961,8 @@
         "code": "7735",
         "company": "SCREENホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1040,8 +970,8 @@
         "code": "7741",
         "company": "HOYA",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1049,8 +979,8 @@
         "code": "8035",
         "company": "東京エレクトロン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1058,8 +988,8 @@
         "code": "8601",
         "company": "大和証券グループ本社",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1067,8 +997,8 @@
         "code": "9020",
         "company": "東日本旅客鉄道",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1076,8 +1006,8 @@
         "code": "2282",
         "company": "日本ハム",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1085,8 +1015,8 @@
         "code": "4005",
         "company": "住友化学",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1094,8 +1024,8 @@
         "code": "4151",
         "company": "協和キリン",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1103,8 +1033,8 @@
         "code": "6971",
         "company": "京セラ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1112,8 +1042,8 @@
         "code": "8053",
         "company": "住友商事",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1121,8 +1051,8 @@
         "code": "9201",
         "company": "日本航空",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1130,8 +1060,8 @@
         "code": "2413",
         "company": "エムスリー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1139,8 +1069,8 @@
         "code": "4503",
         "company": "アステラス製薬",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1148,8 +1078,8 @@
         "code": "6103",
         "company": "オークマ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1157,8 +1087,8 @@
         "code": "6841",
         "company": "横河電機",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1166,8 +1096,8 @@
         "code": "7013",
         "company": "IHI",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1175,8 +1105,8 @@
         "code": "8001",
         "company": "伊藤忠商事",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1184,8 +1114,8 @@
         "code": "8002",
         "company": "丸紅",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1193,8 +1123,8 @@
         "code": "8031",
         "company": "三井物産",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1202,8 +1132,8 @@
         "code": "8058",
         "company": "三菱商事",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1211,8 +1141,8 @@
         "code": "9064",
         "company": "ヤマトホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1220,8 +1150,8 @@
         "code": "9107",
         "company": "川崎汽船",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1229,8 +1159,8 @@
         "code": "9432",
         "company": "NTT",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1238,8 +1168,8 @@
         "code": "3401",
         "company": "帝人",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1247,8 +1177,8 @@
         "code": "3407",
         "company": "旭化成",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1256,8 +1186,8 @@
         "code": "4042",
         "company": "東ソー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1265,8 +1195,8 @@
         "code": "4188",
         "company": "三菱ケミカルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1274,8 +1204,8 @@
         "code": "4208",
         "company": "UBE",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1283,8 +1213,8 @@
         "code": "4452",
         "company": "花王",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1292,8 +1222,8 @@
         "code": "4689",
         "company": "LINEヤフー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1301,8 +1231,8 @@
         "code": "5201",
         "company": "AGC",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1310,8 +1240,8 @@
         "code": "5301",
         "company": "東海カーボン",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1319,8 +1249,8 @@
         "code": "5401",
         "company": "日本製鉄",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1328,8 +1258,8 @@
         "code": "6367",
         "company": "ダイキン工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1337,8 +1267,8 @@
         "code": "6724",
         "company": "セイコーエプソン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1346,8 +1276,8 @@
         "code": "6758",
         "company": "ソニーグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1355,8 +1285,8 @@
         "code": "6963",
         "company": "ローム",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1364,8 +1294,8 @@
         "code": "6976",
         "company": "太陽誘電",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1373,8 +1303,8 @@
         "code": "7203",
         "company": "トヨタ自動車",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1382,8 +1312,8 @@
         "code": "7731",
         "company": "ニコン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1391,8 +1321,8 @@
         "code": "7951",
         "company": "ヤマハ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1400,8 +1330,8 @@
         "code": "7974",
         "company": "任天堂",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1409,8 +1339,8 @@
         "code": "9001",
         "company": "東武鉄道",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1418,8 +1348,8 @@
         "code": "9021",
         "company": "西日本旅客鉄道",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1427,8 +1357,8 @@
         "code": "9101",
         "company": "日本郵船",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1436,8 +1366,8 @@
         "code": "1332",
         "company": "ニッスイ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1445,8 +1375,8 @@
         "code": "1721",
         "company": "コムシスホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1454,8 +1384,8 @@
         "code": "3289",
         "company": "東急不動産ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1463,8 +1393,8 @@
         "code": "3861",
         "company": "王子ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1472,8 +1402,8 @@
         "code": "5411",
         "company": "JFEホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1481,8 +1411,8 @@
         "code": "6479",
         "company": "ミネベアミツミ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1490,8 +1420,8 @@
         "code": "7011",
         "company": "三菱重工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1499,8 +1429,8 @@
         "code": "7202",
         "company": "いすゞ自動車",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1508,8 +1438,8 @@
         "code": "7211",
         "company": "三菱自動車工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1517,8 +1447,8 @@
         "code": "7272",
         "company": "ヤマハ発動機",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1526,8 +1456,8 @@
         "code": "7752",
         "company": "リコー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1535,8 +1465,8 @@
         "code": "8801",
         "company": "三井不動産",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1544,8 +1474,8 @@
         "code": "9009",
         "company": "京成電鉄",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1553,8 +1483,8 @@
         "code": "9433",
         "company": "KDDI",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1562,8 +1492,8 @@
         "code": "1803",
         "company": "清水建設",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1571,8 +1501,8 @@
         "code": "2801",
         "company": "キッコーマン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1580,8 +1510,8 @@
         "code": "2802",
         "company": "味の素",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1589,8 +1519,8 @@
         "code": "4021",
         "company": "日産化学",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1598,8 +1528,8 @@
         "code": "4061",
         "company": "デンカ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1607,8 +1537,8 @@
         "code": "4901",
         "company": "富士フイルムホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1616,8 +1546,8 @@
         "code": "5016",
         "company": "JX金属",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1625,8 +1555,8 @@
         "code": "5801",
         "company": "古河電気工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1634,8 +1564,8 @@
         "code": "6525",
         "company": "KOKUSAI ELECTRIC",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1643,8 +1573,8 @@
         "code": "6753",
         "company": "シャープ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1652,8 +1582,8 @@
         "code": "7261",
         "company": "マツダ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1661,8 +1591,8 @@
         "code": "8331",
         "company": "千葉銀行",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1670,8 +1600,8 @@
         "code": "8591",
         "company": "オリックス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1679,8 +1609,8 @@
         "code": "8802",
         "company": "三菱地所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1688,8 +1618,8 @@
         "code": "9104",
         "company": "商船三井",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1697,8 +1627,8 @@
         "code": "9434",
         "company": "ソフトバンク",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1706,8 +1636,8 @@
         "code": "2432",
         "company": "ディー・エヌ・エー",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1715,8 +1645,8 @@
         "code": "2871",
         "company": "ニチレイ",
         "period": "2026-12-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1724,8 +1654,8 @@
         "code": "3402",
         "company": "東レ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1733,8 +1663,8 @@
         "code": "3659",
         "company": "ネクソン",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1742,8 +1672,8 @@
         "code": "4523",
         "company": "エーザイ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1751,8 +1681,8 @@
         "code": "4911",
         "company": "資生堂",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1760,8 +1690,8 @@
         "code": "5233",
         "company": "太平洋セメント",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1769,8 +1699,8 @@
         "code": "5406",
         "company": "神戸製鋼所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1778,8 +1708,8 @@
         "code": "5631",
         "company": "日本製鋼所",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1787,8 +1717,8 @@
         "code": "5706",
         "company": "三井金属",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1796,8 +1726,8 @@
         "code": "5713",
         "company": "住友金属鉱山",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1805,8 +1735,8 @@
         "code": "5803",
         "company": "フジクラ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1814,8 +1744,8 @@
         "code": "5831",
         "company": "しずおかフィナンシャルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1823,8 +1753,8 @@
         "code": "6645",
         "company": "オムロン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1832,8 +1762,8 @@
         "code": "7012",
         "company": "川崎重工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1841,8 +1771,8 @@
         "code": "7267",
         "company": "本田技研工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1850,8 +1780,8 @@
         "code": "7269",
         "company": "スズキ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1859,8 +1789,8 @@
         "code": "7270",
         "company": "SUBARU",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1868,8 +1798,8 @@
         "code": "7733",
         "company": "オリンパス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1877,8 +1807,8 @@
         "code": "8252",
         "company": "丸井グループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1886,8 +1816,8 @@
         "code": "8308",
         "company": "りそなホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1895,8 +1825,8 @@
         "code": "8354",
         "company": "ふくおかフィナンシャルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1904,8 +1834,8 @@
         "code": "8830",
         "company": "住友不動産",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1913,17 +1843,8 @@
         "code": "9005",
         "company": "東急",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
-        "stage": "planned"
-      },
-      {
-        "date": "2026-11-10",
-        "code": "9008",
-        "company": "京王電鉄",
-        "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1931,8 +1852,8 @@
         "code": "9984",
         "company": "ソフトバンクグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1940,8 +1861,8 @@
         "code": "1801",
         "company": "大成建設",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1949,8 +1870,8 @@
         "code": "1812",
         "company": "鹿島建設",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1958,8 +1879,8 @@
         "code": "1925",
         "company": "大和ハウス工業",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1967,8 +1888,8 @@
         "code": "1963",
         "company": "日揮ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1976,8 +1897,8 @@
         "code": "2501",
         "company": "サッポロビール",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1985,8 +1906,8 @@
         "code": "2503",
         "company": "キリンホールディングス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -1994,8 +1915,8 @@
         "code": "3405",
         "company": "クラレ",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2003,8 +1924,8 @@
         "code": "3436",
         "company": "SUMCO",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2012,8 +1933,8 @@
         "code": "4004",
         "company": "レゾナック・ホールディングス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2021,8 +1942,8 @@
         "code": "4183",
         "company": "三井化学",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2030,8 +1951,8 @@
         "code": "4751",
         "company": "サイバーエージェント",
         "period": "2026-09-30期末・本決算",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2039,8 +1960,8 @@
         "code": "5019",
         "company": "出光興産",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2048,8 +1969,8 @@
         "code": "5020",
         "company": "ENEOSホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2057,8 +1978,8 @@
         "code": "5711",
         "company": "三菱マテリアル",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2066,8 +1987,8 @@
         "code": "5714",
         "company": "DOWAホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2075,8 +1996,8 @@
         "code": "6098",
         "company": "リクルートホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2084,8 +2005,8 @@
         "code": "7186",
         "company": "横浜フィナンシャルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2093,8 +2014,8 @@
         "code": "7201",
         "company": "日産自動車",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2102,8 +2023,8 @@
         "code": "8304",
         "company": "あおぞら銀行",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2111,8 +2032,8 @@
         "code": "9007",
         "company": "小田急電鉄",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2120,8 +2041,8 @@
         "code": "9147",
         "company": "NIPPON EXPRESSホールディングス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2129,8 +2050,8 @@
         "code": "9735",
         "company": "セコム",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2138,8 +2059,8 @@
         "code": "1605",
         "company": "INPEX",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2147,8 +2068,8 @@
         "code": "1808",
         "company": "長谷工コーポレーション",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2156,8 +2077,8 @@
         "code": "2269",
         "company": "明治ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2165,8 +2086,8 @@
         "code": "4543",
         "company": "テルモ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2174,8 +2095,8 @@
         "code": "4704",
         "company": "トレンドマイクロ",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2183,8 +2104,8 @@
         "code": "5108",
         "company": "ブリヂストン",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2192,8 +2113,8 @@
         "code": "6113",
         "company": "アマダ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2201,8 +2122,8 @@
         "code": "7532",
         "company": "パン・パシフィック・インターナショナルホールディングス",
         "period": "2027-06-30期末・第1四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2210,8 +2131,8 @@
         "code": "8309",
         "company": "三井住友トラストグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2219,8 +2140,8 @@
         "code": "8804",
         "company": "東京建物",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2228,8 +2149,8 @@
         "code": "1802",
         "company": "大林組",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2237,8 +2158,8 @@
         "code": "2502",
         "company": "アサヒグループホールディングス",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2246,8 +2167,8 @@
         "code": "3099",
         "company": "三越伊勢丹ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2255,8 +2176,8 @@
         "code": "4755",
         "company": "楽天グループ",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2264,8 +2185,8 @@
         "code": "5101",
         "company": "横浜ゴム",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2273,8 +2194,8 @@
         "code": "6178",
         "company": "日本郵政",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2282,8 +2203,8 @@
         "code": "6273",
         "company": "SMC",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2291,8 +2212,8 @@
         "code": "6361",
         "company": "荏原製作所",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2300,8 +2221,8 @@
         "code": "7911",
         "company": "TOPPANホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2309,8 +2230,8 @@
         "code": "7912",
         "company": "大日本印刷",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2318,8 +2239,8 @@
         "code": "8253",
         "company": "クレディセゾン",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2327,8 +2248,8 @@
         "code": "8306",
         "company": "三菱UFJフィナンシャル・グループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2336,8 +2257,8 @@
         "code": "8316",
         "company": "三井住友フィナンシャルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2345,8 +2266,8 @@
         "code": "8411",
         "company": "みずほフィナンシャルグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2354,8 +2275,8 @@
         "code": "8750",
         "company": "第一ライフグループ",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2363,8 +2284,8 @@
         "code": "8795",
         "company": "T&Dホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2372,8 +2293,8 @@
         "code": "9843",
         "company": "ニトリホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2381,8 +2302,8 @@
         "code": "4324",
         "company": "電通グループ",
         "period": "2026-12-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2390,8 +2311,8 @@
         "code": "8630",
         "company": "SOMPOホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2399,8 +2320,8 @@
         "code": "8725",
         "company": "MS&ADインシュアランスグループホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       },
       {
@@ -2408,23 +2329,32 @@
         "code": "8766",
         "company": "東京海上ホールディングス",
         "period": "2027-03-31期末・第2四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "source_as_of": "2026-10-29",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "source_as_of": "2026-11-05",
+        "stage": "planned"
+      },
+      {
+        "date": "2026-12-10",
+        "code": "1928",
+        "company": "積水ハウス",
+        "period": "2027-01-31期末・第3四半期",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
+        "source_as_of": "2026-11-05",
         "stage": "planned"
       }
     ],
     "sources": [
       {
-        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
-        "as_of": "2026-10-01"
+        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+        "as_of": "2026-11-05"
       },
       {
-        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
-        "as_of": "2026-10-29"
+        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
+        "as_of": "2026-11-05"
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-06T12:39:29+09:00"
+    "last_success_at": "2026-11-07T11:12:14+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
