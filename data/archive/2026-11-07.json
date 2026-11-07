@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T11:12:07+09:00",
+  "generated_at": "2026-11-07T12:11:55+09:00",
   "edition_date": "2026-11-07",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
   "articles": [
     {
-      "id": "8eed352a972820fa7317",
+      "id": "7e4b655b85b660349f21",
       "cat": "セキュリティ",
       "tag": "報道見出し",
       "date": "11/07",
-      "published_at": "2026-11-07T05:00+09:00",
+      "published_at": "2026-11-07T10:27+09:00",
       "date_precision": "minute",
-      "title": "栃木：県立校ホームページ、休止続く…PHP脆弱性の影響：地域ニュース",
+      "title": "サイバー攻撃の緊急対策パッケージ、実効性に疑問 チーム乱立も設計これから 人材確保の実績も乏しく",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kb1R4N0ZZcUxfb0dZQzFVbUZZMlVrb2F4MkxtWjhYTy13MEVCakFJN1NjYjNTYW56dWFKeWJFNEpHZzNHSjdGRk5uTU94d2doQ0RVRTVJVGNTMU1Mb1B5c3RoRG5wYVNXSWFGelVmdzF5cms?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GaF9yUW1TTG0xRVh1ZXN5U2lqaUJKVzJtVGQ0YkJEVXJRS0hlZ2Mxa1ZJMlpOUUpyRnRCdWY4OHlyVzEyTC1SM3dxZWlnYXZCWkhjY1hTRmx2bDlQZXQzYUo0VQ?oc=5",
       "source_kind": "press_search",
-      "publisher": "読売新聞",
-      "publisher_domain": "www.yomiuri.co.jp",
+      "publisher": "時事ドットコム",
+      "publisher_domain": "www.jiji.com",
       "language": "ja",
       "sources": [
         {
-          "name": "読売新聞",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kb1R4N0ZZcUxfb0dZQzFVbUZZMlVrb2F4MkxtWjhYTy13MEVCakFJN1NjYjNTYW56dWFKeWJFNEpHZzNHSjdGRk5uTU94d2doQ0RVRTVJVGNTMU1Mb1B5c3RoRG5wYVNXSWFGelVmdzF5cms?oc=5"
+          "name": "時事ドットコム",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GaF9yUW1TTG0xRVh1ZXN5U2lqaUJKVzJtVGQ0YkJEVXJRS0hlZ2Mxa1ZJMlpOUUpyRnRCdWY4OHlyVzEyTC1SM3dxZWlnYXZCWkhjY1hTRmx2bDlQZXQzYUo0VQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -36,7 +36,79 @@
       "sections": [
         [
           "今回の取得範囲",
-          "読売新聞が配信した見出し・リンク・公開日時（2026-11-07 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-07 10:27 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜セキュリティの重要情報（一般論）",
+          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "脆弱性",
+          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
+        ],
+        [
+          "CVE",
+          "公開された脆弱性を区別する識別番号。"
+        ],
+        [
+          "パッチ",
+          "不具合や脆弱性を直すための更新。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "JPCERT/CC 注意喚起",
+          "url": "https://www.jpcert.or.jp/at/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "1c3b1ebf42f7d50f8c60",
+      "cat": "セキュリティ",
+      "tag": "報道見出し",
+      "date": "11/07",
+      "published_at": "2026-11-07T10:00+09:00",
+      "date_precision": "minute",
+      "title": "PHPで発覚した「脆弱性」の影響は? 対応はもう大丈夫なの?",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5WVE54bUZNT2ZyNllhaXd0MWc5ZEVfcW5DZTBsV2VrejV3MXc4N244OEs0b0dzNWk2WHJpMEl2V0RHclVmdlFqaXVXZHpfbFFReU9VLVlfdlBIc3lJOHVIT005c1VYaVNq?oc=5",
+      "source_kind": "press_search",
+      "publisher": "毎日新聞",
+      "publisher_domain": "mainichi.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "毎日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5WVE54bUZNT2ZyNllhaXd0MWc5ZEVfcW5DZTBsV2VrejV3MXc4N244OEs0b0dzNWk2WHJpMEl2V0RHclVmdlFqaXVXZHpfbFFReU9VLVlfdlBIc3lJOHVIT005c1VYaVNq?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
+      "learning_topic": "セキュリティの重要情報",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "毎日新聞が配信した見出し・リンク・公開日時（2026-11-07 10:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -147,7 +219,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "42c680d9c5b01a23ae8c",
@@ -219,26 +291,26 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "12557ef35213442fc1ff",
-      "cat": "セキュリティ",
+      "id": "d00975e9d13eb6668f48",
+      "cat": "社会・重要",
       "tag": "報道見出し",
-      "date": "11/06",
-      "published_at": "2026-11-06T18:34+09:00",
+      "date": "11/07",
+      "published_at": "2026-11-07T05:04+09:00",
       "date_precision": "minute",
-      "title": "政府がサイバー攻撃の「緊急対策パッケージ」 強制遮断の検討加速、被害防止へ新チーム",
+      "title": "新幹線脱線に備える JR東海 大規模災害想定訓練 ／静岡",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fTnJFMzJiOFp1NUQ3MTFDSmwtTXVLeFN3LV9qMmZDZmxBYktVc0xmU2E0MEdObHV0djVmN0xteWlZRDlTcGJ6QXplNHRDa25acmk2bFB0cVdLZFZTc2dvNGVfNA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SUVB3UmRZcVhFbHpxNi1ORnZmWFc4TXlMbHVBVXhoZFJvQk1uX091UmE1TlBCSUZGQVNsOXRhWW43d3ExaWh5a1V3Q3pIai0zVXFNeXM0SHNXRkNseTQ3b19EajRsZGJ4?oc=5",
       "source_kind": "press_search",
-      "publisher": "時事ドットコム",
-      "publisher_domain": "www.jiji.com",
+      "publisher": "毎日新聞",
+      "publisher_domain": "mainichi.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fTnJFMzJiOFp1NUQ3MTFDSmwtTXVLeFN3LV9qMmZDZmxBYktVc0xmU2E0MEdObHV0djVmN0xteWlZRDlTcGJ6QXplNHRDa25acmk2bFB0cVdLZFZTc2dvNGVfNA?oc=5"
+          "name": "毎日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SUVB3UmRZcVhFbHpxNi1ORnZmWFc4TXlMbHVBVXhoZFJvQk1uX091UmE1TlBCSUZGQVNsOXRhWW43d3ExaWh5a1V3Q3pIai0zVXFNeXM0SHNXRkNseTQ3b19EajRsZGJ4?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -246,25 +318,25 @@
       "read": 3,
       "icon": "📰",
       "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-06 18:34 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "毎日新聞が配信した見出し・リンク・公開日時（2026-11-07 05:04 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
         ],
         [
           "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
         ],
         [
           "解説の位置づけ",
@@ -273,22 +345,14 @@
       ],
       "glossary": [
         [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
         }
       ],
       "new_since_last": true
@@ -314,7 +378,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -495,7 +559,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "9584d65a62233e18b03c",
@@ -559,7 +623,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "25b94c8fcf8ea1cabbca",
@@ -687,7 +751,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "9df81f0c03a31dc5b9a8",
@@ -774,7 +838,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🌍",
       "tone": "amber",
@@ -883,7 +947,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cc8e3898edba26001a33",
@@ -953,74 +1017,6 @@
         {
           "name": "日本銀行：金融政策の概要",
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "96ab7e820ebd3a6d0e83",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/05",
-      "published_at": "2026-11-05T17:29+09:00",
-      "date_precision": "minute",
-      "title": "「津波防災の日」大規模災害想定の合同訓練 山陽小野田",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfNk1DSkpjMWNIOHVRUV9CWW93RkU1NkFKNDN1dEd4YS1mZy1iSUo4bmFaZTBOZ1cxaWFsR3lmQlM3UjFNXy00UXJ0cU4yQjdYXzhPS0JKRHBKWWVBNTRF?oc=5",
-      "source_kind": "press_search",
-      "publisher": "NHKニュース",
-      "publisher_domain": "news.web.nhk",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfNk1DSkpjMWNIOHVRUV9CWW93RkU1NkFKNDN1dEd4YS1mZy1iSUo4bmFaZTBOZ1cxaWFsR3lmQlM3UjFNXy00UXJ0cU4yQjdYXzhPS0JKRHBKWWVBNTRF?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-05 17:29 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
         }
       ],
       "new_since_last": false
@@ -1110,52 +1106,52 @@
       "ok": true,
       "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 26
+        "publisher_not_allowed": 28
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 30,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 70
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 22,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 78
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 23,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 77
+        "publisher_not_allowed": 74
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 60
+        "publisher_not_allowed": 56
       }
     },
     {
@@ -1173,16 +1169,16 @@
       "ok": true,
       "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 60
+        "publisher_not_allowed": 58
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 6,
+      "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 42
+        "publisher_not_allowed": 44
       }
     }
   ]
