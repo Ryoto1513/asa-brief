@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T10:50:48+09:00",
+  "generated_at": "2026-11-09T11:58:21+09:00",
   "edition_date": "2026-11-09",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,7 +75,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "83043916997652ccca66",
@@ -143,7 +143,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "5ae72b8691d7cbf660ac",
@@ -215,7 +215,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "71605b1db150b8be9859",
@@ -281,6 +281,74 @@
         {
           "name": "総務省：公式情報",
           "url": "https://www.soumu.go.jp/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
+      "id": "9380ae79dcee551dae06",
+      "cat": "日本経済",
+      "tag": "報道見出し",
+      "date": "11/09",
+      "published_at": "2026-11-09T11:23+09:00",
+      "date_precision": "minute",
+      "title": "ソフトバンクGあす決算、AI投資に逆風－評価益より財務余力に視線",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU19vSGhfblFxYmhocC1tR0gtdlBTU0pLRmF0akxadlliZTkxWDViQTFBYnFudW9pZnNneVNycElud28zVVFtWVJjZkttZUZBbm1hZzdXSTYzZ1ZyNVZIcUxHaFpJQlNXcHVoQ2wwdnVHVktjOVhnZ0R5TGxuVEZXR2FMcmhPc282ZmNjT0VB?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Bloomberg",
+      "publisher_domain": "www.bloomberg.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU19vSGhfblFxYmhocC1tR0gtdlBTU0pLRmF0akxadlliZTkxWDViQTFBYnFudW9pZnNneVNycElud28zVVFtWVJjZkttZUZBbm1hZzdXSTYzZ1ZyNVZIcUxHaFpJQlNXcHVoQ2wwdnVHVktjOVhnZ0R5TGxuVEZXR2FMcmhPc282ZmNjT0VB?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "💻",
+      "tone": "slate",
+      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Bloombergが配信した見出し・リンク・公開日時（2026-11-09 11:23 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -351,7 +419,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c6e032801c01d6f219a3",
@@ -419,7 +487,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "eff1a4772858767ba2d5",
@@ -549,74 +617,6 @@
         {
           "name": "総務省：公式情報",
           "url": "https://www.soumu.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "5970a20e41a21f91bc7b",
-      "cat": "日本経済",
-      "tag": "公式発表",
-      "date": "11/06",
-      "published_at": "2026-11-06T12:00+09:00",
-      "date_precision": "minute",
-      "title": "関税・外国為替等審議会 関税分科会（令和８年11月６日開催）配付資料",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/proceedings_customs/material/kana20261106.html",
-      "source_kind": "primary",
-      "publisher": "財務省",
-      "publisher_domain": "mof.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "財務省",
-          "url": "https://www.mof.go.jp/about_mof/councils/customs_foreign_exchange/sub-of_customs/proceedings_customs/material/kana20261106.html"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "為替のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "財務省が配信した見出し・リンク・公開日時（2026-11-06 12:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜為替のニュース（一般論）",
-          "為替相場は、異なる通貨を交換するときの比率です。「1ドルに必要な円」が増える場合は、ドルに対して円が安くなっています。表示の向きと比較する時刻を確認しましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般論として、円安は輸入品の円建て費用を増やしやすい一方、海外売上を円に換算する企業には追い風になることがあります。実際の影響は原料の調達先、海外生産、為替予約などで異なります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①変動した期間、②日米の金利見通し、③原材料価格、④企業ごとの海外売上と輸入費用を確認します。一つのニュースだけで為替変動の原因を確定しないことが大切です。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "円安",
-          "ある外国通貨に対して円の価値が下がること。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "日本銀行：教えて！にちぎん",
-          "url": "https://www.boj.or.jp/about/education/oshiete/"
-        },
-        {
-          "name": "日本銀行：金融政策の概要",
-          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
       "new_since_last": false
@@ -835,7 +835,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "fd738838e6e1c11b4423",
@@ -907,6 +907,70 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
+      "new_since_last": false
+    },
+    {
+      "id": "4b2a562d39f4095cdba5",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "11/09",
+      "published_at": "2026-11-09T11:54+09:00",
+      "date_precision": "minute",
+      "title": "中国、米国製品への24％追加関税停止を2カ月延長",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbU5wZzRXQkQ2LWl6cHRoakVIeHAwUzdNeEJFMU9mQVJOVmdfN2xrYUJNNFR4Rk9odVowdDRFYnhJbG5QeVZlSHlPQzBVbkRvYWJFSTRCQXB3QldfcW00MjRFbndVSWU3ZU5zMTFtYkRraUE3SUpFLWEwd0gyQmc?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Reuters",
+      "publisher_domain": "www.reuters.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbU5wZzRXQkQ2LWl6cHRoakVIeHAwUzdNeEJFMU9mQVJOVmdfN2xrYUJNNFR4Rk9odVowdDRFYnhJbG5QeVZlSHlPQzBVbkRvYWJFSTRCQXB3QldfcW00MjRFbndVSWU3ZU5zMTFtYkRraUE3SUpFLWEwd0gyQmc?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Reutersが配信した見出し・リンク・公開日時（2026-11-09 11:54 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
       "new_since_last": true
     },
     {
@@ -971,75 +1035,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "b2639f91fe951ec721dd",
-      "cat": "政治・地方自治",
-      "tag": "公式発表",
-      "date": "11/06",
-      "published_at": "2026-11-06T05:00+09:00",
-      "date_precision": "minute",
-      "title": "株式会社NTTドコモに対する特定利用者情報の保護に向けた措置（指導）",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000300.html",
-      "source_kind": "primary",
-      "publisher": "総務省",
-      "publisher_domain": "soumu.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "総務省",
-          "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000300.html"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "🏛️",
-      "tone": "blue",
-      "selection_reason": "日本株と成長産業の変化を追う",
-      "learning_topic": "政治・地方自治のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "総務省が配信した見出し・リンク・公開日時（2026-11-06 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜政治・地方自治のニュース（一般論）",
-          "自治体の政策は、学校、福祉、道路、防災など身近なサービスに関わります。国の制度と都道府県・市区町村の制度では、実施主体も対象地域も異なります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "新しい支援策は、給付額だけでなく財源、対象者、継続期間まで読む必要があります。政策を評価するときは、期待される効果と、費用や対象外の人への影響を分けて考えましょう。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元資料で①提案・予算案・議決・施行のどの段階か、②対象の地域と住民、③申請条件と期限、④単年度か継続事業か、⑤財源と効果検証の方法を確認します。全国に適用される制度とは限りません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "地方自治",
-          "地域の住民が、自治体を通して地域の公共の仕事を担う仕組み。"
-        ],
-        [
-          "予算案",
-          "支出などの計画案。成立した予算や実際の支出と区別します。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省：公式情報",
-          "url": "https://www.soumu.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1065,19 +1061,19 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 45,
+      "eligible": 44,
       "dropped": {
-        "out_of_time_window": 55
+        "out_of_time_window": 56
       }
     },
     {
       "name": "金融庁",
       "kind": "primary",
       "ok": true,
-      "eligible": 13,
+      "eligible": 12,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 1
+        "out_of_time_window": 2
       }
     },
     {
@@ -1115,9 +1111,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 58
+        "publisher_not_allowed": 65
       }
     },
     {
@@ -1126,16 +1122,16 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 20
+        "publisher_not_allowed": 22
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 5,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 39
+        "publisher_not_allowed": 42
       }
     },
     {
@@ -1151,18 +1147,18 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 19,
+      "eligible": 22,
       "dropped": {
-        "publisher_not_allowed": 81
+        "publisher_not_allowed": 78
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 17,
+      "eligible": 23,
       "dropped": {
-        "publisher_not_allowed": 83
+        "publisher_not_allowed": 77
       }
     },
     {
@@ -1171,7 +1167,7 @@
       "ok": true,
       "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 43
+        "publisher_not_allowed": 39
       }
     },
     {
@@ -1189,7 +1185,7 @@
       "ok": true,
       "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 32
+        "publisher_not_allowed": 33
       }
     },
     {
@@ -1198,7 +1194,7 @@
       "ok": true,
       "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 35
+        "publisher_not_allowed": 34
       }
     }
   ]

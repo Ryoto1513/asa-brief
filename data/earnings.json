@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T10:50:54+09:00",
+  "checked_at": "2026-11-09T11:58:29+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "fb4eb4e4ba6129ca0253",
+      "disclosure_key": "4061:2026-11-09",
+      "code": "4061",
+      "company": "デンカ",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
+      "published_at": "2026-11-09T11:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106567399.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "7becd9158c66b2521393",
+      "disclosure_key": "4061:2026-11-09",
+      "code": "4061",
+      "company": "デンカ",
+      "title": "2027年3月期第2四半期（中間期）連結業績予想と実績値との差異 及び通期連結業績予想の修正に関するお知らせ",
+      "published_at": "2026-11-09T11:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261106567999.pdf",
+      "stage": "detected"
+    },
     {
       "id": "727e201071bfe9654ff0",
       "disclosure_key": "7211:2026-11-06",
@@ -440,7 +460,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-09T10:50:54+09:00",
+    "checked_at": "2026-11-09T11:58:29+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2354,7 +2374,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-09T10:50:54+09:00"
+    "last_success_at": "2026-11-09T11:58:29+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
