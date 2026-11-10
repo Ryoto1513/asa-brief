@@ -1,8 +1,78 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T11:58:29+09:00",
+  "checked_at": "2026-11-10T13:16:12+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "280f334678b2afb679b3",
+      "disclosure_key": "3402:2026-11-10",
+      "code": "3402",
+      "company": "東レ",
+      "title": "2027年３月期 第２四半期(中間期)決算短信〔ＩＦＲＳ〕(連結)",
+      "published_at": "2026-11-10T13:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261109569931.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "07ae12b2c06f03f3e5fe",
+      "disclosure_key": "5406:2026-11-10",
+      "code": "5406",
+      "company": "神戸鋼",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-11-10T13:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261109569636.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "df3321fd7ee4a461850e",
+      "disclosure_key": "5406:2026-11-10",
+      "code": "5406",
+      "company": "神戸鋼",
+      "title": "個別業績予想の修正に関するお知らせ",
+      "published_at": "2026-11-10T13:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261105566006.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "00b4f96a63a3146359d9",
+      "disclosure_key": "7270:2026-11-10",
+      "code": "7270",
+      "company": "ＳＵＢＡＲＵ",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-10T13:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261109570171.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "4eae22359438d918fd85",
+      "disclosure_key": "7832:2026-11-10",
+      "code": "7832",
+      "company": "バンダイナムコ",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-11-10T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261110570341.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "25d0d163f09a68e92b9b",
+      "disclosure_key": "7832:2026-11-10",
+      "code": "7832",
+      "company": "バンダイナムコ",
+      "title": "2027年3月期第２四半期連結累計期間業績予想数値と実績値の差異及び通期連結業績予想修正のお知らせ",
+      "published_at": "2026-11-10T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261110570344.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "9c410dc408ff7364b693",
+      "disclosure_key": "7012:2026-11-10",
+      "code": "7012",
+      "company": "川崎重",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-10T11:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261109569857.pdf",
+      "stage": "detected"
+    },
     {
       "id": "fb4eb4e4ba6129ca0253",
       "disclosure_key": "4061:2026-11-09",
@@ -460,7 +530,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-09T11:58:29+09:00",
+    "checked_at": "2026-11-10T13:16:12+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2374,7 +2444,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-09T11:58:29+09:00"
+    "last_success_at": "2026-11-10T13:16:12+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
