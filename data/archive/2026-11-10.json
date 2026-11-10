@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T13:16:00+09:00",
+  "generated_at": "2026-11-10T13:47:41+09:00",
   "edition_date": "2026-11-10",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,79 +75,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "2a851283cdc74e3d477f",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "11/09",
-      "published_at": "2026-11-09T14:52+09:00",
-      "date_precision": "minute",
-      "title": "プレスリリース：F1Security「UWSS」 重大なPHP脆弱性「PHP2Shell」への攻撃遮断を検証（PR TIMES）",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KUi1Cb2gyMGJGM3VDRmdlVHh2RElNRnR6TF9ZQS1YY0h1T1FvNmIwYlVlMVA1Y1BCYkZlNmtkX2dad3hxbzFUSFVEU0VERm5XbEVvOEQ1UHM1SHFoVldSSkRUNnlMREhY?oc=5",
-      "source_kind": "press_search",
-      "publisher": "毎日新聞",
-      "publisher_domain": "mainichi.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "毎日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KUi1Cb2gyMGJGM3VDRmdlVHh2RElNRnR6TF9ZQS1YY0h1T1FvNmIwYlVlMVA1Y1BCYkZlNmtkX2dad3hxbzFUSFVEU0VERm5XbEVvOEQ1UHM1SHFoVldSSkRUNnlMREhY?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "毎日新聞が配信した見出し・リンク・公開日時（2026-11-09 14:52 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "19b7c19cb8bd96a267ca",
@@ -291,7 +219,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "6df62013e315cf936841",
@@ -363,7 +291,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "83043916997652ccca66",
@@ -499,7 +427,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "bb4c9077fa1d73328485",
@@ -915,7 +843,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "a0d5e57b9d661ea9d055",
@@ -979,7 +907,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "1384f9eb6b45efc7d888",
@@ -1013,6 +941,70 @@
         [
           "今回の取得範囲",
           "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-10 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
+      "id": "4db68ba5049ae877e84f",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "11/09",
+      "published_at": "2026-11-09T17:02+09:00",
+      "date_precision": "minute",
+      "title": "中国、対米追加関税の停止2カ月延長 首脳合意を履行",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vZzF1N0JBa2lpY053NjNkSlRBZjJwRnpiSk5RRXgtZ2lWZXN6MGl1SmlveUEtVndTU0s2am5zajkwSk9JMmNBbFl0cU1SdWR3czc2YjVkR2swZVY5bzVPeGJwRWJZNzJDZ0Z2Wg?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vZzF1N0JBa2lpY053NjNkSlRBZjJwRnpiSk5RRXgtZ2lWZXN6MGl1SmlveUEtVndTU0s2am5zajkwSk9JMmNBbFl0cU1SdWR3czc2YjVkR2swZVY5bzVPeGJwRWJZNzJDZ0Z2Wg?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-09 17:02 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜世界経済・国際情勢のニュース（一般論）",
@@ -1119,9 +1111,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 42,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 58
+        "publisher_not_allowed": 60
       }
     },
     {
@@ -1130,16 +1122,16 @@
       "ok": true,
       "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 28
+        "publisher_not_allowed": 27
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 26,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 76
       }
     },
     {
@@ -1155,27 +1147,27 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 26,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 28,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 72
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 5,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 42
+        "publisher_not_allowed": 40
       }
     },
     {
@@ -1191,7 +1183,7 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 7,
+      "eligible": 6,
       "dropped": {
         "publisher_not_allowed": 49
       }
