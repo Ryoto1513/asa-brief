@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-11T11:06:03+09:00",
+  "attempted_at": "2026-11-11T11:59:48+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -66,9 +66,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 41,
+      "eligible": 42,
       "dropped": {
-        "publisher_not_allowed": 59
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -84,9 +84,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 34,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 66
       }
     },
     {
@@ -102,36 +102,36 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 22,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 78
+        "publisher_not_allowed": 74
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 52
       }
     },
     {
       "name": "JPCERT/CC 注意喚起",
       "kind": "primary",
       "ok": true,
-      "eligible": 14,
+      "eligible": 15,
       "dropped": {
-        "out_of_time_window": 6
+        "out_of_time_window": 5
       }
     },
     {
@@ -140,7 +140,7 @@
       "ok": true,
       "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -149,7 +149,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 27
+        "publisher_not_allowed": 29
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T11:06:03+09:00",
+  "generated_at": "2026-11-11T11:59:48+09:00",
   "edition_date": "2026-11-11",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,7 +75,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "0dfa6d9765da40c8c8bd",
@@ -219,7 +219,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "3fc394aeda3f97028516",
@@ -281,6 +281,74 @@
         {
           "name": "総務省統計局：公式情報",
           "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
+      "id": "94e81a6f45fd2c65d7e1",
+      "cat": "日本経済",
+      "tag": "報道見出し",
+      "date": "11/11",
+      "published_at": "2026-11-11T11:00+09:00",
+      "date_precision": "minute",
+      "title": "決算:レゾナック、電炉向け黒鉛電極事業を27年中に売却 半導体材料に集中",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ScjUzQWNPLVlBUmh4R2lwXzV0ZDVzUlIxRUpOMk1reUJsNGxaNy14OGs2NzVJSzU5azV2eVpQN2ZnYVV4TzFRS1E3aU8xVHdaeFUtLWxNNGJMOG1iYnBfZGRQMUlmN0duQTFIdw?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ScjUzQWNPLVlBUmh4R2lwXzV0ZDVzUlIxRUpOMk1reUJsNGxaNy14OGs2NzVJSzU5azV2eVpQN2ZnYVV4TzFRS1E3aU8xVHdaeFUtLWxNNGJMOG1iYnBfZGRQMUlmN0duQTFIdw?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "💻",
+      "tone": "slate",
+      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-11 11:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -419,7 +487,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b726be08f92294574235",
@@ -487,7 +555,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "7b7df7088edc9d782b1a",
@@ -555,71 +623,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "f1fb07318130e5f9a6c0",
-      "cat": "日本経済",
-      "tag": "報道見出し",
-      "date": "11/10",
-      "published_at": "2026-11-10T16:50+09:00",
-      "date_precision": "minute",
-      "title": "中国財務局、10月景気判断維持 半導体需要増で生産は上方修正",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rRzAweUFSN04yUGVqRUxzZVFIal9BaV93R0VyNWtfU2ROZ2g1ZGRZYlUtTzBkaE9kN3lQMm1fSFg2Q1ZVMm5LUEpCR0VFbUhaMlRpQnNxR09zTDhkTFpYaHhlWjhtQWFURkp4Ug?oc=5",
-      "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rRzAweUFSN04yUGVqRUxzZVFIal9BaV93R0VyNWtfU2ROZ2g1ZGRZYlUtTzBkaE9kN3lQMm1fSFg2Q1ZVMm5LUEpCR0VFbUhaMlRpQnNxR09zTDhkTFpYaHhlWjhtQWFURkp4Ug?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "企業の業績・見通し・株主還元に関わる",
-      "learning_topic": "AI・産業のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-10 16:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜AI・産業のニュース（一般論）",
-          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "設備投資",
-          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "経済産業省：公式情報",
-          "url": "https://www.meti.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cc8e3898edba26001a33",
@@ -907,7 +911,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "85b6cbd44a6165462e5d",
@@ -971,7 +975,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "1384f9eb6b45efc7d888",
@@ -1111,9 +1115,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 41,
+      "eligible": 42,
       "dropped": {
-        "publisher_not_allowed": 59
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -1129,9 +1133,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 33,
+      "eligible": 34,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 66
       }
     },
     {
@@ -1147,36 +1151,36 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 27,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 73
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 22,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 78
+        "publisher_not_allowed": 74
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 52
       }
     },
     {
       "name": "JPCERT/CC 注意喚起",
       "kind": "primary",
       "ok": true,
-      "eligible": 14,
+      "eligible": 15,
       "dropped": {
-        "out_of_time_window": 6
+        "out_of_time_window": 5
       }
     },
     {
@@ -1185,7 +1189,7 @@
       "ok": true,
       "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -1194,7 +1198,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 27
+        "publisher_not_allowed": 29
       }
     }
   ]
