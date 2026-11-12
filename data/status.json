@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-12T12:14:42+09:00",
+  "attempted_at": "2026-11-12T13:14:18+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -16,9 +16,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "out_of_time_window": 45
+        "out_of_time_window": 46
       }
     },
     {
@@ -65,9 +65,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 43,
+      "eligible": 42,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -76,25 +76,25 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 24
+        "publisher_not_allowed": 23
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 38,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 62
+        "publisher_not_allowed": 60
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 17,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 83
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -110,16 +110,16 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 84
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 9,
       "dropped": {
         "publisher_not_allowed": 48
       }
@@ -137,9 +137,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 63
+        "publisher_not_allowed": 64
       }
     },
     {
@@ -148,7 +148,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 26
+        "publisher_not_allowed": 25
       }
     }
   ],

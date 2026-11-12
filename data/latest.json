@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T12:14:42+09:00",
+  "generated_at": "2026-11-12T13:14:18+09:00",
   "edition_date": "2026-11-12",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,7 +75,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "843cc207970196b52d15",
@@ -139,7 +139,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "7d7bb6356958520fa8d0",
@@ -279,7 +279,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "f555d9d6d46be5fe6c3a",
@@ -347,7 +347,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b5ed0e66e5e4b6a438d",
@@ -419,7 +419,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "af6586d6e9addb5b3f7c",
@@ -491,7 +491,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "84f94ca890b28846f869",
@@ -563,7 +563,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "0af77cc6e1814b982bd8",
@@ -627,7 +627,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ef65d1a755e7726f1cd4",
@@ -691,7 +691,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "3fc394aeda3f97028516",
@@ -830,23 +830,23 @@
       "new_since_last": false
     },
     {
-      "id": "0523ca07a277a4e08c8b",
+      "id": "6cca9f6d2193acf0cbf6",
       "cat": "金融政策",
       "tag": "報道見出し",
       "date": "11/12",
-      "published_at": "2026-11-12T11:39+09:00",
+      "published_at": "2026-11-12T12:26+09:00",
       "date_precision": "minute",
-      "title": "１０月の企業物価、７．１％上昇＝原油価格上昇で伸び拡大―日銀",
+      "title": "10月の企業物価7.1%上昇 原油高・AI需要で伸び加速 日銀",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBnVDlXNVJjQTl0aG1JMUR1OExGcjRoYWJJTHpMN05Kanh1Mlk4TGxjZ2lOaWFiTmlBTVdBUkNHYWVqZ2tmQUhoUUdpUlRHZ3pKRTlyWA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zR0l3OFdwUmc1dGpvWHpmS0NQdDVKYkN5NHNqQTF6RVJzMXJLSkRhWnp6N0xGWHZSYlRTV0djQ3dCeWVWUU1fYUNaUkFDZWZRVTRkRUZzX1QzYjRfakRKZGxaUWpLLVU?oc=5",
       "source_kind": "press_search",
-      "publisher": "時事通信ニュース",
-      "publisher_domain": "sp.m.jiji.com",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
       "language": "ja",
       "sources": [
         {
-          "name": "時事通信ニュース",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBnVDlXNVJjQTl0aG1JMUR1OExGcjRoYWJJTHpMN05Kanh1Mlk4TGxjZ2lOaWFiTmlBTVdBUkNHYWVqZ2tmQUhoUUdpUlRHZ3pKRTlyWA?oc=5"
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zR0l3OFdwUmc1dGpvWHpmS0NQdDVKYkN5NHNqQTF6RVJzMXJLSkRhWnp6N0xGWHZSYlRTV0djQ3dCeWVWUU1fYUNaUkFDZWZRVTRkRUZzX1QzYjRfakRKZGxaUWpLLVU?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -860,7 +860,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "時事通信ニュースが配信した見出し・リンク・公開日時（2026-11-12 11:39 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-11-12 12:26 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -974,15 +974,15 @@
       "new_since_last": false
     },
     {
-      "id": "793f6a23750d1adca0d3",
-      "cat": "AI・産業",
+      "id": "d3b0d8d83574db009d94",
+      "cat": "資産形成",
       "tag": "報道見出し",
       "date": "11/12",
-      "published_at": "2026-11-12T11:47+09:00",
+      "published_at": "2026-11-12T12:34+09:00",
       "date_precision": "minute",
-      "title": "日経平均午前465円高、「解任準備報道」に揺れるAI 買いは商社へ",
+      "title": "iFreeHOLD 日本国債10年（2036／2046）[0431326B]（運用会社 : 大和）",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13c05HVy1DYmpXa3FsVHdiT3hvbmZvUDJ3WXU4R3RuYzEyRWFqUnJ3LXhnLUdyR3lxUTVGanpIeEdVdzRZXzFSQ1dkbWk4VWFmTUJ0LU1IdHlRX2dkTFlWQUxQYkFfLXc1YkI1UQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zbVY5Mk1pdmJKZDBfS2llRTdXeTdFRGNleWVnOUxVSlpOSXRuVlJZOXp3YTd3b1YyVmNERGdDX0F2bzJMcWE3aVdoaXhoaTFDUjZISkpmR0c3dnc?oc=5",
       "source_kind": "press_search",
       "publisher": "日本経済新聞",
       "publisher_domain": "www.nikkei.com",
@@ -990,33 +990,33 @@
       "sources": [
         {
           "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13c05HVy1DYmpXa3FsVHdiT3hvbmZvUDJ3WXU4R3RuYzEyRWFqUnJ3LXhnLUdyR3lxUTVGanpIeEdVdzRZXzFSQ1dkbWk4VWFmTUJ0LU1IdHlRX2dkTFlWQUxQYkFfLXc1YkI1UQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zbVY5Mk1pdmJKZDBfS2llRTdXeTdFRGNleWVnOUxVSlpOSXRuVlJZOXp3YTd3b1YyVmNERGdDX0F2bzJMcWE3aVdoaXhoaTFDUjZISkpmR0c3dnc?oc=5"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "💻",
-      "tone": "slate",
+      "icon": "💰",
+      "tone": "teal",
       "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "為替のニュース",
+      "learning_topic": "資産形成のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-12 11:47 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-12 12:34 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜為替のニュース（一般論）",
-          "為替相場は、異なる通貨を交換するときの比率です。「1ドルに必要な円」が増える場合は、ドルに対して円が安くなっています。表示の向きと比較する時刻を確認しましょう。"
+          "基礎知識｜資産形成のニュース（一般論）",
+          "投資の税制と、投資対象の値動きは別です。非課税の制度を利用していても、投資した商品の価格が下がる可能性はあります。制度の改正案と施行済みの内容も区別します。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "一般論として、円安は輸入品の円建て費用を増やしやすい一方、海外売上を円に換算する企業には追い風になることがあります。実際の影響は原料の調達先、海外生産、為替予約などで異なります。"
+          "一般的な確認点は、使う予定のお金を投資に回していないか、一つの会社や分野に偏りすぎていないか、手数料がいくらか、ということです。長期投資や分散も損失をなくす仕組みではありません。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①変動した期間、②日米の金利見通し、③原材料価格、④企業ごとの海外売上と輸入費用を確認します。一つのニュースだけで為替変動の原因を確定しないことが大切です。"
+          "元の公式資料で①対象者、②開始日、③適用される商品や口座、④手数料、⑤過去の制度との違いを確認します。本アプリは制度の最新詳細や運用成果を保証しません。"
         ],
         [
           "解説の位置づけ",
@@ -1025,18 +1025,14 @@
       ],
       "glossary": [
         [
-          "円安",
-          "ある外国通貨に対して円の価値が下がること。"
+          "分散投資",
+          "投資先を複数に分け、特定の投資先への集中を抑えること。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "日本銀行：教えて！にちぎん",
-          "url": "https://www.boj.or.jp/about/education/oshiete/"
-        },
-        {
-          "name": "日本銀行：金融政策の概要",
-          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -1065,9 +1061,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "out_of_time_window": 45
+        "out_of_time_window": 46
       }
     },
     {
@@ -1114,9 +1110,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 43,
+      "eligible": 42,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -1125,25 +1121,25 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 24
+        "publisher_not_allowed": 23
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 38,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 62
+        "publisher_not_allowed": 60
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 17,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 83
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -1159,16 +1155,16 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 84
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 9,
       "dropped": {
         "publisher_not_allowed": 48
       }
@@ -1186,9 +1182,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 63
+        "publisher_not_allowed": 64
       }
     },
     {
@@ -1197,7 +1193,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 26
+        "publisher_not_allowed": 25
       }
     }
   ]
