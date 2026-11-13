@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-13T11:48:24+09:00",
+  "attempted_at": "2026-11-13T12:35:09+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -16,10 +16,10 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 53,
+      "eligible": 52,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 46
+        "out_of_time_window": 47
       }
     },
     {
@@ -68,9 +68,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "publisher_not_allowed": 45
+        "publisher_not_allowed": 46
       }
     },
     {
@@ -86,9 +86,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 39,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 60
       }
     },
     {
@@ -113,9 +113,9 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -142,16 +142,16 @@
       "ok": true,
       "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 54
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 89
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T11:48:24+09:00",
+  "generated_at": "2026-11-13T12:35:09+09:00",
   "edition_date": "2026-11-13",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -147,90 +147,26 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "b1c44e633fea6ada8245",
+      "id": "f0bea2e01d8951c1f4bf",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/13",
-      "published_at": "2026-11-13T11:30+09:00",
+      "published_at": "2026-11-13T11:46+09:00",
       "date_precision": "minute",
-      "title": "「マイクロソフト365」大規模障害 サーバー負担が原因、一部復旧",
+      "title": "米マイクロソフト「アウトルック」などで大規模障害、全面復旧のメドは不明…日本政府のネットワークにも影響",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1N2E2d3lpZWdlMTlDQ0VPdURZMVVFUkgtVmdhaWZBWEt1V3ZYMXFMbF9ETXNxREdtRVdyMjIyUm9ic3R1NlloVmpoRldPbUZIbC1rbFlGcUEzWlFtWmRjM2U1OHNtSC1qYVNqUw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04ZGZtWDlQdVR3RWFrS25JcHNfOHprMzdUWXZtRnZUTmlHUXhGQ1VteHFQRXJGZFNnNVBRczN5WUJYR3l6NFk4WHhWbkJiV3p3UkdFYjdBazBLcVVKQXFkWTJyQTg?oc=5",
       "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
+      "publisher": "読売新聞",
+      "publisher_domain": "www.yomiuri.co.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1N2E2d3lpZWdlMTlDQ0VPdURZMVVFUkgtVmdhaWZBWEt1V3ZYMXFMbF9ETXNxREdtRVdyMjIyUm9ic3R1NlloVmpoRldPbUZIbC1rbFlGcUEzWlFtWmRjM2U1OHNtSC1qYVNqUw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-13 11:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "4d5e2d7f08be6b6df423",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/13",
-      "published_at": "2026-11-13T11:20+09:00",
-      "date_precision": "minute",
-      "title": "Microsoft 365大規模障害、「Outlook」や「Teams」などに影響か 復旧難航",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XeVlDVm1yekpKYVFuZHRJQ0xOcGFGOVl2TVQwZVUwQWZ4cDZiWlJIdzV4UWN4UFRmbkVmMkJQd1pNb1k4cEtrY1kwSWJ6T0hyQTB2QjZTRzlFQ2Qy?oc=5",
-      "source_kind": "press_search",
-      "publisher": "日経クロステック",
-      "publisher_domain": "xtech.nikkei.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日経クロステック",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XeVlDVm1yekpKYVFuZHRJQ0xOcGFGOVl2TVQwZVUwQWZ4cDZiWlJIdzV4UWN4UFRmbkVmMkJQd1pNb1k4cEtrY1kwSWJ6T0hyQTB2QjZTRzlFQ2Qy?oc=5"
+          "name": "読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04ZGZtWDlQdVR3RWFrS25JcHNfOHprMzdUWXZtRnZUTmlHUXhGQ1VteHFQRXJGZFNnNVBRczN5WUJYR3l6NFk4WHhWbkJiV3p3UkdFYjdBazBLcVVKQXFkWTJyQTg?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -244,7 +180,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日経クロステックが配信した見出し・リンク・公開日時（2026-11-13 11:20 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "読売新聞が配信した見出し・リンク・公開日時（2026-11-13 11:46 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -278,79 +214,15 @@
       "new_since_last": true
     },
     {
-      "id": "52ebe8fa637fb4c531d3",
+      "id": "8511a16dc53170707d9d",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/13",
-      "published_at": "2026-11-13T10:46+09:00",
-      "date_precision": "minute",
-      "title": "アウトルックでメール送れず 「マイクロソフト365」で大規模障害",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PSFlHRS03bGpJbW0taWR6c0FnTW5ON3gxSXpLNTVJTlBLWXp0MTBMaXZjWXJMLTR3SzVjanVYTURHV2JkdGR6MktOQUxCMG43VENmLWtreU9LRlZaNWR6S2xJWGpFTVU?oc=5",
-      "source_kind": "press_search",
-      "publisher": "朝日新聞",
-      "publisher_domain": "www.asahi.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PSFlHRS03bGpJbW0taWR6c0FnTW5ON3gxSXpLNTVJTlBLWXp0MTBMaXZjWXJMLTR3SzVjanVYTURHV2JkdGR6MktOQUxCMG43VENmLWtreU9LRlZaNWR6S2xJWGpFTVU?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "朝日新聞が配信した見出し・リンク・公開日時（2026-11-13 10:46 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "173ad90eaa4f1b92fc58",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/13",
-      "published_at": "2026-11-13T10:13+09:00",
+      "published_at": "2026-11-13T11:28+09:00",
       "date_precision": "minute",
       "title": "業務用ソフトで大規模障害 「３６５」、メール送れず―米マイクロソフト",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcDkya3RVV3ppbFRFTDhwVnlxallFRVJ6SmlrQXBJVEpnallSdlNmRnhabjFKbnJjMU03OGxaQ0hSemV0WExMTlNqYWp4OExNRFN2SFZ5OUl4bExIV3NzLVREdXN5Yml2eEwxVlpSajRYMXFRa094Y3l3OWVRNllFTA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1reHBqb3gyVV9qNExYNFZSRHhVOXczclBVcThrSEg0b1p4d2NZWEZyNlA1dGxJM1pKU01CRVR3Vm9HaHhTRWxLeUNsUFl2MXJFT08tRkoyX2hoUFFvdzRsSG10UQ?oc=5",
       "source_kind": "press_search",
       "publisher": "時事ドットコム",
       "publisher_domain": "www.jiji.com",
@@ -358,7 +230,7 @@
       "sources": [
         {
           "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcDkya3RVV3ppbFRFTDhwVnlxallFRVJ6SmlrQXBJVEpnallSdlNmRnhabjFKbnJjMU03OGxaQ0hSemV0WExMTlNqYWp4OExNRFN2SFZ5OUl4bExIV3NzLVREdXN5Yml2eEwxVlpSajRYMXFRa094Y3l3OWVRNllFTA?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1reHBqb3gyVV9qNExYNFZSRHhVOXczclBVcThrSEg0b1p4d2NZWEZyNlA1dGxJM1pKU01CRVR3Vm9HaHhTRWxLeUNsUFl2MXJFT08tRkoyX2hoUFFvdzRsSG10UQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -372,7 +244,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-13 10:13 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-13 11:28 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -401,6 +273,134 @@
         {
           "name": "総務省統計局：公式情報",
           "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "b74129cbd8aff2f04760",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/13",
+      "published_at": "2026-11-13T10:11+09:00",
+      "date_precision": "minute",
+      "title": "【速報】尾崎官房副長官はマイクロソフトの大規模障害の影響で政府の情報システム基盤に障害が発生していると明らかにした",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04aERtaFVZanFaaGZlODFzcl92TjBZNXJEeGw1V0lZVEtQUkZXdmYzZDNrZW10Ui1yUlBiV25fRHpWVlJFUTlMLW10QjVXbHliV0RSQk5VZ0U0QmZjNjZGVHB3U1NIUQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "時事ドットコム",
+      "publisher_domain": "www.jiji.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "時事ドットコム",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04aERtaFVZanFaaGZlODFzcl92TjBZNXJEeGw1V0lZVEtQUkZXdmYzZDNrZW10Ui1yUlBiV25fRHpWVlJFUTlMLW10QjVXbHliV0RSQk5VZ0U0QmZjNjZGVHB3U1NIUQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-13 10:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "7f2eadd05e3ea261c1b1",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/13",
+      "published_at": "2026-11-13T08:31+09:00",
+      "date_precision": "minute",
+      "title": "マイクロソフト大規模障害 世界のメール、AIに影響",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE96aVZwOVVNbEtxYkIzWlozYWlTeUJJSVZzel9zdkVQb3RNVE9hZnowdFMxNlZWRWFEaUZoYWtZTUozU3V1SzlFaXBqYw?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE96aVZwOVVNbEtxYkIzWlozYWlTeUJJSVZzel9zdkVQb3RNVE9hZnowdFMxNlZWRWFEaUZoYWtZTUozU3V1SzlFaXBqYw?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "AI・産業のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-13 08:31 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
         }
       ],
       "new_since_last": true
@@ -426,7 +426,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -751,7 +751,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "e5868f1387cc46651adf",
@@ -823,7 +823,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ef65d1a755e7726f1cd4",
@@ -1023,7 +1023,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1049,10 +1049,10 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 53,
+      "eligible": 52,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 46
+        "out_of_time_window": 47
       }
     },
     {
@@ -1101,9 +1101,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "publisher_not_allowed": 45
+        "publisher_not_allowed": 46
       }
     },
     {
@@ -1119,9 +1119,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 39,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 60
       }
     },
     {
@@ -1146,9 +1146,9 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 81
       }
     },
     {
@@ -1175,16 +1175,16 @@
       "ok": true,
       "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 54
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 11,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 89
       }
     }
   ]

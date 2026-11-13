@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T11:48:33+09:00",
+  "checked_at": "2026-11-13T12:35:17+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "3c815bd2ae98c754e774",
+      "disclosure_key": "1802:2026-11-13",
+      "code": "1802",
+      "company": "大林組",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結）",
+      "published_at": "2026-11-13T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261112575838.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "551a10fd6d243473180c",
+      "disclosure_key": "1802:2026-11-13",
+      "code": "1802",
+      "company": "大林組",
+      "title": "通期業績予想の修正に関するお知らせ",
+      "published_at": "2026-11-13T12:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261112576600.pdf",
+      "stage": "detected"
+    },
     {
       "id": "848dce2034e1f2858032",
       "disclosure_key": "2502:2026-11-13",
@@ -550,7 +570,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-13T11:48:33+09:00",
+    "checked_at": "2026-11-13T12:35:17+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2464,7 +2484,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-13T11:48:33+09:00"
+    "last_success_at": "2026-11-13T12:35:17+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
