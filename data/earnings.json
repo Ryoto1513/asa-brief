@@ -1,8 +1,28 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T13:14:25+09:00",
+  "checked_at": "2026-11-13T11:48:33+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "848dce2034e1f2858032",
+      "disclosure_key": "2502:2026-11-13",
+      "code": "2502",
+      "company": "アサヒ",
+      "title": "2026年12月期 第３四半期決算短信〔ＩＦＲＳ〕（連結)",
+      "published_at": "2026-11-13T11:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261112575238.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "908c5d548a1b1c46e6b1",
+      "disclosure_key": "3436:2026-11-12",
+      "code": "3436",
+      "company": "ＳＵＭＣＯ",
+      "title": "2026年12月期 第3四半期決算短信〔日本基準〕（連結）（公認会計士等による期中レビューの完了）",
+      "published_at": "2026-11-12T17:40+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261111574325.pdf",
+      "stage": "detected"
+    },
     {
       "id": "280f334678b2afb679b3",
       "disclosure_key": "3402:2026-11-10",
@@ -530,7 +550,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-12T13:14:25+09:00",
+    "checked_at": "2026-11-13T11:48:33+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2444,7 +2464,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-12T13:14:25+09:00"
+    "last_success_at": "2026-11-13T11:48:33+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
