@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T11:37:00+09:00",
+  "generated_at": "2026-11-14T12:33:29+09:00",
   "edition_date": "2026-11-14",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -71,7 +71,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d979b077bd0e541385ed",
@@ -135,7 +135,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cda34fc86d07a8884b10",
@@ -207,7 +207,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cbcbe0755492c7a27952",
@@ -279,7 +279,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "843cc207970196b52d15",
@@ -343,14 +343,14 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "29a91dc74c11ff376eb2",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/14",
-      "published_at": "2026-11-14T10:56+09:00",
+      "published_at": "2026-11-14T12:23+09:00",
       "date_precision": "minute",
       "title": "画像・写真：大規模障害、復旧進む：時事ドットコム",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
@@ -376,7 +376,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-14 10:56 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-14 12:23 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -407,26 +407,26 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "747007ab80cc34c1fbdb",
+      "id": "43595e5b31e96b6fb58e",
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/14",
-      "published_at": "2026-11-14T10:07+09:00",
+      "published_at": "2026-11-14T11:43+09:00",
       "date_precision": "minute",
-      "title": "大規模障害、復旧進む 根本原因は対処―米マイクロソフト",
+      "title": "【解説】 米マイクロソフトの大規模障害、テクノロジー依存を痛感する事態に",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0WWk3Nk5fcUtPQTNubVhZVnFyZkljVVpYa1NKLW4xZThWOGk2MmdBcWJMTktwVDdwVVFMeWdObWtISExwUEJHRVNyUzVGN3NfNFlZcUxGTW1HWXQyd2c2LUN2SQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5d3Q5aUE2d2gySGZCRWdwMDl5ZjlfUktUOFI0MzZPWmQ3cnMxT1pTMUJmY0hQZG5xcGY4aXU2d2pPeXBVampHc1loelQ4aW9Wd3dNRGg3cWdubXRUTWVMRdIBZkFVX3lxTFB3TTZEOWNrMkhpd0Q5Rk13M3RLZVgwWEZJQWY2Q1FZak1UZGI3VkdnYW1fVWVlREFrYTY0SF9jNm1uTm1MZDBHbW5PUDl4VVA1NU5yZkNJTHFreVk2UFo0aTJiRXVEUQ?oc=5",
       "source_kind": "press_search",
-      "publisher": "時事ドットコム",
-      "publisher_domain": "www.jiji.com",
+      "publisher": "BBC",
+      "publisher_domain": "www.bbc.com",
       "language": "ja",
       "sources": [
         {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0WWk3Nk5fcUtPQTNubVhZVnFyZkljVVpYa1NKLW4xZThWOGk2MmdBcWJMTktwVDdwVVFMeWdObWtISExwUEJHRVNyUzVGN3NfNFlZcUxGTW1HWXQyd2c2LUN2SQ?oc=5"
+          "name": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5d3Q5aUE2d2gySGZCRWdwMDl5ZjlfUktUOFI0MzZPWmQ3cnMxT1pTMUJmY0hQZG5xcGY4aXU2d2pPeXBVampHc1loelQ4aW9Wd3dNRGg3cWdubXRUTWVMRdIBZkFVX3lxTFB3TTZEOWNrMkhpd0Q5Rk13M3RLZVgwWEZJQWY2Q1FZak1UZGI3VkdnYW1fVWVlREFrYTY0SF9jNm1uTm1MZDBHbW5PUDl4VVA1NU5yZkNJTHFreVk2UFo0aTJiRXVEUQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -440,7 +440,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-14 10:07 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "BBCが配信した見出し・リンク・公開日時（2026-11-14 11:43 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -611,7 +611,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "6fa0777e0b3ea2257242",
@@ -683,7 +683,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ac0d383c1febc3bfd0f2",
@@ -751,7 +751,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b5ed0e66e5e4b6a438d",
@@ -1162,18 +1162,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 54
+        "publisher_not_allowed": 55
       }
     },
     {
@@ -1191,16 +1191,16 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 46
+        "publisher_not_allowed": 45
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 80
       }
     }
   ]

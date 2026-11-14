@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-14T11:37:00+09:00",
+  "attempted_at": "2026-11-14T12:33:29+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -113,18 +113,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 90
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 12,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 54
+        "publisher_not_allowed": 55
       }
     },
     {
@@ -142,16 +142,16 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 46
+        "publisher_not_allowed": 45
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 80
       }
     }
   ],
