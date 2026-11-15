@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T11:03:23+09:00",
+  "generated_at": "2026-11-15T12:04:14+09:00",
   "edition_date": "2026-11-15",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -207,7 +207,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cda34fc86d07a8884b10",
@@ -286,7 +286,7 @@
       "cat": "社会・重要",
       "tag": "報道見出し",
       "date": "11/15",
-      "published_at": "2026-11-15T05:23+09:00",
+      "published_at": "2026-11-15T11:04+09:00",
       "date_precision": "minute",
       "title": "図書館のメール使えず マイクロソフト大規模障害で",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
@@ -312,7 +312,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-11-15 05:23 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-15 11:04 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -343,7 +343,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "02ec449589fbe10ae1a4",
@@ -407,7 +407,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "53536b5d2bd4d5517eb3",
@@ -687,7 +687,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b5ed0e66e5e4b6a438d",
@@ -1039,7 +1039,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1117,9 +1117,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 66,
+      "eligible": 68,
       "dropped": {
-        "publisher_not_allowed": 34
+        "publisher_not_allowed": 32
       }
     },
     {
@@ -1128,7 +1128,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 27
       }
     },
     {
@@ -1153,18 +1153,18 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 23,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 77
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 98
+        "publisher_not_allowed": 94
       }
     },
     {
@@ -1173,7 +1173,7 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 62
+        "publisher_not_allowed": 61
       }
     },
     {
@@ -1191,16 +1191,16 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 25
+        "publisher_not_allowed": 24
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 22,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 78
+        "publisher_not_allowed": 80
       }
     }
   ]
