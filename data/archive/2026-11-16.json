@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T11:20:02+09:00",
+  "generated_at": "2026-11-16T12:06:30+09:00",
   "edition_date": "2026-11-16",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -67,7 +67,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "3f0f898e87ffb355e668",
@@ -136,78 +136,6 @@
         }
       ],
       "new_since_last": false
-    },
-    {
-      "id": "4f8b50e27060d7faa8e9",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "11/16",
-      "published_at": "2026-11-16T07:01+09:00",
-      "date_precision": "minute",
-      "title": "サイバー攻撃「自律化」が脅威に ＡＩエージェント悪用、防御後手",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JTVZYTk10SHJjQ2cteF8tM2pPdS04SVBrMFpKaUZ6MHhGMzFRcHRFT2xCOGtSYnNtd2ZBRUgtTGgzWFZ0T014QUlwanB1bVhjQnBKaWh4YjgydVYzMmhHb3p4dw?oc=5",
-      "source_kind": "press_search",
-      "publisher": "時事ドットコム",
-      "publisher_domain": "www.jiji.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JTVZYTk10SHJjQ2cteF8tM2pPdS04SVBrMFpKaUZ6MHhGMzFRcHRFT2xCOGtSYnNtd2ZBRUgtTGgzWFZ0T014QUlwanB1bVhjQnBKaWh4YjgydVYzMmhHb3p4dw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "💻",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-16 07:01 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
-        }
-      ],
-      "new_since_last": true
     },
     {
       "id": "c57fe893fb1cedf66e21",
@@ -351,7 +279,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "6e6f252fd6c847d91df4",
@@ -419,7 +347,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ccbce9d7de5fdceccd21",
@@ -484,6 +412,74 @@
         }
       ],
       "new_since_last": false
+    },
+    {
+      "id": "e9187193367076321771",
+      "cat": "日本経済",
+      "tag": "報道見出し",
+      "date": "11/16",
+      "published_at": "2026-11-16T11:21+09:00",
+      "date_precision": "minute",
+      "title": "UBE、上方修正",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aWEhudTBpaHN0ZFBNRG1NcUNhcjhITFd0RjlneVRSVjh6SGZuaW1rYTdqTlJNRy1LdzVZcXNZWGZkY1k2LUIwbXZfVmRocncxdkl2d1h1aE1Xcy1IUUxGOFFwTFdkQU1vMFRMRA?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aWEhudTBpaHN0ZFBNRG1NcUNhcjhITFd0RjlneVRSVjh6SGZuaW1rYTdqTlJNRy1LdzVZcXNZWGZkY1k2LUIwbXZfVmRocncxdkl2d1h1aE1Xcy1IUUxGOFFwTFdkQU1vMFRMRA?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📈",
+      "tone": "teal",
+      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-16 11:21 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
+        }
+      ],
+      "new_since_last": true
     },
     {
       "id": "58393fbf58205f4de34f",
@@ -619,7 +615,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b5ed0e66e5e4b6a438d",
@@ -766,74 +762,6 @@
       "new_since_last": false
     },
     {
-      "id": "f9617475fa666a2227fb",
-      "cat": "日本経済",
-      "tag": "公式発表",
-      "date": "11/13",
-      "published_at": "2026-11-13T08:50+09:00",
-      "date_precision": "minute",
-      "title": "新型窓口販売方式による5年利付国債（第189回）の発行条件等",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261113.htm",
-      "source_kind": "primary",
-      "publisher": "財務省",
-      "publisher_domain": "mof.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "財務省",
-          "url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261113.htm"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "決算・日本株のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "財務省が配信した見出し・リンク・公開日時（2026-11-13 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜決算・日本株のニュース（一般論）",
-          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "営業利益",
-          "本業の収益力を考える際に使われる利益指標。"
-        ],
-        [
-          "IR",
-          "企業が投資家に向けて行う情報開示や説明。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "金融庁：NISAの情報",
-          "url": "https://www.fsa.go.jp/policy/nisa2/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
       "id": "e5868f1387cc46651adf",
       "cat": "金融政策",
       "tag": "公式発表",
@@ -978,6 +906,74 @@
       "new_since_last": false
     },
     {
+      "id": "2c52731bb1f40d975086",
+      "cat": "AI・産業",
+      "tag": "報道見出し",
+      "date": "11/16",
+      "published_at": "2026-11-16T11:42+09:00",
+      "date_precision": "minute",
+      "title": "日経平均午前959円安、尾を引くAI不安 ニトリHDなど消費関連に強さ",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wRElibmtXQ2hmUVExbExSMU4wa1dkbV81MWgtS1QtTF9RbVNlWFFmX1VIVXBSZDV5QnNRcnpVNXE1Z0k4dzBsbkxKdEtmZmQzWm92eW1TNnJSakg5ZW1aUEF6UGNXaGtOd0dtNw?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wRElibmtXQ2hmUVExbExSMU4wa1dkbV81MWgtS1QtTF9RbVNlWFFmX1VIVXBSZDV5QnNRcnpVNXE1Z0k4dzBsbkxKdEtmZmQzWm92eW1TNnJSakg5ZW1aUEF6UGNXaGtOd0dtNw?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "💻",
+      "tone": "slate",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "為替のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-16 11:42 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜為替のニュース（一般論）",
+          "為替相場は、異なる通貨を交換するときの比率です。「1ドルに必要な円」が増える場合は、ドルに対して円が安くなっています。表示の向きと比較する時刻を確認しましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般論として、円安は輸入品の円建て費用を増やしやすい一方、海外売上を円に換算する企業には追い風になることがあります。実際の影響は原料の調達先、海外生産、為替予約などで異なります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①変動した期間、②日米の金利見通し、③原材料価格、④企業ごとの海外売上と輸入費用を確認します。一つのニュースだけで為替変動の原因を確定しないことが大切です。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "円安",
+          "ある外国通貨に対して円の価値が下がること。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "日本銀行：教えて！にちぎん",
+          "url": "https://www.boj.or.jp/about/education/oshiete/"
+        },
+        {
+          "name": "日本銀行：金融政策の概要",
+          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
       "id": "ee1b0158624c98c71ff7",
       "cat": "国際情勢",
       "tag": "報道見出し",
@@ -1117,7 +1113,7 @@
       "ok": true,
       "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 39
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -1126,7 +1122,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 17
+        "publisher_not_allowed": 18
       }
     },
     {
@@ -1135,34 +1131,34 @@
       "ok": true,
       "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 54
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 13,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 87
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 79
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 85,
+        "publisher_not_allowed": 87,
         "out_of_scope": 1
       }
     },
@@ -1172,7 +1168,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 48
+        "publisher_not_allowed": 50
       }
     },
     {
@@ -1190,16 +1186,16 @@
       "ok": true,
       "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 31
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 70
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-16T11:20:02+09:00",
+  "attempted_at": "2026-11-16T12:06:30+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -68,7 +68,7 @@
       "ok": true,
       "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 39
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -77,7 +77,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 17
+        "publisher_not_allowed": 18
       }
     },
     {
@@ -86,34 +86,34 @@
       "ok": true,
       "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 54
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 13,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 87
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 79
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 85,
+        "publisher_not_allowed": 87,
         "out_of_scope": 1
       }
     },
@@ -123,7 +123,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 48
+        "publisher_not_allowed": 50
       }
     },
     {
@@ -141,16 +141,16 @@
       "ok": true,
       "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 31
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 70
       }
     }
   ],
