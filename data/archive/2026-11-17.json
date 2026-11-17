@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T13:42:28+09:00",
+  "generated_at": "2026-11-17T14:14:12+09:00",
   "edition_date": "2026-11-17",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -71,7 +71,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "39f02bf00d78f30ae5da",
@@ -199,7 +199,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "30f1cace4783ae8d054a",
@@ -271,7 +271,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d99ad371b104e2848324",
@@ -343,7 +343,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "4750b75a0f2f78484f39",
@@ -411,7 +411,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "25ba4c3e06b84b4c67c6",
@@ -475,7 +475,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b2073052f9c96ed8789",
@@ -547,7 +547,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "daff0c9b346864e89431",
@@ -615,7 +615,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8751951ff68cb4397288",
@@ -683,7 +683,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8b5ed0e66e5e4b6a438d",
@@ -830,49 +830,49 @@
       "new_since_last": false
     },
     {
-      "id": "0bf291e1397686705d7a",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
+      "id": "d8f84444bbdc5fc63485",
+      "cat": "政治・地方自治",
+      "tag": "公式発表",
       "date": "11/17",
-      "published_at": "2026-11-17T08:01+09:00",
+      "published_at": "2026-11-17T05:00+09:00",
       "date_precision": "minute",
-      "title": "ＥＵ、5カ国・地域の冷延鋼板に反ダンピング関税 日本27.9％で最大",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMXZaVlZLdnpxdjA1RXU1bmtpVjJCdFk3RjBfNHFmYlBVR01tbkZsRDI2VTE3OVNMZ0FfcW1hbV9hYUQwMVBQNmFMUWxrc0QzNHNEVnpiMGVOOE1IeGpqc3p2WHBWY3dCN1ZESGNCR1ZsR2xZdTVjZ0ZTTnV1VlhaM1lDVl83NEtjNlA3WXlB?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
+      "title": "フロンティアAI時代の通信事業におけるデータの保護・セキュリティの在り方に関する検討会（第3回）",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.soumu.go.jp/main_sosiki/kenkyu/data_protection/02kiban18_02000518.html",
+      "source_kind": "primary",
+      "publisher": "総務省",
+      "publisher_domain": "soumu.go.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMXZaVlZLdnpxdjA1RXU1bmtpVjJCdFk3RjBfNHFmYlBVR01tbkZsRDI2VTE3OVNMZ0FfcW1hbV9hYUQwMVBQNmFMUWxrc0QzNHNEVnpiMGVOOE1IeGpqc3p2WHBWY3dCN1ZESGNCR1ZsR2xZdTVjZ0ZTTnV1VlhaM1lDVl83NEtjNlA3WXlB?oc=5"
+          "name": "総務省",
+          "url": "https://www.soumu.go.jp/main_sosiki/kenkyu/data_protection/02kiban18_02000518.html"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
+      "icon": "🏛️",
+      "tone": "blue",
+      "selection_reason": "日本株と成長産業の変化を追う",
+      "learning_topic": "AI・産業のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-17 08:01 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "総務省が配信した見出し・リンク・公開日時（2026-11-17 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
         ],
         [
           "解説の位置づけ",
@@ -881,62 +881,62 @@
       ],
       "glossary": [
         [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
         }
       ],
       "new_since_last": true
     },
     {
-      "id": "73af325671efc0aa35fd",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "11/17",
-      "published_at": "2026-11-17T05:13+09:00",
+      "id": "24cfa1e766729cdef73f",
+      "cat": "資産形成",
+      "tag": "公式発表",
+      "date": "11/13",
+      "published_at": "2026-11-13T17:00+09:00",
       "date_precision": "minute",
-      "title": "ＥＵ、日本製冷延鋼板に反ダンピング関税＝１７日から、５カ国・地域対象",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aVkpBaVNhcWdzRXA2UHlMdlJKd1hKZVhycDlpRl95Zktqa2Y0dGZSYnBGMk5VNjRHZDVaOGFNczVwaDhzMVBBS2dYNkJiM3BsUVNoQg?oc=5",
-      "source_kind": "press_search",
-      "publisher": "時事通信ニュース",
-      "publisher_domain": "sp.m.jiji.com",
+      "title": "「株式市場構造の在り方に関する有識者会議」（第１回）議事次第について公表しました。",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.fsa.go.jp/singi/kabushikishijoukouzou/shiryou/20261113.html",
+      "source_kind": "primary",
+      "publisher": "金融庁",
+      "publisher_domain": "fsa.go.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "時事通信ニュース",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aVkpBaVNhcWdzRXA2UHlMdlJKd1hKZVhycDlpRl95Zktqa2Y0dGZSYnBGMk5VNjRHZDVaOGFNczVwaDhzMVBBS2dYNkJiM3BsUVNoQg?oc=5"
+          "name": "金融庁",
+          "url": "https://www.fsa.go.jp/singi/kabushikishijoukouzou/shiryou/20261113.html"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
+      "icon": "💰",
+      "tone": "teal",
+      "selection_reason": "日本株と成長産業の変化を追う",
+      "learning_topic": "資産形成のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "時事通信ニュースが配信した見出し・リンク・公開日時（2026-11-17 05:13 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "金融庁が配信した見出し・リンク・公開日時（2026-11-13 17:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+          "基礎知識｜資産形成のニュース（一般論）",
+          "投資の税制と、投資対象の値動きは別です。非課税の制度を利用していても、投資した商品の価格が下がる可能性はあります。制度の改正案と施行済みの内容も区別します。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+          "一般的な確認点は、使う予定のお金を投資に回していないか、一つの会社や分野に偏りすぎていないか、手数料がいくらか、ということです。長期投資や分散も損失をなくす仕組みではありません。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+          "元の公式資料で①対象者、②開始日、③適用される商品や口座、④手数料、⑤過去の制度との違いを確認します。本アプリは制度の最新詳細や運用成果を保証しません。"
         ],
         [
           "解説の位置づけ",
@@ -945,50 +945,50 @@
       ],
       "glossary": [
         [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
+          "分散投資",
+          "投資先を複数に分け、特定の投資先への集中を抑えること。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
     },
     {
-      "id": "7fea247babf92f9d396f",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
+      "id": "7919def8fc45ce5e2793",
+      "cat": "政治・地方自治",
+      "tag": "公式発表",
       "date": "11/17",
-      "published_at": "2026-11-17T01:40+09:00",
+      "published_at": "2026-11-17T05:00+09:00",
       "date_precision": "minute",
-      "title": "鉄鋼業界が苦境のＥＵ、日本からの冷延鋼板輸入に２７・９％の反ダンピング関税",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YVTdBemlyRjgwQi1yc0s0dmh3aVpxNmZCZzdZVVUyS0RNUV9TQkRpdGFBZkhDWWxja2c0Q1AwNDJRTHdDYlJ5OXBERDNrMDNUUkowSUVwSExUNWhkUHpvVjNWUVo?oc=5",
-      "source_kind": "press_search",
-      "publisher": "読売新聞",
-      "publisher_domain": "www.yomiuri.co.jp",
+      "title": "国際電気通信連合（ITU）全権委員会議における電気通信標準化局長及び理事国選挙の結果等",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.soumu.go.jp/menu_news/s-news/01tsushin06_02000363.html",
+      "source_kind": "primary",
+      "publisher": "総務省",
+      "publisher_domain": "soumu.go.jp",
       "language": "ja",
       "sources": [
         {
-          "name": "読売新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YVTdBemlyRjgwQi1yc0s0dmh3aVpxNmZCZzdZVVUyS0RNUV9TQkRpdGFBZkhDWWxja2c0Q1AwNDJRTHdDYlJ5OXBERDNrMDNUUkowSUVwSExUNWhkUHpvVjNWUVo?oc=5"
+          "name": "総務省",
+          "url": "https://www.soumu.go.jp/menu_news/s-news/01tsushin06_02000363.html"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "icon": "🏛️",
+      "tone": "blue",
+      "selection_reason": "家計・地域の政策・防災への影響を確認",
       "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "読売新聞が配信した見出し・リンク・公開日時（2026-11-17 01:40 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "総務省が配信した見出し・リンク・公開日時（2026-11-17 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜世界経済・国際情勢のニュース（一般論）",
@@ -1028,8 +1028,8 @@
   "ranking_notice": "投資・大きな社会変化・セキュリティを優先し、採用・入札・会議の事務連絡を除外しています。表示順はルールに基づき、真偽の判定ではありません。",
   "feed_statistics": {
     "feed_count": 17,
-    "feeds_ok": 14,
-    "feeds_failed": 3
+    "feeds_ok": 13,
+    "feeds_failed": 4
   },
   "source_reports": [
     {
@@ -1045,9 +1045,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 40,
+      "eligible": 38,
       "dropped": {
-        "out_of_time_window": 60
+        "out_of_time_window": 62
       }
     },
     {
@@ -1094,25 +1094,25 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 34,
+      "eligible": 31,
       "dropped": {
-        "publisher_not_allowed": 66
+        "publisher_not_allowed": 69
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
-      "ok": true,
-      "eligible": 2,
-      "dropped": {
-        "publisher_not_allowed": 30
-      }
+      "ok": false,
+      "reason": "HTTP 429"
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
-      "ok": false,
-      "reason": "HTTP 429"
+      "ok": true,
+      "eligible": 24,
+      "dropped": {
+        "publisher_not_allowed": 76
+      }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
@@ -1123,19 +1123,16 @@
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
-      "ok": true,
-      "eligible": 22,
-      "dropped": {
-        "publisher_not_allowed": 78
-      }
+      "ok": false,
+      "reason": "HTTP 429"
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 74,
+        "publisher_not_allowed": 78,
         "out_of_scope": 1
       }
     },
@@ -1145,7 +1142,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 53
       }
     },
     {
@@ -1172,7 +1169,7 @@
       "ok": true,
       "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 58
       }
     }
   ]
