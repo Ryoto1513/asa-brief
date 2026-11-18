@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T12:46:56+09:00",
+  "generated_at": "2026-11-18T13:42:55+09:00",
   "edition_date": "2026-11-18",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -143,7 +143,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "dc834ac148db41da7152",
@@ -279,7 +279,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "adb7bbdae7fc8a6cdada",
@@ -343,7 +343,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "7d3c5dfe5d5c15da8b92",
@@ -407,7 +407,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "dc34f0274863e31ab2c3",
@@ -471,18 +471,18 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "8bb9e56ec1091657be22",
+      "id": "4161478b33427c90fd5b",
       "cat": "日本経済",
       "tag": "報道見出し",
       "date": "11/18",
-      "published_at": "2026-11-18T11:51+09:00",
+      "published_at": "2026-11-18T13:14+09:00",
       "date_precision": "minute",
-      "title": "日経平均、午前終値163円安 NVIDIA好決算も高揚感乏しく",
+      "title": "決算:NVIDIAの8〜10月期、売上高・純利益2倍 テックのAI投資がけん引",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00WVJWdmVCQkNNdXNQRW1nbE1DVWQ0ZmdFdWxuTDNxb0ZCTU52eS1TVERLaGFyNFV2QU1sUVQxemU3NnNkbFROZzBnNlV5QTJ2QUhEUkNldm9hWmpEVEItX1ZnMWZNZDR0NTdLTw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5WThpa2lScnFBUzk0ZFZsbmVwTU1YbjVKTFRCaXNpNzhOWmRKNkdibGpnQTVDN3poS2FUUTlWd3hRU1B6bENnd00taWtUakphekNJVXppYTZUX0ZDMjk0d182VXB4QkZoUUR2NA?oc=5",
       "source_kind": "press_search",
       "publisher": "日本経済新聞",
       "publisher_domain": "www.nikkei.com",
@@ -490,33 +490,33 @@
       "sources": [
         {
           "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00WVJWdmVCQkNNdXNQRW1nbE1DVWQ0ZmdFdWxuTDNxb0ZCTU52eS1TVERLaGFyNFV2QU1sUVQxemU3NnNkbFROZzBnNlV5QTJ2QUhEUkNldm9hWmpEVEItX1ZnMWZNZDR0NTdLTw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5WThpa2lScnFBUzk0ZFZsbmVwTU1YbjVKTFRCaXNpNzhOWmRKNkdibGpnQTVDN3poS2FUUTlWd3hRU1B6bENnd00taWtUakphekNJVXppYTZUX0ZDMjk0d182VXB4QkZoUUR2NA?oc=5"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "📈",
-      "tone": "teal",
+      "icon": "💻",
+      "tone": "slate",
       "selection_reason": "企業の業績・見通し・株主還元に関わる",
-      "learning_topic": "為替のニュース",
+      "learning_topic": "決算・日本株のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-18 11:51 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-18 13:14 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜為替のニュース（一般論）",
-          "為替相場は、異なる通貨を交換するときの比率です。「1ドルに必要な円」が増える場合は、ドルに対して円が安くなっています。表示の向きと比較する時刻を確認しましょう。"
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "一般論として、円安は輸入品の円建て費用を増やしやすい一方、海外売上を円に換算する企業には追い風になることがあります。実際の影響は原料の調達先、海外生産、為替予約などで異なります。"
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①変動した期間、②日米の金利見通し、③原材料価格、④企業ごとの海外売上と輸入費用を確認します。一つのニュースだけで為替変動の原因を確定しないことが大切です。"
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
         ],
         [
           "解説の位置づけ",
@@ -525,18 +525,18 @@
       ],
       "glossary": [
         [
-          "円安",
-          "ある外国通貨に対して円の価値が下がること。"
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "日本銀行：教えて！にちぎん",
-          "url": "https://www.boj.or.jp/about/education/oshiete/"
-        },
-        {
-          "name": "日本銀行：金融政策の概要",
-          "url": "https://www.boj.or.jp/mopo/outline/index.htm"
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": true
@@ -607,7 +607,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "e54a6f64d47395891485",
@@ -675,7 +675,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d99ad371b104e2848324",
@@ -698,7 +698,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -986,7 +986,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🌍",
       "tone": "amber",
@@ -1027,7 +1027,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1100,9 +1100,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 41,
+      "eligible": 40,
       "dropped": {
-        "publisher_not_allowed": 59
+        "publisher_not_allowed": 60
       }
     },
     {
@@ -1111,7 +1111,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 27
+        "publisher_not_allowed": 28
       }
     },
     {
@@ -1137,18 +1137,18 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 76
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 18,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 82
       }
     },
     {
@@ -1157,7 +1157,7 @@
       "ok": true,
       "eligible": 9,
       "dropped": {
-        "publisher_not_allowed": 52
+        "publisher_not_allowed": 53
       }
     },
     {
@@ -1175,7 +1175,7 @@
       "ok": true,
       "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 36
+        "publisher_not_allowed": 39
       }
     },
     {
@@ -1184,7 +1184,7 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 57
+        "publisher_not_allowed": 56
       }
     }
   ]
