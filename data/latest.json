@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T12:45:12+09:00",
+  "generated_at": "2026-11-19T13:30:13+09:00",
   "edition_date": "2026-11-19",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,14 +75,14 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "267a8d3cbb0db0a35ca3",
       "cat": "セキュリティ",
       "tag": "報道見出し",
       "date": "11/19",
-      "published_at": "2026-11-19T11:28+09:00",
+      "published_at": "2026-11-19T10:20+09:00",
       "date_precision": "minute",
       "title": "「エンジンエックス」に複数の重大な脆弱性 開発元が対応呼びかけ [情報漏洩・個人情報流出の最新ニュース]",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
@@ -108,7 +108,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "朝日新聞が配信した見出し・リンク・公開日時（2026-11-19 11:28 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-11-19 10:20 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -147,7 +147,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b0e7ff698e47daca0249",
@@ -291,7 +291,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "f7cfe32fec82a83e82dc",
@@ -355,7 +355,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b3051b728d3f64b1e0d3",
@@ -419,7 +419,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "eea2112b7a476a530c9d",
@@ -487,7 +487,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "adb7bbdae7fc8a6cdada",
@@ -616,6 +616,74 @@
         }
       ],
       "new_since_last": false
+    },
+    {
+      "id": "46d1df995c50ee99a927",
+      "cat": "日本経済",
+      "tag": "報道見出し",
+      "date": "11/19",
+      "published_at": "2026-11-19T12:37+09:00",
+      "date_precision": "minute",
+      "title": "パロアルト、通期見通し上方修正 ＡＩ新興を45億ドルで買収へ",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdFNxTnlEamNTWUxLN3RVZUpJeUFDdHctSHoyTm9LeWlrUy00VE92Ukt6SVFuSDFTOUZUdEtWSjVvN1l2ZFktWVFDQlpNd0NmVmJSR19KYnhReXNuWDE1aFlPVlR1YS04UUNjWHlqVHllSHdsZHVaazM0aWZLbDMxT1pEVkpWQQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Reuters",
+      "publisher_domain": "www.reuters.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdFNxTnlEamNTWUxLN3RVZUpJeUFDdHctSHoyTm9LeWlrUy00VE92Ukt6SVFuSDFTOUZUdEtWSjVvN1l2ZFktWVFDQlpNd0NmVmJSR19KYnhReXNuWDE1aFlPVlR1YS04UUNjWHlqVHllSHdsZHVaazM0aWZLbDMxT1pEVkpWQQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "💻",
+      "tone": "slate",
+      "selection_reason": "企業の業績・見通し・株主還元に関わる",
+      "learning_topic": "決算・日本株のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Reutersが配信した見出し・リンク・公開日時（2026-11-19 12:37 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜決算・日本株のニュース（一般論）",
+          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "営業利益",
+          "本業の収益力を考える際に使われる利益指標。"
+        ],
+        [
+          "IR",
+          "企業が投資家に向けて行う情報開示や説明。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
+        }
+      ],
+      "new_since_last": true
     },
     {
       "id": "e54a6f64d47395891485",
@@ -830,74 +898,6 @@
       "new_since_last": false
     },
     {
-      "id": "f9617475fa666a2227fb",
-      "cat": "日本経済",
-      "tag": "公式発表",
-      "date": "11/13",
-      "published_at": "2026-11-13T08:50+09:00",
-      "date_precision": "minute",
-      "title": "新型窓口販売方式による5年利付国債（第189回）の発行条件等",
-      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261113.htm",
-      "source_kind": "primary",
-      "publisher": "財務省",
-      "publisher_domain": "mof.go.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "財務省",
-          "url": "https://www.mof.go.jp/jgbs/individual/kojinmuke/houdouhappyou/shinmado20261113.htm"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "直近7日の公式発表",
-      "read": 3,
-      "icon": "📈",
-      "tone": "teal",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "決算・日本株のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "財務省が配信した見出し・リンク・公開日時（2026-11-13 08:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜決算・日本株のニュース（一般論）",
-          "売上は商品やサービスを販売して得た収入、利益はそこから費用を差し引いた結果です。売上が増えていても、原材料費や人件費がそれ以上に増えると利益は減る場合があります。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "株価は足元の業績だけでなく、将来の期待や金利にも左右されます。好決算でも事前の期待を下回れば値下がりする場合があります。「利益が増えた」ことと「今の株価が割安」なことは別です。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "企業のIR資料で①対象期間、②前年との比較、③営業利益と一時的な損益、④会社の通期予想、⑤売上を現金として回収できているかを確認します。銘柄の購入推奨ではありません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "営業利益",
-          "本業の収益力を考える際に使われる利益指標。"
-        ],
-        [
-          "IR",
-          "企業が投資家に向けて行う情報開示や説明。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "金融庁：NISAの情報",
-          "url": "https://www.fsa.go.jp/policy/nisa2/"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
       "id": "e5868f1387cc46651adf",
       "cat": "金融政策",
       "tag": "公式発表",
@@ -967,52 +967,52 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "6216e8ea1a93fee3cc68",
-      "cat": "国際情勢",
+      "id": "5876bcfa481cbdb81943",
+      "cat": "AI・産業",
       "tag": "報道見出し",
       "date": "11/19",
-      "published_at": "2026-11-19T10:27+09:00",
+      "published_at": "2026-11-19T13:00+09:00",
       "date_precision": "minute",
-      "title": "英印が「スコッチ関税」巡り対立、ＦＴＡ発効後に税負担増大",
+      "title": "物価高騰、紛争、AIに奪われる仕事 国連人口白書が描く若者の不安",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZnU4U25ubENkNFhfMGZzc3IzaFNpSVdBLUpqNmRRZjlCaWItanRWNnFiMnpNMmFiYzVMdExLZFZ4d3hsVU94WVZnaDFaRHVLRFllZHJMMElIZFpaT19JVUFQdkRkdjh5SEQxaUNKZDBiQWlDNGhsSmRVUjk1WmNtSTJMUC1sdlREXzc1Rml5NXgxdw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10UGVMWGZNMHc4RWNDQ3hnTm0yaHFGRlM2UXNJZXMtR1JwbUlXV2xxUG1FT1lzNWtqSzBNY1hOMTRjWlRJVHVkMUdiaUIwRnp6U19xckpRaGVGRTRGOHR5WHY1NzRMUQ?oc=5",
       "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
+      "publisher": "朝日新聞",
+      "publisher_domain": "www.asahi.com",
       "language": "ja",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZnU4U25ubENkNFhfMGZzc3IzaFNpSVdBLUpqNmRRZjlCaWItanRWNnFiMnpNMmFiYzVMdExLZFZ4d3hsVU94WVZnaDFaRHVLRFllZHJMMElIZFpaT19JVUFQdkRkdjh5SEQxaUNKZDBiQWlDNGhsSmRVUjk1WmNtSTJMUC1sdlREXzc1Rml5NXgxdw?oc=5"
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10UGVMWGZNMHc4RWNDQ3hnTm0yaHFGRlM2UXNJZXMtR1JwbUlXV2xxUG1FT1lzNWtqSzBNY1hOMTRjWlRJVHVkMUdiaUIwRnp6U19xckpRaGVGRTRGOHR5WHY1NzRMUQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
+      "icon": "💻",
+      "tone": "slate",
       "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_topic": "AI・産業のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-19 10:27 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "朝日新聞が配信した見出し・リンク・公開日時（2026-11-19 13:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
         ],
         [
           "解説の位置づけ",
@@ -1021,14 +1021,14 @@
       ],
       "glossary": [
         [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
         }
       ],
       "new_since_last": true
@@ -1104,9 +1104,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 50,
+      "eligible": 51,
       "dropped": {
-        "publisher_not_allowed": 50
+        "publisher_not_allowed": 49
       }
     },
     {
@@ -1115,16 +1115,16 @@
       "ok": true,
       "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 28
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 79
       }
     },
     {
@@ -1149,9 +1149,9 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 84
       }
     },
     {
@@ -1160,7 +1160,7 @@
       "ok": true,
       "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 62
       }
     },
     {
@@ -1176,9 +1176,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 10,
       "dropped": {
-        "publisher_not_allowed": 48
+        "publisher_not_allowed": 51
       }
     },
     {
@@ -1187,7 +1187,7 @@
       "ok": true,
       "eligible": 5,
       "dropped": {
-        "publisher_not_allowed": 50
+        "publisher_not_allowed": 51
       }
     }
   ]
