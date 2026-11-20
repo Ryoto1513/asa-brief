@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T13:30:23+09:00",
+  "checked_at": "2026-11-20T12:39:29+09:00",
   "state": "success",
   "items": [
+    {
+      "id": "6b1a3d782ef1d4812dbb",
+      "disclosure_key": "8766:2026-11-19",
+      "code": "8766",
+      "company": "東京海上",
+      "title": "2027年3月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-19T16:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261118583013.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "e3e1f5399c0d27f5bbe1",
+      "disclosure_key": "8725:2026-11-19",
+      "code": "8725",
+      "company": "ＭＳ＆ＡＤ",
+      "title": "2027年３月期 第２四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "published_at": "2026-11-19T16:00+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261113580268.pdf",
+      "stage": "detected"
+    },
+    {
+      "id": "7d8422a09b1cf2741034",
+      "disclosure_key": "2914:2026-11-19",
+      "code": "2914",
+      "company": "ＪＴ",
+      "title": "通期連結業績予想及び配当予想の修正に関するお知らせ",
+      "published_at": "2026-11-19T15:30+09:00",
+      "url": "https://www.release.tdnet.info/inbs/140120261119583442.pdf",
+      "stage": "detected"
+    },
     {
       "id": "3c815bd2ae98c754e774",
       "disclosure_key": "1802:2026-11-13",
@@ -570,7 +600,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-19T13:30:23+09:00",
+    "checked_at": "2026-11-20T12:39:29+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2484,7 +2514,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-19T13:30:23+09:00"
+    "last_success_at": "2026-11-20T12:39:29+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
