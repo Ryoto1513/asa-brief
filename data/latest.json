@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T12:39:21+09:00",
+  "generated_at": "2026-11-20T13:17:40+09:00",
   "edition_date": "2026-11-20",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -71,7 +71,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "879103d330f1f4a98f62",
@@ -143,7 +143,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "47a00bcdb47e5d8cb2da",
@@ -215,7 +215,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c6bd7cf9051360ab36bb",
@@ -287,7 +287,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "bad9749ffce9560e520b",
@@ -351,7 +351,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c40687023ef2560b688c",
@@ -415,7 +415,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "7214207389015a9a6d57",
@@ -479,7 +479,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "95bccea31d0a8cf355b5",
@@ -547,7 +547,7 @@
           "url": "https://www.stat.go.jp/data/cpi/4-1.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ea429cf9711d2a463485",
@@ -581,6 +581,70 @@
         [
           "今回の取得範囲",
           "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-20 11:46 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": false
+    },
+    {
+      "id": "f65ffdf4e78454fbd6e0",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/20",
+      "published_at": "2026-11-20T11:40+09:00",
+      "date_precision": "minute",
+      "title": "マイクロソフトに再発防止を要請 大規模障害でデジタル相",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1sTlJfTDVla3NXV1ZGbUNuT19vdm9VNE9fYUpJR1lyTVNMMlFxYS1MdGNpbHM0cVpQM2tOTkZzUndDVzV2SlRqYWhaVQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1sTlJfTDVla3NXV1ZGbUNuT19vdm9VNE9fYUpJR1lyTVNMMlFxYS1MdGNpbHM0cVpQM2tOTkZzUndDVzV2SlRqYWhaVQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-20 11:40 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜ニュースの読み方（一般論）",
@@ -675,7 +739,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "9297c2e5b581b7088292",
@@ -739,71 +803,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "4b12e9375c554313f408",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/19",
-      "published_at": "2026-11-19T20:39+09:00",
-      "date_precision": "minute",
-      "title": "沖縄 米海兵隊オスプレイが石垣空港に緊急事態伝えて着陸",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3UmNUTVRkRng1ZmNjWFdQNW5fYWNGdFQzZTVyWGdfRTJHMFRLSWUyS2dpOEY0cjY1NENENkprZE5hVnc5LVBRQmthNG9oaG8yZVRzZ3lXOWZTYU1GbVI0?oc=5",
-      "source_kind": "press_search",
-      "publisher": "NHKニュース",
-      "publisher_domain": "news.web.nhk",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3UmNUTVRkRng1ZmNjWFdQNW5fYWNGdFQzZTVyWGdfRTJHMFRLSWUyS2dpOEY0cjY1NENENkprZE5hVnc5LVBRQmthNG9oaG8yZVRzZ3lXOWZTYU1GbVI0?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-19 20:39 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d99ad371b104e2848324",
@@ -1015,7 +1015,7 @@
           "url": "https://www.stat.go.jp/data/cpi/4-1.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1032,7 +1032,7 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 15,
+      "eligible": 16,
       "dropped": {
         "out_of_time_window": 60
       }
@@ -1088,18 +1088,18 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 29,
+      "eligible": 30,
       "dropped": {
-        "publisher_not_allowed": 71
+        "publisher_not_allowed": 70
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 4,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -1115,36 +1115,36 @@
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 91
+        "publisher_not_allowed": 92
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 21,
+      "eligible": 22,
       "dropped": {
-        "publisher_not_allowed": 79
+        "publisher_not_allowed": 78
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 24,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 76
+        "publisher_not_allowed": 80
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 53
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -1160,16 +1160,16 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 16,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 84
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 9,
       "dropped": {
         "publisher_not_allowed": 41
       }
