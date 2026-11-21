@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T13:17:48+09:00",
+  "checked_at": "2026-11-21T12:22:32+09:00",
   "state": "success",
   "items": [
     {
@@ -600,7 +600,7 @@
   "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-20T13:17:48+09:00",
+    "checked_at": "2026-11-21T12:22:32+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2498,8 +2498,8 @@
         "code": "1928",
         "company": "積水ハウス",
         "period": "2027-01-31期末・第3四半期",
-        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-        "source_as_of": "2026-11-05",
+        "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+        "source_as_of": "2026-11-19",
         "stage": "planned"
       }
     ],
@@ -2509,12 +2509,12 @@
         "as_of": "2026-11-05"
       },
       {
-        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
-        "as_of": "2026-11-05"
+        "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+        "as_of": "2026-11-19"
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-20T13:17:48+09:00"
+    "last_success_at": "2026-11-21T12:22:32+09:00"
   },
   "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }

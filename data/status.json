@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-20T13:17:40+09:00",
+  "attempted_at": "2026-11-21T12:22:25+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -7,18 +7,18 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 16,
+      "eligible": 15,
       "dropped": {
-        "out_of_time_window": 60
+        "out_of_time_window": 59
       }
     },
     {
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 50,
+      "eligible": 57,
       "dropped": {
-        "out_of_time_window": 50
+        "out_of_time_window": 43
       }
     },
     {
@@ -32,9 +32,9 @@
       "name": "総務省統計局",
       "kind": "primary",
       "ok": true,
-      "eligible": 2,
+      "eligible": 7,
       "dropped": {
-        "out_of_time_window": 13
+        "out_of_time_window": 8
       }
     },
     {
@@ -63,88 +63,88 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 30,
+      "eligible": 57,
       "dropped": {
-        "publisher_not_allowed": 70
+        "publisher_not_allowed": 43
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 6,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 45
+        "publisher_not_allowed": 23
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 76
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 14,
       "dropped": {
-        "publisher_not_allowed": 92
+        "publisher_not_allowed": 86
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 22,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 78
+        "publisher_not_allowed": 71
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 20,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 80
+        "publisher_not_allowed": 76
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 3,
       "dropped": {
-        "publisher_not_allowed": 59
+        "publisher_not_allowed": 66
       }
     },
     {
       "name": "JPCERT/CC 注意喚起",
       "kind": "primary",
       "ok": true,
-      "eligible": 25,
+      "eligible": 26,
       "dropped": {
-        "out_of_time_window": 6
+        "out_of_time_window": 5
       }
     },
     {
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 18,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 82
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 9,
+      "eligible": 4,
       "dropped": {
         "publisher_not_allowed": 41
       }
