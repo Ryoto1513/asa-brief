@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T12:22:25+09:00",
+  "generated_at": "2026-11-21T13:16:20+09:00",
   "edition_date": "2026-11-21",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -75,7 +75,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b1215cb215b409eb21cc",
@@ -143,7 +143,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b685c0485375dc19c437",
@@ -211,7 +211,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "4a7a3da8d7a6e7a726b8",
@@ -283,7 +283,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "47a00bcdb47e5d8cb2da",
@@ -495,7 +495,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c073f31177756fef2011",
@@ -559,7 +559,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "bad9749ffce9560e520b",
@@ -883,7 +883,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d99ad371b104e2848324",
@@ -1036,8 +1036,8 @@
   "ranking_notice": "投資・大きな社会変化・セキュリティを優先し、採用・入札・会議の事務連絡を除外しています。表示順はルールに基づき、真偽の判定ではありません。",
   "feed_statistics": {
     "feed_count": 17,
-    "feeds_ok": 16,
-    "feeds_failed": 1
+    "feeds_ok": 15,
+    "feeds_failed": 2
   },
   "source_reports": [
     {
@@ -1100,9 +1100,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 57,
+      "eligible": 55,
       "dropped": {
-        "publisher_not_allowed": 43
+        "publisher_not_allowed": 45
       }
     },
     {
@@ -1118,9 +1118,9 @@
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 24,
+      "eligible": 22,
       "dropped": {
-        "publisher_not_allowed": 76
+        "publisher_not_allowed": 78
       }
     },
     {
@@ -1136,28 +1136,25 @@
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 29,
+      "eligible": 32,
       "dropped": {
-        "publisher_not_allowed": 71
+        "publisher_not_allowed": 68
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 24,
+      "eligible": 21,
       "dropped": {
-        "publisher_not_allowed": 76
+        "publisher_not_allowed": 79
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
-      "ok": true,
-      "eligible": 3,
-      "dropped": {
-        "publisher_not_allowed": 66
-      }
+      "ok": false,
+      "reason": "HTTP 429"
     },
     {
       "name": "JPCERT/CC 注意喚起",
@@ -1172,9 +1169,9 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 17,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 83
       }
     },
     {
@@ -1183,7 +1180,7 @@
       "ok": true,
       "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 41
+        "publisher_not_allowed": 40
       }
     }
   ]
