@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-21T13:16:27+09:00",
-  "state": "success",
+  "checked_at": "2026-11-22T11:32:34+09:00",
+  "state": "partial",
   "items": [
     {
       "id": "6b1a3d782ef1d4812dbb",
@@ -572,35 +572,17 @@
       "published_at": "2026-10-27T15:30+09:00",
       "url": "https://www.release.tdnet.info/inbs/140120261026556436.pdf",
       "stage": "detected"
-    },
-    {
-      "id": "601a4660ca2954d8b7aa",
-      "disclosure_key": "6146:2026-10-22",
-      "code": "6146",
-      "company": "ディスコ",
-      "title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
-      "published_at": "2026-10-22T16:00+09:00",
-      "url": "https://www.release.tdnet.info/inbs/140120261021554279.pdf",
-      "stage": "detected"
-    },
-    {
-      "id": "9b7651ed338dc9a21b35",
-      "disclosure_key": "6146:2026-10-22",
-      "code": "6146",
-      "company": "ディスコ",
-      "title": "業績予想のお知らせ",
-      "published_at": "2026-10-22T16:00+09:00",
-      "url": "https://www.release.tdnet.info/inbs/140120261021554280.pdf",
-      "stage": "detected"
     }
   ],
   "universe_count": 225,
   "pages_requested": 3,
-  "pages_ok": 3,
-  "errors": [],
+  "pages_ok": 2,
+  "errors": [
+    "2026-11-22:listing_unavailable"
+  ],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-21T13:16:27+09:00",
+    "checked_at": "2026-11-22T11:32:34+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2514,7 +2496,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-21T13:16:27+09:00"
+    "last_success_at": "2026-11-22T11:32:34+09:00"
   },
-  "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
+  "message": "一部の一覧を取得できていません。開示の取りこぼしにご注意ください。"
 }
