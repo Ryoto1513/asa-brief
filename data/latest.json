@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T12:31:51+09:00",
-  "edition_date": "2026-11-22",
+  "generated_at": "2026-11-23T11:58:05+09:00",
+  "edition_date": "2026-11-23",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
   "articles": [
@@ -26,7 +26,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -98,7 +98,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -166,7 +166,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -234,7 +234,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -283,78 +283,14 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "7157616a98bce20866bd",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "11/22",
-      "published_at": "2026-11-22T05:00+09:00",
-      "date_precision": "minute",
-      "title": "GMOも被害のサイバー攻撃 AI悪用と対応策を知る10選 - 日経デジタルガバナンス",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdlZicEpqdWRYa0NVX1RyMmZiT0FQaFFwdHl6RnM0Mzlna0FfQm41WnJUSFZvRmFiMUh3bUFlRVA5NWh3X2VseUdJZmxreGFtaWlKZGtYRU96MEQ4Wm1JRFJMRWFNelJMdEI1VEx6b0FwUFVYeDA5T3dvOU9lY2RBMmlfT1hhQ3dKc3lLLQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "日本経済新聞",
-      "publisher_domain": "www.nikkei.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdlZicEpqdWRYa0NVX1RyMmZiT0FQaFFwdHl6RnM0Mzlna0FfQm41WnJUSFZvRmFiMUh3bUFlRVA5NWh3X2VseUdJZmxreGFtaWlKZGtYRU96MEQ4Wm1JRFJMRWFNelJMdEI1VEx6b0FwUFVYeDA5T3dvOU9lY2RBMmlfT1hhQ3dKc3lLLQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "💻",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "AI・産業のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-22 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜AI・産業のニュース（一般論）",
-          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "設備投資",
-          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "経済産業省：公式情報",
-          "url": "https://www.meti.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "843cc207970196b52d15",
       "cat": "セキュリティ",
       "tag": "報道見出し",
-      "date": "11/21",
-      "published_at": "2026-11-21T09:23+09:00",
+      "date": "11/22",
+      "published_at": "2026-11-22T01:27+09:00",
       "date_precision": "minute",
       "title": "緊急総点検 例外なき標的の時代、AIサイバー攻撃防衛策12項目",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
@@ -380,7 +316,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日経クロステックが配信した見出し・リンク・公開日時（2026-11-21 09:23 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日経クロステックが配信した見出し・リンク・公開日時（2026-11-22 01:27 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜AI・産業のニュース（一般論）",
@@ -411,6 +347,70 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
+      "new_since_last": false
+    },
+    {
+      "id": "06fffb7845fb575d42ad",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/23",
+      "published_at": "2026-11-23T05:42+09:00",
+      "date_precision": "minute",
+      "title": "県歯科医師会のＪＤＡＴ 研修会で大規模災害時の支援手順など確認 福島",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4zdlZReEZtYTR5czdjckFRT1RpaFVQaERpMmZIa21Kc3RWeFZtMmU4WU9Fd21helVfeC1rZVpZVy1HeHR3T1A1OTl2UQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "47NEWS",
+      "publisher_domain": "www.47news.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4zdlZReEZtYTR5czdjckFRT1RpaFVQaERpMmZIa21Kc3RWeFZtMmU4WU9Fd21helVfeC1rZVpZVy1HeHR3T1A1OTl2UQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-23 05:42 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
       "new_since_last": true
     },
     {
@@ -434,7 +434,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "📈",
       "tone": "teal",
@@ -480,70 +480,6 @@
         }
       ],
       "new_since_last": false
-    },
-    {
-      "id": "c073f31177756fef2011",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/20",
-      "published_at": "2026-11-20T23:45+09:00",
-      "date_precision": "minute",
-      "title": "マイクロソフト「アウトルック」など大規模障害、古川デジタル相が原因究明とシステム安定稼働を要請",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MVEM3R0xMWU9RZDNkX2Q1VXlzaEdmZXNyOGxrbWJEc2NFZmtFT2ZXa2wwbExqbkJpaUphTlNPZWRYWWlQaHRJb2tsV2hVQ0pwTTlMQUVWVWZWWS1FRDZIUmctWEQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "読売新聞",
-      "publisher_domain": "www.yomiuri.co.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MVEM3R0xMWU9RZDNkX2Q1VXlzaEdmZXNyOGxrbWJEc2NFZmtFT2ZXa2wwbExqbkJpaUphTlNPZWRYWWlQaHRJb2tsV2hVQ0pwTTlMQUVWVWZWWS1FRDZIUmctWEQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "読売新聞が配信した見出し・リンク・公開日時（2026-11-20 23:45 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": true
     },
     {
       "id": "bad9749ffce9560e520b",
@@ -608,70 +544,6 @@
         }
       ],
       "new_since_last": false
-    },
-    {
-      "id": "b50de624cd1376a83b63",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/20",
-      "published_at": "2026-11-20T16:40+09:00",
-      "date_precision": "minute",
-      "title": "大規模障害で日本マイクロソフト社長がデジタル相に原因など報告",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4bU9SYWctUzhqblNjdFhkRk1YTTAtM2pnLWFoRGNhN1lvNVJ1ZWRoTWlxSmlMZ21xUGpNZEJVQlI1aTVZVzRmdC1OTGZRNlJnaUEyM0J0bTVYbzh0alFHaklmTWRMazhF?oc=5",
-      "source_kind": "press_search",
-      "publisher": "毎日新聞",
-      "publisher_domain": "mainichi.jp",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "毎日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4bU9SYWctUzhqblNjdFhkRk1YTTAtM2pnLWFoRGNhN1lvNVJ1ZWRoTWlxSmlMZ21xUGpNZEJVQlI1aTVZVzRmdC1OTGZRNlJnaUEyM0J0bTVYbzh0alFHaklmTWRMazhF?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "毎日新聞が配信した見出し・リンク・公開日時（2026-11-20 16:40 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": true
     },
     {
       "id": "95bccea31d0a8cf355b5",
@@ -886,27 +758,27 @@
       "new_since_last": false
     },
     {
-      "id": "0a09aa9f3a7a605d4509",
+      "id": "b715af93ef50f6ba8d22",
       "cat": "金融政策",
       "tag": "報道見出し",
-      "date": "11/21",
-      "published_at": "2026-11-21T06:25+09:00",
+      "date": "11/23",
+      "published_at": "2026-11-23T01:52+09:00",
       "date_precision": "minute",
-      "title": "高インフレ抑制に追加利上げ必要、現行の金利水準は不十分＝クックＦＲＢ理事",
+      "title": "ベッセント米財務長官、FRBにけん制球「過度な引き締めは政策ミスになりかねない」",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0otai1IUEh2aEhNRFlUVzdxNWFBWExXZXF0VmxrUHJKN3Z2c1E1REYybWg5UlBnQ0NPS0FrQ3NrUWZ4NWdmblozdHBScm5xdXh6WFF5SW9KNUZ1RjdkRUxjWHBPek12SEc1WUloMGNLakZMbHBlUkhabE1zYzF5czhUQmRadlI1T3ZicGQ3VkU4YVM4c2VqYUNQNA?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFOUMtaHlyOUhTMEVWN1FrbDNHQnBweUxybUhVOWJvSXR3YVgxeVppbkZVSlppVEkwaElPS1pMREVsbmdfNUJwaXFvOFRsUnRtOHlzRTE3ckpiWEdkMHZLN3ctYkJtd1VBWXpoMmZaOGRRUDJ3WkNJ?oc=5",
       "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
+      "publisher": "Bloomberg.com",
+      "publisher_domain": "www.bloomberg.com",
       "language": "ja",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0otai1IUEh2aEhNRFlUVzdxNWFBWExXZXF0VmxrUHJKN3Z2c1E1REYybWg5UlBnQ0NPS0FrQ3NrUWZ4NWdmblozdHBScm5xdXh6WFF5SW9KNUZ1RjdkRUxjWHBPek12SEc1WUloMGNLakZMbHBlUkhabE1zYzF5czhUQmRadlI1T3ZicGQ3VkU4YVM4c2VqYUNQNA?oc=5"
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFOUMtaHlyOUhTMEVWN1FrbDNHQnBweUxybUhVOWJvSXR3YVgxeVppbkZVSlppVEkwaElPS1pMREVsbmdfNUJwaXFvOFRsUnRtOHlzRTE3ckpiWEdkMHZLN3ctYkJtd1VBWXpoMmZaOGRRUDJ3WkNJ?oc=5"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "24時間以内",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -916,7 +788,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-21 06:25 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "Bloomberg.comが配信した見出し・リンク・公開日時（2026-11-23 01:52 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -978,7 +850,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -1027,6 +899,134 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
+      "new_since_last": false
+    },
+    {
+      "id": "8ff1997dbe85ab61bbc0",
+      "cat": "政治・地方自治",
+      "tag": "公式発表",
+      "date": "11/19",
+      "published_at": "2026-11-19T05:00+09:00",
+      "date_precision": "minute",
+      "title": "フロンティアAI時代の通信事業におけるデータの保護・セキュリティの在り方に関する検討会（第2回）",
+      "lead": "公式配信の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://www.soumu.go.jp/main_sosiki/kenkyu/data_protection/02kiban18_02000520.html",
+      "source_kind": "primary",
+      "publisher": "総務省",
+      "publisher_domain": "soumu.go.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "総務省",
+          "url": "https://www.soumu.go.jp/main_sosiki/kenkyu/data_protection/02kiban18_02000520.html"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "直近7日の公式発表",
+      "read": 3,
+      "icon": "🏛️",
+      "tone": "blue",
+      "selection_reason": "日本株と成長産業の変化を追う",
+      "learning_topic": "AI・産業のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "総務省が配信した見出し・リンク・公開日時（2026-11-19 05:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "cc41428f4b7eeca124d1",
+      "cat": "AI・産業",
+      "tag": "報道見出し",
+      "date": "11/23",
+      "published_at": "2026-11-23T08:01+09:00",
+      "date_precision": "minute",
+      "title": "米、エヌビディアに対中半導体販売の説明要求＝財務長官",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbW1CV0Z0NmRFSFdLQkVISllCMDQteDUtbTR1emZZN3dta1BVLUhCaEt6RTlhUGx6LUZoMmdwcktwbHZwdFdwTjhjWnVoQjFLR0lVb3d4M1N3LUhhMnVxdXlMMXVjejhubjl6Smw0MGRmZ2tOMFJUcHNHRTJHQ3l0SnhVa01NSkh2TEE?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Reuters",
+      "publisher_domain": "www.reuters.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbW1CV0Z0NmRFSFdLQkVISllCMDQteDUtbTR1emZZN3dta1BVLUhCaEt6RTlhUGx6LUZoMmdwcktwbHZwdFdwTjhjWnVoQjFLR0lVb3d4M1N3LUhhMnVxdXlMMXVjejhubjl6Smw0MGRmZ2tOMFJUcHNHRTJHQ3l0SnhVa01NSkh2TEE?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "💻",
+      "tone": "slate",
+      "selection_reason": "日本株と成長産業の変化を追う",
+      "learning_topic": "AI・産業のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Reutersが配信した見出し・リンク・公開日時（2026-11-23 08:01 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
+        }
+      ],
       "new_since_last": true
     }
   ],
@@ -1046,16 +1046,16 @@
       "ok": true,
       "eligible": 15,
       "dropped": {
-        "out_of_time_window": 57
+        "out_of_time_window": 54
       }
     },
     {
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 57,
+      "eligible": 55,
       "dropped": {
-        "out_of_time_window": 43
+        "out_of_time_window": 45
       }
     },
     {
@@ -1100,9 +1100,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 57,
+      "eligible": 43,
       "dropped": {
-        "publisher_not_allowed": 43
+        "publisher_not_allowed": 37
       }
     },
     {
@@ -1111,11 +1111,38 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 43
+        "publisher_not_allowed": 37
       }
     },
     {
       "name": "報道見出し検索：金融政策",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 6,
+      "dropped": {
+        "publisher_not_allowed": 46
+      }
+    },
+    {
+      "name": "報道見出し検索：政治・地方自治",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 7,
+      "dropped": {
+        "publisher_not_allowed": 93
+      }
+    },
+    {
+      "name": "報道見出し検索：国際情勢",
+      "kind": "press_search",
+      "ok": true,
+      "eligible": 8,
+      "dropped": {
+        "publisher_not_allowed": 92
+      }
+    },
+    {
+      "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
       "eligible": 15,
@@ -1124,39 +1151,12 @@
       }
     },
     {
-      "name": "報道見出し検索：政治・地方自治",
-      "kind": "press_search",
-      "ok": true,
-      "eligible": 4,
-      "dropped": {
-        "publisher_not_allowed": 96
-      }
-    },
-    {
-      "name": "報道見出し検索：国際情勢",
-      "kind": "press_search",
-      "ok": true,
-      "eligible": 20,
-      "dropped": {
-        "publisher_not_allowed": 80
-      }
-    },
-    {
-      "name": "報道見出し検索：AI・産業",
-      "kind": "press_search",
-      "ok": true,
-      "eligible": 16,
-      "dropped": {
-        "publisher_not_allowed": 84
-      }
-    },
-    {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 4,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 98
       }
     },
     {
@@ -1172,18 +1172,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 10,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 56
+        "publisher_not_allowed": 20
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 29
+        "publisher_not_allowed": 20
       }
     }
   ]

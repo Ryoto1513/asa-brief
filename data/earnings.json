@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-22T12:31:58+09:00",
-  "state": "partial",
+  "checked_at": "2026-11-23T11:58:14+09:00",
+  "state": "success",
   "items": [
     {
       "id": "6b1a3d782ef1d4812dbb",
@@ -576,13 +576,11 @@
   ],
   "universe_count": 225,
   "pages_requested": 3,
-  "pages_ok": 2,
-  "errors": [
-    "2026-11-22:listing_unavailable"
-  ],
+  "pages_ok": 3,
+  "errors": [],
   "schedule": {
     "state": "success",
-    "checked_at": "2026-11-22T12:31:58+09:00",
+    "checked_at": "2026-11-23T11:58:14+09:00",
     "source_url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/",
     "items": [
       {
@@ -2496,7 +2494,7 @@
       }
     ],
     "errors": [],
-    "last_success_at": "2026-11-22T12:31:58+09:00"
+    "last_success_at": "2026-11-23T11:58:14+09:00"
   },
-  "message": "一部の一覧を取得できていません。開示の取りこぼしにご注意ください。"
+  "message": "指定範囲の一覧を確認しました。詳報の作成とは別です。"
 }
