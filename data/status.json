@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-11-23T11:58:05+09:00",
+  "attempted_at": "2026-11-23T12:59:37+09:00",
   "feeds_total": 17,
   "feeds_ok": 16,
   "feeds": [
@@ -16,9 +16,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "out_of_time_window": 45
+        "out_of_time_window": 46
       }
     },
     {
@@ -63,18 +63,18 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 43,
+      "eligible": 44,
       "dropped": {
-        "publisher_not_allowed": 37
+        "publisher_not_allowed": 38
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 1,
+      "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 37
+        "publisher_not_allowed": 19
       }
     },
     {
@@ -83,7 +83,7 @@
       "ok": true,
       "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 46
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -108,18 +108,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 98
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -146,7 +146,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 20
+        "publisher_not_allowed": 21
       }
     }
   ],

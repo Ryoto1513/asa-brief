@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-23T11:58:05+09:00",
+  "generated_at": "2026-11-23T12:59:37+09:00",
   "edition_date": "2026-11-23",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -411,7 +411,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "f1b6eaa12cafa98e501d",
@@ -827,7 +827,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "4795b4a82d6f3ca637a3",
@@ -963,26 +963,26 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "cc41428f4b7eeca124d1",
+      "id": "711c057369a7f2b677b7",
       "cat": "AI・産業",
       "tag": "報道見出し",
       "date": "11/23",
-      "published_at": "2026-11-23T08:01+09:00",
+      "published_at": "2026-11-23T04:00+09:00",
       "date_precision": "minute",
-      "title": "米、エヌビディアに対中半導体販売の説明要求＝財務長官",
+      "title": "多様化する半導体関連株投信・ETF 23年以降に一気に選択肢が拡大",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbW1CV0Z0NmRFSFdLQkVISllCMDQteDUtbTR1emZZN3dta1BVLUhCaEt6RTlhUGx6LUZoMmdwcktwbHZwdFdwTjhjWnVoQjFLR0lVb3d4M1N3LUhhMnVxdXlMMXVjejhubjl6Smw0MGRmZ2tOMFJUcHNHRTJHQ3l0SnhVa01NSkh2TEE?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2OWZ2QmQxZzRxejJRZDJJQ3FpR3VuaTV4Y0tvZ2pNQTBMUG1xMkJPcWNRN1Z2Qks0R1FWSXZXc1NnQ21FbWhzOTIwZTZGSi1XSndfaGNtcEhSX3JSbzdZYjZDV3ptTVQ3bHFETw?oc=5",
       "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
+      "publisher": "日本経済新聞",
+      "publisher_domain": "www.nikkei.com",
       "language": "ja",
       "sources": [
         {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbW1CV0Z0NmRFSFdLQkVISllCMDQteDUtbTR1emZZN3dta1BVLUhCaEt6RTlhUGx6LUZoMmdwcktwbHZwdFdwTjhjWnVoQjFLR0lVb3d4M1N3LUhhMnVxdXlMMXVjejhubjl6Smw0MGRmZ2tOMFJUcHNHRTJHQ3l0SnhVa01NSkh2TEE?oc=5"
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2OWZ2QmQxZzRxejJRZDJJQ3FpR3VuaTV4Y0tvZ2pNQTBMUG1xMkJPcWNRN1Z2Qks0R1FWSXZXc1NnQ21FbWhzOTIwZTZGSi1XSndfaGNtcEhSX3JSbzdZYjZDV3ptTVQ3bHFETw?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -996,7 +996,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-23 08:01 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-23 04:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜AI・産業のニュース（一般論）",
@@ -1053,9 +1053,9 @@
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 55,
+      "eligible": 54,
       "dropped": {
-        "out_of_time_window": 45
+        "out_of_time_window": 46
       }
     },
     {
@@ -1100,18 +1100,18 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 43,
+      "eligible": 44,
       "dropped": {
-        "publisher_not_allowed": 37
+        "publisher_not_allowed": 38
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 1,
+      "eligible": 0,
       "dropped": {
-        "publisher_not_allowed": 37
+        "publisher_not_allowed": 19
       }
     },
     {
@@ -1120,7 +1120,7 @@
       "ok": true,
       "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 46
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -1145,18 +1145,18 @@
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 12,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 88
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 2,
+      "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 98
+        "publisher_not_allowed": 58
       }
     },
     {
@@ -1183,7 +1183,7 @@
       "ok": true,
       "eligible": 1,
       "dropped": {
-        "publisher_not_allowed": 20
+        "publisher_not_allowed": 21
       }
     }
   ]
