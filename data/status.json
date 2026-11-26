@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-26T13:16:17+09:00",
+  "attempted_at": "2026-11-26T14:27:35+09:00",
   "feeds_total": 17,
-  "feeds_ok": 14,
+  "feeds_ok": 16,
   "feeds": [
     {
       "name": "日本銀行",
@@ -36,9 +36,9 @@
       "name": "総務省統計局",
       "kind": "primary",
       "ok": true,
-      "eligible": 8,
+      "eligible": 9,
       "dropped": {
-        "out_of_time_window": 7
+        "out_of_time_window": 6
       }
     },
     {
@@ -69,16 +69,19 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 34,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 66
+        "publisher_not_allowed": 71
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
-      "ok": false,
-      "reason": "HTTP 429"
+      "ok": true,
+      "eligible": 5,
+      "dropped": {
+        "publisher_not_allowed": 45
+      }
     },
     {
       "name": "報道見出し検索：金融政策",
@@ -93,33 +96,36 @@
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 14,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 86
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
-      "ok": false,
-      "reason": "HTTP 429"
+      "ok": true,
+      "eligible": 26,
+      "dropped": {
+        "publisher_not_allowed": 74
+      }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 80
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 92
+        "publisher_not_allowed": 94
       }
     },
     {
@@ -137,16 +143,16 @@
       "ok": true,
       "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 64
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 7,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 54
       }
     }
   ],

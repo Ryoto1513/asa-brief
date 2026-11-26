@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T13:16:17+09:00",
+  "generated_at": "2026-11-26T14:27:35+09:00",
   "edition_date": "2026-11-26",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -147,7 +147,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "8eae8b4b738e09bed356",
@@ -219,7 +219,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "b1215cb215b409eb21cc",
@@ -427,7 +427,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ec7ed5f71ac391e34bea",
@@ -499,7 +499,7 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "3dd3166152505fb34ae1",
@@ -524,8 +524,8 @@
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "📰",
-      "tone": "slate",
+      "icon": "🌍",
+      "tone": "amber",
       "selection_reason": "社会への影響が大きく、知っておきたい動き",
       "learning_topic": "ニュースの読み方",
       "learning_authored_on": "2026-10-22",
@@ -563,7 +563,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "611e3ab1230b5e0a073f",
@@ -631,7 +631,7 @@
           "url": "https://www.soumu.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "f1a1395d60fb36140aa8",
@@ -654,7 +654,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -763,7 +763,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cee290a6e94d174bac49",
@@ -827,7 +827,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "cf9d60a4c68653812207",
@@ -963,18 +963,18 @@
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
-      "id": "c518de2936497d48d875",
-      "cat": "AI・産業",
+      "id": "e5c676e1745a4ec8e610",
+      "cat": "国際情勢",
       "tag": "報道見出し",
       "date": "11/26",
-      "published_at": "2026-11-26T11:47+09:00",
+      "published_at": "2026-11-26T13:11+09:00",
       "date_precision": "minute",
-      "title": "東証前引け 日経平均は反発 一時1200円高、AI・半導体株に買い戻し",
+      "title": "米国、ブラジルに追加関税案 航空機に10%",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PRDhqbW5LX2g0djJkc0FDNTZjcl9UdExRa1A3ZV9IZ3I1SE93TTNEenR6S18xemRXengtTUpmclA5Rk5hVkZPbGZwdWpmVU9ZV05vTEVQMG9GWDJxMkpWbjhXR2Y4R1drVGJjSw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5xREREa1BaQjQ3LXgxck5CeEhzMnBDMEZvQW1yZmgyNHZ1UEIzTl9wN2gyTFBFTmgtTndzV0pSanJRV0luaWl3U3NhWE04N1B0YXBTWnB2M2t2WjlWdEdjT01YWmJiT1VmLUYyQQ?oc=5",
       "source_kind": "press_search",
       "publisher": "日本経済新聞",
       "publisher_domain": "www.nikkei.com",
@@ -982,33 +982,33 @@
       "sources": [
         {
           "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PRDhqbW5LX2g0djJkc0FDNTZjcl9UdExRa1A3ZV9IZ3I1SE93TTNEenR6S18xemRXengtTUpmclA5Rk5hVkZPbGZwdWpmVU9ZV05vTEVQMG9GWDJxMkpWbjhXR2Y4R1drVGJjSw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5xREREa1BaQjQ3LXgxck5CeEhzMnBDMEZvQW1yZmgyNHZ1UEIzTl9wN2gyTFBFTmgtTndzV0pSanJRV0luaWl3U3NhWE04N1B0YXBTWnB2M2t2WjlWdEdjT01YWmJiT1VmLUYyQQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "💻",
-      "tone": "slate",
+      "icon": "🌍",
+      "tone": "amber",
       "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "AI・産業のニュース",
+      "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-26 11:47 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-26 13:11 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
-          "基礎知識｜AI・産業のニュース（一般論）",
-          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
         ],
         [
           "生活や投資とのつながり（一般論）",
-          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
         ],
         [
           "元記事で確認したいこと",
-          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
         ],
         [
           "解説の位置づけ",
@@ -1017,14 +1017,14 @@
       ],
       "glossary": [
         [
-          "設備投資",
-          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
         ]
       ],
       "learning_sources": [
         {
-          "name": "経済産業省：公式情報",
-          "url": "https://www.meti.go.jp/"
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
         }
       ],
       "new_since_last": true
@@ -1036,8 +1036,8 @@
   "ranking_notice": "投資・大きな社会変化・セキュリティを優先し、採用・入札・会議の事務連絡を除外しています。表示順はルールに基づき、真偽の判定ではありません。",
   "feed_statistics": {
     "feed_count": 17,
-    "feeds_ok": 14,
-    "feeds_failed": 3
+    "feeds_ok": 16,
+    "feeds_failed": 1
   },
   "source_reports": [
     {
@@ -1073,9 +1073,9 @@
       "name": "総務省統計局",
       "kind": "primary",
       "ok": true,
-      "eligible": 8,
+      "eligible": 9,
       "dropped": {
-        "out_of_time_window": 7
+        "out_of_time_window": 6
       }
     },
     {
@@ -1106,16 +1106,19 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 34,
+      "eligible": 29,
       "dropped": {
-        "publisher_not_allowed": 66
+        "publisher_not_allowed": 71
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
-      "ok": false,
-      "reason": "HTTP 429"
+      "ok": true,
+      "eligible": 5,
+      "dropped": {
+        "publisher_not_allowed": 45
+      }
     },
     {
       "name": "報道見出し検索：金融政策",
@@ -1130,33 +1133,36 @@
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 14,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 86
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
-      "ok": false,
-      "reason": "HTTP 429"
+      "ok": true,
+      "eligible": 26,
+      "dropped": {
+        "publisher_not_allowed": 74
+      }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 16,
+      "eligible": 20,
       "dropped": {
-        "publisher_not_allowed": 84
+        "publisher_not_allowed": 80
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 8,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 92
+        "publisher_not_allowed": 94
       }
     },
     {
@@ -1174,16 +1180,16 @@
       "ok": true,
       "eligible": 8,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 64
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 7,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 55
+        "publisher_not_allowed": 54
       }
     }
   ]
