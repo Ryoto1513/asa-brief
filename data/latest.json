@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T13:06:05+09:00",
+  "generated_at": "2026-11-28T13:57:34+09:00",
   "edition_date": "2026-11-28",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
@@ -347,7 +347,7 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "843cc207970196b52d15",
@@ -411,7 +411,7 @@
           "url": "https://www.meti.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "a0d1797dd45994a801ac",
@@ -475,7 +475,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "d835069f480a5e02cff5",
@@ -539,7 +539,7 @@
           "url": "https://www.stat.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "929d30085d3fcdd4e443",
@@ -754,8 +754,72 @@
       "new_since_last": false
     },
     {
-      "id": "fd3cce6a7d43a364c76b",
+      "id": "07d6ae632e217d597686",
       "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "11/28",
+      "published_at": "2026-11-28T06:00+09:00",
+      "date_precision": "minute",
+      "title": "フアン氏エヌビディアCEO復帰、トランプ新関税は新NISAも「敵視」、JT大型買収検討、香港火災から1年─1週間のニュース5選",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFR6WjR5V000N2VDUmRRb0NaeE9SNW5kOUVxUDcxMVZaelJPUF9ITVdqYTA5SFgzWHItUFNacDVEOEdMVUZFcWJpVDl2LVdNYTVkSy1MSDZOWm9OTjBIZFZEbHV2OWNjTG9MVTVXemxVQlZZTURVTFBTT2psVzYtOExJUEs5a19hRGZlMU9R?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Bloomberg",
+      "publisher_domain": "www.bloomberg.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFR6WjR5V000N2VDUmRRb0NaeE9SNW5kOUVxUDcxMVZaelJPUF9ITVdqYTA5SFgzWHItUFNacDVEOEdMVUZFcWJpVDl2LVdNYTVkSy1MSDZOWm9OTjBIZFZEbHV2OWNjTG9MVTVXemxVQlZZTURVTFBTT2psVzYtOExJUEs5a19hRGZlMU9R?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "資産形成のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Bloombergが配信した見出し・リンク・公開日時（2026-11-28 06:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜資産形成のニュース（一般論）",
+          "投資の税制と、投資対象の値動きは別です。非課税の制度を利用していても、投資した商品の価格が下がる可能性はあります。制度の改正案と施行済みの内容も区別します。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般的な確認点は、使う予定のお金を投資に回していないか、一つの会社や分野に偏りすぎていないか、手数料がいくらか、ということです。長期投資や分散も損失をなくす仕組みではありません。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元の公式資料で①対象者、②開始日、③適用される商品や口座、④手数料、⑤過去の制度との違いを確認します。本アプリは制度の最新詳細や運用成果を保証しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "分散投資",
+          "投資先を複数に分け、特定の投資先への集中を抑えること。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "金融庁：NISAの情報",
+          "url": "https://www.fsa.go.jp/policy/nisa2/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "fd3cce6a7d43a364c76b",
+      "cat": "資産形成",
       "tag": "報道見出し",
       "date": "11/28",
       "published_at": "2026-11-28T06:00+09:00",
@@ -776,8 +840,8 @@
       "quality": "fixed_learning",
       "age_label": "24時間以内",
       "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
+      "icon": "💰",
+      "tone": "teal",
       "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
       "learning_topic": "世界経済・国際情勢のニュース",
       "learning_authored_on": "2026-10-22",
@@ -815,7 +879,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "ec134c60b871499ba320",
@@ -879,7 +943,7 @@
           "url": "https://www.mof.go.jp/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "0d71e75db1d0d1a56f33",
@@ -949,70 +1013,6 @@
         {
           "name": "日本銀行：金融政策の概要",
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": true
-    },
-    {
-      "id": "c189feae35c952ed6712",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "11/27",
-      "published_at": "2026-11-27T11:37+09:00",
-      "date_precision": "minute",
-      "title": "NISA･高市政権の370兆円投資、米政府が新関税案で批判－｢痛い｣と識者",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE05YXFpUldReVVDYXFXWnR4SjJoMXJoYmFZcVAtLXYxcXJRUnZjWlZUTzZqd3Q1TFZvUHZLX1B2YW1nZm8xbHZQVEpDM21rd1FaVkttbTdSLVBlM0I3Tl9oSnFfZHFXbUJKUk9BT0lVNW9NbDBoUjBr?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Bloomberg.com",
-      "publisher_domain": "www.bloomberg.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE05YXFpUldReVVDYXFXWnR4SjJoMXJoYmFZcVAtLXYxcXJRUnZjWlZUTzZqd3Q1TFZvUHZLX1B2YW1nZm8xbHZQVEpDM21rd1FaVkttbTdSLVBlM0I3Tl9oSnFfZHFXbUJKUk9BT0lVNW9NbDBoUjBr?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "資産形成のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "Bloomberg.comが配信した見出し・リンク・公開日時（2026-11-27 11:37 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜資産形成のニュース（一般論）",
-          "投資の税制と、投資対象の値動きは別です。非課税の制度を利用していても、投資した商品の価格が下がる可能性はあります。制度の改正案と施行済みの内容も区別します。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "一般的な確認点は、使う予定のお金を投資に回していないか、一つの会社や分野に偏りすぎていないか、手数料がいくらか、ということです。長期投資や分散も損失をなくす仕組みではありません。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元の公式資料で①対象者、②開始日、③適用される商品や口座、④手数料、⑤過去の制度との違いを確認します。本アプリは制度の最新詳細や運用成果を保証しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "分散投資",
-          "投資先を複数に分け、特定の投資先への集中を抑えること。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "金融庁：NISAの情報",
-          "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
       "new_since_last": false
@@ -1092,9 +1092,9 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 56,
+      "eligible": 41,
       "dropped": {
-        "publisher_not_allowed": 44
+        "publisher_not_allowed": 59
       }
     },
     {
@@ -1103,43 +1103,43 @@
       "ok": true,
       "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 51
+        "publisher_not_allowed": 41
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 26,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 74
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 18,
+      "eligible": 19,
       "dropped": {
-        "publisher_not_allowed": 82
+        "publisher_not_allowed": 81
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 23,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 77
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 25,
+      "eligible": 24,
       "dropped": {
-        "publisher_not_allowed": 75
+        "publisher_not_allowed": 76
       }
     },
     {
@@ -1148,7 +1148,7 @@
       "ok": true,
       "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 67
+        "publisher_not_allowed": 69
       }
     },
     {
@@ -1175,7 +1175,7 @@
       "ok": true,
       "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 31
+        "publisher_not_allowed": 28
       }
     }
   ]
