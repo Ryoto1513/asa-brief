@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T14:20:46+09:00",
-  "edition_date": "2026-11-27",
+  "generated_at": "2026-11-28T13:06:05+09:00",
+  "edition_date": "2026-11-28",
   "status": "live",
   "editorial_mode": "curated_with_editorial_library",
   "articles": [
@@ -26,7 +26,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏛️",
       "tone": "blue",
@@ -71,7 +71,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "64488f3752c58aaf218e",
@@ -94,7 +94,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏛️",
       "tone": "blue",
@@ -139,7 +139,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "acce6f6c871e158b6ea1",
@@ -162,7 +162,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏛️",
       "tone": "blue",
@@ -207,7 +207,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
+      "new_since_last": false
     },
     {
       "id": "c8b28d0bee18a6e452ef",
@@ -230,7 +230,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
       "icon": "🏛️",
       "tone": "blue",
@@ -275,90 +275,18 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "7c8b124434b03f53fac1",
-      "cat": "セキュリティ",
-      "tag": "報道見出し",
-      "date": "11/26",
-      "published_at": "2026-11-26T07:00+09:00",
-      "date_precision": "minute",
-      "title": "PHPに重大な脆弱性",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBXRnpwYWVHMFlLX3p4Y3B1UEV2MEFpYTZzVzRJLTQ2aG80RjliMEVaZVJTWVVJeUxXOUtKSDFicWVDMXRMODk4dXlEb3lMRXJKRjFEYkM1RVJTWFZWcjc1T1pVdmxFalFBY0l4dHBVSGhsMUk?oc=5",
-      "source_kind": "press_search",
-      "publisher": "日経クロステック",
-      "publisher_domain": "xtech.nikkei.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "日経クロステック",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBXRnpwYWVHMFlLX3p4Y3B1UEV2MEFpYTZzVzRJLTQ2aG80RjliMEVaZVJTWVVJeUxXOUtKSDFicWVDMXRMODk4dXlEb3lMRXJKRjFEYkM1RVJTWFZWcjc1T1pVdmxFalFBY0l4dHBVSGhsMUk?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
-      "learning_topic": "セキュリティの重要情報",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "日経クロステックが配信した見出し・リンク・公開日時（2026-11-26 07:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜セキュリティの重要情報（一般論）",
-          "脆弱性は、ソフトウェアの安全性を損なう欠陥です。ニュースでは、影響する製品・バージョン・悪用の有無・修正版の4点を分けて読みます。重大度が高いだけで、自分の端末が被害を受けているとは限りません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "自分が管理する機器やサーバーを使っている場合と、サービスを利用するだけの場合では対応が異なります。前者は公式の更新案内と影響範囲を確認し、後者は事業者の告知を確認します。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "対象製品、修正版、攻撃に必要な条件、実際の悪用が確認されたかを一次資料で確認します。見知らぬサイトが配る「修正ツール」は使わず、更新は提供元の正式な方法で行います。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "脆弱性",
-          "攻撃などによって悪用され得るソフトウェアや設定上の弱点。"
-        ],
-        [
-          "CVE",
-          "公開された脆弱性を区別する識別番号。"
-        ],
-        [
-          "パッチ",
-          "不具合や脆弱性を直すための更新。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "JPCERT/CC 注意喚起",
-          "url": "https://www.jpcert.or.jp/at/"
-        }
-      ],
       "new_since_last": false
     },
     {
-      "id": "8eae8b4b738e09bed356",
+      "id": "26309cff4307e0b515fa",
       "cat": "セキュリティ",
       "tag": "報道見出し",
-      "date": "11/25",
-      "published_at": "2026-11-25T15:00+09:00",
+      "date": "11/27",
+      "published_at": "2026-11-27T21:00+09:00",
       "date_precision": "minute",
-      "title": "ホームページの利用を再開 群馬・伊勢崎市 「PHP」脆弱性で一部機能停止",
+      "title": "サイバー攻撃手口共有――鹿児島県警、官民連携緊急会議",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0tOWRCOXY0Y2s3OUFzZ0NUT0dYaFpUS3ZzbFpFYjFuR2JwY3J0R1RzQlM3dnlhQ0dtdkVzSkRZX1dDMTBRR29FRXB3VQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9za2c5VG1BME1rRzFYcUQ3bFZYOXdpYmZxUkI5NnJSbDBNN1ltUF92S2licFNHaUk2aHAwM1B1c05jbTNnZ1g5aGk4TQ?oc=5",
       "source_kind": "press_search",
       "publisher": "47NEWS",
       "publisher_domain": "www.47news.jp",
@@ -366,11 +294,11 @@
       "sources": [
         {
           "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0tOWRCOXY0Y2s3OUFzZ0NUT0dYaFpUS3ZzbFpFYjFuR2JwY3J0R1RzQlM3dnlhQ0dtdkVzSkRZX1dDMTBRR29FRXB3VQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9za2c5VG1BME1rRzFYcUQ3bFZYOXdpYmZxUkI5NnJSbDBNN1ltUF92S2licFNHaUk2aHAwM1B1c05jbTNnZ1g5aGk4TQ?oc=5"
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "24時間以内",
       "read": 3,
       "icon": "📰",
       "tone": "slate",
@@ -380,7 +308,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "47NEWSが配信した見出し・リンク・公開日時（2026-11-25 15:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "47NEWSが配信した見出し・リンク・公開日時（2026-11-27 21:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜セキュリティの重要情報（一般論）",
@@ -419,7 +347,199 @@
           "url": "https://www.jpcert.or.jp/at/"
         }
       ],
-      "new_since_last": false
+      "new_since_last": true
+    },
+    {
+      "id": "843cc207970196b52d15",
+      "cat": "セキュリティ",
+      "tag": "報道見出し",
+      "date": "11/26",
+      "published_at": "2026-11-26T15:15+09:00",
+      "date_precision": "minute",
+      "title": "緊急総点検 例外なき標的の時代、AIサイバー攻撃防衛策12項目",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02VUFxWms2dVVKdG45SHRyTldJZ0RXdFJJaWxJRk5ZXzhrLWZLd0NZNENId2pLTDIweTFKNnFOYWo0NjVVRnU1cnJIanZhWGdCTVdDS0pwUE83d1RJdFNn?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日経クロステック",
+      "publisher_domain": "xtech.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日経クロステック",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02VUFxWms2dVVKdG45SHRyTldJZ0RXdFJJaWxJRk5ZXzhrLWZLd0NZNENId2pLTDIweTFKNnFOYWo0NjVVRnU1cnJIanZhWGdCTVdDS0pwUE83d1RJdFNn?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "48時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "利用サービスや開発環境の安全に関わる重要情報",
+      "learning_topic": "AI・産業のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日経クロステックが配信した見出し・リンク・公開日時（2026-11-26 15:15 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜AI・産業のニュース（一般論）",
+          "技術の発表、実証実験、受注、生産開始、売上計上は、それぞれ異なる段階です。大きな投資額が発表されても、全額の支出や将来の利益が確定したとは限りません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "一般に設備投資は、装置や建設などの需要につながる一方、投資する企業には資金負担が生じます。産業全体への追い風と、個々の企業が利益を得られるかは別に評価します。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①決定済みと検討中の区別、②投資総額と初期投資額、③稼働予定と受注、④電力・人材・供給網の制約、⑤収益化の見通しを確認します。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "設備投資",
+          "将来の事業のため工場・機械・システムなどに資金を使うこと。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "経済産業省：公式情報",
+          "url": "https://www.meti.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "a0d1797dd45994a801ac",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/27",
+      "published_at": "2026-11-27T16:36+09:00",
+      "date_precision": "minute",
+      "title": "兵庫県伊丹市:大規模災害時の車中泊避難９か所で、市立中・高校のグラウンド…４５０台分を確保",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tTUVGUkx2SU5sbFk0LWdreTltWVlkZ2FHYzBUS1VKd2dQdk94Q0RtYmkzanFkb2l4WUNWLUZHSFo3SUZEbjNkbHl6XzQwTjhBdEN0aEE0Vlo0SHdlMTJublpMUElCdjFQRU9pem9RVUhoQQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "読売新聞",
+      "publisher_domain": "www.yomiuri.co.jp",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tTUVGUkx2SU5sbFk0LWdreTltWVlkZ2FHYzBUS1VKd2dQdk94Q0RtYmkzanFkb2l4WUNWLUZHSFo3SUZEbjNkbHl6XzQwTjhBdEN0aEE0Vlo0SHdlMTJublpMUElCdjFQRU9pem9RVUhoQQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "読売新聞が配信した見出し・リンク・公開日時（2026-11-27 16:36 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "d835069f480a5e02cff5",
+      "cat": "社会・重要",
+      "tag": "報道見出し",
+      "date": "11/27",
+      "published_at": "2026-11-27T00:39+09:00",
+      "date_precision": "minute",
+      "title": "緊急事態で増えるオンラインイベント・会議 著作権は大丈夫？ （2ページ目）",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONk9yN3NoakQxcFBnbTgxeVQzWTQ5MVBncHBtZnloTF92TmtDY0ZQNHNJampkV25KWXlhcWxad1VFVVIxckZwdEZXRHQ5YXl0bjlOd1lZUENHZDZ1TjF2SW9IY1BTblR4UzFMN1dmVEJiczI4bkNqck1ubDRGSVRoSFU4ckM5SE1BUHFfblVMc2g0LVRLWTd6NkpXLTQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "日経クロストレンド",
+      "publisher_domain": "xtrend.nikkei.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "日経クロストレンド",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONk9yN3NoakQxcFBnbTgxeVQzWTQ5MVBncHBtZnloTF92TmtDY0ZQNHNJampkV25KWXlhcWxad1VFVVIxckZwdEZXRHQ5YXl0bjlOd1lZUENHZDZ1TjF2SW9IY1BTblR4UzFMN1dmVEJiczI4bkNqck1ubDRGSVRoSFU4ckM5SE1BUHFfblVMc2g0LVRLWTd6NkpXLTQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "48時間以内",
+      "read": 3,
+      "icon": "📰",
+      "tone": "slate",
+      "selection_reason": "社会への影響が大きく、知っておきたい動き",
+      "learning_topic": "ニュースの読み方",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日経クロストレンドが配信した見出し・リンク・公開日時（2026-11-27 00:39 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜ニュースの読み方（一般論）",
+          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "一次情報",
+          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "総務省統計局：公式情報",
+          "url": "https://www.stat.go.jp/"
+        }
+      ],
+      "new_since_last": true
     },
     {
       "id": "929d30085d3fcdd4e443",
@@ -442,7 +562,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -489,70 +609,6 @@
         {
           "name": "日本銀行：金融政策の概要",
           "url": "https://www.boj.or.jp/mopo/outline/index.htm"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
-      "id": "e247309fb530d2ca7997",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/26",
-      "published_at": "2026-11-26T08:45+09:00",
-      "date_precision": "minute",
-      "title": "ロシアに暴動鎮圧剤の戦場使用中止要求、34カ国・ＥＵが共同声明 | ロイター",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTEtSTTBkTERudkF3OU9nazVMTzVSaUlYQmtxZ1hjNHRQbGlvQVBCaWhlX1kzUkZLLUNIQzFFNC11MDFGREY5Ymh3UnpfcTZiS0dSbGpaLXJEVTNrazR4U0toUHdyamsyTFgwRUZJYVhtcGg2QVBtM1RVTWNySEltaGRsMDZkdw?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTEtSTTBkTERudkF3OU9nazVMTzVSaUlYQmtxZ1hjNHRQbGlvQVBCaWhlX1kzUkZLLUNIQzFFNC11MDFGREY5Ymh3UnpfcTZiS0dSbGpaLXJEVTNrazR4U0toUHdyamsyTFgwRUZJYVhtcGg2QVBtM1RVTWNySEltaGRsMDZkdw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-26 08:45 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
         }
       ],
       "new_since_last": false
@@ -626,70 +682,6 @@
       "new_since_last": false
     },
     {
-      "id": "6c06f28d544fb5f1654f",
-      "cat": "社会・重要",
-      "tag": "報道見出し",
-      "date": "11/25",
-      "published_at": "2026-11-25T16:50+09:00",
-      "date_precision": "minute",
-      "title": "復旧１時間以内目標に 大規模障害受け―米マイクロソフト",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeFpZd1pJRzVkWkV6dVhtVHZ2RWZHQXRvZGJLbFVPR3ZfYkZTbVg1VnllTTA5TkVFT3RlZWFjTlg0ZlB5dTcwUmJRd3hnYVhhUVhGUnY3TWV1TFQ4VnpFcGIzN2ZTMGNJVzdxeUdOUm1tNjluVVhlUjNaWHlQTXFfTw?oc=5",
-      "source_kind": "press_search",
-      "publisher": "時事ドットコム",
-      "publisher_domain": "www.jiji.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeFpZd1pJRzVkWkV6dVhtVHZ2RWZHQXRvZGJLbFVPR3ZfYkZTbVg1VnllTTA5TkVFT3RlZWFjTlg0ZlB5dTcwUmJRd3hnYVhhUVhGUnY3TWV1TFQ4VnpFcGIzN2ZTMGNJVzdxeUdOUm1tNjluVVhlUjNaWHlQTXFfTw?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "48時間以内",
-      "read": 3,
-      "icon": "📰",
-      "tone": "slate",
-      "selection_reason": "社会への影響が大きく、知っておきたい動き",
-      "learning_topic": "ニュースの読み方",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-25 16:50 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜ニュースの読み方（一般論）",
-          "最初に、誰が・いつ・何を発表したのかを確認します。ニュースの公開日と、出来事が起きた日や統計の対象月は違う場合があります。見出しだけで詳細を断定しないようにしましょう。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "事実、発表者の見通し、記者の解説は別の情報です。将来の影響は「どの条件が成り立てば、誰に、どの経路で影響するか」と分けて読むと、断定や思い込みを避けやすくなります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "①元記事と一次資料を開く、②対象期間と比較相手を確認する、③計画と決定を区別する、④異なる立場の説明を比べる、⑤不明点は不明のまま残す、の順に確認しましょう。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "一次情報",
-          "当事者や統計作成機関などが直接公表する情報。正しさや中立性の無条件の保証ではありません。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "総務省統計局：公式情報",
-          "url": "https://www.stat.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
       "id": "e3fd1c9812a565ca0dba",
       "cat": "金融政策",
       "tag": "公式発表",
@@ -710,7 +702,7 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "48時間以内",
+      "age_label": "直近7日の公式発表",
       "read": 3,
       "icon": "🏦",
       "tone": "indigo",
@@ -762,15 +754,79 @@
       "new_since_last": false
     },
     {
-      "id": "10558b82362cfe271408",
-      "cat": "金融政策",
+      "id": "fd3cce6a7d43a364c76b",
+      "cat": "国際情勢",
+      "tag": "報道見出し",
+      "date": "11/28",
+      "published_at": "2026-11-28T06:00+09:00",
+      "date_precision": "minute",
+      "title": "フアン氏CEO復帰、トランプ新関税、JT大型買収検討、香港火災から1年─1週間のニュース5選",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mUF80RXBILThUdWp5WFkwVF9Ibnk3WnNYVTFuWll3Z1hFb0RmNm9VYVN2bFpBSlhudTI5ZnV1MU4yVldMYnlTakZrcW5PanNNT2U4RGo0Y2N5UzgyekItajJEZVAyN21LTkNCYU56ZFpOZ3lKZmNDTjk2TQ?oc=5",
+      "source_kind": "press_search",
+      "publisher": "Bloomberg.com",
+      "publisher_domain": "www.bloomberg.com",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mUF80RXBILThUdWp5WFkwVF9Ibnk3WnNYVTFuWll3Z1hFb0RmNm9VYVN2bFpBSlhudTI5ZnV1MU4yVldMYnlTakZrcW5PanNNT2U4RGo0Y2N5UzgyekItajJEZVAyN21LTkNCYU56ZFpOZ3lKZmNDTjk2TQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "Bloomberg.comが配信した見出し・リンク・公開日時（2026-11-28 06:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "ec134c60b871499ba320",
+      "cat": "国際情勢",
       "tag": "報道見出し",
       "date": "11/27",
-      "published_at": "2026-11-27T13:44+09:00",
+      "published_at": "2026-11-27T17:00+09:00",
       "date_precision": "minute",
-      "title": "タカ派FRB、12月追加利上げの公算 株式市場の混乱下でも物価を重視",
+      "title": "韓国・台湾のプラスチック樹脂原料などに不当廉売関税、財務省",
       "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBBaWt4Zk5rbng0aXlrQUc3UTVyNVhjak8xUnZXeVpieGhaWkhmcnNQZDNjQXRKMDJPQlFuWUJkbWlRaklhd0IwMmdZV1ZCUUZ1TFNVNXVuaHNxblRXWWtkU0hUNF92aTR1NjVrbEVhOGp5LUxDdFI4?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EVlhacXEwUUxKNzZpQVRxOE1SUW1EZm5FOWZQVzg3ZUktMkUwSVh1cldMbFJYdFlSbkdmNkRxVzFxNHJySUVPTW1wYXFpUERqMF9nMFdzTFdlNERTcXVMS01GTEV0MlhrLUhfeQ?oc=5",
       "source_kind": "press_search",
       "publisher": "日本経済新聞",
       "publisher_domain": "www.nikkei.com",
@@ -778,7 +834,71 @@
       "sources": [
         {
           "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBBaWt4Zk5rbng0aXlrQUc3UTVyNVhjak8xUnZXeVpieGhaWkhmcnNQZDNjQXRKMDJPQlFuWUJkbWlRaklhd0IwMmdZV1ZCUUZ1TFNVNXVuaHNxblRXWWtkU0hUNF92aTR1NjVrbEVhOGp5LUxDdFI4?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EVlhacXEwUUxKNzZpQVRxOE1SUW1EZm5FOWZQVzg3ZUktMkUwSVh1cldMbFJYdFlSbkdmNkRxVzFxNHJySUVPTW1wYXFpUERqMF9nMFdzTFdlNERTcXVMS01GTEV0MlhrLUhfeQ?oc=5"
+        }
+      ],
+      "quality": "fixed_learning",
+      "age_label": "24時間以内",
+      "read": 3,
+      "icon": "🌍",
+      "tone": "amber",
+      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
+      "learning_topic": "世界経済・国際情勢のニュース",
+      "learning_authored_on": "2026-10-22",
+      "sections": [
+        [
+          "今回の取得範囲",
+          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-27 17:00 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+        ],
+        [
+          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
+          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
+        ],
+        [
+          "生活や投資とのつながり（一般論）",
+          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
+        ],
+        [
+          "元記事で確認したいこと",
+          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
+        ],
+        [
+          "解説の位置づけ",
+          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
+        ]
+      ],
+      "glossary": [
+        [
+          "関税",
+          "国境を越えて輸入される商品などに課される税。"
+        ]
+      ],
+      "learning_sources": [
+        {
+          "name": "財務省：公式情報",
+          "url": "https://www.mof.go.jp/"
+        }
+      ],
+      "new_since_last": true
+    },
+    {
+      "id": "0d71e75db1d0d1a56f33",
+      "cat": "金融政策",
+      "tag": "報道見出し",
+      "date": "11/27",
+      "published_at": "2026-11-27T15:07+09:00",
+      "date_precision": "minute",
+      "title": "きょうのおはBiz 11/27 日銀審議員 政策金利“中立的水準”へ",
+      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rUEt2WjJTQnBMN3llYVpJYkZoOGdsMlItOHBTekVjczl1OEpBai1GMFlPNG1JU3lzelB2RW83aEZpRWV5V2xUblJTYTN1RVU3cmdxQkY0NHhoLU1pWENB?oc=5",
+      "source_kind": "press_search",
+      "publisher": "NHKニュース",
+      "publisher_domain": "news.web.nhk",
+      "language": "ja",
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rUEt2WjJTQnBMN3llYVpJYkZoOGdsMlItOHBTekVjczl1OEpBai1GMFlPNG1JU3lzelB2RW83aEZpRWV5V2xUblJTYTN1RVU3cmdxQkY0NHhoLU1pWENB?oc=5"
         }
       ],
       "quality": "fixed_learning",
@@ -792,7 +912,7 @@
       "sections": [
         [
           "今回の取得範囲",
-          "日本経済新聞が配信した見出し・リンク・公開日時（2026-11-27 13:44 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
+          "NHKニュースが配信した見出し・リンク・公開日時（2026-11-27 15:07 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
         ],
         [
           "基礎知識｜金利のニュース（一般論）",
@@ -834,72 +954,8 @@
       "new_since_last": true
     },
     {
-      "id": "b92391890c42fbdc56e0",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "11/27",
-      "published_at": "2026-11-27T12:30+09:00",
-      "date_precision": "minute",
-      "title": "米追加関税案、対抗措置も視野 「協調と対立」に不信感―中国",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPU0ZsQm1CZXpRaVBmQzBnUEFKNDM1QW5VZGRBa2J1THB5Vi1yUEM2bGFRS2dUZHRDY3VaSUVPUmNPYUVxaDZvTEV4VWFCWnNMbFNfaDVQREF1cnJyN3N2RHVmWTZuUTZ2ekktcEIzdENaeHZQOWx4dnkxSmdwbGVaSQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "時事ドットコム",
-      "publisher_domain": "www.jiji.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPU0ZsQm1CZXpRaVBmQzBnUEFKNDM1QW5VZGRBa2J1THB5Vi1yUEM2bGFRS2dUZHRDY3VaSUVPUmNPYUVxaDZvTEV4VWFCWnNMbFNfaDVQREF1cnJyN3N2RHVmWTZuUTZ2ekktcEIzdENaeHZQOWx4dnkxSmdwbGVaSQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "時事ドットコムが配信した見出し・リンク・公開日時（2026-11-27 12:30 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
-        }
-      ],
-      "new_since_last": false
-    },
-    {
       "id": "c189feae35c952ed6712",
-      "cat": "資産形成",
+      "cat": "国際情勢",
       "tag": "報道見出し",
       "date": "11/27",
       "published_at": "2026-11-27T11:37+09:00",
@@ -918,10 +974,10 @@
         }
       ],
       "quality": "fixed_learning",
-      "age_label": "24時間以内",
+      "age_label": "48時間以内",
       "read": 3,
-      "icon": "💰",
-      "tone": "teal",
+      "icon": "🌍",
+      "tone": "amber",
       "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
       "learning_topic": "資産形成のニュース",
       "learning_authored_on": "2026-10-22",
@@ -959,71 +1015,7 @@
           "url": "https://www.fsa.go.jp/policy/nisa2/"
         }
       ],
-      "new_since_last": true
-    },
-    {
-      "id": "81dc0eac3f90778c650a",
-      "cat": "国際情勢",
-      "tag": "報道見出し",
-      "date": "11/27",
-      "published_at": "2026-11-27T10:39+09:00",
-      "date_precision": "minute",
-      "title": "エンブラエル、ブラジル製航空機への米関税に警告 運賃上昇の恐れ",
-      "lead": "報道機関の見出しです。本文・正確な条件は出典を確認してください。",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMWlnWEFIbnA1elZZa3J0b04wdmtkT1pNVXlXZm1oelZvWXZNNVNwb21jNC1GSVdiY3RvUVJ0VzVYV3I0RWxjRS1hX2xfTm82MkNDYkRlZEJONXMza1NlY25EY2pHZERIUVJfUVZPR1puUTZ4cUM1amJjcXhoSmVra2RUdE95UQ?oc=5",
-      "source_kind": "press_search",
-      "publisher": "Reuters",
-      "publisher_domain": "www.reuters.com",
-      "language": "ja",
-      "sources": [
-        {
-          "name": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMWlnWEFIbnA1elZZa3J0b04wdmtkT1pNVXlXZm1oelZvWXZNNVNwb21jNC1GSVdiY3RvUVJ0VzVYV3I0RWxjRS1hX2xfTm82MkNDYkRlZEJONXMza1NlY25EY2pHZERIUVJfUVZPR1puUTZ4cUM1amJjcXhoSmVra2RUdE95UQ?oc=5"
-        }
-      ],
-      "quality": "fixed_learning",
-      "age_label": "24時間以内",
-      "read": 3,
-      "icon": "🌍",
-      "tone": "amber",
-      "selection_reason": "金利・為替・景気を通じて投資と生活に関わる",
-      "learning_topic": "世界経済・国際情勢のニュース",
-      "learning_authored_on": "2026-10-22",
-      "sections": [
-        [
-          "今回の取得範囲",
-          "Reutersが配信した見出し・リンク・公開日時（2026-11-27 10:39 JST）を取得しました。記事本文を読んだ要約ではなく、内容の独立した事実確認もしていません。"
-        ],
-        [
-          "基礎知識｜世界経済・国際情勢のニュース（一般論）",
-          "海外の出来事は、貿易、原材料価格、輸送費、為替などを通じて日本にも影響することがあります。ただし、遠くの出来事がすべて日本企業に同じ影響を与えるわけではありません。"
-        ],
-        [
-          "生活や投資とのつながり（一般論）",
-          "例えば原材料価格の上昇は、資源を買う側には負担、売る側には収益機会になる場合があります。消費者向け価格に転嫁できるか、契約がいつ見直されるかによって、影響の大きさと時期が変わります。"
-        ],
-        [
-          "元記事で確認したいこと",
-          "元記事で①発表主体と当事者、②実施済みか交渉中か、③対象国・品目・期間、④別の当事者の説明、⑤一次資料の有無を確認します。一方の政府の発表だけで状況全体を断定しません。"
-        ],
-        [
-          "解説の位置づけ",
-          "この解説はあらかじめ用意した学習ノートを見出しの語句に応じて選んだものです。今回のニュース固有の原因・影響を分析したものではありません。自動分類が合わないときは、元記事を優先してください。"
-        ]
-      ],
-      "glossary": [
-        [
-          "関税",
-          "国境を越えて輸入される商品などに課される税。"
-        ]
-      ],
-      "learning_sources": [
-        {
-          "name": "財務省：公式情報",
-          "url": "https://www.mof.go.jp/"
-        }
-      ],
-      "new_since_last": true
+      "new_since_last": false
     }
   ],
   "markets": [],
@@ -1040,29 +1032,29 @@
       "name": "日本銀行",
       "kind": "primary",
       "ok": true,
-      "eligible": 14,
+      "eligible": 15,
       "dropped": {
-        "out_of_time_window": 60
+        "out_of_time_window": 58
       }
     },
     {
       "name": "財務省",
       "kind": "primary",
       "ok": true,
-      "eligible": 42,
+      "eligible": 39,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 57
+        "out_of_time_window": 60
       }
     },
     {
       "name": "金融庁",
       "kind": "primary",
       "ok": true,
-      "eligible": 13,
+      "eligible": 12,
       "dropped": {
         "out_of_scope": 1,
-        "out_of_time_window": 1
+        "out_of_time_window": 2
       }
     },
     {
@@ -1100,63 +1092,63 @@
       "name": "報道見出し検索：日本経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 56,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 44
       }
     },
     {
       "name": "報道見出し検索：世界経済",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 4,
       "dropped": {
-        "publisher_not_allowed": 45
+        "publisher_not_allowed": 51
       }
     },
     {
       "name": "報道見出し検索：金融政策",
       "kind": "press_search",
       "ok": true,
-      "eligible": 32,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 68
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：政治・地方自治",
       "kind": "press_search",
       "ok": true,
-      "eligible": 14,
+      "eligible": 18,
       "dropped": {
-        "publisher_not_allowed": 86
+        "publisher_not_allowed": 82
       }
     },
     {
       "name": "報道見出し検索：国際情勢",
       "kind": "press_search",
       "ok": true,
-      "eligible": 26,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 74
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：AI・産業",
       "kind": "press_search",
       "ok": true,
-      "eligible": 15,
+      "eligible": 25,
       "dropped": {
-        "publisher_not_allowed": 85
+        "publisher_not_allowed": 75
       }
     },
     {
       "name": "報道見出し検索：資産形成",
       "kind": "press_search",
       "ok": true,
-      "eligible": 13,
+      "eligible": 7,
       "dropped": {
-        "publisher_not_allowed": 87
+        "publisher_not_allowed": 67
       }
     },
     {
@@ -1172,18 +1164,18 @@
       "name": "報道見出し検索：重要セキュリティ",
       "kind": "press_search",
       "ok": true,
-      "eligible": 4,
+      "eligible": 6,
       "dropped": {
-        "publisher_not_allowed": 28
+        "publisher_not_allowed": 18
       }
     },
     {
       "name": "報道見出し検索：重大な社会動向",
       "kind": "press_search",
       "ok": true,
-      "eligible": 3,
+      "eligible": 2,
       "dropped": {
-        "publisher_not_allowed": 61
+        "publisher_not_allowed": 31
       }
     }
   ]
